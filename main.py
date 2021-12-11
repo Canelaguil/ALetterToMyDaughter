@@ -2,7 +2,7 @@ import random
 import pprint
 
 traits = ['apathetic', 'disorganised', 'anxious', 'critical', 'quirky',
-          'egocentric', 'creative', 'moral', 'impulsive', 'happy', 'obedient' 'brave']
+          'egocentric', 'creative', 'moral', 'impulsive', 'happy', 'obedient', 'brave']
 
 
 class MemoryEvent:
@@ -60,21 +60,11 @@ class MemoryEvent:
             return "neutral"
         return "not affected"
 
+class Character:
+    def __init__(self):
+        pass
 
-class Juana:
-    def __init__(self, input_file='') -> None:
-        self.name = "Juana"
-        self.surname = "Huijzen"
-        self.known_traits = ['kind', 'moody']
-        self.my_traits = ['kind', 'moody']
-        self.trauma = random.randint(0, 50)
-        self.country_affinities = {
-            'Netherlands': 0, 'Spain': 0, 'Australia': 0}
-        self.set_up()
-        self.backstory = self.backstory()
-        self.output_child()
-
-    def set_up(self, input_file=''):
+    def set_up(self):
         # Get traits
         while len(self.my_traits) < 5:
             t = random.choice(traits)
@@ -84,45 +74,6 @@ class Juana:
         # Country affinities
         for country in self.country_affinities:
             self.country_affinities[country] = random.randint(-3, 3)
-
-    def backstory(self):
-        father_alive = True
-        story = "I was born in Spain, where my parents met while fighting for the Spanish " + \
-                "civil war. " 
-        
-        if random.random() < 0.5: 
-            story += "My mother was a fervent communist, one of the leaders of " + \
-                     "The Cause. My father had travelled there all the way from the Netherlands. But "
-        else:
-            story += "My mother was a victim of class and circumstance. She hardly knew how to read, " + \
-                     "she was a communist because everyone else she knew was. My father on the other hand " + \
-                     "had come all the way from the Netherlands to fight for the cause. But "
-
-        if random.random() < 0.5:
-            story += "he never came back. Right before the communists lost, my mother packed " + \
-                     "up and took me to the Netherlands. She didn't even speak the language. " + \
-                     "Her dark, Spanish features got us mistaken for Jews."
-
-            father_alive = False 
-            self.trauma += random.randint(0, 20)
-            self.country_affinities['Spain'] = min(self.country_affinities['Spain'] + 2, 3)
-            self.country_affinities['Netherlands'] = max(self.country_affinities['Netherlands'] - 2, -3)
-        else:
-            story += "in the war he lost my mother and with her his faith in the cause and " + \
-                     "humanity at large. He took me back to the Netherlands." 
-            self.country_affinities['Netherlands'] = min(self.country_affinities['Netherlands'] + 2, 3)
-
-        self.age1940 = random.randint(9, 14)
-        parent = 'father' if father_alive else 'mother'
-        parent_pronoun = 'he' if father_alive else 'she'
-        circumstance = 'knew he was a communist' if father_alive else 'they considered her a Jewish commie'
-
-        story += f" I was {self.age1940} when Germany invaded The Netherlands. My {parent} had seen what was " + \
-                 f"coming and shipped me off to England January that year. It is there that they told me {parent_pronoun} " + \
-                 f"was executed in the second week of occupation. They {circumstance}."
-        
-        return story
-
 
     def output_child(self):
         self.backstory = self.backstory.replace('\n', '')
@@ -142,9 +93,65 @@ class Juana:
         pass
 
 
+
+class Juana(Character):
+    def __init__(self) -> None:
+        self.name = "Juana"
+        self.surname = "Huijzen"
+        self.known_traits = ['kind', 'moody']
+        self.my_traits = ['kind', 'moody']
+        self.trauma = random.randint(0, 50)
+        self.country_affinities = {
+            'Netherlands': 0, 'Spain': 0, 'Australia': 0}
+        self.set_up()
+        self.backstory = self.backstory()
+
+    def backstory(self):
+        father_alive = True
+        story = "I was born in Spain, where my parents met while fighting for the Spanish " + \
+                "civil war. " 
+        
+        if random.random() < 0.5: 
+            story += "My mother was a fervent communist, one of the leaders of " + \
+                     "The Cause. My father had travelled there all the way from the Netherlands. But "
+        else:
+            story += "My mother was a victim of class and circumstance. She hardly knew how to read, " + \
+                     "she was a communist because everyone else she knew was. My father on the other hand " + \
+                     "had come all the way from the Netherlands to fight for the cause. But "
+
+        if random.random() < 0.5:
+            story += "he never came back. Right before  the communists lost, my mother packed " + \
+                     "up and took me to the Netherlands. She didn't even speak the language. " + \
+                     "Her dark, Spanish features got us mistaken for Jews."
+
+            father_alive = False 
+            self.trauma += random.randint(0, 20)
+            self.country_affinities['Spain'] = min(self.country_affinities['Spain'] + 2, 3)
+            self.country_affinities['Netherlands'] = max(self.country_affinities['Netherlands'] - 2, -3)
+        else:
+            story += "in the war he lost my mother and with her his faith in the cause and " + \
+                     "humanity at large. He took me back to the Netherlands." 
+            self.country_affinities['Netherlands'] = min(self.country_affinities['Netherlands'] + 2, 3)
+
+        self.age1940 = random.randint(9, 14)
+        parent = 'father' if father_alive else 'mother'
+        parent_pronoun = 'he' if father_alive else 'she'
+        circumstance = 'knew he was a communist' if father_alive else 'considered her a Jewish commie'
+
+        story += f" I was {self.age1940} when Germany invaded The Netherlands. My {parent} had seen what was " + \
+                 f"coming and shipped me off to England January that year. It is there that they told me {parent_pronoun} " + \
+                 f"was executed in the second week of occupation. They {circumstance}."
+        
+        return story
+
+
+    
+
+
 class Controller:
     def __init__(self, input_file='') -> None:
-        pass
+        j = Juana()
+        j.output_child()
 
+Controller()
 
-j = Juana()
