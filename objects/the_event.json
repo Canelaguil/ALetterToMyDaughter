@@ -1,0 +1,70 @@
+{
+  "cause": "Daniel was mean to Benjamin",
+  "fighter": "Ika",
+  "pusher": "Jules",
+  "involved": [
+    "Ika",
+    "Jules"
+  ],
+  "not_involved": [],
+  "reactions": {
+    "Juana": {
+      "age": 15,
+      "guilt": 51,
+      "trauma": {
+        "old_trauma": 43,
+        "trauma_modifier": 37.7061930287333,
+        "new_trauma": 80
+      },
+      "relationships": {
+        "Jules": {
+          "old_R": 52,
+          "new_R": 53
+        },
+        "Ika": {
+          "old_R": 72,
+          "new_R": 59
+        }
+      }
+    },
+    "Jules": {
+      "age": 15,
+      "guilt": 88,
+      "trauma": {
+        "old_trauma": 20,
+        "trauma_modifier": 49.55265947685079,
+        "new_trauma": 69
+      },
+      "relationships": {
+        "Juana": {
+          "old_R": 61,
+          "new_R": 79
+        },
+        "Ika": {
+          "old_R": 58,
+          "new_R": 75
+        }
+      }
+    },
+    "Ika": {
+      "age": 15,
+      "guilt": 77,
+      "trauma": {
+        "old_trauma": 31,
+        "trauma_modifier": 33.26740472083558,
+        "new_trauma": 64
+      },
+      "relationships": {
+        "Juana": {
+          "old_R": 69,
+          "new_R": 66
+        },
+        "Jules": {
+          "old_R": 57,
+          "new_R": 50
+        }
+      }
+    },
+    "Benjamin": "niet blij"
+  }
+}

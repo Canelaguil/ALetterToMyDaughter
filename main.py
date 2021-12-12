@@ -1,5 +1,5 @@
 import json
-from random import random, randint, choice, seed, choices
+from random import random, randint, choice, seed, choices, uniform
 from pprint import pprint
 
 traits = ['apathetic', 'disorganised', 'anxious', 'critical', 'quirky',
@@ -73,6 +73,7 @@ class Character:
             'Benjamin' : 0,
             'Daniel' : 0
         }
+        self.crush = None
 
     def set_up(self):
         # Get traits
@@ -98,6 +99,51 @@ class Character:
                 bonus = randint(5, 20)
                 self.modify_relationship(bonus, fm)
 
+    def interpret_event(self, event):
+        self.age1943 = self.age1940 + 3
+        dan_R = self.relationships['Daniel']
+        self.reaction = {'age' : self.age1943}
+
+        # GUILT
+        if event['pusher'] == self.name:
+            self.guilt += randint(dan_R, 100)
+            if self.crush == 'Daniel':
+                self.guilt += randint(20, 30)
+                self.modify_trauma(randint(20, 50))
+
+        elif self.name in event['involved']:
+            self.guilt += randint(int(dan_R * 0.5), int(dan_R * 1.2))
+            if self.crush == 'Daniel':
+                self.guilt += randint(10, 20)
+                self.modify_trauma(randint(10, 40))
+        else:
+            self.guilt += randint(0, dan_R)
+        self.guilt = self.guilt if self.guilt < 100 else 100
+        self.reaction['guilt'] = self.guilt
+
+        # TRAUMA
+        trauma_modifier = self.guilt * uniform(0.4, 0.8)
+        self.reaction['trauma'] = {'old_trauma' : self.trauma}
+        self.modify_trauma(trauma_modifier)
+        self.reaction['trauma']['trauma_modifier'] = trauma_modifier
+        self.reaction['trauma']['new_trauma'] = self.trauma
+
+        # RELATIONSHIPS (TODO)
+        self.relationships.pop('Daniel')
+        self.reaction['relationships'] = {}
+        for r in self.relationships:
+            if r != 'Benjamin':
+                self.reaction['relationships'][r] = {'old_R' : self.relationships[r]}
+                m = randint(-30, 30)
+                self.modify_relationship(m, r)
+                self.reaction['relationships'][r]['new_R'] = self.relationships[r]
+
+
+        return self.reaction
+
+    """ 
+      MODIFY CHARACTERS
+    """
 
     def modify_relationship(self, modifier, name):
         cur_value = self.relationships[name] 
@@ -108,12 +154,20 @@ class Character:
             new_value = 0
         self.relationships[name] = new_value
 
-    def interpret_event(self, event):
-        if event['pusher'] == self.name:
-            self.guilt += randint(40, 100)
-        else:
-            pass
+    def modify_trauma(self, modifier):
+        new_value = self.trauma + int(modifier)
+        if new_value > 100:
+            new_value = 100
+        elif new_value < 0:
+            new_value = 0
+        self.trauma = new_value
 
+    def give_crush(self, crush):
+        self.crush = crush
+
+    """
+      OUTPUT FUNCTIONS
+    """
 
     def output_child(self):
         self.backstory = self.backstory.replace('\n', '')
@@ -126,32 +180,35 @@ class Character:
             'country affinities' : self.country_affinities, 
             "relationships" : self.relationships,
             'backstory' : self.backstory,
-            'trauma' : self.trauma
+            'trauma' : self.trauma,
+            'crush' : self.crush
         }
         pprint(child, sort_dicts=False)
         self.write_json(child, 'child')
 
-    def post_event_output(self):
+    def output_event(self):
         child = {
             'name' : f'{self.name} {self.surname}',
-            'age at move' : self.age1940, 
+            'age at event' : self.age1943, 
             'known traits' : self.known_traits,
             'all traits' : self.my_traits,
             'country affinities' : self.country_affinities, 
             "relationships" : self.relationships,
-            'trauma' : self.trauma
+            'trauma' : self.trauma, 
+            'reaction' : self.reaction,
+            'crush' : self.crush
         }
         pprint(child, sort_dicts=False)
-        self.write_json(child, 'post-event')
-
-    def write_json(self, object, stage):
-        with open(f'objects/{self.name}_{stage}.json', 'a') as outfile:
-            json.dump(object, outfile, indent=2)
+        self.write_json(child, 'event')
 
     def output_adult(self):
         pass
 
+    def write_json(self, object, stage):
+        with open(f'objects/{self.name}_{stage}.json', 'w') as outfile:
+            json.dump(object, outfile, indent=4, sort_keys=False)
 
+    
 class Juana(Character):
     def __init__(self) -> None:
         super().__init__()
@@ -162,8 +219,11 @@ class Juana(Character):
         self.trauma = randint(0, 50)
         self.country_affinities = {
             'Netherlands': 0, 'Spain': 0, 'Australia': 0}
+        self.sex = 'f'
+
         self.set_up()
         self.backstory = self.backstory()
+        self.birth_year = 1940 - self.age1940
 
     def backstory(self):
         father_alive = True
@@ -214,8 +274,11 @@ class Jules(Character):
         self.trauma = randint(20, 60)
         self.country_affinities = {
             'Netherlands': -2, 'Belgium': -1, 'Australia': -1}
+        self.sex = 'm'
+
         self.set_up()
         self.backstory = self.backstory()
+        self.birth_year = 1940 - self.age1940
 
     def backstory(self):
         moveage = randint(1, 5)
@@ -249,8 +312,11 @@ class Ika(Character):
         self.trauma = randint(0, 20)
         self.country_affinities = {
             'Netherlands': 0, 'Indonesia': 0, 'Australia': 0}
+        self.sex = 'f'
+
         self.set_up()
         self.backstory = self.backstory()
+        self.birth_year = 1940 - self.age1940
 
     def backstory(self):
         self.back_snippets = {
@@ -289,6 +355,43 @@ class Benjamin(Character):
             'Ika' : 80,
             'Daniel' : 80
         }
+        self.sex = 'm'
+        self.age1943 = self.age1940 + 3
+        self.birth_year = 1940 - self.age1940
+
+    def interpret_event(self, event):
+        self.reaction = "niet blij"
+        return self.reaction
+
+
+class Daniel(Character):
+    def __init__(self):
+        super().__init__()
+        self.name = 'Daniel'
+        self.surname = 'de Bruijn'
+        self.age1940 = randint(12, 14)
+        self.known_traits = ['creative', 'outgoing']
+        self.my_traits = ['creative', 'outgoing', 'mean', 'impulsive', 'insecure']
+        self.all_traits = [] 
+        self.backstory = "Mother died in childbirth. Father was part of the socialist party, saw what was " + \
+                         "coming and moved to England. Was drafted for war and died in 1939, leaving Daniel " + \
+                         "orphaned."
+        self.trauma = randint(0, 20)
+        self.country_affinities = {
+            'Netherlands': 2, 'Australia': 2 }        
+        self.relationships = {
+            'Juana' : randint(30, 80), 
+            'Jules' : randint(30, 80),
+            'Ika' : randint(30, 80),
+            'Benjamin' : randint(60, 90)
+        }
+        self.sex = 'm'
+        self.age1943 = self.age1940 + 3
+        self.birth_year = 1940 - self.age1940
+
+    def interpret_event(self, event):
+        self.reaction = ""
+        return self.reaction
 
 
 class Controller:
@@ -297,17 +400,44 @@ class Controller:
             'Juana' : Juana(),
             'Jules' : Jules(),
             'Ika' : Ika(),
-            'Benjamin' : Benjamin()
+            'Benjamin' : Benjamin(),
+            'Daniel' : Daniel()
         }
+
+        self.childhood_memories()
 
         for child in self.cs.values(): 
             child.output_child()
-
+            
         self.the_event()
 
+    def childhood_memories(self):
+        self.init_crushes()
+
+    def init_crushes(self):
+        for c in self.cs.values():
+            for r in self.cs.values():
+                if r.name != c.name:
+                    if r.age1940 in range(c.age1940 - 1, c.age1940 + 4):
+                        chance = (c.relationships[r.name] / 100 + 1) * 0.3
+                        print(chance)
+                        if random() < chance:
+                            c.give_crush(r.name)
+                            # print(f'{c.name} has a crush on {r.name}')
+                            break
+    
     def the_event(self):
+        self.cs.pop('Daniel')
         event = {}
-        causes = ["Daniel is a bully", "Daniel is lying about Ika's parents", "Daniel is lying about Jules' parents", "Daniel is too bossy", "Daniel lied to their caretaker"]
+        causes = [
+            "Daniel is a bully",
+            "Daniel mocked Ika's parents", 
+            "Daniel is lying about Jules' parents", 
+            "Daniel insulted Juana's parents",
+            "Daniel is too bossy", 
+            "Daniel lied to their caretaker",
+            "Daniel was mean to Benjamin"
+            ]
         event['cause'] = choice(causes)
 
         # find fighter
@@ -326,15 +456,24 @@ class Controller:
         event['involved'] = [fighter, pusher[0]]
         event['not_involved'] = []
         if random() < 0.5:
-            event['involved'].append(pusher[1])
+            if pusher[1]  not in event['involved']:
+                event['involved'].append(pusher[1])
         else:
             for c in self.cs:
                 if c != fighter and c != pusher[0] and c != 'Benjamin':
                     event['not_involved'].append(c)
+        
+        # check how someone reacts
+        event['reactions'] = {}
+        for name, c in self.cs.items():
+            event['reactions'][name] = c.interpret_event(event)
+            c.output_event()
 
-        for c in self.cs.values():
-            c.interpret_event(event)
         pprint(event, sort_dicts=False)
+
+        with open(f'objects/the_event.json', 'w') as outfile:
+            json.dump(event, outfile, indent=2, sort_keys=False)
+
 
 Controller()
 

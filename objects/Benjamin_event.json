@@ -1,6 +1,6 @@
 {
     "name": "Benjamin Kuijper",
-    "age at move": 6,
+    "age at event": 9,
     "known traits": [],
     "all traits": [],
     "country affinities": {
@@ -13,7 +13,7 @@
         "Ika": 80,
         "Daniel": 80
     },
-    "backstory": "",
     "trauma": 12,
+    "reaction": "niet blij",
     "crush": null
 }
