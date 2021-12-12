@@ -228,6 +228,8 @@ class Controller:
         for child in self.cs.values(): 
             child.output_child()
 
+        self.the_event()
+
     def the_event(self):
         event = {}
         # Ika & Daniel fight
@@ -235,10 +237,12 @@ class Controller:
         event['cause'] = random.choice(causes)
 
         # One person pushes
-        event['pusher'] = random.choice(self.cs)
+        event['pusher'] = random.choice(['Juana', 'Jules', 'Ika'])
 
-        for c in self.cs:
+        for c in self.cs.values():
             c.interpret_event(event)
+        
+        pprint.pprint(event)
 
 Controller()
 
