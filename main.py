@@ -81,6 +81,9 @@ class Character:
             elif self.country_affinities[country] < -3: 
                 self.country_affinities[country] = -3
 
+    def interpret_event(self, event):
+        pass
+
     def output_child(self):
         self.backstory = self.backstory.replace('\n', '')
         self.backstory = self.backstory.replace('             ', ' ')
@@ -224,6 +227,18 @@ class Controller:
 
         for child in self.cs.values(): 
             child.output_child()
+
+    def the_event(self):
+        event = {}
+        # Ika & Daniel fight
+        causes = ["Daniel is a bully", "Daniel is lying about Ika's parents", "Daniel is lying about Jules' parents", "Daniel is too bossy", "Daniel lied to their caretaker"]
+        event['cause'] = random.choice(causes)
+
+        # One person pushes
+        event['pusher'] = random.choice(self.cs)
+
+        for c in self.cs:
+            c.interpret_event(event)
 
 Controller()
 
