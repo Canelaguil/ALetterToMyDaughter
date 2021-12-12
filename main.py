@@ -73,6 +73,8 @@ class Character:
             'Benjamin' : 0,
             'Daniel' : 0
         }
+        self.childhood_memories = {}
+        self.memories = {}
         self.crush = None
 
     def set_up(self):
@@ -360,7 +362,7 @@ class Benjamin(Character):
         self.birth_year = 1940 - self.age1940
 
     def interpret_event(self, event):
-        self.reaction = "niet blij"
+        self.reaction = "Not present"
         return self.reaction
 
 
@@ -460,7 +462,7 @@ class Controller:
                 event['involved'].append(pusher[1])
         else:
             for c in self.cs:
-                if c != fighter and c != pusher[0] and c != 'Benjamin':
+                if c not in event['involved'] and c != 'Benjamin':
                     event['not_involved'].append(c)
         
         # check how someone reacts

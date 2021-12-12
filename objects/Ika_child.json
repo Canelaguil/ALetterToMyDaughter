@@ -1,6 +1,6 @@
 {
     "name": "Ika Nicolaas",
-    "age at move": 12,
+    "age at move": 13,
     "known traits": [
         "brave",
         "outgoing"
@@ -8,22 +8,22 @@
     "all traits": [
         "brave",
         "outgoing",
-        "egocentric",
-        "apathetic",
-        "obedient"
+        "quirky",
+        "impulsive",
+        "anxious"
     ],
     "country affinities": {
-        "Netherlands": -2,
-        "Indonesia": -2,
+        "Netherlands": 1,
+        "Indonesia": 3,
         "Australia": -2
     },
     "relationships": {
-        "Juana": 69,
-        "Jules": 57,
-        "Benjamin": 77,
-        "Daniel": 51
+        "Juana": 62,
+        "Jules": 90,
+        "Benjamin": 68,
+        "Daniel": 67
     },
-    "backstory": "My mother was Dutch, but she was as un-Dutch as one can be. People there love to say just act normal, that's strange enough, but normal was never strange enough for her. Just imagine: this good protestant girl from Veenendaal running away to Amsterdam: she was barely 15. And yet she survived. Became a bartender, took odd jobs wherever she could, and when my father was forced to go back to Indonesia she raised me on her own. When the war loomed on the horizon she became too involved in her political causes to look after me. I was 12 when she send me away.",
-    "trauma": 10,
-    "crush": "Daniel"
+    "backstory": "My mother was Dutch, but she was as un-Dutch as one can be. People there love to say just act normal, that's strange enough, but normal was never strange enough for her. Just imagine: this good protestant girl from Veenendaal running away to Amsterdam: she was barely 15. And yet she survived. Became a bartender, took odd jobs wherever she could, and when my father was forced to go back to Indonesia she raised me on her own. When the war loomed on the horizon she became too involved in her political causes to look after me. I was 13 when she send me away.",
+    "trauma": 19,
+    "crush": null
 }

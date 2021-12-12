@@ -1,6 +1,6 @@
 {
     "name": "Juana Huijzen",
-    "age at move": 12,
+    "age at move": 11,
     "known traits": [
         "kind",
         "moody"
@@ -9,21 +9,21 @@
         "kind",
         "moody",
         "obedient",
-        "impulsive",
-        "quirky"
+        "critical",
+        "happy"
     ],
     "country affinities": {
-        "Netherlands": 1,
+        "Netherlands": 0,
         "Spain": 1,
-        "Australia": -2
+        "Australia": 1
     },
     "relationships": {
-        "Jules": 52,
-        "Ika": 72,
-        "Benjamin": 62,
-        "Daniel": 52
+        "Jules": 44,
+        "Ika": 75,
+        "Benjamin": 54,
+        "Daniel": 51
     },
-    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a victim of class and circumstance. She hardly knew how to read, she was a communist because everyone else she knew was. My father on the other hand had come all the way from the Netherlands to fight for the cause. But in the war he lost my mother and with her his faith in the cause and humanity at large. He took me back to the Netherlands. I was 12 when Germany invaded The Netherlands. My father had seen what was coming and shipped me off to England January that year. It is there that they told me he was executed in the second week of occupation. They knew he was a communist.",
-    "trauma": 43,
-    "crush": null
+    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a fervent communist, one of the leaders of The Cause. My father had travelled there all the way from the Netherlands. But in the war he lost my mother and with her his faith in the cause and humanity at large. He took me back to the Netherlands. I was 11 when Germany invaded The Netherlands. My father had seen what was coming and shipped me off to England January that year. It is there that they told me he was executed in the second week of occupation. They knew he was a communist.",
+    "trauma": 46,
+    "crush": "Ika"
 }
