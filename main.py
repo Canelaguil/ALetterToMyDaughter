@@ -1,5 +1,6 @@
-import random
-import pprint
+import json
+from random import random, randint, choice, seed, choices
+from pprint import pprint
 
 traits = ['apathetic', 'disorganised', 'anxious', 'critical', 'quirky',
           'egocentric', 'creative', 'moral', 'impulsive', 'happy', 'obedient', 'brave']
@@ -63,26 +64,56 @@ class MemoryEvent:
 
 class Character:
     def __init__(self):
-        random.seed()
+        seed()
         self.guilt = 0
+        self.relationships = {
+            'Juana' : 0, 
+            'Jules' : 0,
+            'Ika' : 0,
+            'Benjamin' : 0,
+            'Daniel' : 0
+        }
 
     def set_up(self):
         # Get traits
         while len(self.my_traits) < 5:
-            t = random.choice(traits)
+            t = choice(traits)
             if t not in self.my_traits:
                 self.my_traits.append(t)
 
         # Country affinities
         for country in self.country_affinities:
-            self.country_affinities[country] += random.randint(-3, 3)
+            self.country_affinities[country] += randint(-3, 3)
             if self.country_affinities[country] > 3: 
                 self.country_affinities[country] = 3
             elif self.country_affinities[country] < -3: 
                 self.country_affinities[country] = -3
 
+        # Init relationships
+        self.relationships.pop(self.name)
+        for fm in self.relationships:
+            m = randint(40, 80)
+            self.modify_relationship(m, fm)
+            if fm == 'Benjamin' or random() < 0.2:
+                bonus = randint(5, 20)
+                self.modify_relationship(bonus, fm)
+
+
+    def modify_relationship(self, modifier, name):
+        cur_value = self.relationships[name] 
+        new_value = cur_value + modifier
+        if new_value > 100:
+            new_value = 100
+        elif new_value < 0:
+            new_value = 0
+        self.relationships[name] = new_value
+
     def interpret_event(self, event):
-        pass
+        if event['pusher'] == self.name:
+            self.guilt += randint(40, 100)
+        else:
+            pass
+
 
     def output_child(self):
         self.backstory = self.backstory.replace('\n', '')
@@ -93,10 +124,29 @@ class Character:
             'known traits' : self.known_traits,
             'all traits' : self.my_traits,
             'country affinities' : self.country_affinities, 
+            "relationships" : self.relationships,
             'backstory' : self.backstory,
             'trauma' : self.trauma
         }
-        pprint.pprint(child, sort_dicts=False)
+        pprint(child, sort_dicts=False)
+        self.write_json(child, 'child')
+
+    def post_event_output(self):
+        child = {
+            'name' : f'{self.name} {self.surname}',
+            'age at move' : self.age1940, 
+            'known traits' : self.known_traits,
+            'all traits' : self.my_traits,
+            'country affinities' : self.country_affinities, 
+            "relationships" : self.relationships,
+            'trauma' : self.trauma
+        }
+        pprint(child, sort_dicts=False)
+        self.write_json(child, 'post-event')
+
+    def write_json(self, object, stage):
+        with open(f'objects/{self.name}_{stage}.json', 'a') as outfile:
+            json.dump(object, outfile, indent=2)
 
     def output_adult(self):
         pass
@@ -104,11 +154,12 @@ class Character:
 
 class Juana(Character):
     def __init__(self) -> None:
+        super().__init__()
         self.name = "Juana"
         self.surname = "Huijzen"
         self.known_traits = ['kind', 'moody']
         self.my_traits = ['kind', 'moody']
-        self.trauma = random.randint(0, 50)
+        self.trauma = randint(0, 50)
         self.country_affinities = {
             'Netherlands': 0, 'Spain': 0, 'Australia': 0}
         self.set_up()
@@ -119,7 +170,7 @@ class Juana(Character):
         story = "I was born in Spain, where my parents met while fighting for the Spanish " + \
                 "civil war. " 
         
-        if random.random() < 0.5: 
+        if random() < 0.5: 
             story += "My mother was a fervent communist, one of the leaders of " + \
                      "The Cause. My father had travelled there all the way from the Netherlands. But "
         else:
@@ -127,13 +178,13 @@ class Juana(Character):
                      "she was a communist because everyone else she knew was. My father on the other hand " + \
                      "had come all the way from the Netherlands to fight for the cause. But "
 
-        if random.random() < 0.5:
+        if random() < 0.5:
             story += "he never came back. Right before  the communists lost, my mother packed " + \
                      "up and took me to the Netherlands. She didn't even speak the language. " + \
                      "Her dark, Spanish features got us mistaken for Jews."
 
             father_alive = False 
-            self.trauma += random.randint(0, 20)
+            self.trauma += randint(0, 20)
             self.country_affinities['Spain'] = min(self.country_affinities['Spain'] + 2, 3)
             self.country_affinities['Netherlands'] = max(self.country_affinities['Netherlands'] - 2, -3)
         else:
@@ -141,7 +192,7 @@ class Juana(Character):
                      "humanity at large. He took me back to the Netherlands." 
             self.country_affinities['Netherlands'] = min(self.country_affinities['Netherlands'] + 2, 3)
 
-        self.age1940 = random.randint(9, 14)
+        self.age1940 = randint(9, 14)
         parent = 'father' if father_alive else 'mother'
         parent_pronoun = 'he' if father_alive else 'she'
         circumstance = 'knew he was a communist' if father_alive else 'considered her a Jewish commie'
@@ -155,22 +206,23 @@ class Juana(Character):
 
 class Jules(Character):
     def __init__(self) -> None:
+        super().__init__()
         self.name = "Jules"
         self.surname = "Cohen"
         self.known_traits = ['impulsive', 'creative']
         self.my_traits = ['impulsive', 'creative']
-        self.trauma = random.randint(20, 60)
+        self.trauma = randint(20, 60)
         self.country_affinities = {
             'Netherlands': -2, 'Belgium': -1, 'Australia': -1}
         self.set_up()
         self.backstory = self.backstory()
 
     def backstory(self):
-        moveage = random.randint(1, 5)
-        circumstance = random.choice(['thought it would be saver for us', 'got a job', 'liked it'])
+        moveage = randint(1, 5)
+        circumstance = choice(['thought it would be saver for us', 'got a job', 'liked it'])
         story = f"I came to the Netherlands when I was {moveage} years old. My father {circumstance} there. "
         
-        if random.random() < 0.5: 
+        if random() < 0.5: 
             story += "He was a true European. Spoke 4 languages, made himself understood in many more. " + \
                      "Europe never loved him back enough. Met my mother in a theatre in Brussels, I guess " + \
                      "they made do well enough. "
@@ -179,7 +231,7 @@ class Jules(Character):
                      "He met my mother in Brussels. My mother was an silent movie actress, but after " + \
                      "the switch to talkies finding work became hard for her in more ways than one. "
 
-        self.age1940 = random.randint(10, 15)
+        self.age1940 = randint(10, 15)
 
         story += f"When Germany invaded the Netherlands I was {self.age1940}. My parents had send me " + \
                  " to England days prior. I never saw them again."
@@ -189,11 +241,12 @@ class Jules(Character):
 
 class Ika(Character):
     def __init__(self) -> None:
+        super().__init__()
         self.name = "Ika"
         self.surname = "Nicolaas"
         self.known_traits = ['brave', 'outgoing']
         self.my_traits = ['brave', 'outgoing']
-        self.trauma = random.randint(0, 20)
+        self.trauma = randint(0, 20)
         self.country_affinities = {
             'Netherlands': 0, 'Indonesia': 0, 'Australia': 0}
         self.set_up()
@@ -205,7 +258,7 @@ class Ika(Character):
             'father' : "I don't know where my father is now. He was a student in Amsterdam, but he was forced to go " + \
                        "back to Indonesia when they found out about me."
         }
-        self.age1940 = random.randint(9, 15)
+        self.age1940 = randint(9, 15)
         story = "My mother was Dutch, but she was as un-Dutch as one can be. People there love to say " + \
                 "just act normal, that's strange enough, but normal was never strange enough for her. " + \
                 "Just imagine: this good protestant girl from Veenendaal running away to Amsterdam: " + \
@@ -217,12 +270,34 @@ class Ika(Character):
         return story
 
 
+class Benjamin(Character):
+    def __init__(self):
+        super().__init__()
+        self.name = 'Benjamin'
+        self.surname = 'Kuijper'
+        self.age1940 = 6
+        self.known_traits = []
+        self.my_traits = []
+        self.all_traits = [] 
+        self.backstory = ""
+        self.trauma = randint(0, 20)
+        self.country_affinities = {
+            'Netherlands': 2, 'Australia': 3 }        
+        self.relationships = {
+            'Juana' : 80, 
+            'Jules' : 80,
+            'Ika' : 80,
+            'Daniel' : 80
+        }
+
+
 class Controller:
     def __init__(self) -> None:
         self.cs = {
             'Juana' : Juana(),
             'Jules' : Jules(),
-            'Ika' : Ika()
+            'Ika' : Ika(),
+            'Benjamin' : Benjamin()
         }
 
         for child in self.cs.values(): 
@@ -232,17 +307,34 @@ class Controller:
 
     def the_event(self):
         event = {}
-        # Ika & Daniel fight
         causes = ["Daniel is a bully", "Daniel is lying about Ika's parents", "Daniel is lying about Jules' parents", "Daniel is too bossy", "Daniel lied to their caretaker"]
-        event['cause'] = random.choice(causes)
+        event['cause'] = choice(causes)
 
-        # One person pushes
-        event['pusher'] = random.choice(['Juana', 'Jules', 'Ika'])
+        # find fighter
+        choice_list = [(c.name, 100 - c.relationships['Daniel']) for c in self.cs.values() if c.name != 'Benjamin']
+        a, w = zip(*choice_list)
+        fighter = choices(a, weights=w)[0]
+        event['fighter'] = fighter
+
+        # find pusher
+        choice_list = [(c.name, 100 - c.relationships['Daniel'] + c.relationships[fighter]) for c in self.cs.values() if c.name not in ['Benjamin', fighter]]
+        a, w = zip(*choice_list)
+        pusher = choices(a, weights=w, k=2)
+        event['pusher'] = pusher[0]
+
+        # check if others were also involved
+        event['involved'] = [fighter, pusher[0]]
+        event['not_involved'] = []
+        if random() < 0.5:
+            event['involved'].append(pusher[1])
+        else:
+            for c in self.cs:
+                if c != fighter and c != pusher[0] and c != 'Benjamin':
+                    event['not_involved'].append(c)
 
         for c in self.cs.values():
             c.interpret_event(event)
-        
-        pprint.pprint(event)
+        pprint(event, sort_dicts=False)
 
 Controller()
 
