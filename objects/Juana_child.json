@@ -1,6 +1,6 @@
 {
     "name": "Juana Huijzen",
-    "age at move": 11,
+    "age at move": 12,
     "known traits": [
         "kind",
         "moody"
@@ -8,22 +8,22 @@
     "all traits": [
         "kind",
         "moody",
+        "moral",
         "obedient",
-        "critical",
-        "happy"
+        "disorganised"
     ],
     "country affinities": {
-        "Netherlands": 0,
+        "Netherlands": -2,
         "Spain": 1,
-        "Australia": 1
+        "Australia": 0
     },
     "relationships": {
-        "Jules": 44,
-        "Ika": 75,
-        "Benjamin": 54,
-        "Daniel": 51
+        "Jules": 84,
+        "Ika": 73,
+        "Robin": 47,
+        "Daniel": 60
     },
-    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a fervent communist, one of the leaders of The Cause. My father had travelled there all the way from the Netherlands. But in the war he lost my mother and with her his faith in the cause and humanity at large. He took me back to the Netherlands. I was 11 when Germany invaded The Netherlands. My father had seen what was coming and shipped me off to England January that year. It is there that they told me he was executed in the second week of occupation. They knew he was a communist.",
-    "trauma": 46,
-    "crush": "Ika"
+    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a victim of class and circumstance. She hardly knew how to read, she was a communist because everyone else she knew was. My father on the other hand had come all the way from the Netherlands to fight for the cause. But he never came back. Right before  the communists lost, my mother packed up and took me to the Netherlands. She didn't even speak the language. Her dark, Spanish features got us mistaken for Jews. I was 12 when Germany invaded The Netherlands. My mother had seen what was coming and shipped me off to England January that year. It is there that they told me she was executed in the second week of occupation. They considered her a Jewish commie.",
+    "trauma": 39,
+    "crush": "Daniel"
 }

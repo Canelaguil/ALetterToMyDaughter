@@ -1,6 +1,6 @@
 {
     "name": "Jules Cohen",
-    "age at event": 17,
+    "age at event": 14,
     "known traits": [
         "impulsive",
         "creative"
@@ -8,39 +8,39 @@
     "all traits": [
         "impulsive",
         "creative",
-        "critical",
-        "quirky",
-        "moral"
+        "anxious",
+        "moral",
+        "obedient"
     ],
     "country affinities": {
-        "Netherlands": -2,
-        "Belgium": -3,
-        "Australia": -3
+        "Netherlands": -3,
+        "Belgium": 0,
+        "Australia": 1
     },
     "relationships": {
-        "Juana": 86,
-        "Ika": 23,
-        "Benjamin": 68
+        "Juana": 47,
+        "Ika": 55,
+        "Robin": 91
     },
-    "trauma": 61,
+    "trauma": 74,
     "reaction": {
-        "age": 17,
-        "guilt": 49,
+        "age": 14,
+        "guilt": 53,
         "trauma": {
-            "old_trauma": 39,
-            "trauma_modifier": 22.929437104507244,
-            "new_trauma": 61
+            "old_trauma": 40,
+            "trauma_modifier": 34.1588058996087,
+            "new_trauma": 74
         },
         "relationships": {
             "Juana": {
-                "old_R": 65,
-                "new_R": 86
+                "old_R": 51,
+                "new_R": 47
             },
             "Ika": {
                 "old_R": 45,
-                "new_R": 23
+                "new_R": 55
             }
         }
     },
-    "crush": "Ika"
+    "crush": "Juana"
 }

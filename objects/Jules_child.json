@@ -1,6 +1,6 @@
 {
     "name": "Jules Cohen",
-    "age at move": 14,
+    "age at move": 11,
     "known traits": [
         "impulsive",
         "creative"
@@ -8,22 +8,22 @@
     "all traits": [
         "impulsive",
         "creative",
-        "critical",
-        "quirky",
-        "moral"
+        "anxious",
+        "moral",
+        "obedient"
     ],
     "country affinities": {
-        "Netherlands": -2,
-        "Belgium": -3,
-        "Australia": -3
+        "Netherlands": -3,
+        "Belgium": 0,
+        "Australia": 1
     },
     "relationships": {
-        "Juana": 65,
+        "Juana": 51,
         "Ika": 45,
-        "Benjamin": 68,
-        "Daniel": 50
+        "Robin": 91,
+        "Daniel": 94
     },
-    "backstory": "I came to the Netherlands when I was 1 years old. My father got a job there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 14. My parents had send me  to England days prior. I never saw them again.",
-    "trauma": 39,
-    "crush": "Ika"
+    "backstory": "I came to the Netherlands when I was 5 years old. My father thought it would be saver for us there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 11. My parents had send me  to England days prior. I never saw them again.",
+    "trauma": 40,
+    "crush": "Juana"
 }

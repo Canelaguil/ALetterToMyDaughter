@@ -70,7 +70,7 @@ class Character:
             'Juana' : 0, 
             'Jules' : 0,
             'Ika' : 0,
-            'Benjamin' : 0,
+            'Robin' : 0,
             'Daniel' : 0
         }
         self.childhood_memories = {}
@@ -97,7 +97,7 @@ class Character:
         for fm in self.relationships:
             m = randint(40, 80)
             self.modify_relationship(m, fm)
-            if fm == 'Benjamin' or random() < 0.2:
+            if fm == 'Robin' or random() < 0.2:
                 bonus = randint(5, 20)
                 self.modify_relationship(bonus, fm)
 
@@ -134,7 +134,7 @@ class Character:
         self.relationships.pop('Daniel')
         self.reaction['relationships'] = {}
         for r in self.relationships:
-            if r != 'Benjamin':
+            if r != 'Robin':
                 self.reaction['relationships'][r] = {'old_R' : self.relationships[r]}
                 m = randint(-30, 30)
                 self.modify_relationship(m, r)
@@ -338,10 +338,10 @@ class Ika(Character):
         return story
 
 
-class Benjamin(Character):
+class Robin(Character):
     def __init__(self):
         super().__init__()
-        self.name = 'Benjamin'
+        self.name = 'Robin'
         self.surname = 'Kuijper'
         self.age1940 = 6
         self.known_traits = []
@@ -385,7 +385,7 @@ class Daniel(Character):
             'Juana' : randint(30, 80), 
             'Jules' : randint(30, 80),
             'Ika' : randint(30, 80),
-            'Benjamin' : randint(60, 90)
+            'Robin' : randint(60, 90)
         }
         self.sex = 'm'
         self.age1943 = self.age1940 + 3
@@ -402,7 +402,7 @@ class Controller:
             'Juana' : Juana(),
             'Jules' : Jules(),
             'Ika' : Ika(),
-            'Benjamin' : Benjamin(),
+            'Robin' : Robin(),
             'Daniel' : Daniel()
         }
 
@@ -438,18 +438,18 @@ class Controller:
             "Daniel insulted Juana's parents",
             "Daniel is too bossy", 
             "Daniel lied to their caretaker",
-            "Daniel was mean to Benjamin"
+            "Daniel was mean to Robin"
             ]
         event['cause'] = choice(causes)
 
         # find fighter
-        choice_list = [(c.name, 100 - c.relationships['Daniel']) for c in self.cs.values() if c.name != 'Benjamin']
+        choice_list = [(c.name, 100 - c.relationships['Daniel']) for c in self.cs.values() if c.name != 'Robin']
         a, w = zip(*choice_list)
         fighter = choices(a, weights=w)[0]
         event['fighter'] = fighter
 
         # find pusher
-        choice_list = [(c.name, 100 - c.relationships['Daniel'] + c.relationships[fighter]) for c in self.cs.values() if c.name not in ['Benjamin', fighter]]
+        choice_list = [(c.name, 100 - c.relationships['Daniel'] + c.relationships[fighter]) for c in self.cs.values() if c.name not in ['Robin', fighter]]
         a, w = zip(*choice_list)
         pusher = choices(a, weights=w, k=2)
         event['pusher'] = pusher[0]
@@ -462,7 +462,7 @@ class Controller:
                 event['involved'].append(pusher[1])
         else:
             for c in self.cs:
-                if c not in event['involved'] and c != 'Benjamin':
+                if c not in event['involved'] and c != 'Robin':
                     event['not_involved'].append(c)
         
         # check how someone reacts
