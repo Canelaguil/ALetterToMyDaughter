@@ -8,22 +8,22 @@
     "all traits": [
         "brave",
         "outgoing",
-        "moral",
-        "disorganised",
-        "critical"
+        "thoughtful",
+        "egocentric",
+        "rebellious"
     ],
     "country affinities": {
-        "Netherlands": 3,
+        "Netherlands": 1,
         "Indonesia": -2,
-        "Australia": -1
+        "Australia": 0
     },
     "relationships": {
-        "Juana": 71,
-        "Jules": 52,
-        "Robin": 71,
-        "Daniel": 71
+        "Juana": 41,
+        "Jules": 76,
+        "Robin": 77,
+        "Daniel": 77
     },
     "backstory": "My mother was Dutch, but she was as un-Dutch as one can be. People there love to say just act normal, that's strange enough, but normal was never strange enough for her. Just imagine: this good protestant girl from Veenendaal running away to Amsterdam: she was barely 15. And yet she survived. Became a bartender, took odd jobs wherever she could, and when my father was forced to go back to Indonesia she raised me on her own. When the war loomed on the horizon she became too involved in her political causes to look after me. I was 12 when she send me away.",
-    "trauma": 5,
+    "trauma": 3,
     "crush": null
 }

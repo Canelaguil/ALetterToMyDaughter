@@ -8,12 +8,9 @@
     "all traits": [
         "kind",
         "moody",
-        [
-            "apathetic",
-            "caring"
-        ],
-        "happy",
-        "egocentric"
+        "cheeky",
+        "optimistic",
+        "immoral"
     ],
     "country affinities": {
         "Netherlands": -3,
@@ -21,29 +18,29 @@
         "Australia": 0
     },
     "relationships": {
-        "Jules": 80,
-        "Ika": 70,
-        "Robin": 89
+        "Jules": 100,
+        "Ika": 49,
+        "Robin": 52
     },
-    "trauma": 97,
+    "trauma": 100,
     "reaction": {
         "age": 18,
-        "guilt": 65,
+        "guilt": 100,
         "trauma": {
-            "old_trauma": 49,
-            "trauma_modifier": 48.83885083647468,
-            "new_trauma": 97
+            "old_trauma": 52,
+            "trauma_modifier": 57.0670323995489,
+            "new_trauma": 100
         },
         "relationships": {
             "Jules": {
-                "old_R": 56,
-                "new_R": 80
+                "old_R": 98,
+                "new_R": 100
             },
             "Ika": {
-                "old_R": 60,
-                "new_R": 70
+                "old_R": 65,
+                "new_R": 49
             }
         }
     },
-    "crush": "Ika"
+    "crush": "Daniel"
 }

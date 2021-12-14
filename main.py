@@ -78,8 +78,9 @@ class Character:
     def set_up(self):
         # Get traits
         while len(self.my_traits) < 5:
-            t = choice(traits)
-            if t not in self.my_traits:
+            t1, t2 = choice(traits)
+            if t1 not in self.my_traits and t2 not in self.my_traits:
+                t = choice([t1, t2])
                 self.my_traits.append(t)
 
         # Country affinities
