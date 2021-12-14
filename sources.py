@@ -40,6 +40,7 @@ event_traits = [
 adult_tags = {
     'divorced' : False, 
     'married' : False,
+    'relationship' : False,
     'parent' : False, 
     'widowed' : False,
     'gambler' : False, 
@@ -70,7 +71,9 @@ guardians = {
         'provide_college' : False,
         'provide_women_college' : False,
         'provide_boarding_school' : False, 
-        'allowance' : allowance[1]
+        'allowance' : allowance[1], 
+        'capacity' : 1,
+        'ward' : []
     },
     'B' : {
         'name' : 'B', 
@@ -86,7 +89,9 @@ guardians = {
         'provide_college' : True,
         'provide_women_college' : False,
         'provide_boarding_school' : False, 
-        'allowance' : allowance[-1]
+        'allowance' : allowance[-1],
+        'capacity' : 1,
+        'ward' : []
     },
     'C' : {
         'name' : 'C', 
@@ -102,7 +107,9 @@ guardians = {
         'provide_college' : True,
         'provide_women_college' : True,
         'provide_boarding_school' : True, 
-        'allowance' : allowance[0]
+        'allowance' : allowance[0],
+        'capacity' : 2,
+        'ward' : []
     },
     'nadia' : {
         'name' : 'Nadia', 
@@ -119,6 +126,8 @@ guardians = {
         'provide_college' : False,
         'provide_women_college' : False,
         'provide_boarding_school' : False, 
-        'allowance' : allowance[0]
+        'allowance' : allowance[0],
+        'capacity' : 1,
+        'ward' : []
     }
 }

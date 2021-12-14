@@ -1,0 +1,29 @@
+Description,category,"Base Chance [0, 1]",Keyword,no_negative,no_neutral,no_positive,ch_decrease,ch_increase
+{me} taught {name1} how to cycle,childhood,0.05,learning to cycle,None,None,"['me', 'name1']","['brave', 'athletlic']","['clumsy', 'impulsive']"
+{me} once patiently helped {name1} out of a tree,childhood,0.05,stuck in tree,None,None,"['me', 'name1']","['brave', 'athletlic']","['clumsy', 'impulsive']"
+{me} informed {name2} and {name1} that sex involves two naked people,childhood,0.05,sex talk,None,"['me', 'name1', 'name2']",None,None,None
+{me} once got lost in the woods while playing tag with {name2} and {name1},childhood,0.05,lost in woods,None,None,"['me', 'name1']",None,None
+"{name1} would often wander off from games to read, which {me} hated",childhood,0.05,wander off to read,None,None,"['me', 'name1']",None,None
+{me} told {name1} that {name2} thought {name1}'s nose was weird,childhood,0.05,nose,None,None,"['me', 'name1']",None,None
+"{me} once hid under {name1}'s bed and jumped out in the middle of the night, scaring not only {name2} but everyone",childhood,0.05,scaring,None,None,"['me', 'name1']",None,None
+"{me} once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",childhood,0.05,pretending to be sick,None,"['me', 'name1', 'name2']",None,None,None
+{me} and {name2} listened to the radio in secret to keep track of the war,childhood,0.05,listen to radio about war,None,None,"['me', 'name1']",None,None
+{me} idolized the general and was always excited about his scarce visits,childhood,0.05,idolized general,None,None,"['me', 'name1']",None,None
+{me} was always sucking up to Nadia,childhood,0.05,sucking up to Nadia,None,None,"['me', 'name1']",None,None
+{name1} shared a room with {me} for a while,childhood,0.05,room sharing,None,None,"['me', 'name1']",None,None
+"When {name1} got sad, {me} would be the first to be at their side",childhood,0.05,helping when crying,None,"['me', 'name1', 'name2']",None,None,None
+{me} disliked the general,childhood,0.05,disliked general,None,None,"['me', 'name1']",None,None
+{me} believed that baby's were brought by a stork for a very long time,childhood,0.05,stork,None,None,"['me', 'name1']",None,None
+{me} conducted scientific experiences to figure out if fairies existed,childhood,0.05,science fairies,None,None,"['me', 'name1']",None,None
+{me} kept everyone updated about the progress of the war,childhood,0.05,war progress,None,None,"['me', 'name1']",None,None
+{me} struggled the longest with learning English,childhood,0.05,learning english,None,"['me', 'name1', 'name2']",None,None,None
+{me} was a huge fan of the Little House on the Prairie books,childhood,0.05,little house on the prairy,None,None,"['me', 'name1']",None,None
+{me} read Little Women in secret,childhood,0.05,little women,None,None,"['me', 'name1']",None,None
+{me} was obsessed with greek mythology for a while,childhood,0.05,greek mythology,None,None,"['me', 'name1']",None,None
+{me} would often come up with new games ,childhood,0.05,new games,None,None,"['me', 'name1']",None,None
+"After reading Black Beauty, {me} begged Nadia to ask the general for horses: Nadia replied the horses were all off to war",childhood,0.05,horses,None,"['me', 'name1', 'name2']",None,None,None
+"Nadia got angry when she found out {me} had been reading Brave New World, which we were not allowed to read yet",childhood,0.05,brave new world,None,None,"['me', 'name1']",None,None
+{me} read all the works of E.M. Forster in one summer,childhood,0.05,em forster,None,None,"['me', 'name1']",None,None
+{me} would make up words and then act superior if we didn't recognize them,childhood,0.05,make up words,None,None,"['me', 'name1']",None,None
+{me} would sometimes play with the farmer's children,childhood,0.05,farmers children,None,None,"['me', 'name1']",None,None
+{me} and {name1} got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve,childhood,0.05,fight,None,"['me', 'name1', 'name2']",None,None,None

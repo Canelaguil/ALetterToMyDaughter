@@ -1,64 +1,9 @@
 import json
 from random import random, randint, choice, seed, choices, uniform
 from pprint import pprint
+from copy import copy
 from sources import traits, event_traits, adult_tags, guardians
-
-
-class MemoryEvent:
-    def __init__(self, description, weight, pos_a=[], neg_a=[], neu_a=[], s_e={}) -> None:
-        """
-        A memory has: 
-        - description "" : line of text describing event
-        - weight [0-5] : how impactful is this information?
-        - positively_affects [] : list of siblings positively implicated
-        - negatively_affects [] : list of siblings negatively implicated
-        - neutraly_affects [] : list of siblings involved, but not impacted by memory
-        - status_effects { trait : modifier } : dictionary of traits and their modifiers
-        """
-        self.description = description
-        self.weight = weight
-        self.positively_affects = pos_a
-        self.negatively_affects = neg_a
-        self.neutraly_affects = neu_a
-        self.status_effects = s_e
-        self.known_by = self.init_known()
-
-    def init_known(self):
-        """
-        Simple init function for known_by.
-        """
-        known = []
-        for l in [self.positively_affects, self.negatively_affects, self.neutraly_affects]:
-            for p in l:
-                if p not in known:
-                    known.append(p)
-        return known
-
-    def char_knows(self, char_key):
-        """
-        Add new character to list of people who knows about it.
-        """
-        if char_key not in self.known_by:
-            self.known_by.append(char_key)
-
-    def does_char_know(self, char_key):
-        """
-        Checks if character knows about memory.
-        """
-        return char_key in self.known_by
-
-    def how_affects_char(self, char_key):
-        """
-        Checks how character is affected by memory.
-        """
-        if char_key in self.positively_affects:
-            return "positive"
-        if char_key in self.negatively_affects:
-            return "negative"
-        if char_key in self.neutraly_affects:
-            return "neutral"
-        return "not affected"
-
+from memories import MemoryEvent, Memory
 
 class Character:
     def __init__(self):
@@ -141,6 +86,9 @@ class Character:
 
         return self.reaction
 
+    def become_adult(self):
+        self.tags = copy(adult_tags)
+
     """ 
       MODIFY CHARACTERS
     """
@@ -202,7 +150,18 @@ class Character:
         self.write_json(child, 'event')
 
     def output_adult(self):
-        pass
+        adult = {
+            'name' : f'{self.name} {self.surname}',
+            'age at event' : self.age1945 + 21, 
+            'known traits' : self.known_traits,
+            'all traits' : self.my_traits,
+            'tags' : self.tags,
+            'country affinities' : self.country_affinities, 
+            "relationships" : self.relationships,
+            'trauma' : self.trauma
+        }
+        pprint(adult, sort_dicts=False)
+        self.write_json(adult, 'adult')
 
     def write_json(self, object, stage):
         with open(f'objects/{self.name}_{stage}.json', 'w') as outfile:
