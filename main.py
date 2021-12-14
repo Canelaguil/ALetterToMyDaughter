@@ -1,9 +1,7 @@
 import json
 from random import random, randint, choice, seed, choices, uniform
 from pprint import pprint
-
-traits = ['apathetic', 'disorganised', 'anxious', 'critical', 'quirky',
-          'egocentric', 'creative', 'moral', 'impulsive', 'happy', 'obedient', 'brave']
+from sources import traits, event_traits, adult_tags, guardians
 
 
 class MemoryEvent:
@@ -102,9 +100,9 @@ class Character:
                 self.modify_relationship(bonus, fm)
 
     def interpret_event(self, event):
-        self.age1943 = self.age1940 + 3
+        self.age1945 = self.age1940 + 5
         dan_R = self.relationships['Daniel']
-        self.reaction = {'age' : self.age1943}
+        self.reaction = {'age' : self.age1945}
 
         # GUILT
         if event['pusher'] == self.name:
@@ -139,7 +137,6 @@ class Character:
                 m = randint(-30, 30)
                 self.modify_relationship(m, r)
                 self.reaction['relationships'][r]['new_R'] = self.relationships[r]
-
 
         return self.reaction
 
@@ -191,7 +188,7 @@ class Character:
     def output_event(self):
         child = {
             'name' : f'{self.name} {self.surname}',
-            'age at event' : self.age1943, 
+            'age at event' : self.age1945, 
             'known traits' : self.known_traits,
             'all traits' : self.my_traits,
             'country affinities' : self.country_affinities, 
@@ -222,6 +219,7 @@ class Juana(Character):
         self.country_affinities = {
             'Netherlands': 0, 'Spain': 0, 'Australia': 0}
         self.sex = 'f'
+        self.age1940 = 13
 
         self.set_up()
         self.backstory = self.backstory()
@@ -254,7 +252,6 @@ class Juana(Character):
                      "humanity at large. He took me back to the Netherlands." 
             self.country_affinities['Netherlands'] = min(self.country_affinities['Netherlands'] + 2, 3)
 
-        self.age1940 = randint(9, 14)
         parent = 'father' if father_alive else 'mother'
         parent_pronoun = 'he' if father_alive else 'she'
         circumstance = 'knew he was a communist' if father_alive else 'considered her a Jewish commie'
@@ -277,6 +274,7 @@ class Jules(Character):
         self.country_affinities = {
             'Netherlands': -2, 'Belgium': -1, 'Australia': -1}
         self.sex = 'm'
+        self.age1940 = 13
 
         self.set_up()
         self.backstory = self.backstory()
@@ -296,8 +294,6 @@ class Jules(Character):
                      "He met my mother in Brussels. My mother was an silent movie actress, but after " + \
                      "the switch to talkies finding work became hard for her in more ways than one. "
 
-        self.age1940 = randint(10, 15)
-
         story += f"When Germany invaded the Netherlands I was {self.age1940}. My parents had send me " + \
                  " to England days prior. I never saw them again."
         
@@ -315,6 +311,7 @@ class Ika(Character):
         self.country_affinities = {
             'Netherlands': 0, 'Indonesia': 0, 'Australia': 0}
         self.sex = 'f'
+        self.age1940 = 12
 
         self.set_up()
         self.backstory = self.backstory()
@@ -326,7 +323,6 @@ class Ika(Character):
             'father' : "I don't know where my father is now. He was a student in Amsterdam, but he was forced to go " + \
                        "back to Indonesia when they found out about me."
         }
-        self.age1940 = randint(9, 15)
         story = "My mother was Dutch, but she was as un-Dutch as one can be. People there love to say " + \
                 "just act normal, that's strange enough, but normal was never strange enough for her. " + \
                 "Just imagine: this good protestant girl from Veenendaal running away to Amsterdam: " + \
@@ -343,7 +339,7 @@ class Robin(Character):
         super().__init__()
         self.name = 'Robin'
         self.surname = 'Kuijper'
-        self.age1940 = 6
+        self.age1940 = 7
         self.known_traits = []
         self.my_traits = []
         self.all_traits = [] 
@@ -358,7 +354,7 @@ class Robin(Character):
             'Daniel' : 80
         }
         self.sex = 'm'
-        self.age1943 = self.age1940 + 3
+        self.age1945 = self.age1940 + 5
         self.birth_year = 1940 - self.age1940
 
     def interpret_event(self, event):
@@ -388,7 +384,7 @@ class Daniel(Character):
             'Robin' : randint(60, 90)
         }
         self.sex = 'm'
-        self.age1943 = self.age1940 + 3
+        self.age1945 = self.age1940 + 5
         self.birth_year = 1940 - self.age1940
 
     def interpret_event(self, event):
@@ -443,13 +439,17 @@ class Controller:
         event['cause'] = choice(causes)
 
         # find fighter
-        choice_list = [(c.name, 100 - c.relationships['Daniel']) for c in self.cs.values() if c.name != 'Robin']
+        choice_list = [
+            (c.name, 100 - c.relationships['Daniel'])
+            for c in self.cs.values() if c.name != 'Robin']
         a, w = zip(*choice_list)
         fighter = choices(a, weights=w)[0]
         event['fighter'] = fighter
 
         # find pusher
-        choice_list = [(c.name, 100 - c.relationships['Daniel'] + c.relationships[fighter]) for c in self.cs.values() if c.name not in ['Robin', fighter]]
+        choice_list = [
+            (c.name, 100 - c.relationships['Daniel'] + c.relationships[fighter]) 
+            for c in self.cs.values() if c.name not in ['Robin', fighter]]
         a, w = zip(*choice_list)
         pusher = choices(a, weights=w, k=2)
         event['pusher'] = pusher[0]
@@ -478,4 +478,3 @@ class Controller:
 
 
 Controller()
-

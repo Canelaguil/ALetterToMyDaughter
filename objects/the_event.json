@@ -1,69 +1,67 @@
 {
-  "cause": "Daniel mocked Ika's parents",
-  "fighter": "Jules",
+  "cause": "Daniel is lying about Jules' parents",
+  "fighter": "Ika",
   "pusher": "Juana",
   "involved": [
-    "Jules",
+    "Ika",
     "Juana"
   ],
-  "not_involved": [
-    "Ika"
-  ],
+  "not_involved": [],
   "reactions": {
     "Juana": {
-      "age": 15,
-      "guilt": 100,
+      "age": 18,
+      "guilt": 65,
       "trauma": {
-        "old_trauma": 62,
-        "trauma_modifier": 62.49429104809714,
-        "new_trauma": 100
+        "old_trauma": 49,
+        "trauma_modifier": 48.83885083647468,
+        "new_trauma": 97
       },
       "relationships": {
         "Jules": {
-          "old_R": 84,
-          "new_R": 71
+          "old_R": 56,
+          "new_R": 80
         },
         "Ika": {
-          "old_R": 73,
-          "new_R": 89
+          "old_R": 60,
+          "new_R": 70
         }
       }
     },
     "Jules": {
-      "age": 14,
-      "guilt": 53,
+      "age": 18,
+      "guilt": 61,
       "trauma": {
-        "old_trauma": 40,
-        "trauma_modifier": 34.1588058996087,
-        "new_trauma": 74
+        "old_trauma": 33,
+        "trauma_modifier": 45.20478709486465,
+        "new_trauma": 78
       },
       "relationships": {
         "Juana": {
-          "old_R": 51,
-          "new_R": 47
+          "old_R": 60,
+          "new_R": 49
         },
         "Ika": {
-          "old_R": 45,
-          "new_R": 55
+          "old_R": 60,
+          "new_R": 86
         }
       }
     },
     "Ika": {
-      "age": 14,
-      "guilt": 29,
+      "age": 17,
+      "guilt": 40,
       "trauma": {
-        "old_trauma": 20,
-        "trauma_modifier": 13.096170324235533,
-        "new_trauma": 33
+        "old_trauma": 5,
+        "trauma_modifier": 25.308646663438527,
+        "new_trauma": 30
       },
       "relationships": {
         "Juana": {
-          "old_R": 72,
-          "new_R": 76
+          "old_R": 71,
+          "new_R": 51
         },
         "Jules": {
-          "old_R": 69,
-          "new_R": 73
+          "old_R": 52,
+          "new_R": 69
         }
       }
     },

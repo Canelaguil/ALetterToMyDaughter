@@ -1,6 +1,6 @@
 {
     "name": "Daniel de Bruijn",
-    "age at move": 14,
+    "age at move": 12,
     "known traits": [
         "creative",
         "outgoing"
@@ -17,12 +17,12 @@
         "Australia": 2
     },
     "relationships": {
-        "Juana": 47,
-        "Jules": 36,
-        "Ika": 49,
-        "Robin": 80
+        "Juana": 54,
+        "Jules": 46,
+        "Ika": 47,
+        "Robin": 69
     },
     "backstory": "Mother died in childbirth. Father was part of the socialist party, saw what was coming and moved to England. Was drafted for war and died in 1939, leaving Daniel orphaned.",
-    "trauma": 13,
-    "crush": null
+    "trauma": 3,
+    "crush": "Jules"
 }
