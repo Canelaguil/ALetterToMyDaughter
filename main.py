@@ -3,7 +3,7 @@ from random import random, randint, choice, seed, choices, uniform
 from pprint import pprint
 from copy import copy
 from sources import traits, event_traits, adult_tags, guardians
-from memories import MemoryEvent, Memory
+from memories import MemoryEvent, Memory, ChildhoodMemories
 
 class Character:
     def __init__(self):
@@ -370,6 +370,7 @@ class Controller:
         self.the_event()
 
     def childhood_memories(self):
+        db = ChildhoodMemories()
         self.init_crushes()
 
     def init_crushes(self):

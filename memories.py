@@ -57,6 +57,7 @@ class MemoryEvent:
             return "neutral"
         return "not affected"
 
+
 class ChildhoodMemories:
     def __init__(self) -> None:
         self.memories = self.read_file()
@@ -71,8 +72,8 @@ class ChildhoodMemories:
             'no_positive', 
             'ch_decrease', 
             'ch_increase']:
-
-            df[col].apply(lambda x: literal_eval(x) if isinstance(x, str) else x)
+            pass
+            # df[col].apply(lambda x: literal_eval(x) if isinstance(x, str) else x)
         return df
 
     def get_random(self):
@@ -84,12 +85,26 @@ class ChildhoodMemories:
         return dict(self.memories.iloc[i])
 
 
-
-
-
 class Memory:
     def __init__(self) -> None:
-        pass
+        self.childhood_memories = {}
 
+    def add_childhood_memory(self, memory):
+        people = []
+        for c in ['no_negative', 'no_neutral', 'no_positive']:
+            # aslist = memory[c]
+            print(memory[c])
+            aslist = literal_eval(memory[c]) if isinstance(memory[c], str) else memory[c]
+            if isinstance(aslist, list) and aslist != 'None' and aslist != None: 
+                people.extend(memory[c])
+            print('p', people)
+        for p in people:
+            if p not in self.childhood_memories:
+                self.childhood_memories[p] = {}
+            self.childhood_memories[p][memory['Keyword']] = memory
 c = ChildhoodMemories()
-print(c.get_random())
+a = c.get_random()
+# print(a)
+m = Memory()
+m.add_childhood_memory(a)
+print(m.childhood_memories)
