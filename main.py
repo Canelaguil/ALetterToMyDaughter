@@ -6,7 +6,7 @@ from copy import copy
 
 from numpy.lib.arraysetops import isin
 from sources import traits, event_traits, adult_tags, guardians
-from memories import MemoryEvent, Memory, ChildhoodMemories
+from memories import Memory, ChildhoodMemories
 
 class Character:
     def __init__(self):
@@ -20,7 +20,6 @@ class Character:
             'Daniel' : 0
         }
         self.childhood_memories = {}
-        self.memory = Memory()
         self.crush = None
 
     def set_up(self):
@@ -143,6 +142,7 @@ class Character:
             'all traits' : self.my_traits,
             'country affinities' : self.country_affinities, 
             'relationships' : self.relationships,
+            'memory' : self.memory.get_memory(),
             'backstory' : self.backstory,
             'trauma' : self.trauma,
             'crush' : self.crush
@@ -177,7 +177,7 @@ class Character:
         self.write_json(adult, 'adult')
 
     def write_json(self, object, stage):
-        pprint(object)
+        # pprint(object)
         with open(f'objects/{self.name}_{stage}.json', 'w') as outfile:
             json.dump(object, outfile, indent=4, sort_keys=False)
 
@@ -187,6 +187,7 @@ class Juana(Character):
         super().__init__()
         self.name = "Juana"
         self.surname = "Huijzen"
+        self.memory = Memory(self.name)
         self.known_traits = ['kind', 'moody']
         self.my_traits = ['kind', 'moody']
         self.trauma = randint(0, 50)
@@ -242,6 +243,7 @@ class Jules(Character):
         super().__init__()
         self.name = "Jules"
         self.surname = "Cohen"
+        self.memory = Memory(self.name)
         self.known_traits = ['impulsive', 'creative']
         self.my_traits = ['impulsive', 'creative']
         self.trauma = randint(20, 60)
@@ -279,6 +281,7 @@ class Ika(Character):
         super().__init__()
         self.name = "Ika"
         self.surname = "Nicolaas"
+        self.memory = Memory(self.name)
         self.known_traits = ['brave', 'outgoing']
         self.my_traits = ['brave', 'outgoing']
         self.trauma = randint(0, 20)
@@ -313,6 +316,7 @@ class Robin(Character):
         super().__init__()
         self.name = 'Robin'
         self.surname = 'Kuijper'
+        self.memory = Memory(self.name)
         self.age1940 = 7
         self.known_traits = []
         self.my_traits = []
@@ -341,6 +345,7 @@ class Daniel(Character):
         super().__init__()
         self.name = 'Daniel'
         self.surname = 'de Bruijn'
+        self.memory = Memory(self.name)
         self.age1940 = randint(12, 14)
         self.known_traits = ['creative', 'outgoing']
         self.my_traits = ['creative', 'outgoing', 'mean', 'impulsive', 'insecure']
@@ -378,10 +383,10 @@ class Controller:
 
         self.childhood_memories()
 
-        # for child in self.cs.values(): 
-        #     child.output_child()
+        for child in self.cs.values(): 
+            child.output_child()
             
-        # self.the_event()
+        self.the_event()
 
     def childhood_memories(self):
         self.cdb = ChildhoodMemories()
@@ -395,6 +400,9 @@ class Controller:
             m_inited = self.init_childhood_memory(m)
             if m_inited == {}: # if memory not chosen
                 continue 
+
+            for child in self.cs.values(): 
+                child.add_memory(m_inited, 'child')
     
     def init_childhood_memory(self, m):
         chances = {}
@@ -414,12 +422,13 @@ class Controller:
             if ch_increase != None:
                 for tr in ch_increase:
                     if ch.has_trait(tr):
-                        c += 0.1
+                        c *= 1.5
             if ch_decrease:
                 for tr in ch_decrease:
                     if ch.has_trait(tr):
                         c *= 0.5
             chances[name] = c
+        # print(chances)
             
         # Go over all names in random order and match event
         items = list(chances.items())
@@ -429,8 +438,7 @@ class Controller:
             if random() < p: 
                 found_me = True
                 names['me'] = n
-                if m['people'] == []:
-                    print('DDDDD')
+                m['people'] = literal_eval(m['people'])
                 for i in m['people']:
                     while True: 
                         rn = choice(items)
@@ -447,10 +455,9 @@ class Controller:
         m['description'] = m['description'].replace('{name2}', names['name2'])
         m['description'] = m['description'].replace('{name3}', names['name3'])
         m['description'] = m['description'].replace('{name4}', names['name4'])
-        print(m['description'])
+        # print(m['description'])
         return m
             
-
     def init_crushes(self):
         for c in self.cs.values():
             for r in self.cs.values():

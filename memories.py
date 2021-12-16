@@ -1,62 +1,7 @@
 from ast import literal_eval
 from random import choice, choices
 import pandas as pd
-
-class MemoryEvent:
-    def __init__(self, description, weight, pos_a=[], neg_a=[], neu_a=[], s_e={}) -> None:
-        """
-        A memory has: 
-        - description "" : line of text describing event
-        - weight [0-5] : how impactful is this information?
-        - positively_affects [] : list of siblings positively implicated
-        - negatively_affects [] : list of siblings negatively implicated
-        - neutraly_affects [] : list of siblings involved, but not impacted by memory
-        - status_effects { trait : modifier } : dictionary of traits and their modifiers
-        """
-        self.description = description
-        self.weight = weight
-        self.positively_affects = pos_a
-        self.negatively_affects = neg_a
-        self.neutraly_affects = neu_a
-        self.status_effects = s_e
-        self.known_by = self.init_known()
-
-    def init_known(self):
-        """
-        Simple init function for known_by.
-        """
-        known = []
-        for l in [self.positively_affects, self.negatively_affects, self.neutraly_affects]:
-            for p in l:
-                if p not in known:
-                    known.append(p)
-        return known
-
-    def char_knows(self, char_key):
-        """
-        Add new character to list of people who knows about it.
-        """
-        if char_key not in self.known_by:
-            self.known_by.append(char_key)
-
-    def does_char_know(self, char_key):
-        """
-        Checks if character knows about memory.
-        """
-        return char_key in self.known_by
-
-    def how_affects_char(self, char_key):
-        """
-        Checks how character is affected by memory.
-        """
-        if char_key in self.positively_affects:
-            return "positive"
-        if char_key in self.negatively_affects:
-            return "negative"
-        if char_key in self.neutraly_affects:
-            return "neutral"
-        return "not affected"
-
+from copy import copy
 
 class ChildhoodMemories:
     def __init__(self) -> None:
@@ -66,14 +11,6 @@ class ChildhoodMemories:
     def read_file(self):
         fn = 'memoriesChild.csv'
         df = pd.read_csv(fn)
-        for col in [
-            'no_negative', 
-            'no_neutral', 
-            'no_positive', 
-            'ch_decrease', 
-            'ch_increase']:
-            pass
-            # df[col].apply(lambda x: literal_eval(x) if isinstance(x, str) else x)
         return df
 
     def get_random(self):
@@ -84,31 +21,37 @@ class ChildhoodMemories:
         self.not_used.remove(i)
 
         rm = dict(self.memories.iloc[i])
-        people = []
-        for c in ['no_negative', 'no_neutral', 'no_positive']:
-            # aslist = rm[c]
-            aslist = literal_eval(rm[c])
-            rm[c] = aslist
-            if isinstance(aslist, list): 
-                people.extend(aslist)
-            rm['people'] = people
         return rm
 
 
 class Memory:
-    def __init__(self) -> None:
+    def __init__(self, name) -> None:
+        self.name = name
         self.childhood_memories = {}
 
     def add_childhood_memory(self, memory):
-        people = memory['people']
-                
+        m = copy(memory)
+        m['description'] = m['description'].replace(self.name, 'I')
+        x = m['mapping'].values()
+        people = list(filter(None, x))
+        m['people'] = people 
+
+        # cleanup
+        m.pop('mapping')
+        m.pop('base_chance')
+
         for p in people:
+            if p == self.name:
+                p = 'myself'
             if p not in self.childhood_memories:
                 self.childhood_memories[p] = {}
-            self.childhood_memories[p][memory['keyword']] = memory
+            self.childhood_memories[p][m['keyword']] = m
 
     def add_memory(self, memory):
         pass
+
+    def get_memory(self): 
+        return self.childhood_memories
 
 # c = ChildhoodMemories()
 # a = c.get_random()

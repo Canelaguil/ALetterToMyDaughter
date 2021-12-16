@@ -1,29 +1,29 @@
-description,category,base_chance,keyword,no_negative,no_neutral,no_positive,ch_decrease,ch_increase
-{me} taught {name1} how to cycle,childhood,0.08,learning to cycle,None,None,"['me', 'name1']","['brave', 'athletlic']","['clumsy', 'impulsive']"
-{me} once patiently helped {name1} out of a tree,childhood,0.08,stuck in tree,None,None,"['me', 'name1']","['brave', 'athletlic']","['clumsy', 'impulsive']"
-{me} informed {name2} and {name1} that sex involves two naked people,childhood,0.08,sex talk,None,"['me', 'name1', 'name2']",None,None,None
-{me} once got lost in the woods while playing tag with {name2} and {name1},childhood,0.08,lost in woods,None,None,"['me', 'name1']",None,None
-"{name1} would often wander off from games to read, which {me} hated",childhood,0.08,wander off to read,None,None,"['me', 'name1']",None,None
-{me} told {name1} that {name2} thought {name1}'s nose was weird,childhood,0.08,nose,None,None,"['me', 'name1']",None,None
-"{me} once hid under {name1}'s bed and jumped out in the middle of the night, scaring not only {name2} but everyone",childhood,0.08,scaring,None,None,"['me', 'name1']",None,None
-"{me} once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",childhood,0.08,pretending to be sick,None,"['me', 'name1', 'name2']",None,None,None
-{me} and {name2} listened to the radio in secret to keep track of the war,childhood,0.08,listen to radio about war,None,None,"['me', 'name1']",None,None
-{me} idolized the general and was always excited about his scarce visits,childhood,0.08,idolized general,None,None,"['me', 'name1']",None,None
-{me} was always sucking up to Nadia,childhood,0.08,sucking up to Nadia,None,None,"['me', 'name1']",None,None
-{name1} shared a room with {me} for a while,childhood,0.08,room sharing,None,None,"['me', 'name1']",None,None
-"When {name1} got sad, {me} would be the first to be at their side",childhood,0.08,helping when crying,None,"['me', 'name1', 'name2']",None,None,None
-{me} disliked the general,childhood,0.08,disliked general,None,None,"['me', 'name1']",None,None
-{me} believed that baby's were brought by a stork for a very long time,childhood,0.08,stork,None,None,"['me', 'name1']",None,None
-{me} conducted scientific experiences to figure out if fairies existed,childhood,0.08,science fairies,None,None,"['me', 'name1']",None,None
-{me} kept everyone updated about the progress of the war,childhood,0.08,war progress,None,None,"['me', 'name1']",None,None
-{me} struggled the longest with learning English,childhood,0.08,learning english,None,"['me', 'name1', 'name2']",None,None,None
-{me} was a huge fan of the Little House on the Prairie books,childhood,0.08,little house on the prairy,None,None,"['me', 'name1']",None,None
-{me} read Little Women in secret,childhood,0.08,little women,None,None,"['me', 'name1']",None,None
-{me} was obsessed with greek mythology for a while,childhood,0.08,greek mythology,None,None,"['me', 'name1']",None,None
-{me} would often come up with new games ,childhood,0.08,new games,None,None,"['me', 'name1']",None,None
-"After reading Black Beauty, {me} begged Nadia to ask the general for horses: Nadia replied the horses were all off to war",childhood,0.08,horses,None,"['me', 'name1', 'name2']",None,None,None
-"Nadia got angry when she found out {me} had been reading Brave New World, which we were not allowed to read yet",childhood,0.08,brave new world,None,None,"['me', 'name1']",None,None
-{me} read all the works of E.M. Forster in one summer,childhood,0.08,em forster,None,None,"['me', 'name1']",None,None
-{me} would make up words and then act superior if we didn't recognize them,childhood,0.08,make up words,None,None,"['me', 'name1']",None,None
-{me} would sometimes play with the farmer's children,childhood,0.08,farmers children,None,None,"['me', 'name1']",None,None
-{me} and {name1} got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve,childhood,0.08,fight,None,"['me', 'name1', 'name2']",None,None,None
+description,category,base_chance,keyword,people,ch_decrease,ch_increase,memory_relation_impact
+{me} taught {name1} how to cycle,childhood,0.1,learning to cycle,"['me', 'name1']","['disinterested',  'clumsy', 'critical', 'disorganised', 'shy', 'mean', 'selfish']","['athletlic', 'calm', 'tolerant', 'optimistic', 'kind', 'practical', 'altruistic', 'athletic']",positive
+{me} once patiently helped {name1} out of a tree,childhood,0.1,stuck in tree,"['me', 'name1']","['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']","['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",positive
+{me} informed {name2} and {name1} that sex involves two naked people,childhood,0.1,sex talk,"['me', 'name1', 'name2']","['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']","['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",neutral
+{me} once got lost in the woods while playing tag with {name2} and {name1},childhood,0.1,lost in woods,"['me', 'name1', 'name2']","['practical', 'disorganised', 'hesitant', 'obedient']","['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",neutral
+"{name1} would often wander off from games to read, which {me} hated",childhood,0.1,wander off to read,"['me', 'name1']","['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']","['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",negative
+{name2} told {name1} that {me} thought {name1}'s nose was weird,childhood,0.1,nose,"['me', 'name1', 'name2']","['straight-laced', 'kind', 'timid']","['critical', 'quirky', 'mean']",neutral 
+"{me} once hid under {name1}'s bed and jumped out in the middle of the night, scaring not only {name2} but everyone",childhood,0.1,scaring,"['me', 'name1', 'name2']","['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']","['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",negative
+"{me} once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",childhood,0.1,pretending to be sick,['me'],"['obedient', 'moral', 'shy']","['rebellious', 'creative', 'immoral']",neutral
+{me} and {name1} listened to the radio in secret to keep track of the war,childhood,0.1,listen to radio about war,"['me', 'name1']","['disinterested', 'slow', 'cowardly', 'naive', 'nervous']","['curious', 'intelligent', 'brave', 'suspicious']",neutral
+{me} idolized the general and was always excited about his scarce visits,childhood,0.1,idolized general,['me'],"['rebellious', 'supicious', 'critical']","['obedient', 'naive']",neutral
+{me} was always sucking up to Nadia,childhood,0.1,sucking up to Nadia,['me'],"['rebellious', 'supicious', 'critical']","['obedient', 'naive']",neutral
+{name1} shared a room with {me} for a while,childhood,0.1,room sharing,"['me', 'name1']",[],[],neutral
+"When {name1} got sad, {me} would be the first to be at their side",childhood,0.1,helping when crying,"['me', 'name1']","['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']","['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",positive
+{me} disliked the general,childhood,0.1,disliked general,['me'],"['obedient', 'naive']","['rebellious', 'supicious', 'critical']",neutral
+{me} believed that babies were brought by a stork for a very long time,childhood,0.1,stork,['me'],"['rebellious', 'supicious', 'critical']","['obedient', 'naive']",neutral
+{me} conducted scientific experiences to figure out if fairies existed,childhood,0.1,science fairies,['me'],"['disinterested', 'slow', 'naive', 'practical', 'critical']","['curious', 'intelligent', 'daydreamer', 'suspicious']",neutral
+{me} kept everyone updated about the progress of the war,childhood,0.1,war progress,['me'],"['disinterested', 'slow', 'cowardly', 'naive', 'nervous']","['curious', 'intelligent', 'brave', 'suspicious']",neutral
+{me} struggled the longest with learning English,childhood,0.1,learning english,['me'],"['curious', 'intelligent', 'daydreamer', 'suspicious']","['disinterested', 'slow', 'naive', 'practical', 'critical']",neutral
+{me} was a huge fan of the Little House on the Prairie books,childhood,0.1,little house on the prairy,['me'],[],[],neutral
+{me} read Little Women several times but pretended not to like it,childhood,0.1,little women,['me'],"['tolerant', 'confident', 'outgoing', 'upbeat']","['critical', 'cowardly', 'nervous', 'timid', 'suspicious']",neutral
+{me} was obsessed with greek mythology for a while,childhood,0.1,greek mythology,['me'],"['disinterested', 'slow', 'practical']","['curious', 'daydreamer']",neutral
+{me} would often come up with new games ,childhood,0.1,new games,['me'],"['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']","['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",neutral
+"After reading Black Beauty, {me} begged Nadia to ask the general for horses: Nadia replied the horses were all off to war",childhood,0.1,horses,['me'],"['practical', 'pessimistic']","['optimistic', 'daydreamer']",neutral
+"Nadia got angry when she found out {me} had been reading Brave New World, which we were not allowed to read yet",childhood,0.1,brave new world,['me'],"['disinterested', 'obedient']","['curious', 'rebellious']",neutral
+{me} read all the works of E.M. Forster in one summer,childhood,0.1,em forster,['me'],[],[],neutral
+{me} would make up words and then act superior if we didn't recognize them,childhood,0.1,make up words,['me'],"['dull', 'relaxed', 'nervous', 'selfless', 'altruistic', 'empathetic']","['creative', 'uptight', 'confident', 'intelligent', 'egocentric']",neutral
+{me} would sometimes play with the farmer's children,childhood,0.1,farmers children,['me'],"['obedient', 'straight-laced', 'uptight']","['rebellious', 'impulsive', 'relaxed']",neutral
+{me} and {name1} got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve,childhood,0.1,fight,"['me', 'name1']","['calm', 'kind', 'hesitant']","['impulsive', 'mean', 'moody']",negative

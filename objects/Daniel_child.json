@@ -17,12 +17,157 @@
         "Australia": 2
     },
     "relationships": {
-        "Juana": 40,
-        "Jules": 56,
-        "Ika": 54,
-        "Robin": 80
+        "Juana": 62,
+        "Jules": 79,
+        "Ika": 51,
+        "Robin": 67
+    },
+    "memory": {
+        "Robin": {
+            "nose": {
+                "description": "Jules told I that Robin thought I's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "fight": {
+                "description": "Ika and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            },
+            "wander off to read": {
+                "description": "Juana would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "myself": {
+            "nose": {
+                "description": "Jules told I that Robin thought I's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "stuck in tree": {
+                "description": "Juana once patiently helped I out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Jules": {
+            "nose": {
+                "description": "Jules told I that Robin thought I's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "idolized general": {
+                "description": "Jules idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Juana": {
+            "stuck in tree": {
+                "description": "Juana once patiently helped I out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "war progress": {
+                "description": "Juana kept everyone updated about the progress of the war",
+                "category": "childhood",
+                "keyword": "war progress",
+                "people": [
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
+                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
+                "memory_relation_impact": "neutral"
+            },
+            "wander off to read": {
+                "description": "Juana would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Ika": {
+            "fight": {
+                "description": "Ika and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            }
+        }
     },
     "backstory": "Mother died in childbirth. Father was part of the socialist party, saw what was coming and moved to England. Was drafted for war and died in 1939, leaving Daniel orphaned.",
-    "trauma": 10,
-    "crush": "Ika"
+    "trauma": 15,
+    "crush": "Juana"
 }

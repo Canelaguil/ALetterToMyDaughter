@@ -8,22 +8,167 @@
     "all traits": [
         "impulsive",
         "creative",
-        "moral",
-        "melancholic",
-        "humorless"
+        "egocentric",
+        "practical",
+        "critical"
     ],
     "country affinities": {
         "Netherlands": -3,
-        "Belgium": 2,
-        "Australia": 1
+        "Belgium": 0,
+        "Australia": -3
     },
     "relationships": {
-        "Juana": 48,
-        "Ika": 79,
-        "Robin": 52,
-        "Daniel": 50
+        "Juana": 52,
+        "Ika": 61,
+        "Robin": 83,
+        "Daniel": 48
     },
-    "backstory": "I came to the Netherlands when I was 4 years old. My father liked it there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 13. My parents had send me  to England days prior. I never saw them again.",
-    "trauma": 44,
+    "memory": {
+        "Robin": {
+            "nose": {
+                "description": "I told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "fight": {
+                "description": "Ika and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            },
+            "wander off to read": {
+                "description": "Juana would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Daniel": {
+            "nose": {
+                "description": "I told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "stuck in tree": {
+                "description": "Juana once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "myself": {
+            "nose": {
+                "description": "I told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "idolized general": {
+                "description": "I idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Juana": {
+            "stuck in tree": {
+                "description": "Juana once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "war progress": {
+                "description": "Juana kept everyone updated about the progress of the war",
+                "category": "childhood",
+                "keyword": "war progress",
+                "people": [
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
+                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
+                "memory_relation_impact": "neutral"
+            },
+            "wander off to read": {
+                "description": "Juana would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Ika": {
+            "fight": {
+                "description": "Ika and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            }
+        }
+    },
+    "backstory": "I came to the Netherlands when I was 3 years old. My father liked it there. He was a true European. Spoke 4 languages, made himself understood in many more. Europe never loved him back enough. Met my mother in a theatre in Brussels, I guess they made do well enough. When Germany invaded the Netherlands I was 13. My parents had send me  to England days prior. I never saw them again.",
+    "trauma": 45,
     "crush": "Ika"
 }

@@ -8,22 +8,167 @@
     "all traits": [
         "brave",
         "outgoing",
-        "melancholic",
-        "organised",
-        "optimistic"
+        "quirky",
+        "disorganised",
+        "intelligent"
     ],
     "country affinities": {
-        "Netherlands": 0,
-        "Indonesia": -2,
-        "Australia": -2
+        "Netherlands": 2,
+        "Indonesia": -1,
+        "Australia": -1
     },
     "relationships": {
-        "Juana": 82,
-        "Jules": 72,
-        "Robin": 90,
-        "Daniel": 62
+        "Juana": 75,
+        "Jules": 53,
+        "Robin": 78,
+        "Daniel": 60
+    },
+    "memory": {
+        "Robin": {
+            "nose": {
+                "description": "Jules told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "fight": {
+                "description": "I and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            },
+            "wander off to read": {
+                "description": "Juana would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Daniel": {
+            "nose": {
+                "description": "Jules told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "stuck in tree": {
+                "description": "Juana once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Jules": {
+            "nose": {
+                "description": "Jules told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "idolized general": {
+                "description": "Jules idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Juana": {
+            "stuck in tree": {
+                "description": "Juana once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "war progress": {
+                "description": "Juana kept everyone updated about the progress of the war",
+                "category": "childhood",
+                "keyword": "war progress",
+                "people": [
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
+                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
+                "memory_relation_impact": "neutral"
+            },
+            "wander off to read": {
+                "description": "Juana would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "myself": {
+            "fight": {
+                "description": "I and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            }
+        }
     },
     "backstory": "My mother was Dutch, but she was as un-Dutch as one can be. People there love to say just act normal, that's strange enough, but normal was never strange enough for her. Just imagine: this good protestant girl from Veenendaal running away to Amsterdam: she was barely 15. And yet she survived. Became a bartender, took odd jobs wherever she could, and when my father was forced to go back to Indonesia she raised me on her own. When the war loomed on the horizon she became too involved in her political causes to look after me. I was 12 when she send me away.",
-    "trauma": 12,
+    "trauma": 4,
     "crush": "Juana"
 }

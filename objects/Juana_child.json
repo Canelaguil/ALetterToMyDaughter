@@ -8,22 +8,167 @@
     "all traits": [
         "kind",
         "moody",
-        "critical",
-        "disorganised",
-        "timid"
+        "selfish",
+        "athletic",
+        "moral"
     ],
     "country affinities": {
-        "Netherlands": -3,
-        "Spain": 0,
+        "Netherlands": 0,
+        "Spain": 2,
         "Australia": -3
     },
     "relationships": {
-        "Jules": 77,
-        "Ika": 78,
-        "Robin": 87,
-        "Daniel": 55
+        "Jules": 47,
+        "Ika": 64,
+        "Robin": 80,
+        "Daniel": 76
     },
-    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a fervent communist, one of the leaders of The Cause. My father had travelled there all the way from the Netherlands. But he never came back. Right before  the communists lost, my mother packed up and took me to the Netherlands. She didn't even speak the language. Her dark, Spanish features got us mistaken for Jews. I was 13 when Germany invaded The Netherlands. My mother had seen what was coming and shipped me off to England January that year. It is there that they told me she was executed in the second week of occupation. They considered her a Jewish commie.",
-    "trauma": 45,
+    "memory": {
+        "Robin": {
+            "nose": {
+                "description": "Jules told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "fight": {
+                "description": "Ika and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            },
+            "wander off to read": {
+                "description": "I would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Daniel": {
+            "nose": {
+                "description": "Jules told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "stuck in tree": {
+                "description": "I once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Jules": {
+            "nose": {
+                "description": "Jules told Daniel that Robin thought Daniel's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "idolized general": {
+                "description": "Jules idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "myself": {
+            "stuck in tree": {
+                "description": "I once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "war progress": {
+                "description": "I kept everyone updated about the progress of the war",
+                "category": "childhood",
+                "keyword": "war progress",
+                "people": [
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
+                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
+                "memory_relation_impact": "neutral"
+            },
+            "wander off to read": {
+                "description": "I would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Juana"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Ika": {
+            "fight": {
+                "description": "Ika and Robin got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Ika",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            }
+        }
+    },
+    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a victim of class and circumstance. She hardly knew how to read, she was a communist because everyone else she knew was. My father on the other hand had come all the way from the Netherlands to fight for the cause. But he never came back. Right before  the communists lost, my mother packed up and took me to the Netherlands. She didn't even speak the language. Her dark, Spanish features got us mistaken for Jews. I was 13 when Germany invaded The Netherlands. My mother had seen what was coming and shipped me off to England January that year. It is there that they told me she was executed in the second week of occupation. They considered her a Jewish commie.",
+    "trauma": 49,
     "crush": "Jules"
 }
