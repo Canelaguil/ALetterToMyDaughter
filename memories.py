@@ -110,9 +110,9 @@ class Memory:
     def add_memory(self, memory):
         pass
 
-c = ChildhoodMemories()
-a = c.get_random()
-print(a)
-m = Memory()
-m.add_childhood_memory(a)
-print(m.childhood_memories)
+# c = ChildhoodMemories()
+# a = c.get_random()
+# print(a)
+# m = Memory()
+# m.add_childhood_memory(a)
+# print(m.childhood_memories)

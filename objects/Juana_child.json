@@ -8,22 +8,22 @@
     "all traits": [
         "kind",
         "moody",
-        "cheeky",
-        "optimistic",
-        "immoral"
+        "clumsy",
+        "upbeat",
+        "disinterested"
     ],
     "country affinities": {
-        "Netherlands": -3,
-        "Spain": 3,
-        "Australia": 0
+        "Netherlands": 1,
+        "Spain": -2,
+        "Australia": 1
     },
     "relationships": {
-        "Jules": 98,
-        "Ika": 65,
-        "Robin": 52,
-        "Daniel": 79
+        "Jules": 65,
+        "Ika": 51,
+        "Robin": 71,
+        "Daniel": 51
     },
-    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a fervent communist, one of the leaders of The Cause. My father had travelled there all the way from the Netherlands. But he never came back. Right before  the communists lost, my mother packed up and took me to the Netherlands. She didn't even speak the language. Her dark, Spanish features got us mistaken for Jews. I was 13 when Germany invaded The Netherlands. My mother had seen what was coming and shipped me off to England January that year. It is there that they told me she was executed in the second week of occupation. They considered her a Jewish commie.",
-    "trauma": 21,
-    "crush": "Daniel"
+    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a victim of class and circumstance. She hardly knew how to read, she was a communist because everyone else she knew was. My father on the other hand had come all the way from the Netherlands to fight for the cause. But in the war he lost my mother and with her his faith in the cause and humanity at large. He took me back to the Netherlands. I was 13 when Germany invaded The Netherlands. My father had seen what was coming and shipped me off to England January that year. It is there that they told me he was executed in the second week of occupation. They knew he was a communist.",
+    "trauma": 20,
+    "crush": "Ika"
 }

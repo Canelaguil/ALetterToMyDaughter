@@ -17,12 +17,12 @@
         "Australia": 2
     },
     "relationships": {
-        "Juana": 41,
-        "Jules": 43,
-        "Ika": 70,
-        "Robin": 63
+        "Juana": 46,
+        "Jules": 40,
+        "Ika": 33,
+        "Robin": 74
     },
     "backstory": "Mother died in childbirth. Father was part of the socialist party, saw what was coming and moved to England. Was drafted for war and died in 1939, leaving Daniel orphaned.",
-    "trauma": 4,
-    "crush": "Juana"
+    "trauma": 6,
+    "crush": null
 }

@@ -1,7 +1,10 @@
+from ast import literal_eval
 import json
-from random import random, randint, choice, seed, choices, uniform
+from random import random, randint, choice, seed, choices, uniform, shuffle
 from pprint import pprint
 from copy import copy
+
+from numpy.lib.arraysetops import isin
 from sources import traits, event_traits, adult_tags, guardians
 from memories import MemoryEvent, Memory, ChildhoodMemories
 
@@ -139,12 +142,11 @@ class Character:
             'known traits' : self.known_traits,
             'all traits' : self.my_traits,
             'country affinities' : self.country_affinities, 
-            "relationships" : self.relationships,
+            'relationships' : self.relationships,
             'backstory' : self.backstory,
             'trauma' : self.trauma,
             'crush' : self.crush
         }
-        pprint(child, sort_dicts=False)
         self.write_json(child, 'child')
 
     def output_event(self):
@@ -159,7 +161,6 @@ class Character:
             'reaction' : self.reaction,
             'crush' : self.crush
         }
-        pprint(child, sort_dicts=False)
         self.write_json(child, 'event')
 
     def output_adult(self):
@@ -173,10 +174,10 @@ class Character:
             "relationships" : self.relationships,
             'trauma' : self.trauma
         }
-        pprint(adult, sort_dicts=False)
         self.write_json(adult, 'adult')
 
     def write_json(self, object, stage):
+        pprint(object)
         with open(f'objects/{self.name}_{stage}.json', 'w') as outfile:
             json.dump(object, outfile, indent=4, sort_keys=False)
 
@@ -402,42 +403,46 @@ class Controller:
             'name4' : ''
         }
 
+        # Determine chance of event for each character
         for name, ch in self.cs.items():
             c = m['base_chance']
-            if m['ch_increase']:
-                for tr in m['ch_increase']:
+            ch_increase = literal_eval(m['ch_increase'])
+            ch_decrease = literal_eval(m['ch_decrease'])
+            if ch_increase != None:
+                for tr in ch_increase:
                     if ch.has_trait(tr):
                         c += 0.1
-            if m['ch_decrease']:
-                for tr in m['ch_decrease']:
+            if ch_decrease:
+                for tr in ch_decrease:
                     if ch.has_trait(tr):
                         c *= 0.5
             chances[name] = c
-        
+            
+        # Go over all names in random order and match event
         items = list(chances.items())
-        while items != []:
-            n, p = choice(items)
+        shuffle(items)
+        found_me = False
+        for n, p in items: 
             if random() < p: 
+                found_me = True
                 names['me'] = n
-                items.remove((n, p))
                 for i in ['name1', 'name2', 'name3', 'name4']:
-                    if items == []:
-                        break
-                    rn = choice(items)
-                    names[i] = rn[0]
-                    items.remove(rn)
-            else:
-                items.remove((n, p))
+                    while True: 
+                        rn = choice(items)
+                        if rn[0] not in names.values():
+                            names[i] = rn[0]
+                            break
+                break
+        if not found_me:
+            return {}
 
         m['mapping'] = names
-        global().update(names)
-        print(me)
-        print(m['description'].format())
-        st = m['description']
-        m['description'] = f'{st}'
-        # for key, value in names.items():
-        #     m['description'] = m['description'].replace(f'{{key}}', value)
-        print(m['description'])
+        m['description'] = m['description'].replace('{me}', names['me'])
+        m['description'] = m['description'].replace('{name1}', names['name1'])
+        m['description'] = m['description'].replace('{name2}', names['name2'])
+        m['description'] = m['description'].replace('{name3}', names['name3'])
+        m['description'] = m['description'].replace('{name4}', names['name4'])
+        # print(m['description'])
 
         return m
             
@@ -501,7 +506,7 @@ class Controller:
             event['reactions'][name] = c.interpret_event(event)
             c.output_event()
 
-        pprint(event, sort_dicts=False)
+        pprint(event)
 
         with open(f'objects/the_event.json', 'w') as outfile:
             json.dump(event, outfile, indent=2, sort_keys=False)
