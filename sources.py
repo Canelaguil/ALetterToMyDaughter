@@ -5,23 +5,31 @@ traits = [
     ('moody', 'calm'),
     ('critical', 'tolerant'), 
     ('quirky', 'straight-laced'),
+
     ('egocentric', 'humble'), 
     ('creative', 'dull'),
     ('moral', 'immoral'),
-    ('impulsive', 'thoughtful'),
+    ('relaxed', 'uptight')
+    ('impulsive', 'hesitant'),
+
     ('optimistic', 'pessimistic'),
     ('obedient', 'rebellious'),
     ('brave', 'cowardly'),
     ('nervous', 'confident'),
     ('outgoing', 'shy'),
+
     ('clumsy', 'athletic'),
     ('intelligent', 'slow'),
     ('kind', 'mean'),
     ('timid', 'exuberant'),
     ('melancholic', 'upbeat'),
+
     ('daydreamer', 'practical'),
     ('suspicious', 'naive'), 
-    ('cheeky', 'humorless')
+    ('cheeky', 'humorless'), 
+    ('empathetic', 'jealous'), 
+    ('altruistic', 'selfish'),
+    ('stoic', 'sensitive'), 
     ]
 
 event_traits = [

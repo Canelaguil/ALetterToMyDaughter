@@ -378,22 +378,25 @@ class Controller:
 
         self.childhood_memories()
 
-        for child in self.cs.values(): 
-            child.output_child()
+        # for child in self.cs.values(): 
+        #     child.output_child()
             
-        self.the_event()
+        # self.the_event()
 
     def childhood_memories(self):
         self.cdb = ChildhoodMemories()
         self.init_crushes()
         
-        for _ in range(20):
+        for _ in range(27):
             m = self.cdb.get_random()
-            if m == {}:
+            if m == {}: # if no more memories left
                 break 
-            m_inited = self.init_memory(m)
+
+            m_inited = self.init_childhood_memory(m)
+            if m_inited == {}: # if memory not chosen
+                continue 
     
-    def init_memory(self, m):
+    def init_childhood_memory(self, m):
         chances = {}
         names = {
             'me' : '', 
@@ -426,7 +429,9 @@ class Controller:
             if random() < p: 
                 found_me = True
                 names['me'] = n
-                for i in ['name1', 'name2', 'name3', 'name4']:
+                if m['people'] == []:
+                    print('DDDDD')
+                for i in m['people']:
                     while True: 
                         rn = choice(items)
                         if rn[0] not in names.values():
@@ -442,8 +447,7 @@ class Controller:
         m['description'] = m['description'].replace('{name2}', names['name2'])
         m['description'] = m['description'].replace('{name3}', names['name3'])
         m['description'] = m['description'].replace('{name4}', names['name4'])
-        # print(m['description'])
-
+        print(m['description'])
         return m
             
 

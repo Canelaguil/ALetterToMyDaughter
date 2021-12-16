@@ -8,22 +8,22 @@
     "all traits": [
         "impulsive",
         "creative",
-        "quirky",
-        "clumsy",
-        "suspicious"
+        "moral",
+        "melancholic",
+        "humorless"
     ],
     "country affinities": {
-        "Netherlands": 0,
-        "Belgium": -1,
-        "Australia": 2
+        "Netherlands": -3,
+        "Belgium": 2,
+        "Australia": 1
     },
     "relationships": {
-        "Juana": 40,
-        "Ika": 63,
-        "Robin": 57,
-        "Daniel": 77
+        "Juana": 48,
+        "Ika": 79,
+        "Robin": 52,
+        "Daniel": 50
     },
-    "backstory": "I came to the Netherlands when I was 4 years old. My father got a job there. He was a true European. Spoke 4 languages, made himself understood in many more. Europe never loved him back enough. Met my mother in a theatre in Brussels, I guess they made do well enough. When Germany invaded the Netherlands I was 13. My parents had send me  to England days prior. I never saw them again.",
-    "trauma": 36,
-    "crush": "Juana"
+    "backstory": "I came to the Netherlands when I was 4 years old. My father liked it there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 13. My parents had send me  to England days prior. I never saw them again.",
+    "trauma": 44,
+    "crush": "Ika"
 }
