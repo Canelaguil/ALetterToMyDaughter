@@ -82,7 +82,17 @@ class ChildhoodMemories:
 
         i = choice(self.not_used)
         self.not_used.remove(i)
-        return dict(self.memories.iloc[i])
+
+        rm = dict(self.memories.iloc[i])
+        people = []
+        for c in ['no_negative', 'no_neutral', 'no_positive']:
+            # aslist = rm[c]
+            aslist = literal_eval(rm[c])
+            rm[c] = aslist
+            if isinstance(aslist, list): 
+                people.extend(aslist)
+            rm['people'] = people
+        return rm
 
 
 class Memory:
@@ -90,21 +100,19 @@ class Memory:
         self.childhood_memories = {}
 
     def add_childhood_memory(self, memory):
-        people = []
-        for c in ['no_negative', 'no_neutral', 'no_positive']:
-            # aslist = memory[c]
-            print(memory[c])
-            aslist = literal_eval(memory[c]) if isinstance(memory[c], str) else memory[c]
-            if isinstance(aslist, list) and aslist != 'None' and aslist != None: 
-                people.extend(memory[c])
-            print('p', people)
+        people = memory['people']
+                
         for p in people:
             if p not in self.childhood_memories:
                 self.childhood_memories[p] = {}
-            self.childhood_memories[p][memory['Keyword']] = memory
+            self.childhood_memories[p][memory['keyword']] = memory
+
+    def add_memory(self, memory):
+        pass
+
 c = ChildhoodMemories()
 a = c.get_random()
-# print(a)
+print(a)
 m = Memory()
 m.add_childhood_memory(a)
 print(m.childhood_memories)

@@ -17,7 +17,7 @@ class Character:
             'Daniel' : 0
         }
         self.childhood_memories = {}
-        self.memories = {}
+        self.memory = Memory()
         self.crush = None
 
     def set_up(self):
@@ -89,6 +89,13 @@ class Character:
     def become_adult(self):
         self.tags = copy(adult_tags)
 
+    """
+      CHECK CHARACTER 
+    """
+
+    def has_trait(self, trait):
+        return trait in self.my_traits
+
     """ 
       MODIFY CHARACTERS
     """
@@ -112,6 +119,12 @@ class Character:
 
     def give_crush(self, crush):
         self.crush = crush
+
+    def add_memory(self, memory, category='adult'):
+        if category == 'adult':
+            self.memory.add_memory(memory)
+        else:
+            self.memory.add_childhood_memory(memory)
 
     """
       OUTPUT FUNCTIONS
@@ -370,8 +383,64 @@ class Controller:
         self.the_event()
 
     def childhood_memories(self):
-        db = ChildhoodMemories()
+        self.cdb = ChildhoodMemories()
         self.init_crushes()
+        
+        for _ in range(20):
+            m = self.cdb.get_random()
+            if m == {}:
+                break 
+            m_inited = self.init_memory(m)
+    
+    def init_memory(self, m):
+        chances = {}
+        names = {
+            'me' : '', 
+            'name1' : '', 
+            'name2' : '',
+            'name3' : '', 
+            'name4' : ''
+        }
+
+        for name, ch in self.cs.items():
+            c = m['base_chance']
+            if m['ch_increase']:
+                for tr in m['ch_increase']:
+                    if ch.has_trait(tr):
+                        c += 0.1
+            if m['ch_decrease']:
+                for tr in m['ch_decrease']:
+                    if ch.has_trait(tr):
+                        c *= 0.5
+            chances[name] = c
+        
+        items = list(chances.items())
+        while items != []:
+            n, p = choice(items)
+            if random() < p: 
+                names['me'] = n
+                items.remove((n, p))
+                for i in ['name1', 'name2', 'name3', 'name4']:
+                    if items == []:
+                        break
+                    rn = choice(items)
+                    names[i] = rn[0]
+                    items.remove(rn)
+            else:
+                items.remove((n, p))
+
+        m['mapping'] = names
+        global().update(names)
+        print(me)
+        print(m['description'].format())
+        st = m['description']
+        m['description'] = f'{st}'
+        # for key, value in names.items():
+        #     m['description'] = m['description'].replace(f'{{key}}', value)
+        print(m['description'])
+
+        return m
+            
 
     def init_crushes(self):
         for c in self.cs.values():
@@ -379,7 +448,7 @@ class Controller:
                 if r.name != c.name:
                     if r.age1940 in range(c.age1940 - 1, c.age1940 + 4):
                         chance = (c.relationships[r.name] / 100 + 1) * 0.3
-                        print(chance)
+                        # print(chance)
                         if random() < chance:
                             c.give_crush(r.name)
                             # print(f'{c.name} has a crush on {r.name}')

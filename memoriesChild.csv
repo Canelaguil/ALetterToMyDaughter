@@ -1,4 +1,4 @@
-Description,category,"Base Chance [0, 1]",Keyword,no_negative,no_neutral,no_positive,ch_decrease,ch_increase
+description,category,base_chance,keyword,no_negative,no_neutral,no_positive,ch_decrease,ch_increase
 {me} taught {name1} how to cycle,childhood,0.05,learning to cycle,None,None,"['me', 'name1']","['brave', 'athletlic']","['clumsy', 'impulsive']"
 {me} once patiently helped {name1} out of a tree,childhood,0.05,stuck in tree,None,None,"['me', 'name1']","['brave', 'athletlic']","['clumsy', 'impulsive']"
 {me} informed {name2} and {name1} that sex involves two naked people,childhood,0.05,sex talk,None,"['me', 'name1', 'name2']",None,None,None
