@@ -1,68 +1,69 @@
 {
-  "cause": "Daniel insulted Juana's parents",
+  "cause": "Daniel was mean to Robin",
   "fighter": "Jules",
   "pusher": "Ika",
   "involved": [
     "Jules",
-    "Ika",
+    "Ika"
+  ],
+  "not_involved": [
     "Juana"
   ],
-  "not_involved": [],
   "reactions": {
     "Juana": {
       "age": 18,
-      "guilt": 32,
+      "guilt": 39,
       "trauma": {
-        "old_trauma": 27,
-        "trauma_modifier": 25.084685438793333,
-        "new_trauma": 52
+        "old_trauma": 36,
+        "trauma_modifier": 31.181286748725842,
+        "new_trauma": 67
       },
       "relationships": {
         "Jules": {
-          "old_R": 41,
-          "new_R": 17
+          "old_R": 63,
+          "new_R": 47
         },
         "Ika": {
-          "old_R": 100,
-          "new_R": 100
+          "old_R": 80,
+          "new_R": 77
         }
       }
     },
     "Jules": {
       "age": 18,
-      "guilt": 49,
+      "guilt": 65,
       "trauma": {
-        "old_trauma": 54,
-        "trauma_modifier": 22.03449143738742,
-        "new_trauma": 76
+        "old_trauma": 90,
+        "trauma_modifier": 49.82385837740002,
+        "new_trauma": 100
       },
       "relationships": {
         "Juana": {
-          "old_R": 45,
-          "new_R": 20
+          "old_R": 77,
+          "new_R": 56
         },
         "Ika": {
-          "old_R": 94,
-          "new_R": 82
+          "old_R": 50,
+          "new_R": 35
         }
       }
     },
     "Ika": {
       "age": 17,
-      "guilt": 100,
+      "guilt": 83,
       "trauma": {
-        "old_trauma": 14,
-        "trauma_modifier": 56.95786862725063,
-        "new_trauma": 70
+        "old_trauma": 8,
+        "trauma_modifier": 44.66630984870794,
+        "new_trauma": 52
       },
       "relationships": {
         "Juana": {
-          "old_R": 58,
-          "new_R": 77
+          "old_R": 91,
+          "new_R": 100
         },
         "Jules": {
-          "old_R": 54,
-          "new_R": 78
+          "old_R": 82,
+          "new_R": 58
         }
       }
     },

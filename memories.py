@@ -1,5 +1,5 @@
 from ast import literal_eval
-from random import choice, randint
+from random import choice, randint, random
 import pandas as pd
 from copy import copy
 
@@ -57,16 +57,24 @@ class Memory:
         m.pop('mapping')
         m.pop('base_chance')
 
-        for p in people:
-            if p == self.name:
-                p = 'myself'
-            if p not in self.childhood_memories:
-                self.childhood_memories[p] = {}
-            self.childhood_memories[p][m['keyword']] = m
+        # memory is not always remembered
+        if random() < 0.7:
+            for p in people:
+                if p == self.name:
+                    p = 'myself'
+                if p not in self.childhood_memories:
+                    self.childhood_memories[p] = {}
+                self.childhood_memories[p][m['keyword']] = m
 
         return changes
 
-        
+    def add_pre_config_childhood_memory(self, m, about_person):
+        if about_person not in self.childhood_memories:
+            self.childhood_memories[about_person] = {}
+
+        key = m['keyword']
+        print(key)
+        self.childhood_memories[about_person][key] = m
 
     def add_memory(self, memory):
         pass

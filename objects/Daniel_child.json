@@ -1,6 +1,6 @@
 {
     "name": "Daniel de Bruijn",
-    "age at move": 13,
+    "age at move": 14,
     "known traits": [
         "creative",
         "outgoing"
@@ -17,203 +17,152 @@
         "Australia": 2
     },
     "relationships": {
-        "Juana": 72,
-        "Jules": 63,
-        "Ika": 98,
-        "Robin": 41
+        "Juana": 100,
+        "Jules": 30,
+        "Ika": 86,
+        "Robin": 95
     },
     "memory": {
-        "Robin": {
-            "fight": {
-                "description": "Robin and I got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+        "Juana": {
+            "crush": {
+                "description": "I had a crush on Juana",
                 "category": "childhood",
-                "keyword": "fight",
+                "keyword": "crush",
                 "people": [
-                    "Robin",
-                    "Daniel"
+                    "Daniel",
+                    "Juana"
                 ],
-                "ch_decrease": "['calm', 'kind', 'hesitant']",
-                "ch_increase": "['impulsive', 'mean', 'moody']",
-                "memory_relation_impact": "negative"
-            },
-            "scaring": {
-                "description": "Robin once hid under Ika's bed and jumped out in the middle of the night, scaring not only Jules but everyone",
-                "category": "childhood",
-                "keyword": "scaring",
-                "people": [
-                    "Robin",
-                    "Ika",
-                    "Jules"
-                ],
-                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
-                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
-                "memory_relation_impact": "negative"
-            },
-            "helping when crying": {
-                "description": "When Robin got sad, Ika would be the first to be at their side",
-                "category": "childhood",
-                "keyword": "helping when crying",
-                "people": [
-                    "Ika",
-                    "Robin"
-                ],
-                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
-                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
                 "memory_relation_impact": "positive"
             },
-            "em forster": {
-                "description": "Robin read all the works of E.M. Forster in one summer",
-                "category": "childhood",
-                "keyword": "em forster",
-                "people": [
-                    "Robin"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
             "new games": {
-                "description": "Robin would often come up with new games ",
+                "description": "Juana would often come up with new games ",
                 "category": "childhood",
                 "keyword": "new games",
                 "people": [
-                    "Robin"
+                    "Juana"
                 ],
                 "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
                 "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
                 "memory_relation_impact": "neutral"
             },
-            "lost in woods": {
-                "description": "Juana once got lost in the woods while playing tag with Robin and Jules",
+            "scaring": {
+                "description": "Jules once hid under Juana's bed and jumped out in the middle of the night, scaring not only Ika but everyone",
                 "category": "childhood",
-                "keyword": "lost in woods",
+                "keyword": "scaring",
+                "people": [
+                    "Jules",
+                    "Juana",
+                    "Ika"
+                ],
+                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
+                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
+                "memory_relation_impact": "negative"
+            },
+            "stuck in tree": {
+                "description": "Juana once patiently helped Robin out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
                 "people": [
                     "Juana",
-                    "Jules",
                     "Robin"
                 ],
-                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
-                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
-                "memory_relation_impact": "neutral"
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
             },
-            "nose": {
-                "description": "Robin told I that Ika thought I's nose was weird",
+            "little house on the prairy": {
+                "description": "Juana was a huge fan of the Little House on the Prairie books",
                 "category": "childhood",
-                "keyword": "nose",
+                "keyword": "little house on the prairy",
                 "people": [
-                    "Ika",
-                    "Daniel",
-                    "Robin"
-                ],
-                "ch_decrease": "['straight-laced', 'kind', 'timid']",
-                "ch_increase": "['critical', 'quirky', 'mean']",
-                "memory_relation_impact": "neutral "
-            },
-            "listen to radio about war": {
-                "description": "Robin and Jules listened to the radio in secret to keep track of the war",
-                "category": "childhood",
-                "keyword": "listen to radio about war",
-                "people": [
-                    "Robin",
-                    "Jules"
-                ],
-                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
-                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
-                "memory_relation_impact": "neutral"
-            },
-            "room sharing": {
-                "description": "Robin shared a room with I for a while",
-                "category": "childhood",
-                "keyword": "room sharing",
-                "people": [
-                    "Daniel",
-                    "Robin"
+                    "Juana"
                 ],
                 "ch_decrease": "[]",
                 "ch_increase": "[]",
                 "memory_relation_impact": "neutral"
             }
         },
-        "myself": {
-            "fight": {
-                "description": "Robin and I got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+        "Robin": {
+            "helping when crying": {
+                "description": "When I got sad, Robin would be the first to be at their side",
                 "category": "childhood",
-                "keyword": "fight",
+                "keyword": "helping when crying",
                 "people": [
                     "Robin",
                     "Daniel"
                 ],
-                "ch_decrease": "['calm', 'kind', 'hesitant']",
-                "ch_increase": "['impulsive', 'mean', 'moody']",
-                "memory_relation_impact": "negative"
-            },
-            "stuck in tree": {
-                "description": "Ika once patiently helped I out of a tree",
-                "category": "childhood",
-                "keyword": "stuck in tree",
-                "people": [
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
-                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
+                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
                 "memory_relation_impact": "positive"
             },
-            "sex talk": {
-                "description": "Juana informed I and Ika that sex involves two naked people",
+            "listen to radio about war": {
+                "description": "Robin and Ika listened to the radio in secret to keep track of the war",
                 "category": "childhood",
-                "keyword": "sex talk",
+                "keyword": "listen to radio about war",
                 "people": [
-                    "Juana",
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
-                "memory_relation_impact": "neutral"
-            },
-            "learning english": {
-                "description": "I struggled the longest with learning English",
-                "category": "childhood",
-                "keyword": "learning english",
-                "people": [
-                    "Daniel"
-                ],
-                "ch_decrease": "['curious', 'intelligent', 'daydreamer', 'suspicious']",
-                "ch_increase": "['disinterested', 'slow', 'naive', 'practical', 'critical']",
-                "memory_relation_impact": "neutral"
-            },
-            "nose": {
-                "description": "Robin told I that Ika thought I's nose was weird",
-                "category": "childhood",
-                "keyword": "nose",
-                "people": [
-                    "Ika",
-                    "Daniel",
-                    "Robin"
-                ],
-                "ch_decrease": "['straight-laced', 'kind', 'timid']",
-                "ch_increase": "['critical', 'quirky', 'mean']",
-                "memory_relation_impact": "neutral "
-            },
-            "war progress": {
-                "description": "I kept everyone updated about the progress of the war",
-                "category": "childhood",
-                "keyword": "war progress",
-                "people": [
-                    "Daniel"
+                    "Robin",
+                    "Ika"
                 ],
                 "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
                 "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
                 "memory_relation_impact": "neutral"
             },
-            "room sharing": {
-                "description": "Robin shared a room with I for a while",
+            "stuck in tree": {
+                "description": "Juana once patiently helped Robin out of a tree",
                 "category": "childhood",
-                "keyword": "room sharing",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Juana",
+                    "Robin"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "myself": {
+            "helping when crying": {
+                "description": "When I got sad, Robin would be the first to be at their side",
+                "category": "childhood",
+                "keyword": "helping when crying",
+                "people": [
+                    "Robin",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
+                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "learning to cycle": {
+                "description": "Ika taught I how to cycle",
+                "category": "childhood",
+                "keyword": "learning to cycle",
+                "people": [
+                    "Ika",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'clumsy', 'critical', 'disorganised', 'shy', 'mean', 'selfish']",
+                "ch_increase": "['athletlic', 'calm', 'tolerant', 'optimistic', 'kind', 'practical', 'altruistic', 'athletic']",
+                "memory_relation_impact": "positive"
+            },
+            "fight": {
+                "description": "I and Jules got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
                 "people": [
                     "Daniel",
-                    "Robin"
+                    "Jules"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            },
+            "em forster": {
+                "description": "I read all the works of E.M. Forster in one summer",
+                "category": "childhood",
+                "keyword": "em forster",
+                "people": [
+                    "Daniel"
                 ],
                 "ch_decrease": "[]",
                 "ch_increase": "[]",
@@ -221,173 +170,106 @@
             }
         },
         "Ika": {
-            "scaring": {
-                "description": "Robin once hid under Ika's bed and jumped out in the middle of the night, scaring not only Jules but everyone",
+            "idolized general": {
+                "description": "Ika idolized the general and was always excited about his scarce visits",
                 "category": "childhood",
-                "keyword": "scaring",
-                "people": [
-                    "Robin",
-                    "Ika",
-                    "Jules"
-                ],
-                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
-                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
-                "memory_relation_impact": "negative"
-            },
-            "helping when crying": {
-                "description": "When Robin got sad, Ika would be the first to be at their side",
-                "category": "childhood",
-                "keyword": "helping when crying",
-                "people": [
-                    "Ika",
-                    "Robin"
-                ],
-                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
-                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
-                "memory_relation_impact": "positive"
-            },
-            "stuck in tree": {
-                "description": "Ika once patiently helped I out of a tree",
-                "category": "childhood",
-                "keyword": "stuck in tree",
-                "people": [
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
-                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
-                "memory_relation_impact": "positive"
-            },
-            "brave new world": {
-                "description": "Nadia got angry when she found out Ika had been reading Brave New World, which we were not allowed to read yet",
-                "category": "childhood",
-                "keyword": "brave new world",
+                "keyword": "idolized general",
                 "people": [
                     "Ika"
                 ],
-                "ch_decrease": "['disinterested', 'obedient']",
-                "ch_increase": "['curious', 'rebellious']",
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
             },
-            "sex talk": {
-                "description": "Juana informed I and Ika that sex involves two naked people",
+            "war progress": {
+                "description": "Ika kept everyone updated about the progress of the war",
                 "category": "childhood",
-                "keyword": "sex talk",
-                "people": [
-                    "Juana",
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
-                "memory_relation_impact": "neutral"
-            },
-            "little house on the prairy": {
-                "description": "Ika was a huge fan of the Little House on the Prairie books",
-                "category": "childhood",
-                "keyword": "little house on the prairy",
+                "keyword": "war progress",
                 "people": [
                     "Ika"
                 ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
+                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
+                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
                 "memory_relation_impact": "neutral"
             },
-            "nose": {
-                "description": "Robin told I that Ika thought I's nose was weird",
-                "category": "childhood",
-                "keyword": "nose",
-                "people": [
-                    "Ika",
-                    "Daniel",
-                    "Robin"
-                ],
-                "ch_decrease": "['straight-laced', 'kind', 'timid']",
-                "ch_increase": "['critical', 'quirky', 'mean']",
-                "memory_relation_impact": "neutral "
-            }
-        },
-        "Jules": {
             "scaring": {
-                "description": "Robin once hid under Ika's bed and jumped out in the middle of the night, scaring not only Jules but everyone",
+                "description": "Jules once hid under Juana's bed and jumped out in the middle of the night, scaring not only Ika but everyone",
                 "category": "childhood",
                 "keyword": "scaring",
                 "people": [
-                    "Robin",
-                    "Ika",
-                    "Jules"
-                ],
-                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
-                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
-                "memory_relation_impact": "negative"
-            },
-            "lost in woods": {
-                "description": "Juana once got lost in the woods while playing tag with Robin and Jules",
-                "category": "childhood",
-                "keyword": "lost in woods",
-                "people": [
-                    "Juana",
                     "Jules",
-                    "Robin"
+                    "Juana",
+                    "Ika"
                 ],
-                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
-                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
-                "memory_relation_impact": "neutral"
+                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
+                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
+                "memory_relation_impact": "negative"
+            },
+            "learning to cycle": {
+                "description": "Ika taught I how to cycle",
+                "category": "childhood",
+                "keyword": "learning to cycle",
+                "people": [
+                    "Ika",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'clumsy', 'critical', 'disorganised', 'shy', 'mean', 'selfish']",
+                "ch_increase": "['athletlic', 'calm', 'tolerant', 'optimistic', 'kind', 'practical', 'altruistic', 'athletic']",
+                "memory_relation_impact": "positive"
             },
             "listen to radio about war": {
-                "description": "Robin and Jules listened to the radio in secret to keep track of the war",
+                "description": "Robin and Ika listened to the radio in secret to keep track of the war",
                 "category": "childhood",
                 "keyword": "listen to radio about war",
                 "people": [
                     "Robin",
-                    "Jules"
+                    "Ika"
                 ],
                 "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
                 "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
                 "memory_relation_impact": "neutral"
             }
         },
-        "Juana": {
-            "disliked general": {
-                "description": "Juana disliked the general",
+        "Jules": {
+            "stork": {
+                "description": "Jules believed that babies were brought by a stork for a very long time",
                 "category": "childhood",
-                "keyword": "disliked general",
+                "keyword": "stork",
                 "people": [
-                    "Juana"
+                    "Jules"
                 ],
-                "ch_decrease": "['obedient', 'naive']",
-                "ch_increase": "['rebellious', 'supicious', 'critical']",
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
             },
-            "sex talk": {
-                "description": "Juana informed I and Ika that sex involves two naked people",
+            "scaring": {
+                "description": "Jules once hid under Juana's bed and jumped out in the middle of the night, scaring not only Ika but everyone",
                 "category": "childhood",
-                "keyword": "sex talk",
+                "keyword": "scaring",
                 "people": [
-                    "Juana",
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
-                "memory_relation_impact": "neutral"
-            },
-            "lost in woods": {
-                "description": "Juana once got lost in the woods while playing tag with Robin and Jules",
-                "category": "childhood",
-                "keyword": "lost in woods",
-                "people": [
-                    "Juana",
                     "Jules",
-                    "Robin"
+                    "Juana",
+                    "Ika"
                 ],
-                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
-                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
-                "memory_relation_impact": "neutral"
+                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
+                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
+                "memory_relation_impact": "negative"
+            },
+            "fight": {
+                "description": "I and Jules got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
             }
         }
     },
     "backstory": "Mother died in childbirth. Father was part of the socialist party, saw what was coming and moved to England. Was drafted for war and died in 1939, leaving Daniel orphaned.",
-    "trauma": 4,
+    "trauma": 8,
     "crush": "Juana"
 }
