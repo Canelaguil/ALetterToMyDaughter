@@ -8,39 +8,39 @@
     "all traits": [
         "kind",
         "moody",
-        "selfish",
-        "athletic",
-        "moral"
+        "empathetic",
+        "exuberant",
+        "immoral"
     ],
     "country affinities": {
         "Netherlands": 0,
-        "Spain": 2,
-        "Australia": -3
+        "Spain": 0,
+        "Australia": -1
     },
     "relationships": {
-        "Jules": 29,
-        "Ika": 77,
-        "Robin": 80
+        "Jules": 17,
+        "Ika": 100,
+        "Robin": 67
     },
-    "trauma": 58,
+    "trauma": 52,
     "reaction": {
         "age": 18,
-        "guilt": 21,
+        "guilt": 32,
         "trauma": {
-            "old_trauma": 49,
-            "trauma_modifier": 9.447667250383018,
-            "new_trauma": 58
+            "old_trauma": 27,
+            "trauma_modifier": 25.084685438793333,
+            "new_trauma": 52
         },
         "relationships": {
             "Jules": {
-                "old_R": 47,
-                "new_R": 29
+                "old_R": 41,
+                "new_R": 17
             },
             "Ika": {
-                "old_R": 64,
-                "new_R": 77
+                "old_R": 100,
+                "new_R": 100
             }
         }
     },
-    "crush": "Jules"
+    "crush": "Ika"
 }

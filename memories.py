@@ -1,5 +1,5 @@
 from ast import literal_eval
-from random import choice, choices
+from random import choice, randint
 import pandas as pd
 from copy import copy
 
@@ -30,11 +30,28 @@ class Memory:
         self.childhood_memories = {}
 
     def add_childhood_memory(self, memory):
+        changes = {}
         m = copy(memory)
         m['description'] = m['description'].replace(self.name, 'I')
         x = m['mapping'].values()
         people = list(filter(None, x))
         m['people'] = people 
+
+        # alter relationships
+        changes['relationships'] = {}
+        if m['memory_relation_impact'] == 'neutral': 
+            r_mod = 0
+        else: 
+            r_mod = -1 if m['memory_relation_impact'] == 'negative' else 1
+
+        r_ch = randint(1, 20)
+        if self.name == m['mapping']['me']:
+            for p in people: 
+                if self.name != p: 
+                    changes['relationships'][p] = r_mod * r_ch 
+        else: 
+            originator = m['mapping']['me']
+            changes['relationships'][originator] = r_mod * r_ch 
 
         # cleanup
         m.pop('mapping')
@@ -46,6 +63,10 @@ class Memory:
             if p not in self.childhood_memories:
                 self.childhood_memories[p] = {}
             self.childhood_memories[p][m['keyword']] = m
+
+        return changes
+
+        
 
     def add_memory(self, memory):
         pass

@@ -9,11 +9,11 @@
     },
     "relationships": {
         "Juana": 80,
-        "Jules": 80,
-        "Ika": 80,
-        "Daniel": 80
+        "Jules": 64,
+        "Ika": 95,
+        "Daniel": 63
     },
-    "trauma": 16,
+    "trauma": 9,
     "reaction": "Not present",
     "crush": null
 }

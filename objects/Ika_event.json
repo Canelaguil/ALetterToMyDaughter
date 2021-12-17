@@ -8,37 +8,37 @@
     "all traits": [
         "brave",
         "outgoing",
-        "quirky",
-        "disorganised",
-        "intelligent"
+        "obedient",
+        "relaxed",
+        "straight-laced"
     ],
     "country affinities": {
-        "Netherlands": 2,
-        "Indonesia": -1,
-        "Australia": -1
+        "Netherlands": -2,
+        "Indonesia": -2,
+        "Australia": 0
     },
     "relationships": {
-        "Juana": 88,
-        "Jules": 83,
-        "Robin": 78
+        "Juana": 77,
+        "Jules": 78,
+        "Robin": 75
     },
-    "trauma": 56,
+    "trauma": 70,
     "reaction": {
         "age": 17,
-        "guilt": 71,
+        "guilt": 100,
         "trauma": {
-            "old_trauma": 4,
-            "trauma_modifier": 52.1551657027332,
-            "new_trauma": 56
+            "old_trauma": 14,
+            "trauma_modifier": 56.95786862725063,
+            "new_trauma": 70
         },
         "relationships": {
             "Juana": {
-                "old_R": 75,
-                "new_R": 88
+                "old_R": 58,
+                "new_R": 77
             },
             "Jules": {
-                "old_R": 53,
-                "new_R": 83
+                "old_R": 54,
+                "new_R": 78
             }
         }
     },

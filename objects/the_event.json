@@ -1,67 +1,68 @@
 {
-  "cause": "Daniel is a bully",
+  "cause": "Daniel insulted Juana's parents",
   "fighter": "Jules",
   "pusher": "Ika",
   "involved": [
     "Jules",
-    "Ika"
+    "Ika",
+    "Juana"
   ],
   "not_involved": [],
   "reactions": {
     "Juana": {
       "age": 18,
-      "guilt": 21,
+      "guilt": 32,
       "trauma": {
-        "old_trauma": 49,
-        "trauma_modifier": 9.447667250383018,
-        "new_trauma": 58
+        "old_trauma": 27,
+        "trauma_modifier": 25.084685438793333,
+        "new_trauma": 52
       },
       "relationships": {
         "Jules": {
-          "old_R": 47,
-          "new_R": 29
+          "old_R": 41,
+          "new_R": 17
         },
         "Ika": {
-          "old_R": 64,
-          "new_R": 77
+          "old_R": 100,
+          "new_R": 100
         }
       }
     },
     "Jules": {
       "age": 18,
-      "guilt": 41,
+      "guilt": 49,
       "trauma": {
-        "old_trauma": 45,
-        "trauma_modifier": 31.959433464557566,
+        "old_trauma": 54,
+        "trauma_modifier": 22.03449143738742,
         "new_trauma": 76
       },
       "relationships": {
         "Juana": {
-          "old_R": 52,
-          "new_R": 44
+          "old_R": 45,
+          "new_R": 20
         },
         "Ika": {
-          "old_R": 61,
-          "new_R": 80
+          "old_R": 94,
+          "new_R": 82
         }
       }
     },
     "Ika": {
       "age": 17,
-      "guilt": 71,
+      "guilt": 100,
       "trauma": {
-        "old_trauma": 4,
-        "trauma_modifier": 52.1551657027332,
-        "new_trauma": 56
+        "old_trauma": 14,
+        "trauma_modifier": 56.95786862725063,
+        "new_trauma": 70
       },
       "relationships": {
         "Juana": {
-          "old_R": 75,
-          "new_R": 88
+          "old_R": 58,
+          "new_R": 77
         },
         "Jules": {
-          "old_R": 53,
-          "new_R": 83
+          "old_R": 54,
+          "new_R": 78
         }
       }
     },

@@ -126,7 +126,11 @@ class Character:
         if category == 'adult':
             self.memory.add_memory(memory)
         else:
-            self.memory.add_childhood_memory(memory)
+            changes = self.memory.add_childhood_memory(memory)
+
+        # change relationships
+        for p, v in changes['relationships'].items():
+            self.modify_relationship(v, p)
 
     """
       OUTPUT FUNCTIONS
