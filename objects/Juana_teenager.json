@@ -8,45 +8,44 @@
     "all traits": [
         "kind",
         "moody",
-        "straight-laced",
-        "cold",
-        "uptight"
+        "selfish",
+        "exuberant",
+        "suspicious"
     ],
-    "location": "Ccc",
+    "location": "Aaa",
     "country affinities": {
-        "Netherlands": 0,
-        "Spain": 3,
-        "Australia": 1
+        "Netherlands": -1,
+        "Spain": -3,
+        "Australia": 2
     },
     "relationships": {
-        "Jules": 69,
-        "Ika": 65,
-        "Robin": 90,
-        "Magda Martin": 0
+        "Jules": 63,
+        "Ika": 55,
+        "Robin": 74,
+        "Kent Roberts": 59
     },
     "person tags": {
-        "guardian": "Magda Martin"
+        "guardian": "Kent Roberts"
     },
-    "trauma": 57,
+    "trauma": 59,
     "guardian": {
-        "name": "Magda",
-        "surname": "Martin",
-        "age": 55,
-        "relation": "sister",
-        "location": "Ccc",
-        "income_class": "high",
-        "lifestyle": "lavish",
+        "name": "Kent",
+        "surname": "Roberts",
+        "age": 32,
+        "relation": "cousin",
+        "location": "Aaa",
+        "income_class": "medium",
+        "lifestyle": "average",
         "married": true,
-        "other_children": false,
-        "nurturing": false,
-        "provide_college": true,
-        "provide_women_college": true,
-        "provide_boarding_school": true,
-        "allowance": "no allowance",
+        "other_children": true,
+        "nurturing": true,
+        "provide_college": false,
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "small allowance",
         "capacity": 0,
         "ward": [
-            "Juana",
-            "Jules"
+            "Juana"
         ]
     }
 }

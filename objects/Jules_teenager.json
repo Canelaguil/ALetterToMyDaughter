@@ -8,44 +8,43 @@
     "all traits": [
         "impulsive",
         "creative",
-        "selfish",
-        "brave",
-        "suspicious"
+        "naive",
+        "disinterested",
+        "moral"
     ],
-    "location": "Ccc",
+    "location": "Bbb",
     "country affinities": {
-        "Netherlands": -1,
-        "Belgium": -2,
-        "Australia": -3
+        "Netherlands": -2,
+        "Belgium": 2,
+        "Australia": 3
     },
     "relationships": {
-        "Juana": 56,
-        "Ika": 67,
-        "Robin": 91,
-        "Magda Martin": 0
+        "Juana": 72,
+        "Ika": 18,
+        "Robin": 85,
+        "James Lee": 100
     },
     "person tags": {
-        "guardian": "Magda Martin"
+        "guardian": "James Lee"
     },
-    "trauma": 91,
+    "trauma": 26,
     "guardian": {
-        "name": "Magda",
-        "surname": "Martin",
-        "age": 55,
-        "relation": "sister",
-        "location": "Ccc",
+        "name": "James",
+        "surname": "Lee",
+        "age": 72,
+        "relation": "uncle",
+        "location": "Bbb",
         "income_class": "high",
         "lifestyle": "lavish",
-        "married": true,
+        "married": false,
         "other_children": false,
-        "nurturing": false,
+        "nurturing": true,
         "provide_college": true,
-        "provide_women_college": true,
-        "provide_boarding_school": true,
-        "allowance": "no allowance",
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "big allowance",
         "capacity": 0,
         "ward": [
-            "Juana",
             "Jules"
         ]
     }

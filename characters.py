@@ -30,11 +30,7 @@ class Character:
 
         # Country affinities
         for country in self.country_affinities:
-            self.country_affinities[country] += randint(-3, 3)
-            if self.country_affinities[country] > 3: 
-                self.country_affinities[country] = 3
-            elif self.country_affinities[country] < -3: 
-                self.country_affinities[country] = -3
+            self.modify_country_affinity(country, randint(-3, 3))
 
         # Init relationships
         self.relationships.pop(self.name)
@@ -112,13 +108,23 @@ class Character:
             new_value = 0
         self.relationships[name] = new_value
 
-    def modify_trauma(self, modifier):
+    def modify_trauma(self, modifier, set=False):
+        if set: 
+            self.trauma = modifier
+            return
         new_value = self.trauma + int(modifier)
         if new_value > 100:
             new_value = 100
         elif new_value < 0:
             new_value = 0
         self.trauma = new_value
+
+    def modify_country_affinity(self, country, modifier): 
+        self.country_affinities[country] += modifier
+        if self.country_affinities[country] < - 3: 
+            self.country_affinities[country] = -3
+        elif self.country_affinities[country] > 3: 
+            self.country_affinities[country] = 3
 
     def add_memory(self, memory, category='adult'):
         if category == 'adult':
@@ -169,6 +175,7 @@ class Character:
         
         self.modify_relationship(g_R, guardian_name)
         self.location = guardian['location']
+        self.modify_country_affinity('Australia', int(g_R / 100 * 3))
 
     def teenage_years(self): 
         t_years = 18 - self.age1945
@@ -177,8 +184,7 @@ class Character:
         guardian_factor = -3 if guardian_factor > -3 else guardian_factor
         new_trauma = self.trauma + guardian_factor * t_years
         new_trauma = int(0.1 * self.trauma) if new_trauma < 0 else new_trauma
-
-
+        self.modify_trauma(new_trauma, True)
 
     """
       OUTPUT FUNCTIONS
@@ -287,12 +293,12 @@ class Juana(Character):
 
             father_alive = False 
             self.trauma += randint(0, 20)
-            self.country_affinities['Spain'] = min(self.country_affinities['Spain'] + 2, 3)
-            self.country_affinities['Netherlands'] = max(self.country_affinities['Netherlands'] - 2, -3)
+            self.modify_country_affinity('Spain', 2)
+            self.modify_country_affinity('Netherlands', -2)
         else:
             story += "in the war he lost my mother and with her his faith in the cause and " + \
                      "humanity at large. He took me back to the Netherlands." 
-            self.country_affinities['Netherlands'] = min(self.country_affinities['Netherlands'] + 2, 3)
+            self.modify_country_affinity('Netherlands', 2)
 
         parent = 'father' if father_alive else 'mother'
         parent_pronoun = 'he' if father_alive else 'she'
@@ -401,16 +407,18 @@ class Robin(Character):
         self.sex = 'm'
         self.age1945 = self.age1940 + 5
         self.birth_year = 1940 - self.age1940
+        self.give_crush(max(self.relationships, key=self.relationships.get))
 
     def interpret_event(self, event):
         rD = self.relationships['Daniel']
         mt = randint(int(rD * 0.3),  int(rD * 0.8))
         self.reaction = { 
+            'age' : self.age1945,
             'old_trauma' : self.trauma, 
             'trauma_modifier' : mt, 
             }
         self.modify_trauma(mt)
-        self.reaction['new_trauma'] = mt
+        self.reaction['new_trauma'] = self.trauma
         return self.reaction
 
 

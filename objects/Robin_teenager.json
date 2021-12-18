@@ -9,16 +9,16 @@
         "Australia": 3
     },
     "relationships": {
-        "Juana": 52,
-        "Jules": 74,
-        "Ika": 100,
-        "Daniel": 96,
-        "Nadia Wilkes": 100
+        "Juana": 80,
+        "Jules": 90,
+        "Ika": 72,
+        "Daniel": 62,
+        "Nadia Wilkes": 53
     },
     "person tags": {
         "guardian": "Nadia Wilkes"
     },
-    "trauma": 58,
+    "trauma": 7,
     "guardian": {
         "name": "Nadia",
         "surname": "Wilkes",

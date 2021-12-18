@@ -8,42 +8,42 @@
     "all traits": [
         "brave",
         "outgoing",
+        "cheeky",
         "straight-laced",
-        "creative",
-        "organised"
+        "uptight"
     ],
-    "location": "Bbb",
+    "location": "Ccc",
     "country affinities": {
-        "Netherlands": 0,
-        "Indonesia": -1,
-        "Australia": 2
+        "Netherlands": 1,
+        "Indonesia": 3,
+        "Australia": 3
     },
     "relationships": {
-        "Juana": 40,
-        "Jules": 27,
-        "Robin": 93,
-        "James Lee": 70
+        "Juana": 67,
+        "Jules": 32,
+        "Robin": 65,
+        "Magda Martin": 2
     },
     "person tags": {
-        "guardian": "James Lee"
+        "guardian": "Magda Martin"
     },
-    "trauma": 42,
+    "trauma": 13,
     "guardian": {
-        "name": "James",
-        "surname": "Lee",
-        "age": 72,
-        "relation": "uncle",
-        "location": "Bbb",
+        "name": "Magda",
+        "surname": "Martin",
+        "age": 55,
+        "relation": "sister",
+        "location": "Ccc",
         "income_class": "high",
         "lifestyle": "lavish",
-        "married": false,
+        "married": true,
         "other_children": false,
-        "nurturing": true,
+        "nurturing": false,
         "provide_college": true,
-        "provide_women_college": false,
-        "provide_boarding_school": false,
-        "allowance": "big allowance",
-        "capacity": 0,
+        "provide_women_college": true,
+        "provide_boarding_school": true,
+        "allowance": "no allowance",
+        "capacity": 1,
         "ward": [
             "Ika"
         ]
