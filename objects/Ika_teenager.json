@@ -1,0 +1,51 @@
+{
+    "name": "Ika Nicolaas",
+    "age": 18,
+    "known traits": [
+        "brave",
+        "outgoing"
+    ],
+    "all traits": [
+        "brave",
+        "outgoing",
+        "straight-laced",
+        "creative",
+        "organised"
+    ],
+    "location": "Bbb",
+    "country affinities": {
+        "Netherlands": 0,
+        "Indonesia": -1,
+        "Australia": 2
+    },
+    "relationships": {
+        "Juana": 40,
+        "Jules": 27,
+        "Robin": 93,
+        "James Lee": 70
+    },
+    "person tags": {
+        "guardian": "James Lee"
+    },
+    "trauma": 42,
+    "guardian": {
+        "name": "James",
+        "surname": "Lee",
+        "age": 72,
+        "relation": "uncle",
+        "location": "Bbb",
+        "income_class": "high",
+        "lifestyle": "lavish",
+        "married": false,
+        "other_children": false,
+        "nurturing": true,
+        "provide_college": true,
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "big allowance",
+        "capacity": 0,
+        "ward": [
+            "Ika"
+        ]
+    }
+}

@@ -88,6 +88,7 @@ class Character:
 
     def become_adult(self):
         self.tags = copy(adult_tags)
+        self.age = 18
 
     """
       CHECK CHARACTER 
@@ -101,6 +102,8 @@ class Character:
     """
 
     def modify_relationship(self, modifier, name):
+        if not name in self.relationships: 
+            self.relationships[name] = 0
         cur_value = self.relationships[name] 
         new_value = cur_value + modifier
         if new_value > 100:
@@ -116,6 +119,22 @@ class Character:
         elif new_value < 0:
             new_value = 0
         self.trauma = new_value
+
+    def add_memory(self, memory, category='adult'):
+        if category == 'adult':
+            self.memory.add_memory(memory)
+        else:
+            changes = self.memory.add_childhood_memory(memory)
+            self.process_changes(changes)
+
+    def process_changes(self, changes): 
+        # change relationships
+        for p, v in changes['relationships'].items():
+            self.modify_relationship(v, p)
+
+    """ 
+      MEMORY STUFF
+    """
 
     def give_crush(self, crush):
         self.crush = crush
@@ -134,17 +153,31 @@ class Character:
         }
         self.process_changes(changes)
 
-    def add_memory(self, memory, category='adult'):
-        if category == 'adult':
-            self.memory.add_memory(memory)
-        else:
-            changes = self.memory.add_childhood_memory(memory)
-            self.process_changes(changes)
+    def give_guardian(self, guardian): 
+        guardian_name = f"{guardian['name']} {guardian['surname']}"
+        self.person_tags = {}
+        self.person_tags['guardian'] = guardian_name
+        self.guardian = guardian 
 
-    def process_changes(self, changes): 
-        # change relationships
-        for p, v in changes['relationships'].items():
-            self.modify_relationship(v, p)
+        g_R = randint(10, 50)
+        if self.guardian['nurturing']: 
+            g_R += randint(20, 60)
+        if self.guardian['provide_boarding_school']: 
+            g_R -= randint(10, 40)
+        if self.guardian['other_children']: 
+            g_R += randint(-20, 20)
+        
+        self.modify_relationship(g_R, guardian_name)
+        self.location = guardian['location']
+
+    def teenage_years(self): 
+        t_years = 18 - self.age1945
+        g_R = self.relationships[self.person_tags['guardian']]
+        guardian_factor = int(-1 * g_R / 10)
+        guardian_factor = -3 if guardian_factor > -3 else guardian_factor
+        new_trauma = self.trauma + guardian_factor * t_years
+        new_trauma = int(0.1 * self.trauma) if new_trauma < 0 else new_trauma
+
 
 
     """
@@ -182,6 +215,21 @@ class Character:
         }
         self.write_json(child, 'event')
 
+    def output_teenager(self): 
+        child = {
+            'name' : f'{self.name} {self.surname}',
+            'age' : 18, 
+            'known traits' : self.known_traits,
+            'all traits' : self.my_traits,
+            'location' : self.location, 
+            'country affinities' : self.country_affinities, 
+            "relationships" : self.relationships,
+            'person tags' : self.person_tags, 
+            'trauma' : self.trauma, 
+            'guardian' : self.guardian,
+        }
+        self.write_json(child, 'teenager')
+
     def output_adult(self):
         adult = {
             'name' : f'{self.name} {self.surname}',
@@ -213,7 +261,7 @@ class Juana(Character):
         self.country_affinities = {
             'Netherlands': 0, 'Spain': 0, 'Australia': 0}
         self.sex = 'f'
-        self.age1940 = 13
+        self.age1940 = 9
 
         self.set_up()
         self.backstory = self.backstory()
@@ -269,7 +317,7 @@ class Jules(Character):
         self.country_affinities = {
             'Netherlands': -2, 'Belgium': -1, 'Australia': -1}
         self.sex = 'm'
-        self.age1940 = 13
+        self.age1940 = 9
 
         self.set_up()
         self.backstory = self.backstory()
@@ -307,7 +355,7 @@ class Ika(Character):
         self.country_affinities = {
             'Netherlands': 0, 'Indonesia': 0, 'Australia': 0}
         self.sex = 'f'
-        self.age1940 = 12
+        self.age1940 = 8
 
         self.set_up()
         self.backstory = self.backstory()
@@ -336,7 +384,7 @@ class Robin(Character):
         self.name = 'Robin'
         self.surname = 'Kuijper'
         self.memory = Memory(self.name)
-        self.age1940 = 7
+        self.age1940 = 5
         self.known_traits = []
         self.my_traits = []
         self.all_traits = [] 
@@ -345,17 +393,24 @@ class Robin(Character):
         self.country_affinities = {
             'Netherlands': 2, 'Australia': 3 }        
         self.relationships = {
-            'Juana' : 80, 
-            'Jules' : 80,
-            'Ika' : 80,
-            'Daniel' : 80
+            'Juana' : randint(70, 90), 
+            'Jules' : randint(70, 90), 
+            'Ika' : randint(70, 90), 
+            'Daniel' : randint(70, 90), 
         }
         self.sex = 'm'
         self.age1945 = self.age1940 + 5
         self.birth_year = 1940 - self.age1940
 
     def interpret_event(self, event):
-        self.reaction = "Not present"
+        rD = self.relationships['Daniel']
+        mt = randint(int(rD * 0.3),  int(rD * 0.8))
+        self.reaction = { 
+            'old_trauma' : self.trauma, 
+            'trauma_modifier' : mt, 
+            }
+        self.modify_trauma(mt)
+        self.reaction['new_trauma'] = mt
         return self.reaction
 
 

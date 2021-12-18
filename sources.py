@@ -23,9 +23,10 @@ traits = [
     ('daydreamer', 'practical'),
     ('suspicious', 'naive'), 
     ('cheeky', 'humorless'), 
-    ('empathetic', 'jealous'), 
+    ('empathetic', 'cold'), 
     ('altruistic', 'selfish'),
     ('stoic', 'sensitive'), 
+    ('jealous', 'trusting')
     ]
 
 event_traits = [
@@ -61,9 +62,9 @@ allowance = [
     'medium allowance', 'big allowance'
     ]
 guardians = {
-    'A' : {
-        'name' : 'A', 
-        'surname' : 'Aa', 
+    1 : {
+        'name' : 'Kent', 
+        'surname' : 'Roberts', 
         'age' : 32,
         'relation' : 'cousin',
         'location' : 'Aaa',
@@ -79,9 +80,9 @@ guardians = {
         'capacity' : 1,
         'ward' : []
     },
-    'B' : {
-        'name' : 'B', 
-        'surname' : 'Bb', 
+    2 : {
+        'name' : 'James', 
+        'surname' : 'Lee', 
         'age' : 72,
         'relation' : 'uncle',
         'location' : 'Bbb',
@@ -97,9 +98,9 @@ guardians = {
         'capacity' : 1,
         'ward' : []
     },
-    'C' : {
-        'name' : 'C', 
-        'surname' : 'Cc', 
+    3 : {
+        'name' : 'Magda', 
+        'surname' : 'Martin', 
         'age' : 55,
         'relation' : 'sister',
         'location' : 'Ccc',

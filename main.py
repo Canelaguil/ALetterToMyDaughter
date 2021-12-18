@@ -19,19 +19,18 @@ class Controller:
             'Daniel' : Daniel()
         }
 
-        self.childhood_memories()
-
-        for child in self.cs.values(): 
-            child.output_child()
-            
+        self.childhood_memories()            
         self.the_event()
+        self.warden_life()
+        self.teenage_progress()
+        self.start_adulthood()
 
     def childhood_memories(self):
-        self.cdb = ChildhoodMemories()
+        cdb = ChildhoodMemories()
         self.init_crushes()
         
         for _ in range(27):
-            m = self.cdb.get_random()
+            m = cdb.get_random()
             if m == {}: # if no more memories left
                 break 
 
@@ -41,6 +40,9 @@ class Controller:
 
             for child in self.cs.values(): 
                 child.add_memory(m_inited, 'child')
+        
+        for child in self.cs.values(): 
+            child.output_child()
     
     def init_childhood_memory(self, m):
         chances = {}
@@ -93,7 +95,6 @@ class Controller:
         m['description'] = m['description'].replace('{name2}', names['name2'])
         m['description'] = m['description'].replace('{name3}', names['name3'])
         m['description'] = m['description'].replace('{name4}', names['name4'])
-        # print(m['description'])
         return m
             
     def init_crushes(self):
@@ -108,8 +109,8 @@ class Controller:
                             self.crushes[c.name] = r.name
                             break
 
-    
     def the_event(self):
+        # remove Daniel from character list
         self.cs.pop('Daniel')
         event = {}
         causes = [
@@ -146,9 +147,9 @@ class Controller:
             if pusher[1]  not in event['involved']:
                 event['involved'].append(pusher[1])
         else:
-            for c in self.cs:
-                if c not in event['involved'] and c != 'Robin':
-                    event['not_involved'].append(c)
+            for cname in self.cs:
+                if cname not in event['involved'] and cname != 'Robin':
+                    event['not_involved'].append(cname)
         
         # check how someone reacts
         event['reactions'] = {}
@@ -161,5 +162,26 @@ class Controller:
         with open(f'objects/the_event.json', 'w') as outfile:
             json.dump(event, outfile, indent=2, sort_keys=False)
 
+    def warden_life(self):
+        global guardians
+        for c in self.cs.values(): 
+            if c.name == 'Robin': 
+                c.give_guardian(guardians['nadia'])
+                continue
+            while True: 
+                g = randint(1, 3)
+                if guardians[g]['capacity'] != 0: 
+                    guardians[g]['capacity'] -= 1
+                    guardians[g]['ward'].append(c.name)
+                    c.give_guardian(guardians[g])
+                    break
+
+    def teenage_progress(self):
+        for c in self.cs.values(): 
+            c.teenage_years()        
+            c.output_teenager()
+
+    def start_adulthood(self):
+        self.cs.pop('Robin')
 
 Controller()

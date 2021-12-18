@@ -1,0 +1,41 @@
+{
+    "name": "Robin Kuijper",
+    "age": 18,
+    "known traits": [],
+    "all traits": [],
+    "location": "Ddd",
+    "country affinities": {
+        "Netherlands": 2,
+        "Australia": 3
+    },
+    "relationships": {
+        "Juana": 52,
+        "Jules": 74,
+        "Ika": 100,
+        "Daniel": 96,
+        "Nadia Wilkes": 100
+    },
+    "person tags": {
+        "guardian": "Nadia Wilkes"
+    },
+    "trauma": 58,
+    "guardian": {
+        "name": "Nadia",
+        "surname": "Wilkes",
+        "age": 47,
+        "age1940": 42,
+        "relation": "governess",
+        "location": "Ddd",
+        "income_class": "low",
+        "lifestyle": "humble",
+        "married": false,
+        "other_children": false,
+        "nurturing": true,
+        "provide_college": false,
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "no allowance",
+        "capacity": 1,
+        "ward": []
+    }
+}

@@ -1,6 +1,6 @@
 {
     "name": "Juana Huijzen",
-    "age at event": 18,
+    "age at event": 14,
     "known traits": [
         "kind",
         "moody"
@@ -8,37 +8,37 @@
     "all traits": [
         "kind",
         "moody",
-        "egocentric",
-        "outgoing",
-        "moral"
+        "straight-laced",
+        "cold",
+        "uptight"
     ],
     "country affinities": {
-        "Netherlands": 3,
-        "Spain": 0,
+        "Netherlands": 0,
+        "Spain": 3,
         "Australia": 1
     },
     "relationships": {
-        "Jules": 47,
-        "Ika": 77,
-        "Robin": 93
+        "Jules": 69,
+        "Ika": 65,
+        "Robin": 90
     },
-    "trauma": 67,
+    "trauma": 57,
     "reaction": {
-        "age": 18,
-        "guilt": 39,
+        "age": 14,
+        "guilt": 95,
         "trauma": {
-            "old_trauma": 36,
-            "trauma_modifier": 31.181286748725842,
-            "new_trauma": 67
+            "old_trauma": 11,
+            "trauma_modifier": 46.746018800403235,
+            "new_trauma": 57
         },
         "relationships": {
             "Jules": {
-                "old_R": 63,
-                "new_R": 47
+                "old_R": 64,
+                "new_R": 69
             },
             "Ika": {
-                "old_R": 80,
-                "new_R": 77
+                "old_R": 41,
+                "new_R": 65
             }
         }
     },

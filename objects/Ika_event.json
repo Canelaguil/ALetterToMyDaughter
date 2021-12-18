@@ -1,6 +1,6 @@
 {
     "name": "Ika Nicolaas",
-    "age at event": 17,
+    "age at event": 13,
     "known traits": [
         "brave",
         "outgoing"
@@ -8,39 +8,39 @@
     "all traits": [
         "brave",
         "outgoing",
-        "immoral",
-        "athletic",
-        "moody"
+        "straight-laced",
+        "creative",
+        "organised"
     ],
     "country affinities": {
-        "Netherlands": 3,
-        "Indonesia": -2,
+        "Netherlands": 0,
+        "Indonesia": -1,
         "Australia": 2
     },
     "relationships": {
-        "Juana": 100,
-        "Jules": 58,
-        "Robin": 98
+        "Juana": 40,
+        "Jules": 27,
+        "Robin": 93
     },
-    "trauma": 52,
+    "trauma": 42,
     "reaction": {
-        "age": 17,
-        "guilt": 83,
+        "age": 13,
+        "guilt": 72,
         "trauma": {
-            "old_trauma": 8,
-            "trauma_modifier": 44.66630984870794,
-            "new_trauma": 52
+            "old_trauma": 1,
+            "trauma_modifier": 41.113016952685136,
+            "new_trauma": 42
         },
         "relationships": {
             "Juana": {
-                "old_R": 91,
-                "new_R": 100
+                "old_R": 31,
+                "new_R": 40
             },
             "Jules": {
-                "old_R": 82,
-                "new_R": 58
+                "old_R": 47,
+                "new_R": 27
             }
         }
     },
-    "crush": "Jules"
+    "crush": null
 }

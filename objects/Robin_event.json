@@ -1,6 +1,6 @@
 {
     "name": "Robin Kuijper",
-    "age at event": 12,
+    "age at event": 10,
     "known traits": [],
     "all traits": [],
     "country affinities": {
@@ -8,12 +8,16 @@
         "Australia": 3
     },
     "relationships": {
-        "Juana": 97,
-        "Jules": 62,
-        "Ika": 84,
-        "Daniel": 76
+        "Juana": 52,
+        "Jules": 74,
+        "Ika": 100,
+        "Daniel": 96
     },
-    "trauma": 11,
-    "reaction": "Not present",
-    "crush": null
+    "trauma": 58,
+    "reaction": {
+        "old_trauma": 17,
+        "trauma_modifier": 41,
+        "new_trauma": 41
+    },
+    "crush": "Ika"
 }
