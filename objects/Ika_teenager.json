@@ -8,34 +8,18 @@
     "all traits": [
         "brave",
         "outgoing",
-        "cheeky",
-        "straight-laced",
-        "uptight"
+        "upbeat",
+        "practical",
+        "altruistic"
     ],
-    "location": "Ccc",
-    "country affinities": {
-        "Netherlands": 1,
-        "Indonesia": 3,
-        "Australia": 3
-    },
-    "relationships": {
-        "Juana": 67,
-        "Jules": 32,
-        "Robin": 65,
-        "Magda Martin": 2
-    },
-    "person tags": {
-        "guardian": "Magda Martin"
-    },
-    "trauma": 13,
     "guardian": {
         "name": "Magda",
         "surname": "Martin",
         "age": 55,
         "relation": "sister",
         "location": "Ccc",
-        "income_class": "high",
-        "lifestyle": "lavish",
+        "income_class": "medium",
+        "lifestyle": "rich",
         "married": true,
         "other_children": false,
         "nurturing": false,
@@ -43,9 +27,35 @@
         "provide_women_college": true,
         "provide_boarding_school": true,
         "allowance": "no allowance",
-        "capacity": 1,
+        "capacity": 0,
         "ward": [
+            "Juana",
             "Ika"
         ]
+    },
+    "location": "Ccc",
+    "lifestyle": "rich",
+    "income class": "medium",
+    "boarding school": true,
+    "country affinities": {
+        "Netherlands": 3,
+        "Indonesia": -2,
+        "Australia": -1
+    },
+    "relationships": {
+        "Juana": 95,
+        "Jules": 73,
+        "Robin": 74,
+        "Magda Martin": 7
+    },
+    "person tags": {
+        "guardian": "Magda Martin"
+    },
+    "trauma": 45,
+    "aspirations": {
+        "lifestyle": "lavish",
+        "income": "very high",
+        "children": true,
+        "location": "Netherlands"
     }
 }

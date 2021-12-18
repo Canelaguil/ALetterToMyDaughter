@@ -57,6 +57,8 @@ adult_tags = {
     'paranoid' : False
 }
 
+lifestyle = ['pauper', 'humble', 'average', 'rich', 'lavish' ]
+income = ['very low', 'low', 'medium', 'high', 'very high']
 allowance = [
     'no allowance', 'small allowance', 
     'medium allowance', 'big allowance'
@@ -68,8 +70,8 @@ guardians = {
         'age' : 32,
         'relation' : 'cousin',
         'location' : 'Aaa',
-        'income_class' : 'medium',
-        'lifestyle' : 'average', 
+        'income_class' : income[2],
+        'lifestyle' : lifestyle[2], 
         'married' : True,
         'other_children' : True,
         'nurturing' : True, 
@@ -86,6 +88,8 @@ guardians = {
         'age' : 72,
         'relation' : 'uncle',
         'location' : 'Bbb',
+        'income_class' : income[4],
+        'lifestyle' : lifestyle[3], 
         'income_class' : 'high',
         'lifestyle' : 'lavish', 
         'married' : False,
@@ -104,8 +108,8 @@ guardians = {
         'age' : 55,
         'relation' : 'sister',
         'location' : 'Ccc',
-        'income_class' : 'high',
-        'lifestyle' : 'lavish', 
+        'income_class' : income[2],
+        'lifestyle' : lifestyle[3], 
         'married' : True,
         'other_children' : False,
         'nurturing' : False, 
@@ -123,8 +127,8 @@ guardians = {
         'age1940' : 42, 
         'relation' : 'governess',
         'location' : 'Ddd',
-        'income_class' : 'low',
-        'lifestyle' : 'humble', 
+        'income_class' : income[1],
+        'lifestyle' : lifestyle[1], 
         'married' : False,
         'other_children' : False,
         'nurturing' : True, 

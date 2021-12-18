@@ -3,22 +3,6 @@
     "age": 18,
     "known traits": [],
     "all traits": [],
-    "location": "Ddd",
-    "country affinities": {
-        "Netherlands": 2,
-        "Australia": 3
-    },
-    "relationships": {
-        "Juana": 80,
-        "Jules": 90,
-        "Ika": 72,
-        "Daniel": 62,
-        "Nadia Wilkes": 53
-    },
-    "person tags": {
-        "guardian": "Nadia Wilkes"
-    },
-    "trauma": 7,
     "guardian": {
         "name": "Nadia",
         "surname": "Wilkes",
@@ -37,5 +21,30 @@
         "allowance": "no allowance",
         "capacity": 1,
         "ward": []
+    },
+    "location": "Ddd",
+    "lifestyle": "humble",
+    "income class": "low",
+    "boarding school": false,
+    "country affinities": {
+        "Netherlands": 2,
+        "Australia": 3
+    },
+    "relationships": {
+        "Juana": 80,
+        "Jules": 73,
+        "Ika": 86,
+        "Daniel": 88,
+        "Nadia Wilkes": 67
+    },
+    "person tags": {
+        "guardian": "Nadia Wilkes"
+    },
+    "trauma": 16,
+    "aspirations": {
+        "lifestyle": "lavish",
+        "income": "low",
+        "children": true,
+        "location": "Australia"
     }
 }

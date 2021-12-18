@@ -3,7 +3,7 @@ from random import random, randint, choice, seed, choices, uniform, shuffle
 from pprint import pprint
 from copy import copy
 
-from sources import traits, event_traits, adult_tags, guardians
+from sources import traits, event_traits, adult_tags, guardians, lifestyle, income
 from memories import Memory, ChildhoodMemories
 
 class Character:
@@ -175,9 +175,12 @@ class Character:
         
         self.modify_relationship(g_R, guardian_name)
         self.location = guardian['location']
+        self.lifestyle = guardian['lifestyle']
+        self.income_class = guardian['income_class']
         self.modify_country_affinity('Australia', int(g_R / 100 * 3))
 
     def teenage_years(self): 
+        # trauma
         t_years = 18 - self.age1945
         g_R = self.relationships[self.person_tags['guardian']]
         guardian_factor = int(-1 * g_R / 10)
@@ -185,6 +188,16 @@ class Character:
         new_trauma = self.trauma + guardian_factor * t_years
         new_trauma = int(0.1 * self.trauma) if new_trauma < 0 else new_trauma
         self.modify_trauma(new_trauma, True)
+
+        # aspirations
+        l_index = randint(lifestyle.index(self.lifestyle), len(lifestyle) - 1)
+        i_index = randint(income.index(self.income_class), len(income) -1)
+        self.aspirations = {
+            'lifestyle' : lifestyle[l_index], 
+            'income' : income[i_index], 
+            'children' : False if random() < self.trauma / 100 else True,
+            'location' : max(self.country_affinities, key=self.country_affinities.get)
+        }
 
     """
       OUTPUT FUNCTIONS
@@ -227,12 +240,16 @@ class Character:
             'age' : 18, 
             'known traits' : self.known_traits,
             'all traits' : self.my_traits,
+            'guardian' : self.guardian,
             'location' : self.location, 
+            'lifestyle' : self.lifestyle, 
+            'income class' : self.income_class, 
+            'boarding school' : self.guardian['provide_boarding_school'],
             'country affinities' : self.country_affinities, 
             "relationships" : self.relationships,
             'person tags' : self.person_tags, 
             'trauma' : self.trauma, 
-            'guardian' : self.guardian,
+            'aspirations' : self.aspirations, 
         }
         self.write_json(child, 'teenager')
 

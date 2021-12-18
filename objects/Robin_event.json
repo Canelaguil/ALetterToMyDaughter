@@ -9,16 +9,16 @@
     },
     "relationships": {
         "Juana": 80,
-        "Jules": 90,
-        "Ika": 72,
-        "Daniel": 62
+        "Jules": 73,
+        "Ika": 86,
+        "Daniel": 88
     },
-    "trauma": 47,
+    "trauma": 64,
     "reaction": {
         "age": 10,
-        "old_trauma": 10,
-        "trauma_modifier": 37,
-        "new_trauma": 47
+        "old_trauma": 19,
+        "trauma_modifier": 45,
+        "new_trauma": 64
     },
-    "crush": "Jules"
+    "crush": "Daniel"
 }

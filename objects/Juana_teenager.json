@@ -8,44 +8,54 @@
     "all traits": [
         "kind",
         "moody",
-        "selfish",
-        "exuberant",
-        "suspicious"
+        "hesitant",
+        "confident",
+        "upbeat"
     ],
-    "location": "Aaa",
-    "country affinities": {
-        "Netherlands": -1,
-        "Spain": -3,
-        "Australia": 2
-    },
-    "relationships": {
-        "Jules": 63,
-        "Ika": 55,
-        "Robin": 74,
-        "Kent Roberts": 59
-    },
-    "person tags": {
-        "guardian": "Kent Roberts"
-    },
-    "trauma": 59,
     "guardian": {
-        "name": "Kent",
-        "surname": "Roberts",
-        "age": 32,
-        "relation": "cousin",
-        "location": "Aaa",
+        "name": "Magda",
+        "surname": "Martin",
+        "age": 55,
+        "relation": "sister",
+        "location": "Ccc",
         "income_class": "medium",
-        "lifestyle": "average",
+        "lifestyle": "rich",
         "married": true,
-        "other_children": true,
-        "nurturing": true,
-        "provide_college": false,
-        "provide_women_college": false,
-        "provide_boarding_school": false,
-        "allowance": "small allowance",
+        "other_children": false,
+        "nurturing": false,
+        "provide_college": true,
+        "provide_women_college": true,
+        "provide_boarding_school": true,
+        "allowance": "no allowance",
         "capacity": 0,
         "ward": [
-            "Juana"
+            "Juana",
+            "Ika"
         ]
+    },
+    "location": "Ccc",
+    "lifestyle": "rich",
+    "income class": "medium",
+    "boarding school": true,
+    "country affinities": {
+        "Netherlands": 3,
+        "Spain": 0,
+        "Australia": -1
+    },
+    "relationships": {
+        "Jules": 73,
+        "Ika": 30,
+        "Robin": 80,
+        "Magda Martin": 0
+    },
+    "person tags": {
+        "guardian": "Magda Martin"
+    },
+    "trauma": 44,
+    "aspirations": {
+        "lifestyle": "rich",
+        "income": "very high",
+        "children": false,
+        "location": "Netherlands"
     }
 }
