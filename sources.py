@@ -66,11 +66,11 @@ allowance = [
     ]
 guardians = {
     1 : {
-        'name' : 'Kent', 
-        'surname' : 'Roberts', 
+        'name' : 'April', 
+        'surname' : 'Ryan', 
         'age' : 32,
         'relation' : 'cousin',
-        'location' : 'Aaa',
+        'location' : ('Port Macquarie', 'Australia'),
         'income_class' : income[2],
         'lifestyle' : lifestyle[2], 
         'married' : True,
@@ -84,11 +84,11 @@ guardians = {
         'ward' : []
     },
     2 : {
-        'name' : 'James', 
-        'surname' : 'Lee', 
+        'name' : 'Paul', 
+        'surname' : 'Carter', 
         'age' : 72,
         'relation' : 'uncle',
-        'location' : 'Bbb',
+        'location' : ('Yankalilla', 'Australia'),
         'income_class' : income[4],
         'lifestyle' : lifestyle[3], 
         'income_class' : 'high',
@@ -104,11 +104,11 @@ guardians = {
         'ward' : []
     },
     3 : {
-        'name' : 'Magda', 
-        'surname' : 'Martin', 
+        'name' : 'Diane', 
+        'surname' : 'Schwarze', 
         'age' : 55,
         'relation' : 'sister',
-        'location' : 'Ccc',
+        'location' : ('Geelong', 'Australia'),
         'income_class' : income[2],
         'lifestyle' : lifestyle[3], 
         'married' : True,
@@ -127,7 +127,7 @@ guardians = {
         'age' : 47,
         'age1940' : 42, 
         'relation' : 'governess',
-        'location' : 'Ddd',
+        'location' : ('Yealering', 'Australia'),
         'income_class' : income[1],
         'lifestyle' : lifestyle[1], 
         'married' : False,

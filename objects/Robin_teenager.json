@@ -1,5 +1,5 @@
 {
-    "name": "Robin Kuijper",
+    "name": "Robin Wilkes",
     "age": 18,
     "known traits": [],
     "all traits": [],
@@ -9,7 +9,10 @@
         "age": 47,
         "age1940": 42,
         "relation": "governess",
-        "location": "Ddd",
+        "location": [
+            "Yealering",
+            "Australia"
+        ],
         "income_class": "low",
         "lifestyle": "humble",
         "married": false,
@@ -22,7 +25,10 @@
         "capacity": 1,
         "ward": []
     },
-    "location": "Ddd",
+    "location": [
+        "Yealering",
+        "Australia"
+    ],
     "lifestyle": "humble",
     "income class": "low",
     "boarding school": false,
@@ -30,20 +36,22 @@
         "Netherlands": 2,
         "Australia": 3
     },
+    "sexuality": "straight",
     "relationships": {
-        "Juana": 92,
-        "Jules": 98,
-        "Ika": 75,
-        "Daniel": 90,
-        "Nadia Wilkes": 87
+        "Juana": 100,
+        "Jules": 83,
+        "Ika": 77,
+        "Daniel": 87,
+        "Nadia Wilkes": 69
     },
     "person tags": {
         "guardian": "Nadia Wilkes"
     },
-    "trauma": 8,
+    "trauma": 21,
+    "happinness": 80,
     "aspirations": {
-        "lifestyle": "rich",
-        "income": "low",
+        "lifestyle": "lavish",
+        "income": "very high",
         "children": true,
         "location": "Australia",
         "college": false

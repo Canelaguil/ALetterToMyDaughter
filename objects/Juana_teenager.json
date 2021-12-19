@@ -8,54 +8,62 @@
     "all traits": [
         "kind",
         "moody",
-        "straight-laced",
-        "naive",
-        "sensitive"
+        "altruistic",
+        "upbeat",
+        "intelligent"
     ],
     "guardian": {
-        "name": "Kent",
-        "surname": "Roberts",
-        "age": 32,
-        "relation": "cousin",
-        "location": "Aaa",
-        "income_class": "medium",
-        "lifestyle": "average",
-        "married": true,
-        "other_children": true,
+        "name": "Paul",
+        "surname": "Carter",
+        "age": 72,
+        "relation": "uncle",
+        "location": [
+            "Yankalilla",
+            "Australia"
+        ],
+        "income_class": "high",
+        "lifestyle": "lavish",
+        "married": false,
+        "other_children": false,
         "nurturing": true,
-        "provide_college": false,
+        "provide_college": true,
         "provide_women_college": false,
         "provide_boarding_school": false,
-        "allowance": "small allowance",
+        "allowance": "big allowance",
         "capacity": 0,
         "ward": [
             "Juana"
         ]
     },
-    "location": "Aaa",
-    "lifestyle": "average",
-    "income class": "medium",
+    "location": [
+        "Yankalilla",
+        "Australia"
+    ],
+    "lifestyle": "lavish",
+    "income class": "high",
     "boarding school": false,
     "country affinities": {
-        "Netherlands": 2,
-        "Spain": -3,
-        "Australia": -1
+        "Netherlands": -2,
+        "Spain": 3,
+        "Australia": 3
     },
+    "sexuality": "bisexual",
     "relationships": {
-        "Jules": 56,
-        "Ika": 52,
-        "Robin": 66,
-        "Kent Roberts": 92
+        "Jules": 76,
+        "Ika": 67,
+        "Robin": 59,
+        "Paul Carter": 77
     },
     "person tags": {
-        "guardian": "Kent Roberts"
+        "guardian": "Paul Carter"
     },
-    "trauma": 30,
+    "trauma": 39,
+    "happinness": 80,
     "aspirations": {
-        "lifestyle": "rich",
-        "income": "high",
+        "lifestyle": "lavish",
+        "income": "very high",
         "children": false,
-        "location": "Netherlands",
+        "location": "Spain",
         "college": true
     }
 }

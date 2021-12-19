@@ -3,22 +3,18 @@
     "age at event": 10,
     "known traits": [],
     "all traits": [],
-    "country affinities": {
-        "Netherlands": 2,
-        "Australia": 3
-    },
     "relationships": {
-        "Juana": 92,
-        "Jules": 98,
-        "Ika": 75,
-        "Daniel": 90
+        "Juana": 100,
+        "Jules": 83,
+        "Ika": 77,
+        "Daniel": 87
     },
-    "trauma": 72,
+    "trauma": 69,
     "reaction": {
         "age": 10,
-        "old_trauma": 19,
-        "trauma_modifier": 53,
-        "new_trauma": 72
+        "old_trauma": 13,
+        "trauma_modifier": 56,
+        "new_trauma": 69
     },
-    "crush": "Jules"
+    "crush": "Juana"
 }

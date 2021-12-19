@@ -19,6 +19,8 @@ class Character:
         }
         self.childhood_memories = {}
         self.crush = None
+        self.sexuality = 'bisexual'
+        self.happiness = 80
 
     def set_up(self):
         # Get traits
@@ -179,6 +181,10 @@ class Character:
         self.income_class = guardian['income_class']
         self.modify_country_affinity('Australia', int(g_R / 100 * 3))
 
+        # change surname
+        if random() < g_R / 100: 
+            self.surname = guardian['surname']
+
     def teenage_years(self): 
         # trauma
         t_years = 18 - self.age1945
@@ -232,7 +238,6 @@ class Character:
             'age at event' : self.age1945, 
             'known traits' : self.known_traits,
             'all traits' : self.my_traits,
-            'country affinities' : self.country_affinities, 
             "relationships" : self.relationships,
             'trauma' : self.trauma, 
             'reaction' : self.reaction,
@@ -252,9 +257,11 @@ class Character:
             'income class' : self.income_class, 
             'boarding school' : self.guardian['provide_boarding_school'],
             'country affinities' : self.country_affinities, 
+            'sexuality' : self.sexuality,
             "relationships" : self.relationships,
             'person tags' : self.person_tags, 
             'trauma' : self.trauma, 
+            'happinness' : self.happiness, 
             'aspirations' : self.aspirations, 
         }
         self.write_json(child, 'teenager')

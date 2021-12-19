@@ -8,54 +8,62 @@
     "all traits": [
         "brave",
         "outgoing",
-        "naive",
-        "impulsive",
-        "straight-laced"
+        "dull",
+        "cheeky",
+        "calm"
     ],
     "guardian": {
-        "name": "James",
-        "surname": "Lee",
-        "age": 72,
-        "relation": "uncle",
-        "location": "Bbb",
-        "income_class": "high",
-        "lifestyle": "lavish",
-        "married": false,
+        "name": "Diane",
+        "surname": "Schwarze",
+        "age": 55,
+        "relation": "sister",
+        "location": [
+            "Geelong",
+            "Australia"
+        ],
+        "income_class": "medium",
+        "lifestyle": "rich",
+        "married": true,
         "other_children": false,
-        "nurturing": true,
+        "nurturing": false,
         "provide_college": true,
-        "provide_women_college": false,
-        "provide_boarding_school": false,
-        "allowance": "big allowance",
-        "capacity": 0,
+        "provide_women_college": true,
+        "provide_boarding_school": true,
+        "allowance": "no allowance",
+        "capacity": 1,
         "ward": [
             "Ika"
         ]
     },
-    "location": "Bbb",
-    "lifestyle": "lavish",
-    "income class": "high",
-    "boarding school": false,
+    "location": [
+        "Geelong",
+        "Australia"
+    ],
+    "lifestyle": "rich",
+    "income class": "medium",
+    "boarding school": true,
     "country affinities": {
-        "Netherlands": -2,
+        "Netherlands": 0,
         "Indonesia": 1,
-        "Australia": 0
+        "Australia": -3
     },
+    "sexuality": "bisexual",
     "relationships": {
-        "Juana": 91,
-        "Jules": 63,
-        "Robin": 96,
-        "James Lee": 51
+        "Juana": 52,
+        "Jules": 36,
+        "Robin": 58,
+        "Diane Schwarze": 9
     },
     "person tags": {
-        "guardian": "James Lee"
+        "guardian": "Diane Schwarze"
     },
-    "trauma": 13,
+    "trauma": 29,
+    "happinness": 80,
     "aspirations": {
         "lifestyle": "lavish",
-        "income": "very high",
-        "children": true,
+        "income": "medium",
+        "children": false,
         "location": "Indonesia",
-        "college": false
+        "college": true
     }
 }

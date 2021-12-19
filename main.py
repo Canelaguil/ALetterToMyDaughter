@@ -178,7 +178,20 @@ class Controller:
 
     def teenage_progress(self):
         for c in self.cs.values(): 
-            c.teenage_years()        
+            c.teenage_years()       
+
+            # give sexuality
+            if c.crush:
+                other_sex = self.cs[c.crush].sex if c.crush != 'Daniel' else 'm'
+                if other_sex == c.sex:
+                    c.sexuality = choices(['bisexual', 'gay'], weights=[1, 3])[0]
+                else: 
+                    c.sexuality = choices(['bisexual', 'straight'], weights=[1, 3])[0]
+            else:
+                c.sexuality = choices(['bisexual', 'straight', 'gay'])[0]
+
+            if c.name == 'Robin':
+                c.sexuality == 'bisexual'
             c.output_teenager()
 
     def start_adulthood(self):
