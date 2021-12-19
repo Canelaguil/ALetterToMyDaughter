@@ -7,6 +7,7 @@ traits = [
     ('quirky', 'straight-laced'),
     ('egocentric', 'humble'), 
     ('creative', 'dull'),
+    ('ambitious', 'unambitious'),
     ('moral', 'immoral'),
     ('relaxed', 'uptight'),
     ('impulsive', 'hesitant'),

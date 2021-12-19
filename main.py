@@ -102,7 +102,7 @@ class Controller:
         for c in self.cs.values():
             for r in self.cs.values():
                 if r.name != c.name:
-                    if r.age1940 in range(c.age1940 - 1, c.age1940 + 4):
+                    if r.age1940 in range(c.age1940 - 1, c.age1940 + 5):
                         chance = (c.relationships[r.name] / 100 + 1) * 0.3
                         if random() < chance:
                             c.give_crush(r.name)

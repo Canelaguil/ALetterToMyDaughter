@@ -8,54 +8,54 @@
     "all traits": [
         "kind",
         "moody",
-        "hesitant",
-        "confident",
-        "upbeat"
+        "straight-laced",
+        "naive",
+        "sensitive"
     ],
     "guardian": {
-        "name": "Magda",
-        "surname": "Martin",
-        "age": 55,
-        "relation": "sister",
-        "location": "Ccc",
+        "name": "Kent",
+        "surname": "Roberts",
+        "age": 32,
+        "relation": "cousin",
+        "location": "Aaa",
         "income_class": "medium",
-        "lifestyle": "rich",
+        "lifestyle": "average",
         "married": true,
-        "other_children": false,
-        "nurturing": false,
-        "provide_college": true,
-        "provide_women_college": true,
-        "provide_boarding_school": true,
-        "allowance": "no allowance",
+        "other_children": true,
+        "nurturing": true,
+        "provide_college": false,
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "small allowance",
         "capacity": 0,
         "ward": [
-            "Juana",
-            "Ika"
+            "Juana"
         ]
     },
-    "location": "Ccc",
-    "lifestyle": "rich",
+    "location": "Aaa",
+    "lifestyle": "average",
     "income class": "medium",
-    "boarding school": true,
+    "boarding school": false,
     "country affinities": {
-        "Netherlands": 3,
-        "Spain": 0,
+        "Netherlands": 2,
+        "Spain": -3,
         "Australia": -1
     },
     "relationships": {
-        "Jules": 73,
-        "Ika": 30,
-        "Robin": 80,
-        "Magda Martin": 0
+        "Jules": 56,
+        "Ika": 52,
+        "Robin": 66,
+        "Kent Roberts": 92
     },
     "person tags": {
-        "guardian": "Magda Martin"
+        "guardian": "Kent Roberts"
     },
-    "trauma": 44,
+    "trauma": 30,
     "aspirations": {
         "lifestyle": "rich",
-        "income": "very high",
+        "income": "high",
         "children": false,
-        "location": "Netherlands"
+        "location": "Netherlands",
+        "college": true
     }
 }

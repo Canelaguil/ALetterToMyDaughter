@@ -8,37 +8,37 @@
     "all traits": [
         "impulsive",
         "creative",
-        "organised",
-        "stoic",
-        "pessimistic"
+        "exuberant",
+        "rebellious",
+        "naive"
     ],
     "country affinities": {
         "Netherlands": -2,
-        "Belgium": 2,
+        "Belgium": -2,
         "Australia": 1
     },
     "relationships": {
         "Juana": 100,
-        "Ika": 52,
-        "Robin": 47
+        "Ika": 64,
+        "Robin": 70
     },
-    "trauma": 60,
+    "trauma": 86,
     "reaction": {
         "age": 14,
-        "guilt": 11,
+        "guilt": 77,
         "trauma": {
-            "old_trauma": 53,
-            "trauma_modifier": 7.745527729179723,
-            "new_trauma": 60
+            "old_trauma": 42,
+            "trauma_modifier": 44.57210071131135,
+            "new_trauma": 86
         },
         "relationships": {
             "Juana": {
-                "old_R": 98,
+                "old_R": 100,
                 "new_R": 100
             },
             "Ika": {
-                "old_R": 64,
-                "new_R": 52
+                "old_R": 62,
+                "new_R": 64
             }
         }
     },

@@ -8,17 +8,17 @@
         "Australia": 3
     },
     "relationships": {
-        "Juana": 80,
-        "Jules": 73,
-        "Ika": 86,
-        "Daniel": 88
+        "Juana": 92,
+        "Jules": 98,
+        "Ika": 75,
+        "Daniel": 90
     },
-    "trauma": 64,
+    "trauma": 72,
     "reaction": {
         "age": 10,
         "old_trauma": 19,
-        "trauma_modifier": 45,
-        "new_trauma": 64
+        "trauma_modifier": 53,
+        "new_trauma": 72
     },
-    "crush": "Daniel"
+    "crush": "Jules"
 }

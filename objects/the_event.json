@@ -1,77 +1,75 @@
 {
-  "cause": "Daniel was mean to Robin",
-  "fighter": "Juana",
-  "pusher": "Ika",
+  "cause": "Daniel is too bossy",
+  "fighter": "Ika",
+  "pusher": "Jules",
   "involved": [
-    "Juana",
-    "Ika"
-  ],
-  "not_involved": [
+    "Ika",
     "Jules"
   ],
+  "not_involved": [],
   "reactions": {
     "Juana": {
       "age": 14,
-      "guilt": 93,
+      "guilt": 47,
       "trauma": {
-        "old_trauma": 19,
-        "trauma_modifier": 37.45825070429774,
-        "new_trauma": 56
+        "old_trauma": 37,
+        "trauma_modifier": 29.39649430824731,
+        "new_trauma": 66
       },
       "relationships": {
         "Jules": {
-          "old_R": 89,
-          "new_R": 73
+          "old_R": 56,
+          "new_R": 56
         },
         "Ika": {
-          "old_R": 47,
-          "new_R": 30
+          "old_R": 50,
+          "new_R": 52
         }
       }
     },
     "Jules": {
       "age": 14,
-      "guilt": 11,
+      "guilt": 77,
       "trauma": {
-        "old_trauma": 53,
-        "trauma_modifier": 7.745527729179723,
-        "new_trauma": 60
+        "old_trauma": 42,
+        "trauma_modifier": 44.57210071131135,
+        "new_trauma": 86
       },
       "relationships": {
         "Juana": {
-          "old_R": 98,
+          "old_R": 100,
           "new_R": 100
         },
         "Ika": {
-          "old_R": 64,
-          "new_R": 52
+          "old_R": 62,
+          "new_R": 64
         }
       }
     },
     "Ika": {
       "age": 13,
-      "guilt": 99,
+      "guilt": 57,
       "trauma": {
         "old_trauma": 9,
-        "trauma_modifier": 51.26623224151378,
-        "new_trauma": 60
+        "trauma_modifier": 29.514669806698596,
+        "new_trauma": 38
       },
       "relationships": {
         "Juana": {
-          "old_R": 100,
-          "new_R": 95
+          "old_R": 71,
+          "new_R": 91
         },
         "Jules": {
-          "old_R": 56,
-          "new_R": 73
+          "old_R": 65,
+          "new_R": 63
         }
       }
     },
     "Robin": {
       "age": 10,
       "old_trauma": 19,
-      "trauma_modifier": 45,
-      "new_trauma": 64
+      "trauma_modifier": 53,
+      "new_trauma": 72
     }
   }
 }

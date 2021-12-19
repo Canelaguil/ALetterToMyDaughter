@@ -31,20 +31,21 @@
         "Australia": 3
     },
     "relationships": {
-        "Juana": 80,
-        "Jules": 73,
-        "Ika": 86,
-        "Daniel": 88,
-        "Nadia Wilkes": 67
+        "Juana": 92,
+        "Jules": 98,
+        "Ika": 75,
+        "Daniel": 90,
+        "Nadia Wilkes": 87
     },
     "person tags": {
         "guardian": "Nadia Wilkes"
     },
-    "trauma": 16,
+    "trauma": 8,
     "aspirations": {
-        "lifestyle": "lavish",
+        "lifestyle": "rich",
         "income": "low",
         "children": true,
-        "location": "Australia"
+        "location": "Australia",
+        "college": false
     }
 }
