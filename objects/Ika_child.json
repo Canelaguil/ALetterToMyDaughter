@@ -8,138 +8,179 @@
     "all traits": [
         "brave",
         "outgoing",
-        "dull",
-        "cheeky",
-        "calm"
+        "jealous",
+        "stoic",
+        "optimistic"
     ],
     "country affinities": {
-        "Netherlands": 0,
-        "Indonesia": 1,
-        "Australia": -3
+        "Netherlands": 3,
+        "Indonesia": 0,
+        "Australia": 3
     },
     "relationships": {
-        "Juana": 60,
-        "Jules": 60,
-        "Robin": 58,
-        "Daniel": 57
+        "Juana": 75,
+        "Jules": 61,
+        "Robin": 50,
+        "Daniel": 78
     },
     "memory": {
-        "Daniel": {
+        "Juana": {
             "crush": {
-                "description": "I had a crush on Daniel",
+                "description": "I had a crush on Juana",
                 "category": "childhood",
                 "keyword": "crush",
                 "people": [
                     "Ika",
-                    "Daniel"
+                    "Juana"
                 ],
                 "memory_relation_impact": "positive"
             },
+            "sex talk": {
+                "description": "Robin informed Juana and Daniel that sex involves two naked people",
+                "category": "childhood",
+                "keyword": "sex talk",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "memory_relation_impact": "neutral"
+            },
+            "idolized general": {
+                "description": "Juana idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
+                "people": [
+                    "Juana"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
             "room sharing": {
-                "description": "Daniel shared a room with Robin for a while",
+                "description": "I shared a room with Juana for a while",
                 "category": "childhood",
                 "keyword": "room sharing",
                 "people": [
-                    "Robin",
-                    "Daniel"
+                    "Juana",
+                    "Ika"
                 ],
                 "ch_decrease": "[]",
                 "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
-            "listen to radio about war": {
-                "description": "Daniel and I listened to the radio in secret to keep track of the war",
-                "category": "childhood",
-                "keyword": "listen to radio about war",
-                "people": [
-                    "Daniel",
-                    "Ika"
-                ],
-                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
-                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
                 "memory_relation_impact": "neutral"
             }
         },
         "Robin": {
+            "sex talk": {
+                "description": "Robin informed Juana and Daniel that sex involves two naked people",
+                "category": "childhood",
+                "keyword": "sex talk",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "memory_relation_impact": "neutral"
+            },
+            "scaring": {
+                "description": "Robin once hid under Jules's bed and jumped out in the middle of the night, scaring not only Daniel but everyone",
+                "category": "childhood",
+                "keyword": "scaring",
+                "people": [
+                    "Robin",
+                    "Jules",
+                    "Daniel"
+                ],
+                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
+                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Daniel": {
+            "sex talk": {
+                "description": "Robin informed Juana and Daniel that sex involves two naked people",
+                "category": "childhood",
+                "keyword": "sex talk",
+                "people": [
+                    "Robin",
+                    "Daniel",
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "memory_relation_impact": "neutral"
+            },
+            "new games": {
+                "description": "Daniel would often come up with new games ",
+                "category": "childhood",
+                "keyword": "new games",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
+                "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
+                "memory_relation_impact": "neutral"
+            },
+            "scaring": {
+                "description": "Robin once hid under Jules's bed and jumped out in the middle of the night, scaring not only Daniel but everyone",
+                "category": "childhood",
+                "keyword": "scaring",
+                "people": [
+                    "Robin",
+                    "Jules",
+                    "Daniel"
+                ],
+                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
+                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Jules": {
+            "greek mythology": {
+                "description": "Jules was obsessed with greek mythology for a while",
+                "category": "childhood",
+                "keyword": "greek mythology",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'practical']",
+                "ch_increase": "['curious', 'daydreamer']",
+                "memory_relation_impact": "neutral"
+            },
+            "scaring": {
+                "description": "Robin once hid under Jules's bed and jumped out in the middle of the night, scaring not only Daniel but everyone",
+                "category": "childhood",
+                "keyword": "scaring",
+                "people": [
+                    "Robin",
+                    "Jules",
+                    "Daniel"
+                ],
+                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
+                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "myself": {
             "room sharing": {
-                "description": "Daniel shared a room with Robin for a while",
+                "description": "I shared a room with Juana for a while",
                 "category": "childhood",
                 "keyword": "room sharing",
                 "people": [
-                    "Robin",
-                    "Daniel"
+                    "Juana",
+                    "Ika"
                 ],
                 "ch_decrease": "[]",
                 "ch_increase": "[]",
                 "memory_relation_impact": "neutral"
             }
-        },
-        "myself": {
-            "listen to radio about war": {
-                "description": "Daniel and I listened to the radio in secret to keep track of the war",
-                "category": "childhood",
-                "keyword": "listen to radio about war",
-                "people": [
-                    "Daniel",
-                    "Ika"
-                ],
-                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
-                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
-                "memory_relation_impact": "neutral"
-            },
-            "new games": {
-                "description": "I would often come up with new games ",
-                "category": "childhood",
-                "keyword": "new games",
-                "people": [
-                    "Ika"
-                ],
-                "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
-                "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
-                "memory_relation_impact": "neutral"
-            }
-        },
-        "Juana": {
-            "pretending to be sick": {
-                "description": "Juana once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",
-                "category": "childhood",
-                "keyword": "pretending to be sick",
-                "people": [
-                    "Juana"
-                ],
-                "ch_decrease": "['obedient', 'moral', 'shy']",
-                "ch_increase": "['rebellious', 'creative', 'immoral']",
-                "memory_relation_impact": "neutral"
-            },
-            "learning to cycle": {
-                "description": "Jules taught Juana how to cycle",
-                "category": "childhood",
-                "keyword": "learning to cycle",
-                "people": [
-                    "Jules",
-                    "Juana"
-                ],
-                "ch_decrease": "['disinterested',  'clumsy', 'critical', 'disorganised', 'shy', 'mean', 'selfish']",
-                "ch_increase": "['athletlic', 'calm', 'tolerant', 'optimistic', 'kind', 'practical', 'altruistic', 'athletic']",
-                "memory_relation_impact": "positive"
-            }
-        },
-        "Jules": {
-            "learning to cycle": {
-                "description": "Jules taught Juana how to cycle",
-                "category": "childhood",
-                "keyword": "learning to cycle",
-                "people": [
-                    "Jules",
-                    "Juana"
-                ],
-                "ch_decrease": "['disinterested',  'clumsy', 'critical', 'disorganised', 'shy', 'mean', 'selfish']",
-                "ch_increase": "['athletlic', 'calm', 'tolerant', 'optimistic', 'kind', 'practical', 'altruistic', 'athletic']",
-                "memory_relation_impact": "positive"
-            }
         }
     },
     "backstory": "My mother was Dutch, but she was as un-Dutch as one can be. People there love to say just act normal, that's strange enough, but normal was never strange enough for her. Just imagine: this good protestant girl from Veenendaal running away to Amsterdam: she was barely 15. And yet she survived. Became a bartender, took odd jobs wherever she could, and when my father was forced to go back to Indonesia she raised me on her own. When the war loomed on the horizon she became too involved in her political causes to look after me. I was 8 when she send me away.",
-    "trauma": 3,
-    "crush": "Daniel"
+    "trauma": 17,
+    "crush": "Juana"
 }

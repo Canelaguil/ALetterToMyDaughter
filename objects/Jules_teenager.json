@@ -1,5 +1,5 @@
 {
-    "name": "Jules Cohen",
+    "name": "Jules Ryan",
     "age": 18,
     "known traits": [
         "impulsive",
@@ -8,9 +8,9 @@
     "all traits": [
         "impulsive",
         "creative",
-        "ambitious",
-        "jealous",
-        "obedient"
+        "clumsy",
+        "upbeat",
+        "disinterested"
     ],
     "guardian": {
         "name": "April",
@@ -43,27 +43,27 @@
     "income class": "medium",
     "boarding school": false,
     "country affinities": {
-        "Netherlands": -3,
-        "Belgium": 0,
-        "Australia": 3
+        "Netherlands": -1,
+        "Belgium": 2,
+        "Australia": -1
     },
-    "sexuality": "gay",
+    "sexuality": "bisexual",
     "relationships": {
-        "Juana": 64,
-        "Ika": 74,
-        "Robin": 91,
-        "April Ryan": 39
+        "Juana": 59,
+        "Ika": 57,
+        "Robin": 52,
+        "April Ryan": 70
     },
     "person tags": {
         "guardian": "April Ryan"
     },
-    "trauma": 88,
+    "trauma": 72,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "lavish",
-        "income": "high",
+        "lifestyle": "rich",
+        "income": "medium",
         "children": false,
-        "location": "Australia",
-        "college": true
+        "location": "Belgium",
+        "college": false
     }
 }

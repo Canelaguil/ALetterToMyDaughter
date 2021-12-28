@@ -196,5 +196,7 @@ class Controller:
 
     def start_adulthood(self):
         self.cs.pop('Robin')
+        for ch in self.cs.values():
+            ch.become_adult()
 
 Controller()

@@ -8,62 +8,62 @@
     "all traits": [
         "kind",
         "moody",
-        "altruistic",
-        "upbeat",
-        "intelligent"
+        "stoic",
+        "athletic",
+        "pessimistic"
     ],
     "guardian": {
-        "name": "Paul",
-        "surname": "Carter",
-        "age": 72,
-        "relation": "uncle",
+        "name": "Diane",
+        "surname": "Schwarze",
+        "age": 55,
+        "relation": "sister",
         "location": [
-            "Yankalilla",
+            "Geelong",
             "Australia"
         ],
-        "income_class": "high",
-        "lifestyle": "lavish",
-        "married": false,
+        "income_class": "medium",
+        "lifestyle": "rich",
+        "married": true,
         "other_children": false,
-        "nurturing": true,
+        "nurturing": false,
         "provide_college": true,
-        "provide_women_college": false,
-        "provide_boarding_school": false,
-        "allowance": "big allowance",
-        "capacity": 0,
+        "provide_women_college": true,
+        "provide_boarding_school": true,
+        "allowance": "no allowance",
+        "capacity": 1,
         "ward": [
             "Juana"
         ]
     },
     "location": [
-        "Yankalilla",
+        "Geelong",
         "Australia"
     ],
-    "lifestyle": "lavish",
-    "income class": "high",
-    "boarding school": false,
+    "lifestyle": "rich",
+    "income class": "medium",
+    "boarding school": true,
     "country affinities": {
-        "Netherlands": -2,
+        "Netherlands": -1,
         "Spain": 3,
-        "Australia": 3
+        "Australia": -3
     },
-    "sexuality": "bisexual",
+    "sexuality": "straight",
     "relationships": {
-        "Jules": 76,
-        "Ika": 67,
-        "Robin": 59,
-        "Paul Carter": 77
+        "Jules": 100,
+        "Ika": 63,
+        "Robin": 57,
+        "Diane Schwarze": 5
     },
     "person tags": {
-        "guardian": "Paul Carter"
+        "guardian": "Diane Schwarze"
     },
-    "trauma": 39,
+    "trauma": 68,
     "happinness": 80,
     "aspirations": {
         "lifestyle": "lavish",
-        "income": "very high",
+        "income": "high",
         "children": false,
         "location": "Spain",
-        "college": true
+        "college": false
     }
 }

@@ -8,62 +8,62 @@
     "all traits": [
         "brave",
         "outgoing",
-        "dull",
-        "cheeky",
-        "calm"
+        "jealous",
+        "stoic",
+        "optimistic"
     ],
     "guardian": {
-        "name": "Diane",
-        "surname": "Schwarze",
-        "age": 55,
-        "relation": "sister",
+        "name": "Paul",
+        "surname": "Carter",
+        "age": 72,
+        "relation": "uncle",
         "location": [
-            "Geelong",
+            "Yankalilla",
             "Australia"
         ],
-        "income_class": "medium",
-        "lifestyle": "rich",
-        "married": true,
+        "income_class": "high",
+        "lifestyle": "lavish",
+        "married": false,
         "other_children": false,
-        "nurturing": false,
+        "nurturing": true,
         "provide_college": true,
-        "provide_women_college": true,
-        "provide_boarding_school": true,
-        "allowance": "no allowance",
-        "capacity": 1,
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "big allowance",
+        "capacity": 0,
         "ward": [
             "Ika"
         ]
     },
     "location": [
-        "Geelong",
+        "Yankalilla",
         "Australia"
     ],
-    "lifestyle": "rich",
-    "income class": "medium",
-    "boarding school": true,
+    "lifestyle": "lavish",
+    "income class": "high",
+    "boarding school": false,
     "country affinities": {
-        "Netherlands": 0,
-        "Indonesia": 1,
-        "Australia": -3
+        "Netherlands": 3,
+        "Indonesia": 0,
+        "Australia": 3
     },
-    "sexuality": "bisexual",
+    "sexuality": "gay",
     "relationships": {
-        "Juana": 52,
-        "Jules": 36,
-        "Robin": 58,
-        "Diane Schwarze": 9
+        "Juana": 58,
+        "Jules": 71,
+        "Robin": 50,
+        "Paul Carter": 43
     },
     "person tags": {
-        "guardian": "Diane Schwarze"
+        "guardian": "Paul Carter"
     },
-    "trauma": 29,
+    "trauma": 28,
     "happinness": 80,
     "aspirations": {
         "lifestyle": "lavish",
-        "income": "medium",
-        "children": false,
-        "location": "Indonesia",
+        "income": "high",
+        "children": true,
+        "location": "Netherlands",
         "college": true
     }
 }

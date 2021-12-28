@@ -2,6 +2,7 @@ import json
 from random import random, randint, choice, seed, choices, uniform, shuffle
 from pprint import pprint
 from copy import copy
+from lifestates import RomanceLife
 
 from sources import traits, event_traits, adult_tags, guardians, lifestyle, income
 from memories import Memory, ChildhoodMemories
@@ -87,6 +88,15 @@ class Character:
     def become_adult(self):
         self.tags = copy(adult_tags)
         self.age = 18
+        self.romance_life = RomanceLife(self.sexuality, self.sex, self.year)
+        self.adult_years()
+
+    def adult_years(self):
+        while self.year < 1966: 
+            self.romance_life.transition()
+            self.year += 1
+        print(self.name)
+        pprint(self.romance_life.get_log())
 
     """
       CHECK CHARACTER 
@@ -210,6 +220,7 @@ class Character:
             'location' : max(self.country_affinities, key=self.country_affinities.get),
             'college' : True if random() < c_chance else False
         }
+        self.year = 1945 + t_years
 
     """
       OUTPUT FUNCTIONS
