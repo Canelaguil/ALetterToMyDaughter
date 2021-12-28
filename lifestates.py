@@ -38,6 +38,7 @@ class RomanceLife:
     def __init__(self, sexuality, sex, year, country='Australia') -> None:
         self.state = 'single'
         self.year = year
+        self.age = 18
         self.country = country
         self.log = {}
         self.sexuality = sexuality
@@ -67,6 +68,7 @@ class RomanceLife:
         elif self.state == 'cheating': 
             self.cheating()
         self.year += 1
+        self.age += 1
 
     def find_partner(self):
         if self.sex == 'f':
@@ -91,7 +93,7 @@ class RomanceLife:
                     return Person(self.country, 'm')
 
     def single(self):
-        if random() < 0.35:
+        if random() < 0.4:
             self.state = 'in love'
             self.primary_partner = self.find_partner()
             self.log_change()
@@ -103,7 +105,7 @@ class RomanceLife:
                 self.state = 'engaged'
                 self.is_engaged = True
                 self.log_change()
-            elif random() < 0.3: 
+            elif random() < 0.4: 
                 self.state = 'single'
                 self.primary_partner = None 
                 self.log_change()
@@ -113,7 +115,7 @@ class RomanceLife:
                 self.state = 'partnership'
                 self.partnership = True
                 self.log_change()
-            elif random() < 0.3: 
+            elif random() < 0.4: 
                 self.state = 'single'
                 self.primary_partner = None 
                 self.log_change()
@@ -192,11 +194,38 @@ class RomanceLife:
         else: 
             prim = ''
 
-        self.log[self.year] = f'{self.state} {prim}{sec}'
+        self.log[self.year] = f'{self.state}, age {self.age} {prim}{sec}'
 
     def get_log(self):
         return self.log
 
-class ProffesionalLife: 
-    def __init__(self) -> None:
-        self.state = ''
+class ProfessionalLife: 
+    def __init__(self, year, aspirations, guardian, location) -> None:
+        self.year = year
+        self.guardian = guardian
+        self.aspirations = aspirations
+        self.location = location
+        self.state = 'start'
+
+    def transition(self):
+        if self.state == 'unemployed':
+            self.unemployed()
+        elif self.state == 'start':
+            self.start()
+        elif self.state == 'student':
+            self.student()
+        elif self.state == 'low job':
+            self.low_job()
+        elif self.state == 'medium job':
+            self.medium_job()
+        elif self.state == 'high job':
+            self.high_job()
+        self.year += 1
+
+    def start(self):
+        self.lifestyle = self.guardian['lifestyle']
+        self.income_class = self.guardian['income_class']
+        self.location = self.guardian['location']
+
+        
+        

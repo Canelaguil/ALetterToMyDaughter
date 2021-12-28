@@ -58,6 +58,10 @@ adult_tags = {
     'paranoid' : False
 }
 
+"""
+GUARDIANS & LIFESTYLE
+"""
+
 lifestyle = ['pauper', 'humble', 'average', 'rich', 'lavish' ]
 income = ['very low', 'low', 'medium', 'high', 'very high']
 allowance = [
@@ -70,7 +74,7 @@ guardians = {
         'surname' : 'Ryan', 
         'age' : 32,
         'relation' : 'cousin',
-        'location' : ('Port Macquarie', 'Australia'),
+        'location' : ('Port Macquarie', 'New South Wales', 'Australia', 'town'),
         'income_class' : income[2],
         'lifestyle' : lifestyle[2], 
         'married' : True,
@@ -88,7 +92,7 @@ guardians = {
         'surname' : 'Carter', 
         'age' : 72,
         'relation' : 'uncle',
-        'location' : ('Yankalilla', 'Australia'),
+        'location' : ('Yankalilla', 'South Australia', 'Australia', 'town'),
         'income_class' : income[4],
         'lifestyle' : lifestyle[3], 
         'income_class' : 'high',
@@ -108,7 +112,7 @@ guardians = {
         'surname' : 'Schwarze', 
         'age' : 55,
         'relation' : 'sister',
-        'location' : ('Geelong', 'Australia'),
+        'location' : ('Geelong', 'Victoria', 'Australia', 'town'),
         'income_class' : income[2],
         'lifestyle' : lifestyle[3], 
         'married' : True,
@@ -127,7 +131,7 @@ guardians = {
         'age' : 47,
         'age1940' : 42, 
         'relation' : 'governess',
-        'location' : ('Yealering', 'Australia'),
+        'location' : ('Yealering', 'Western Australia', 'Australia', 'town'),
         'income_class' : income[1],
         'lifestyle' : lifestyle[1], 
         'married' : False,
@@ -142,9 +146,31 @@ guardians = {
     }
 }
 
-fem_first_en = ['Linda', 'Mary', 'Patricia', 'Susan', 'Barbara', 'Nancy', 'Deborah', 'Dawn', 'Cathleen', 'Catherine', 'Danielle']
-male_first_en = ['Robert', 'Michael', 'John', 'David', 'Richard', 'Thomas', 'Mark', 'James', 'William', 'Charles', 'Steven', 'George']
+"""
+NAMES
+"""
+
+fem_first_en = ['Linda', 'Mary', 'Patricia', 'Susan', 'Barbara', 'Nancy', 'Deborah', 'Dawn', 'Cathleen', 'Catherine', 'Danielle', 'Karin', 'Ingrid', 'Helga', 'Renate', 'Elke', 'Ursula', 'Erika', 'Christa', 'Gisela', 'Monika', 'Hannelore', 'Inge', 'Christel', 'Rosemarie', 'Ingeborg', 'Brigitte', 'Bärbel', 'Waltraud', 'Jutta', 'Ute', 'Mary', 'Linda', 'Barbara', 'Patricia', 'Carol', 'Sandra', 'Nancy', 'Sharon', 'Judith', 'Susan', 'Betty', 'Carolyn', 'Margaret', 'Shirley', 'Judy', 'Karen', 'Donna', 'Kathleen', 'Joyce', 'Dorothy', 'Janet', 'Diane', 'Janice', 'Joan', 'Elizabeth', 'Brenda', 'Gloria', 'Virginia', 'Marilyn', 'Martha', 'Beverly', 'Helen', 'Bonnie', 'Ruth', 'Frances', 'Jean', 'Ann', 'Phyllis', 'Pamela', 'Jane', 'Alice', 'Peggy', 'Cheryl', 'Doris', 'Catherine', 'Elaine', 'Cynthia', 'Marie', 'Lois', 'Connie']
+male_first_en = ['Robert', 'Michael', 'John', 'David', 'Richard', 'Thomas', 'Mark', 'James', 'William', 'Charles', 'Steven', 'George', 'Peter', 'Klaus', 'Hans', 'Jürgen', 'Dieter', 'Günter', 'Horst', 'Manfred', 'Uwe', 'Wolfgang', 'Carl', 'Werner', 'Rolf', 'Heinz', 'Gerhard', 'Helmut', 'Gerd', 'Bernd', 'Walter', 'Harald', 'James', 'Robert', 'John', 'William', 'Richard', 'David', 'Charles', 'Thomas', 'Michael', 'Ronald', 'Larry', 'Donald', 'Joseph', 'Gary', 'George', 'Kenneth', 'Paul', 'Edward', 'Jerry', 'Dennis', 'Frank', 'Daniel', 'Raymond', 'Roger', 'Stephen', 'Gerald', 'Walter', 'Harold', 'Steven', 'Douglas', 'Lawrence', 'Terry', 'Wayne', 'Arthur', 'Jack', 'Carl', 'Henry', 'Willie', 'Bruce', 'Joe', 'Peter', 'Billy', 'Roy', 'Ralph', 'Anthony', 'Jimmy', 'Albert', 'Bobby', 'Eugene', 'Johnny']
 fem_first_nl = ['Maaike', 'Myrthe', 'Tamara', 'Nicole', 'Riet', 'Henrietta', 'Annie', 'Marie Jose', 'Leanne', 'Maria', 'Rieky', 'Suze', 'Hasse']
 male_first_nl = ['Tijs', 'Joris', 'Jonathan', 'Niels', 'Jurre', 'Wouter', 'Julian', 'Lars', 'Daniel', 'Mathias', 'Mathijs', 'Daan', 'Dirk']
 surnames_en = ['Acker', 'Ackford', 'Ansley', 'Barlow', 'Bircher', 'Catfield', 'Calcott', 'Digby', 'Eveleigh', 'Farlow', 'Fulton', 'Gladstone', 'Hanney', 'Harlow', 'Hayes', 'Hilling', 'Kilby', 'Marleigh', 'Marston', 'Morley', 'Quinton', 'Ramsay', 'Riley', 'Shelly', 'Sherwood', 'Tindall', 'Thorpe', 'Woolley', 'York', 'Yeaton']
 surnames_nl = ['Teulings', 'van Hijfte', 'Smeets', 'Potharst', 'Bosch', 'De Wolf', 'Timmerman', 'Verweij', 'van Veenen', 'ter Schure', 'Verhoeven', 'De Jong', 'Misdorp', 'de Valk', 'Perdeck', 'Brandsen', 'Jonk', 'Wassing', 'Slagt', 'Simonsdochter']
+
+
+"""
+LOCATIONS
+"""
+
+locations = [
+    ('Yealering', 'Western Australia', 'Australia', 'town'),
+    ('Geelong', 'Victoria', 'Australia', 'town'),
+    ('Yankalilla', 'South Australia', 'Australia', 'town'),
+    ('Port Macquarie', 'New South Wales', 'Australia', 'town'),
+    ('Sydney', 'New South Wales', 'Australia', 'city'),
+    ('Adelaide', 'South Australia', 'Australia', 'city'),
+    ('Melbourne', 'Victoria', 'Australia', 'city'),
+    ('Perth', 'Western Australia', 'Australia', 'city'),
+    ('Amsterdam', 'Noord-Holland', 'Netherlands', 'city'),
+    ('Amersfoort', 'Utrecht', 'Netherlands', 'town')
+]

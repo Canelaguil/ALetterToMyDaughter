@@ -8,62 +8,67 @@
     "all traits": [
         "brave",
         "outgoing",
-        "jealous",
-        "stoic",
-        "optimistic"
+        "timid",
+        "confident",
+        "athletic"
     ],
     "guardian": {
-        "name": "Paul",
-        "surname": "Carter",
-        "age": 72,
-        "relation": "uncle",
+        "name": "Diane",
+        "surname": "Schwarze",
+        "age": 55,
+        "relation": "sister",
         "location": [
-            "Yankalilla",
-            "Australia"
+            "Geelong",
+            "Victoria",
+            "Australia",
+            "town"
         ],
-        "income_class": "high",
-        "lifestyle": "lavish",
-        "married": false,
+        "income_class": "medium",
+        "lifestyle": "rich",
+        "married": true,
         "other_children": false,
-        "nurturing": true,
+        "nurturing": false,
         "provide_college": true,
-        "provide_women_college": false,
-        "provide_boarding_school": false,
-        "allowance": "big allowance",
+        "provide_women_college": true,
+        "provide_boarding_school": true,
+        "allowance": "no allowance",
         "capacity": 0,
         "ward": [
+            "Juana",
             "Ika"
         ]
     },
     "location": [
-        "Yankalilla",
-        "Australia"
+        "Geelong",
+        "Victoria",
+        "Australia",
+        "town"
     ],
-    "lifestyle": "lavish",
-    "income class": "high",
-    "boarding school": false,
+    "lifestyle": "rich",
+    "income class": "medium",
+    "boarding school": true,
     "country affinities": {
-        "Netherlands": 3,
-        "Indonesia": 0,
-        "Australia": 3
+        "Netherlands": -2,
+        "Indonesia": -1,
+        "Australia": -1
     },
-    "sexuality": "gay",
+    "sexuality": "bisexual",
     "relationships": {
-        "Juana": 58,
-        "Jules": 71,
-        "Robin": 50,
-        "Paul Carter": 43
+        "Juana": 100,
+        "Jules": 100,
+        "Robin": 54,
+        "Diane Schwarze": 12
     },
     "person tags": {
-        "guardian": "Paul Carter"
+        "guardian": "Diane Schwarze"
     },
-    "trauma": 28,
+    "trauma": 6,
     "happinness": 80,
     "aspirations": {
         "lifestyle": "lavish",
-        "income": "high",
+        "income": "medium",
         "children": true,
-        "location": "Netherlands",
+        "location": "Indonesia",
         "college": true
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "Jules Ryan",
+    "name": "Jules Carter",
     "age": 18,
     "known traits": [
         "impulsive",
@@ -8,62 +8,66 @@
     "all traits": [
         "impulsive",
         "creative",
-        "clumsy",
-        "upbeat",
-        "disinterested"
+        "timid",
+        "altruistic",
+        "melancholic"
     ],
     "guardian": {
-        "name": "April",
-        "surname": "Ryan",
-        "age": 32,
-        "relation": "cousin",
+        "name": "Paul",
+        "surname": "Carter",
+        "age": 72,
+        "relation": "uncle",
         "location": [
-            "Port Macquarie",
-            "Australia"
+            "Yankalilla",
+            "South Australia",
+            "Australia",
+            "town"
         ],
-        "income_class": "medium",
-        "lifestyle": "average",
-        "married": true,
-        "other_children": true,
+        "income_class": "high",
+        "lifestyle": "lavish",
+        "married": false,
+        "other_children": false,
         "nurturing": true,
-        "provide_college": false,
+        "provide_college": true,
         "provide_women_college": false,
         "provide_boarding_school": false,
-        "allowance": "small allowance",
+        "allowance": "big allowance",
         "capacity": 0,
         "ward": [
             "Jules"
         ]
     },
     "location": [
-        "Port Macquarie",
-        "Australia"
+        "Yankalilla",
+        "South Australia",
+        "Australia",
+        "town"
     ],
-    "lifestyle": "average",
-    "income class": "medium",
+    "lifestyle": "lavish",
+    "income class": "high",
     "boarding school": false,
     "country affinities": {
-        "Netherlands": -1,
-        "Belgium": 2,
-        "Australia": -1
+        "Netherlands": 1,
+        "Belgium": 0,
+        "Australia": 0
     },
     "sexuality": "bisexual",
     "relationships": {
-        "Juana": 59,
-        "Ika": 57,
-        "Robin": 52,
-        "April Ryan": 70
+        "Juana": 97,
+        "Ika": 27,
+        "Robin": 65,
+        "Paul Carter": 67
     },
     "person tags": {
-        "guardian": "April Ryan"
+        "guardian": "Paul Carter"
     },
-    "trauma": 72,
+    "trauma": 41,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "rich",
-        "income": "medium",
-        "children": false,
-        "location": "Belgium",
+        "lifestyle": "lavish",
+        "income": "very high",
+        "children": true,
+        "location": "Netherlands",
         "college": false
     }
 }

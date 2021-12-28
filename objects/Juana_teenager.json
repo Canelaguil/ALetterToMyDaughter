@@ -8,9 +8,9 @@
     "all traits": [
         "kind",
         "moody",
-        "stoic",
-        "athletic",
-        "pessimistic"
+        "quirky",
+        "altruistic",
+        "suspicious"
     ],
     "guardian": {
         "name": "Diane",
@@ -19,7 +19,9 @@
         "relation": "sister",
         "location": [
             "Geelong",
-            "Australia"
+            "Victoria",
+            "Australia",
+            "town"
         ],
         "income_class": "medium",
         "lifestyle": "rich",
@@ -30,40 +32,43 @@
         "provide_women_college": true,
         "provide_boarding_school": true,
         "allowance": "no allowance",
-        "capacity": 1,
+        "capacity": 0,
         "ward": [
-            "Juana"
+            "Juana",
+            "Ika"
         ]
     },
     "location": [
         "Geelong",
-        "Australia"
+        "Victoria",
+        "Australia",
+        "town"
     ],
     "lifestyle": "rich",
     "income class": "medium",
     "boarding school": true,
     "country affinities": {
-        "Netherlands": -1,
-        "Spain": 3,
-        "Australia": -3
+        "Netherlands": 3,
+        "Spain": 0,
+        "Australia": 0
     },
-    "sexuality": "straight",
+    "sexuality": "bisexual",
     "relationships": {
-        "Jules": 100,
-        "Ika": 63,
-        "Robin": 57,
-        "Diane Schwarze": 5
+        "Jules": 76,
+        "Ika": 83,
+        "Robin": 68,
+        "Diane Schwarze": 0
     },
     "person tags": {
         "guardian": "Diane Schwarze"
     },
-    "trauma": 68,
+    "trauma": 88,
     "happinness": 80,
     "aspirations": {
         "lifestyle": "lavish",
-        "income": "high",
-        "children": false,
-        "location": "Spain",
-        "college": false
+        "income": "very high",
+        "children": true,
+        "location": "Netherlands",
+        "college": true
     }
 }

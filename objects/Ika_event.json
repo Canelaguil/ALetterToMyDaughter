@@ -8,32 +8,32 @@
     "all traits": [
         "brave",
         "outgoing",
-        "jealous",
-        "stoic",
-        "optimistic"
+        "timid",
+        "confident",
+        "athletic"
     ],
     "relationships": {
-        "Juana": 58,
-        "Jules": 71,
-        "Robin": 50
+        "Juana": 100,
+        "Jules": 100,
+        "Robin": 54
     },
-    "trauma": 48,
+    "trauma": 21,
     "reaction": {
         "age": 13,
-        "guilt": 76,
+        "guilt": 19,
         "trauma": {
-            "old_trauma": 17,
-            "trauma_modifier": 31.13555338760611,
-            "new_trauma": 48
+            "old_trauma": 13,
+            "trauma_modifier": 8.129465501870591,
+            "new_trauma": 21
         },
         "relationships": {
             "Juana": {
-                "old_R": 75,
-                "new_R": 58
+                "old_R": 100,
+                "new_R": 100
             },
             "Jules": {
-                "old_R": 61,
-                "new_R": 71
+                "old_R": 81,
+                "new_R": 100
             }
         }
     },
