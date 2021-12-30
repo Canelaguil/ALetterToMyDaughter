@@ -1,5 +1,5 @@
 {
-    "name": "Robin Wilkes",
+    "name": "Robin Kuijper",
     "age": 18,
     "known traits": [],
     "all traits": [],
@@ -42,22 +42,22 @@
     },
     "sexuality": "straight",
     "relationships": {
-        "Juana": 89,
-        "Jules": 100,
-        "Ika": 60,
-        "Daniel": 84,
-        "Nadia Wilkes": 57
+        "Juana": 70,
+        "Jules": 89,
+        "Ika": 58,
+        "Daniel": 65,
+        "Nadia Wilkes": 64
     },
     "person tags": {
         "guardian": "Nadia Wilkes"
     },
-    "trauma": 31,
+    "trauma": 2,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "humble",
-        "income": "very high",
-        "children": false,
+        "lifestyle": "rich",
+        "income": "low",
+        "children": true,
         "location": "Australia",
-        "college": true
+        "college": false
     }
 }

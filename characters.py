@@ -2,7 +2,7 @@ import json
 from random import random, randint, choice, seed, choices, uniform, shuffle
 from pprint import pprint
 from copy import copy
-from lifestates import RomanceLife
+from lifestates import ProfessionalLife, RomanceLife
 
 from sources import traits, event_traits, adult_tags, guardians, lifestyle, income
 from memories import Memory, ChildhoodMemories
@@ -89,14 +89,17 @@ class Character:
         self.tags = copy(adult_tags)
         self.age = 18
         self.romance_life = RomanceLife(self.sexuality, self.sex, self.year)
+        self.professional_life = ProfessionalLife(self.year, self.sex, self.aspirations, self.guardian, self.location)
         self.adult_years()
 
     def adult_years(self):
         while self.year < 1966: 
-            self.romance_life.transition()
+            married = self.romance_life.transition()
+            self.location = self.professional_life.transition(married)
             self.year += 1
         print(self.name)
         pprint(self.romance_life.get_log())
+        pprint(self.professional_life.get_log())
 
     """
       CHECK CHARACTER 

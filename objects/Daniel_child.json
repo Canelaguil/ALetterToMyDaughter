@@ -1,6 +1,6 @@
 {
     "name": "Daniel de Bruijn",
-    "age at move": 13,
+    "age at move": 12,
     "known traits": [
         "creative",
         "outgoing"
@@ -17,22 +17,24 @@
         "Australia": 2
     },
     "relationships": {
-        "Juana": 54,
-        "Jules": 35,
-        "Ika": 67,
-        "Robin": 88
+        "Juana": 65,
+        "Jules": 59,
+        "Ika": 23,
+        "Robin": 51
     },
     "memory": {
         "Robin": {
-            "war progress": {
-                "description": "Robin kept everyone updated about the progress of the war",
+            "lost in woods": {
+                "description": "Robin once got lost in the woods while playing tag with Jules and Juana",
                 "category": "childhood",
-                "keyword": "war progress",
+                "keyword": "lost in woods",
                 "people": [
-                    "Robin"
+                    "Robin",
+                    "Juana",
+                    "Jules"
                 ],
-                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
-                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
                 "memory_relation_impact": "neutral"
             },
             "new games": {
@@ -45,132 +47,134 @@
                 "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
                 "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
                 "memory_relation_impact": "neutral"
-            },
-            "pretending to be sick": {
-                "description": "Robin once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",
-                "category": "childhood",
-                "keyword": "pretending to be sick",
-                "people": [
-                    "Robin"
-                ],
-                "ch_decrease": "['obedient', 'moral', 'shy']",
-                "ch_increase": "['rebellious', 'creative', 'immoral']",
-                "memory_relation_impact": "neutral"
-            }
-        },
-        "myself": {
-            "em forster": {
-                "description": "I read all the works of E.M. Forster in one summer",
-                "category": "childhood",
-                "keyword": "em forster",
-                "people": [
-                    "Daniel"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
-            "room sharing": {
-                "description": "I shared a room with Ika for a while",
-                "category": "childhood",
-                "keyword": "room sharing",
-                "people": [
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
-            "fight": {
-                "description": "Ika and I got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
-                "category": "childhood",
-                "keyword": "fight",
-                "people": [
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "['calm', 'kind', 'hesitant']",
-                "ch_increase": "['impulsive', 'mean', 'moody']",
-                "memory_relation_impact": "negative"
-            }
-        },
-        "Jules": {
-            "farmers children": {
-                "description": "Jules would sometimes play with the farmer's children",
-                "category": "childhood",
-                "keyword": "farmers children",
-                "people": [
-                    "Jules"
-                ],
-                "ch_decrease": "['obedient', 'straight-laced', 'uptight']",
-                "ch_increase": "['rebellious', 'impulsive', 'relaxed']",
-                "memory_relation_impact": "neutral"
-            },
-            "little women": {
-                "description": "Jules read Little Women several times but pretended not to like it",
-                "category": "childhood",
-                "keyword": "little women",
-                "people": [
-                    "Jules"
-                ],
-                "ch_decrease": "['tolerant', 'confident', 'outgoing', 'upbeat']",
-                "ch_increase": "['critical', 'cowardly', 'nervous', 'timid', 'suspicious']",
-                "memory_relation_impact": "neutral"
-            }
-        },
-        "Ika": {
-            "room sharing": {
-                "description": "I shared a room with Ika for a while",
-                "category": "childhood",
-                "keyword": "room sharing",
-                "people": [
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
-            "fight": {
-                "description": "Ika and I got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
-                "category": "childhood",
-                "keyword": "fight",
-                "people": [
-                    "Ika",
-                    "Daniel"
-                ],
-                "ch_decrease": "['calm', 'kind', 'hesitant']",
-                "ch_increase": "['impulsive', 'mean', 'moody']",
-                "memory_relation_impact": "negative"
-            },
-            "horses": {
-                "description": "After reading Black Beauty, Ika begged Nadia to ask the general for horses: Nadia replied the horses were all off to war",
-                "category": "childhood",
-                "keyword": "horses",
-                "people": [
-                    "Ika"
-                ],
-                "ch_decrease": "['practical', 'pessimistic']",
-                "ch_increase": "['optimistic', 'daydreamer']",
-                "memory_relation_impact": "neutral"
             }
         },
         "Juana": {
-            "idolized general": {
-                "description": "Juana idolized the general and was always excited about his scarce visits",
+            "lost in woods": {
+                "description": "Robin once got lost in the woods while playing tag with Jules and Juana",
                 "category": "childhood",
-                "keyword": "idolized general",
+                "keyword": "lost in woods",
+                "people": [
+                    "Robin",
+                    "Juana",
+                    "Jules"
+                ],
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
+                "memory_relation_impact": "neutral"
+            },
+            "greek mythology": {
+                "description": "Juana was obsessed with greek mythology for a while",
+                "category": "childhood",
+                "keyword": "greek mythology",
                 "people": [
                     "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'practical']",
+                "ch_increase": "['curious', 'daydreamer']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Jules": {
+            "lost in woods": {
+                "description": "Robin once got lost in the woods while playing tag with Jules and Juana",
+                "category": "childhood",
+                "keyword": "lost in woods",
+                "people": [
+                    "Robin",
+                    "Juana",
+                    "Jules"
+                ],
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
+                "memory_relation_impact": "neutral"
+            },
+            "em forster": {
+                "description": "Jules read all the works of E.M. Forster in one summer",
+                "category": "childhood",
+                "keyword": "em forster",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            },
+            "room sharing": {
+                "description": "Ika shared a room with Jules for a while",
+                "category": "childhood",
+                "keyword": "room sharing",
+                "people": [
+                    "Jules",
+                    "Ika"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            },
+            "sucking up to Nadia": {
+                "description": "Jules was always sucking up to Nadia",
+                "category": "childhood",
+                "keyword": "sucking up to Nadia",
+                "people": [
+                    "Jules"
                 ],
                 "ch_decrease": "['rebellious', 'supicious', 'critical']",
                 "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
+            },
+            "disliked general": {
+                "description": "Jules disliked the general",
+                "category": "childhood",
+                "keyword": "disliked general",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['obedient', 'naive']",
+                "ch_increase": "['rebellious', 'supicious', 'critical']",
+                "memory_relation_impact": "neutral"
+            },
+            "wander off to read": {
+                "description": "Jules would often wander off from games to read, which Ika hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Ika",
+                    "Jules"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "Ika": {
+            "room sharing": {
+                "description": "Ika shared a room with Jules for a while",
+                "category": "childhood",
+                "keyword": "room sharing",
+                "people": [
+                    "Jules",
+                    "Ika"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            },
+            "wander off to read": {
+                "description": "Jules would often wander off from games to read, which Ika hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Ika",
+                    "Jules"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
             }
         }
     },
     "backstory": "Mother died in childbirth. Father was part of the socialist party, saw what was coming and moved to England. Was drafted for war and died in 1939, leaving Daniel orphaned.",
-    "trauma": 15,
+    "trauma": 19,
     "crush": null
 }

@@ -8,34 +8,34 @@
     "all traits": [
         "impulsive",
         "creative",
-        "timid",
-        "altruistic",
-        "melancholic"
+        "clumsy",
+        "moody",
+        "outgoing"
     ],
     "relationships": {
-        "Juana": 97,
-        "Ika": 27,
-        "Robin": 65
+        "Juana": 100,
+        "Ika": 32,
+        "Robin": 54
     },
-    "trauma": 65,
+    "trauma": 61,
     "reaction": {
         "age": 14,
-        "guilt": 25,
+        "guilt": 86,
         "trauma": {
-            "old_trauma": 50,
-            "trauma_modifier": 15.259596026014968,
-            "new_trauma": 65
+            "old_trauma": 26,
+            "trauma_modifier": 35.94154743947638,
+            "new_trauma": 61
         },
         "relationships": {
             "Juana": {
-                "old_R": 73,
-                "new_R": 97
+                "old_R": 100,
+                "new_R": 100
             },
             "Ika": {
-                "old_R": 37,
-                "new_R": 27
+                "old_R": 44,
+                "new_R": 32
             }
         }
     },
-    "crush": null
+    "crush": "Juana"
 }

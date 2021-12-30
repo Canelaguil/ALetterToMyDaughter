@@ -121,7 +121,7 @@ guardians = {
         'provide_college' : True,
         'provide_women_college' : True,
         'provide_boarding_school' : True, 
-        'allowance' : allowance[0],
+        'allowance' : allowance[2],
         'capacity' : 2,
         'ward' : []
     },
