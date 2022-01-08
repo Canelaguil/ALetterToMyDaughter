@@ -1,5 +1,5 @@
 {
-    "name": "Robin Kuijper",
+    "name": "Robin Wilkes",
     "age": 18,
     "known traits": [],
     "all traits": [],
@@ -7,6 +7,7 @@
         "name": "Nadia",
         "surname": "Wilkes",
         "age": 47,
+        "sex": "f",
         "age1940": 42,
         "relation": "governess",
         "location": [
@@ -42,22 +43,43 @@
     },
     "sexuality": "straight",
     "relationships": {
-        "Juana": 70,
-        "Jules": 89,
-        "Ika": 58,
-        "Daniel": 65,
-        "Nadia Wilkes": 64
+        "Juana": 100,
+        "Jules": 79,
+        "Ika": 82,
+        "Daniel": 71,
+        "Nadia Wilkes": 87
     },
     "person tags": {
-        "guardian": "Nadia Wilkes"
+        "love_interest": null,
+        "old_flame": null,
+        "partner": null,
+        "spouse": null,
+        "affairpartner": null,
+        "dead_partner": null,
+        "dead_child": null,
+        "children": [],
+        "extra_marital_children": [],
+        "ex_spouses": [],
+        "ex_partners": [],
+        "boss": null,
+        "colleague": null,
+        "guardian": "Nadia Wilkes",
+        "friend": null,
+        "bestfriend": null,
+        "deadfriend": null,
+        "bfriend": null,
+        "childhoodfriend": null,
+        "familyfriend": null,
+        "pet": null,
+        "enemy": null
     },
-    "trauma": 2,
+    "trauma": 4,
     "happinness": 80,
     "aspirations": {
         "lifestyle": "rich",
-        "income": "low",
+        "income": "high",
         "children": true,
         "location": "Australia",
-        "college": false
+        "college": true
     }
 }

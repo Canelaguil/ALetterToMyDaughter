@@ -5,7 +5,7 @@ from pprint import pprint
 from copy import copy
 
 from characters import Juana, Jules, Ika, Robin, Daniel
-from sources import traits, event_traits, adult_tags, guardians
+from sources import traits, adult_tags, guardians
 from memories import Memory, ChildhoodMemories
 
 

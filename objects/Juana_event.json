@@ -8,32 +8,32 @@
     "all traits": [
         "kind",
         "moody",
-        "melancholic",
-        "practical",
-        "cowardly"
+        "organised",
+        "cold",
+        "humble"
     ],
     "relationships": {
-        "Jules": 68,
-        "Ika": 81,
+        "Jules": 74,
+        "Ika": 75,
         "Robin": 57
     },
-    "trauma": 96,
+    "trauma": 100,
     "reaction": {
         "age": 14,
-        "guilt": 62,
+        "guilt": 95,
         "trauma": {
-            "old_trauma": 67,
-            "trauma_modifier": 29.609004909770675,
-            "new_trauma": 96
+            "old_trauma": 36,
+            "trauma_modifier": 74.25600378961913,
+            "new_trauma": 100
         },
         "relationships": {
             "Jules": {
-                "old_R": 55,
-                "new_R": 68
+                "old_R": 100,
+                "new_R": 74
             },
             "Ika": {
-                "old_R": 59,
-                "new_R": 81
+                "old_R": 62,
+                "new_R": 75
             }
         }
     },

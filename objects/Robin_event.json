@@ -4,17 +4,17 @@
     "known traits": [],
     "all traits": [],
     "relationships": {
-        "Juana": 70,
-        "Jules": 89,
-        "Ika": 58,
-        "Daniel": 65
+        "Juana": 100,
+        "Jules": 79,
+        "Ika": 82,
+        "Daniel": 71
     },
-    "trauma": 50,
+    "trauma": 47,
     "reaction": {
         "age": 10,
-        "old_trauma": 1,
-        "trauma_modifier": 49,
-        "new_trauma": 50
+        "old_trauma": 18,
+        "trauma_modifier": 29,
+        "new_trauma": 47
     },
-    "crush": null
+    "crush": "Juana"
 }

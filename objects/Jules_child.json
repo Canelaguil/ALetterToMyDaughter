@@ -8,9 +8,9 @@
     "all traits": [
         "impulsive",
         "creative",
-        "clumsy",
-        "moody",
-        "outgoing"
+        "organised",
+        "ambitious",
+        "moody"
     ],
     "country affinities": {
         "Netherlands": -1,
@@ -18,158 +18,115 @@
         "Australia": -3
     },
     "relationships": {
-        "Juana": 100,
-        "Ika": 44,
-        "Robin": 54,
-        "Daniel": 49
+        "Juana": 52,
+        "Ika": 87,
+        "Robin": 47,
+        "Daniel": 47
     },
     "memory": {
-        "Juana": {
+        "Ika": {
             "crush": {
-                "description": "I had a crush on Juana",
+                "description": "I had a crush on Ika",
                 "category": "childhood",
                 "keyword": "crush",
                 "people": [
                     "Jules",
-                    "Juana"
+                    "Ika"
                 ],
                 "memory_relation_impact": "positive"
             },
-            "lost in woods": {
-                "description": "Robin once got lost in the woods while playing tag with I and Juana",
+            "sex talk": {
+                "description": "I informed Juana and Ika that sex involves two naked people",
                 "category": "childhood",
-                "keyword": "lost in woods",
+                "keyword": "sex talk",
                 "people": [
-                    "Robin",
-                    "Juana",
-                    "Jules"
+                    "Jules",
+                    "Ika",
+                    "Juana"
                 ],
-                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
-                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
                 "memory_relation_impact": "neutral"
             }
         },
         "Robin": {
-            "lost in woods": {
-                "description": "Robin once got lost in the woods while playing tag with I and Juana",
+            "sucking up to Nadia": {
+                "description": "Robin was always sucking up to Nadia",
                 "category": "childhood",
-                "keyword": "lost in woods",
+                "keyword": "sucking up to Nadia",
                 "people": [
-                    "Robin",
-                    "Juana",
-                    "Jules"
+                    "Robin"
                 ],
-                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
-                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
-            },
+            }
+        },
+        "Juana": {
             "new games": {
-                "description": "Robin would often come up with new games ",
+                "description": "Juana would often come up with new games ",
                 "category": "childhood",
                 "keyword": "new games",
                 "people": [
-                    "Robin"
+                    "Juana"
                 ],
                 "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
                 "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
                 "memory_relation_impact": "neutral"
             },
-            "scaring": {
-                "description": "Robin once hid under Daniel's bed and jumped out in the middle of the night, scaring not only Ika but everyone",
+            "pretending to be sick": {
+                "description": "Juana once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",
                 "category": "childhood",
-                "keyword": "scaring",
+                "keyword": "pretending to be sick",
                 "people": [
-                    "Robin",
-                    "Daniel",
-                    "Ika"
+                    "Juana"
                 ],
-                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
-                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
-                "memory_relation_impact": "negative"
+                "ch_decrease": "['obedient', 'moral', 'shy']",
+                "ch_increase": "['rebellious', 'creative', 'immoral']",
+                "memory_relation_impact": "neutral"
+            },
+            "sex talk": {
+                "description": "I informed Juana and Ika that sex involves two naked people",
+                "category": "childhood",
+                "keyword": "sex talk",
+                "people": [
+                    "Jules",
+                    "Ika",
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "memory_relation_impact": "neutral"
             }
         },
         "myself": {
-            "lost in woods": {
-                "description": "Robin once got lost in the woods while playing tag with I and Juana",
+            "stork": {
+                "description": "I believed that babies were brought by a stork for a very long time",
                 "category": "childhood",
-                "keyword": "lost in woods",
-                "people": [
-                    "Robin",
-                    "Juana",
-                    "Jules"
-                ],
-                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
-                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
-                "memory_relation_impact": "neutral"
-            },
-            "room sharing": {
-                "description": "Ika shared a room with I for a while",
-                "category": "childhood",
-                "keyword": "room sharing",
-                "people": [
-                    "Jules",
-                    "Ika"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
-            "disliked general": {
-                "description": "I disliked the general",
-                "category": "childhood",
-                "keyword": "disliked general",
+                "keyword": "stork",
                 "people": [
                     "Jules"
                 ],
-                "ch_decrease": "['obedient', 'naive']",
-                "ch_increase": "['rebellious', 'supicious', 'critical']",
-                "memory_relation_impact": "neutral"
-            }
-        },
-        "Ika": {
-            "room sharing": {
-                "description": "Ika shared a room with I for a while",
-                "category": "childhood",
-                "keyword": "room sharing",
-                "people": [
-                    "Jules",
-                    "Ika"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
             },
-            "scaring": {
-                "description": "Robin once hid under Daniel's bed and jumped out in the middle of the night, scaring not only Ika but everyone",
+            "sex talk": {
+                "description": "I informed Juana and Ika that sex involves two naked people",
                 "category": "childhood",
-                "keyword": "scaring",
+                "keyword": "sex talk",
                 "people": [
-                    "Robin",
-                    "Daniel",
-                    "Ika"
+                    "Jules",
+                    "Ika",
+                    "Juana"
                 ],
-                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
-                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
-                "memory_relation_impact": "negative"
-            }
-        },
-        "Daniel": {
-            "scaring": {
-                "description": "Robin once hid under Daniel's bed and jumped out in the middle of the night, scaring not only Ika but everyone",
-                "category": "childhood",
-                "keyword": "scaring",
-                "people": [
-                    "Robin",
-                    "Daniel",
-                    "Ika"
-                ],
-                "ch_decrease": "['straight-laced', 'obedient', 'humble', 'calm', 'hesitant', 'obedient', 'shy', 'humorless']",
-                "ch_increase": "['quirky', 'mean', 'exuberant', 'upbeat', 'cheeky', 'rebellious', 'impulsive']",
-                "memory_relation_impact": "negative"
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "memory_relation_impact": "neutral"
             }
         }
     },
-    "backstory": "I came to the Netherlands when I was 5 years old. My father thought it would be saver for us there. He was a true European. Spoke 4 languages, made himself understood in many more. Europe never loved him back enough. Met my mother in a theatre in Brussels, I guess they made do well enough. When Germany invaded the Netherlands I was 9. My parents had send me  to England days prior. I never saw them again.",
-    "trauma": 26,
-    "crush": "Juana"
+    "backstory": "I came to the Netherlands when I was 4 years old. My father got a job there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 9. My parents had send me  to England days prior. I never saw them again.",
+    "trauma": 35,
+    "crush": "Ika"
 }

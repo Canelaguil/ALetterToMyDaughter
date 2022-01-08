@@ -1,5 +1,5 @@
 {
-    "name": "Juana Carter",
+    "name": "Juana Huijzen",
     "age": 18,
     "known traits": [
         "kind",
@@ -8,14 +8,15 @@
     "all traits": [
         "kind",
         "moody",
-        "melancholic",
-        "practical",
-        "cowardly"
+        "organised",
+        "cold",
+        "humble"
     ],
     "guardian": {
         "name": "Paul",
         "surname": "Carter",
         "age": 72,
+        "sex": "m",
         "relation": "uncle",
         "location": [
             "Yankalilla",
@@ -47,27 +48,48 @@
     "income class": "high",
     "boarding school": false,
     "country affinities": {
-        "Netherlands": -3,
-        "Spain": 3,
-        "Australia": -1
+        "Netherlands": 2,
+        "Spain": -3,
+        "Australia": -2
     },
     "sexuality": "straight",
     "relationships": {
-        "Jules": 68,
-        "Ika": 81,
+        "Jules": 74,
+        "Ika": 75,
         "Robin": 57,
-        "Paul Carter": 69
+        "Paul Carter": 43
     },
     "person tags": {
-        "guardian": "Paul Carter"
+        "love_interest": null,
+        "old_flame": null,
+        "partner": null,
+        "spouse": null,
+        "affairpartner": null,
+        "dead_partner": null,
+        "dead_child": null,
+        "children": [],
+        "extra_marital_children": [],
+        "ex_spouses": [],
+        "ex_partners": [],
+        "boss": null,
+        "colleague": null,
+        "guardian": "Paul Carter",
+        "friend": null,
+        "bestfriend": null,
+        "deadfriend": null,
+        "bfriend": null,
+        "childhoodfriend": null,
+        "familyfriend": null,
+        "pet": null,
+        "enemy": null
     },
-    "trauma": 72,
+    "trauma": 84,
     "happinness": 80,
     "aspirations": {
         "lifestyle": "lavish",
-        "income": "very high",
+        "income": "high",
         "children": false,
-        "location": "Spain",
+        "location": "Netherlands",
         "college": true
     }
 }

@@ -8,20 +8,20 @@
     "all traits": [
         "kind",
         "moody",
-        "melancholic",
-        "practical",
-        "cowardly"
+        "organised",
+        "cold",
+        "humble"
     ],
     "country affinities": {
-        "Netherlands": -3,
-        "Spain": 3,
+        "Netherlands": 2,
+        "Spain": -3,
         "Australia": -3
     },
     "relationships": {
-        "Jules": 55,
-        "Ika": 59,
+        "Jules": 100,
+        "Ika": 62,
         "Robin": 57,
-        "Daniel": 68
+        "Daniel": 58
     },
     "memory": {
         "Jules": {
@@ -35,33 +35,10 @@
                 ],
                 "memory_relation_impact": "positive"
             },
-            "em forster": {
-                "description": "Jules read all the works of E.M. Forster in one summer",
+            "stork": {
+                "description": "Jules believed that babies were brought by a stork for a very long time",
                 "category": "childhood",
-                "keyword": "em forster",
-                "people": [
-                    "Jules"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
-            "room sharing": {
-                "description": "Ika shared a room with Jules for a while",
-                "category": "childhood",
-                "keyword": "room sharing",
-                "people": [
-                    "Jules",
-                    "Ika"
-                ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
-                "memory_relation_impact": "neutral"
-            },
-            "sucking up to Nadia": {
-                "description": "Jules was always sucking up to Nadia",
-                "category": "childhood",
-                "keyword": "sucking up to Nadia",
+                "keyword": "stork",
                 "people": [
                     "Jules"
                 ],
@@ -69,47 +46,113 @@
                 "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
             },
-            "disliked general": {
-                "description": "Jules disliked the general",
+            "sex talk": {
+                "description": "Jules informed I and Ika that sex involves two naked people",
                 "category": "childhood",
-                "keyword": "disliked general",
+                "keyword": "sex talk",
                 "people": [
-                    "Jules"
+                    "Jules",
+                    "Ika",
+                    "Juana"
                 ],
-                "ch_decrease": "['obedient', 'naive']",
-                "ch_increase": "['rebellious', 'supicious', 'critical']",
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
                 "memory_relation_impact": "neutral"
             }
         },
         "Robin": {
+            "wander off to read": {
+                "description": "Daniel would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Daniel"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            },
+            "sucking up to Nadia": {
+                "description": "Robin was always sucking up to Nadia",
+                "category": "childhood",
+                "keyword": "sucking up to Nadia",
+                "people": [
+                    "Robin"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Daniel": {
+            "wander off to read": {
+                "description": "Daniel would often wander off from games to read, which Robin hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Robin",
+                    "Daniel"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            }
+        },
+        "myself": {
             "new games": {
-                "description": "Robin would often come up with new games ",
+                "description": "I would often come up with new games ",
                 "category": "childhood",
                 "keyword": "new games",
                 "people": [
-                    "Robin"
+                    "Juana"
                 ],
                 "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
                 "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
                 "memory_relation_impact": "neutral"
+            },
+            "pretending to be sick": {
+                "description": "I once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",
+                "category": "childhood",
+                "keyword": "pretending to be sick",
+                "people": [
+                    "Juana"
+                ],
+                "ch_decrease": "['obedient', 'moral', 'shy']",
+                "ch_increase": "['rebellious', 'creative', 'immoral']",
+                "memory_relation_impact": "neutral"
+            },
+            "sex talk": {
+                "description": "Jules informed I and Ika that sex involves two naked people",
+                "category": "childhood",
+                "keyword": "sex talk",
+                "people": [
+                    "Jules",
+                    "Ika",
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "memory_relation_impact": "neutral"
             }
         },
         "Ika": {
-            "room sharing": {
-                "description": "Ika shared a room with Jules for a while",
+            "sex talk": {
+                "description": "Jules informed I and Ika that sex involves two naked people",
                 "category": "childhood",
-                "keyword": "room sharing",
+                "keyword": "sex talk",
                 "people": [
                     "Jules",
-                    "Ika"
+                    "Ika",
+                    "Juana"
                 ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
+                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
+                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
                 "memory_relation_impact": "neutral"
             }
         }
     },
-    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a victim of class and circumstance. She hardly knew how to read, she was a communist because everyone else she knew was. My father on the other hand had come all the way from the Netherlands to fight for the cause. But he never came back. Right before  the communists lost, my mother packed up and took me to the Netherlands. She didn't even speak the language. Her dark, Spanish features got us mistaken for Jews. I was 9 when Germany invaded The Netherlands. My mother had seen what was coming and shipped me off to England January that year. It is there that they told me she was executed in the second week of occupation. They considered her a Jewish commie.",
-    "trauma": 67,
+    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a victim of class and circumstance. She hardly knew how to read, she was a communist because everyone else she knew was. My father on the other hand had come all the way from the Netherlands to fight for the cause. But in the war he lost my mother and with her his faith in the cause and humanity at large. He took me back to the Netherlands. I was 9 when Germany invaded The Netherlands. My father had seen what was coming and shipped me off to England January that year. It is there that they told me he was executed in the second week of occupation. They knew he was a communist.",
+    "trauma": 36,
     "crush": "Jules"
 }

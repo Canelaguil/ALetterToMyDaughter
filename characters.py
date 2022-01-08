@@ -1,11 +1,12 @@
 import json
 from random import random, randint, choice, seed, choices, uniform, shuffle
 from pprint import pprint
-from copy import copy
-from lifestates import ProfessionalLife, RomanceLife
+from copy import copy, deepcopy
+from typing import IO
+from lifestates import ProfessionalLife, RomanceLife, IOLife
 
-from sources import traits, event_traits, adult_tags, guardians, lifestyle, income
-from memories import Memory, ChildhoodMemories
+from sources import traits, adult_tags, people, lifestyle, income
+from memories import Memory
 
 class Character:
     def __init__(self):
@@ -86,20 +87,24 @@ class Character:
         return self.reaction
 
     def become_adult(self):
-        self.tags = copy(adult_tags)
+        self.tags = deepcopy(adult_tags)
         self.age = 18
-        self.romance_life = RomanceLife(self.sexuality, self.sex, self.year)
-        self.professional_life = ProfessionalLife(self.year, self.sex, self.aspirations, self.guardian, self.location)
+        self.romance_life = RomanceLife(self.sexuality, self.sex, self.year, self.location[2], self.my_traits, self.surname, self.tags, self.aspirations, self.person_tags)
+        self.professional_life = ProfessionalLife(self.year, self.sex, self.aspirations, self.guardian, self.location, self.my_traits, self.person_tags)
+        self.io_life = IOLife(self.person_tags, self.location[2], self.guardian, self.tags, self.year, self.sex)
         self.adult_years()
 
     def adult_years(self):
         while self.year < 1966: 
-            married = self.romance_life.transition()
-            self.location = self.professional_life.transition(married)
+            married, self.tags, self.people_tags = self.romance_life.transition(self.location[2], self.tags)
+            self.location, self.tags, self.people_tags = self.professional_life.transition(married, self.tags)
+            self.people_tags, self.tags = self.io_life.transition(self.person_tags, self.location, self.tags)
+            self.surname = self.romance_life.surname
             self.year += 1
-        print(self.name)
+        print(self.name, self.surname)
         pprint(self.romance_life.get_log())
-        pprint(self.professional_life.get_log())
+        pprint(self.io_life.get_people())
+        # pprint(self.professional_life.get_log())
 
     """
       CHECK CHARACTER 
@@ -176,7 +181,7 @@ class Character:
 
     def give_guardian(self, guardian): 
         guardian_name = f"{guardian['name']} {guardian['surname']}"
-        self.person_tags = {}
+        self.person_tags = deepcopy(people)
         self.person_tags['guardian'] = guardian_name
         self.guardian = guardian 
 
@@ -464,7 +469,6 @@ class Robin(Character):
         self.modify_trauma(mt)
         self.reaction['new_trauma'] = self.trauma
         return self.reaction
-
 
 class Daniel(Character):
     def __init__(self):
