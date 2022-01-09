@@ -7,11 +7,11 @@ class Person:
         self.nationality = nationality
         self.sex = sex
         self.alive = True
-        self.name = name if name else self.get_first_name()
-        self.surname = surname if surname else self.get_surname()
-        self.get_age(age)
+        self.name = name if name else self._get_first_name()
+        self.surname = surname if surname else self._get_surname()
+        self._get_age(age)
 
-    def get_first_name(self): 
+    def _get_first_name(self): 
         if self.nationality == 'Netherlands':
             if self.sex == 'f':
                 return choice(fem_first_nl)
@@ -23,7 +23,7 @@ class Person:
             else:
                 return choice(male_first_en)
 
-    def get_surname(self):
+    def _get_surname(self):
         if self.nationality == 'Netherlands':
             surname = choice(surnames_nl)
             # surnames_nl.remove(surname)
@@ -32,8 +32,8 @@ class Person:
             surname = choice(surnames_en)
             # surnames_en.remove(surname)
             return surname
-            
-    def get_age(self, age):
+      
+    def _get_age(self, age):
         if age > 0:
             low_range = age / 2 + 7 
             top_range = (age - 7) * 2
@@ -45,7 +45,7 @@ class Person:
 
     def get_name(self):
        return f"{self.name} {self.surname}"
-
+      
     def __str__(self):
         return f"{self.name} {self.surname} ({self.age})"
 
@@ -351,6 +351,7 @@ class RomanceLife:
     def get_log(self):
         return self.log
 
+
 class ProfessionalLife: 
     def __init__(self, year, sex, aspirations, guardian, location, traits, people) -> None:
         self.year = year
@@ -394,8 +395,7 @@ class ProfessionalLife:
         self.age += 1
 
         if change: 
-            self.relocate()
-            self.log_change()
+            self.change()
 
         return self.location, self.tags, self.people
 
@@ -426,8 +426,31 @@ class ProfessionalLife:
                 if random() < 0.2:
                     options = filter(lambda x: x[2] == self.location[2], locations)
         ops = list(options)
-        self.location = choice(ops)
+        new_location = choice(ops)
+        if self.location != new_location: 
+            self.location = new_location
+            return True 
+        else: 
+            return False
 
+    def get_colleague(self): 
+        sex = 'm' if random() < 0.7 else 'f'
+        age = self.age + 10
+        return Person(self.location, sex, age=age)
+
+    def change(self): 
+        relocated = self.relocate()
+        self.people['boss'] = self.get_colleague()
+        if relocated: 
+            self.people['colleague'] = self.get_colleague()
+        else: 
+            if random() < 0.4: 
+                self.people['colleague'] = self.get_colleague()
+        self.log_change()
+
+    """ 
+      PHASES
+    """
     def start(self):
         self.lifestyle = self.guardian['lifestyle']
         self.income_class = self.guardian['income_class']
@@ -476,6 +499,9 @@ class ProfessionalLife:
                     else: 
                         self.state = 'medium job'
         return True
+
+    def creative(self):
+        pass
 
     def student(self): 
         if self.student_years > 3: 
@@ -557,11 +583,24 @@ class ProfessionalLife:
     def very_high_job(self):
         return False
 
+    """ 
+      HELP FUNCTION
+    """
     def log_change(self):
-        self.log[self.year] = f'{self.state}, age {self.age} in {self.location[0]}, {self.location[1]} ({self.location[2]}) with a {self.lifestyle} lifestyle while married {self.married}'
+        if self.state == 'student' or self.state == 'unemployed' or self.state == 'jailed':
+            cols = ''
+        else:
+            cols = ", under boss {self.people['boss']} and with colleague {self.people['colleague']}"
+
+        if self.married: 
+            mar = f" while married {self.married}"
+        else:
+            mar = ""
+        self.log[self.year] = f"{self.state}, age {self.age} in {self.location[0]}, {self.location[1]} ({self.location[2]}) with a {self.lifestyle} lifestyle{mar}{cols}"
 
     def get_log(self):
         return self.log
+
 
 class IOLife:
     def __init__(self, people, location, guardian, tags, year, sex) -> None:
@@ -582,7 +621,6 @@ class IOLife:
         self.people['childhoodfriend'] = self.make_person()
         self.people['childhoodfriend'].age = self.age
         self.people['friend'] = self.make_person()
-
 
     def transition(self, people, location, tags):
         self.people = people
@@ -618,7 +656,7 @@ class IOLife:
         if random() < 0.3:
             self.people['bestfriend'] = self.make_person()
 
-        if random() < 0.5: 
+        if random() < 0.3: 
             self.people['pet'] = Person(self.location, self.sex, surname=' ')
 
     def update_ages(self):

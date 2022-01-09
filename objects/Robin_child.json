@@ -8,10 +8,10 @@
         "Australia": 3
     },
     "relationships": {
-        "Juana": 100,
-        "Jules": 79,
+        "Juana": 86,
+        "Jules": 85,
         "Ika": 82,
-        "Daniel": 71
+        "Daniel": 93
     },
     "memory": {
         "Juana": {
@@ -25,53 +25,137 @@
                 ],
                 "memory_relation_impact": "positive"
             },
-            "pretending to be sick": {
-                "description": "Juana once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",
+            "disliked general": {
+                "description": "Juana disliked the general",
                 "category": "childhood",
-                "keyword": "pretending to be sick",
+                "keyword": "disliked general",
                 "people": [
                     "Juana"
                 ],
-                "ch_decrease": "['obedient', 'moral', 'shy']",
-                "ch_increase": "['rebellious', 'creative', 'immoral']",
+                "ch_decrease": "['obedient', 'naive']",
+                "ch_increase": "['rebellious', 'supicious', 'critical']",
                 "memory_relation_impact": "neutral"
             },
+            "stork": {
+                "description": "Juana believed that babies were brought by a stork for a very long time",
+                "category": "childhood",
+                "keyword": "stork",
+                "people": [
+                    "Juana"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
+            "listen to radio about war": {
+                "description": "Jules and Juana listened to the radio in secret to keep track of the war",
+                "category": "childhood",
+                "keyword": "listen to radio about war",
+                "people": [
+                    "Jules",
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
+                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Jules": {
+            "fight": {
+                "description": "Jules and I got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
+                "category": "childhood",
+                "keyword": "fight",
+                "people": [
+                    "Jules",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            },
             "sex talk": {
-                "description": "Jules informed Juana and Ika that sex involves two naked people",
+                "description": "Jules informed Daniel and I that sex involves two naked people",
                 "category": "childhood",
                 "keyword": "sex talk",
                 "people": [
                     "Jules",
-                    "Ika",
-                    "Juana"
+                    "Robin",
+                    "Daniel"
                 ],
                 "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
                 "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
                 "memory_relation_impact": "neutral"
+            },
+            "nose": {
+                "description": "Jules told Ika that Daniel thought Ika's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Daniel",
+                    "Ika",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "listen to radio about war": {
+                "description": "Jules and Juana listened to the radio in secret to keep track of the war",
+                "category": "childhood",
+                "keyword": "listen to radio about war",
+                "people": [
+                    "Jules",
+                    "Juana"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'cowardly', 'naive', 'nervous']",
+                "ch_increase": "['curious', 'intelligent', 'brave', 'suspicious']",
+                "memory_relation_impact": "neutral"
+            },
+            "learning to cycle": {
+                "description": "Jules taught Ika how to cycle",
+                "category": "childhood",
+                "keyword": "learning to cycle",
+                "people": [
+                    "Jules",
+                    "Ika"
+                ],
+                "ch_decrease": "['disinterested',  'clumsy', 'critical', 'disorganised', 'shy', 'mean', 'selfish']",
+                "ch_increase": "['athletlic', 'calm', 'tolerant', 'optimistic', 'kind', 'practical', 'altruistic', 'athletic']",
+                "memory_relation_impact": "positive"
             }
         },
         "myself": {
-            "sucking up to Nadia": {
-                "description": "I was always sucking up to Nadia",
+            "fight": {
+                "description": "Jules and I got into a fight one year at the christmas dinner and didn't speak to each other until new year's eve",
                 "category": "childhood",
-                "keyword": "sucking up to Nadia",
+                "keyword": "fight",
+                "people": [
+                    "Jules",
+                    "Robin"
+                ],
+                "ch_decrease": "['calm', 'kind', 'hesitant']",
+                "ch_increase": "['impulsive', 'mean', 'moody']",
+                "memory_relation_impact": "negative"
+            },
+            "idolized general": {
+                "description": "I idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
                 "people": [
                     "Robin"
                 ],
                 "ch_decrease": "['rebellious', 'supicious', 'critical']",
                 "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
-            }
-        },
-        "Jules": {
+            },
             "sex talk": {
-                "description": "Jules informed Juana and Ika that sex involves two naked people",
+                "description": "Jules informed Daniel and I that sex involves two naked people",
                 "category": "childhood",
                 "keyword": "sex talk",
                 "people": [
                     "Jules",
-                    "Ika",
-                    "Juana"
+                    "Robin",
+                    "Daniel"
                 ],
                 "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
                 "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
@@ -79,22 +163,84 @@
             }
         },
         "Ika": {
+            "sucking up to Nadia": {
+                "description": "Ika was always sucking up to Nadia",
+                "category": "childhood",
+                "keyword": "sucking up to Nadia",
+                "people": [
+                    "Ika"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
+            "nose": {
+                "description": "Jules told Ika that Daniel thought Ika's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Daniel",
+                    "Ika",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "learning to cycle": {
+                "description": "Jules taught Ika how to cycle",
+                "category": "childhood",
+                "keyword": "learning to cycle",
+                "people": [
+                    "Jules",
+                    "Ika"
+                ],
+                "ch_decrease": "['disinterested',  'clumsy', 'critical', 'disorganised', 'shy', 'mean', 'selfish']",
+                "ch_increase": "['athletlic', 'calm', 'tolerant', 'optimistic', 'kind', 'practical', 'altruistic', 'athletic']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Daniel": {
             "sex talk": {
-                "description": "Jules informed Juana and Ika that sex involves two naked people",
+                "description": "Jules informed Daniel and I that sex involves two naked people",
                 "category": "childhood",
                 "keyword": "sex talk",
                 "people": [
                     "Jules",
-                    "Ika",
-                    "Juana"
+                    "Robin",
+                    "Daniel"
                 ],
                 "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
                 "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "memory_relation_impact": "neutral"
+            },
+            "nose": {
+                "description": "Jules told Ika that Daniel thought Ika's nose was weird",
+                "category": "childhood",
+                "keyword": "nose",
+                "people": [
+                    "Daniel",
+                    "Ika",
+                    "Jules"
+                ],
+                "ch_decrease": "['straight-laced', 'kind', 'timid']",
+                "ch_increase": "['critical', 'quirky', 'mean']",
+                "memory_relation_impact": "neutral "
+            },
+            "pretending to be sick": {
+                "description": "Daniel once pretended to be sick, but stopped the moment Nadia announced sick people would have soup instead of dinner",
+                "category": "childhood",
+                "keyword": "pretending to be sick",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['obedient', 'moral', 'shy']",
+                "ch_increase": "['rebellious', 'creative', 'immoral']",
                 "memory_relation_impact": "neutral"
             }
         }
     },
     "backstory": "",
-    "trauma": 18,
+    "trauma": 12,
     "crush": "Juana"
 }

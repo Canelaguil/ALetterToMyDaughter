@@ -102,9 +102,9 @@ class Character:
             self.surname = self.romance_life.surname
             self.year += 1
         print(self.name, self.surname)
-        pprint(self.romance_life.get_log())
+        # pprint(self.romance_life.get_log())
         pprint(self.io_life.get_people())
-        # pprint(self.professional_life.get_log())
+        pprint(self.professional_life.get_log())
 
     """
       CHECK CHARACTER 
@@ -469,6 +469,7 @@ class Robin(Character):
         self.modify_trauma(mt)
         self.reaction['new_trauma'] = self.trauma
         return self.reaction
+
 
 class Daniel(Character):
     def __init__(self):

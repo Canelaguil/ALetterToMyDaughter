@@ -8,9 +8,9 @@
     "all traits": [
         "brave",
         "outgoing",
-        "clumsy",
-        "intelligent",
-        "mean"
+        "uptight",
+        "cheeky",
+        "rebellious"
     ],
     "guardian": {
         "name": "Diane",
@@ -33,9 +33,8 @@
         "provide_women_college": true,
         "provide_boarding_school": true,
         "allowance": "medium allowance",
-        "capacity": 0,
+        "capacity": 1,
         "ward": [
-            "Jules",
             "Ika"
         ]
     },
@@ -49,16 +48,16 @@
     "income class": "medium",
     "boarding school": true,
     "country affinities": {
-        "Netherlands": -3,
-        "Indonesia": -2,
-        "Australia": 2
+        "Netherlands": 2,
+        "Indonesia": 1,
+        "Australia": -3
     },
     "sexuality": "bisexual",
     "relationships": {
-        "Juana": 47,
-        "Jules": 69,
-        "Robin": 60,
-        "Diane Schwarze": 1
+        "Juana": 84,
+        "Jules": 8,
+        "Robin": 76,
+        "Diane Schwarze": 0
     },
     "person tags": {
         "love_interest": null,
@@ -84,13 +83,13 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 21,
+    "trauma": 51,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "lavish",
-        "income": "high",
+        "lifestyle": "rich",
+        "income": "very high",
         "children": true,
-        "location": "Australia",
+        "location": "Netherlands",
         "college": true
     }
 }

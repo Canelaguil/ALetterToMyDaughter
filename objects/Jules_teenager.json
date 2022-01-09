@@ -8,57 +8,56 @@
     "all traits": [
         "impulsive",
         "creative",
-        "organised",
-        "ambitious",
-        "moody"
+        "calm",
+        "empathetic",
+        "athletic"
     ],
     "guardian": {
-        "name": "Diane",
-        "surname": "Schwarze",
-        "age": 55,
+        "name": "April",
+        "surname": "Ryan",
+        "age": 32,
         "sex": "f",
-        "relation": "sister",
+        "relation": "cousin",
         "location": [
-            "Geelong",
-            "Victoria",
+            "Port Macquarie",
+            "New South Wales",
             "Australia",
             "town"
         ],
         "income_class": "medium",
-        "lifestyle": "rich",
+        "lifestyle": "average",
         "married": true,
-        "other_children": false,
-        "nurturing": false,
-        "provide_college": true,
-        "provide_women_college": true,
-        "provide_boarding_school": true,
-        "allowance": "medium allowance",
+        "other_children": true,
+        "nurturing": true,
+        "provide_college": false,
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "small allowance",
         "capacity": 0,
         "ward": [
-            "Jules",
-            "Ika"
+            "Jules"
         ]
     },
     "location": [
-        "Geelong",
-        "Victoria",
+        "Port Macquarie",
+        "New South Wales",
         "Australia",
         "town"
     ],
-    "lifestyle": "rich",
+    "lifestyle": "average",
     "income class": "medium",
-    "boarding school": true,
+    "boarding school": false,
     "country affinities": {
-        "Netherlands": -1,
-        "Belgium": 1,
-        "Australia": -3
+        "Netherlands": -3,
+        "Belgium": -1,
+        "Australia": 2
     },
     "sexuality": "straight",
     "relationships": {
-        "Juana": 58,
-        "Ika": 94,
-        "Robin": 47,
-        "Diane Schwarze": 12
+        "Juana": 39,
+        "Ika": 100,
+        "Robin": 62,
+        "April Ryan": 39
     },
     "person tags": {
         "love_interest": null,
@@ -74,7 +73,7 @@
         "ex_partners": [],
         "boss": null,
         "colleague": null,
-        "guardian": "Diane Schwarze",
+        "guardian": "April Ryan",
         "friend": null,
         "bestfriend": null,
         "deadfriend": null,
@@ -84,13 +83,13 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 36,
+    "trauma": 76,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "rich",
-        "income": "medium",
-        "children": false,
-        "location": "Belgium",
-        "college": false
+        "lifestyle": "lavish",
+        "income": "very high",
+        "children": true,
+        "location": "Australia",
+        "college": true
     }
 }

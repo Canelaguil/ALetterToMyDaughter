@@ -42,6 +42,7 @@ adult_tags = {
     'famous' : False, 
     'workaholic' : False, 
     'ambitious' : False,
+    'independent' : False,
     # trauma
     'gambler' : False, 
     'drug addict' : False, 
@@ -210,3 +211,29 @@ locations = [
     ('Amsterdam', 'Noord-Holland', 'Netherlands', 'city'),
     ('Amersfoort', 'Utrecht', 'Netherlands', 'town')
 ]
+
+
+""" 
+  JOBS
+"""
+
+# (title, level, acceptable, mobile)
+fem_jobs = [
+    ('writer', 'creative', True, True),
+    ('painter', 'creative', True, True),
+    ('shopkeep', 'low', False, False), 
+    ('barkeep', 'low', False, False),
+    ('teacher', 'medium', True, False), 
+    ('nurse', 'medium', True, False), 
+    ('journalist', 'medium', False, True), 
+    ('secretary', 'medium', False, False)
+]
+
+# title : job per income class
+male_jobs = {
+    'accountant' : ['clerk', 'accountant', 'senior accountant', 'CFO'],
+    'laywer' : [None, 'paralegal apprenticeship', 'paralegal', 'sollicitor'],
+    'bar' : ['bartender', 'bar owner', 'bar chain owner', 'CEO bar chain'], 
+    'mechanic' : ['mechanic apprentice', 'mechanic', 'car shop owner', None], 
+    'cook' : ['waiter', 'line cook', 'chef cook', 'famous chef cook']
+}

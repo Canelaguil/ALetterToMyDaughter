@@ -1,5 +1,5 @@
 {
-    "name": "Juana Huijzen",
+    "name": "Juana Carter",
     "age": 18,
     "known traits": [
         "kind",
@@ -8,9 +8,9 @@
     "all traits": [
         "kind",
         "moody",
-        "organised",
-        "cold",
-        "humble"
+        "outgoing",
+        "relaxed",
+        "altruistic"
     ],
     "guardian": {
         "name": "Paul",
@@ -48,16 +48,16 @@
     "income class": "high",
     "boarding school": false,
     "country affinities": {
-        "Netherlands": 2,
+        "Netherlands": -1,
         "Spain": -3,
-        "Australia": -2
+        "Australia": 1
     },
-    "sexuality": "straight",
+    "sexuality": "bisexual",
     "relationships": {
-        "Jules": 74,
-        "Ika": 75,
-        "Robin": 57,
-        "Paul Carter": 43
+        "Jules": 85,
+        "Ika": 19,
+        "Robin": 74,
+        "Paul Carter": 94
     },
     "person tags": {
         "love_interest": null,
@@ -83,13 +83,13 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 84,
+    "trauma": 32,
     "happinness": 80,
     "aspirations": {
         "lifestyle": "lavish",
-        "income": "high",
+        "income": "very high",
         "children": false,
-        "location": "Netherlands",
-        "college": true
+        "location": "Australia",
+        "college": false
     }
 }
