@@ -1,0 +1,214 @@
+{
+    "name": "Jules Carter",
+    "age at event": 35,
+    "known traits": [
+        "impulsive",
+        "creative"
+    ],
+    "all traits": [
+        "impulsive",
+        "creative",
+        "daydreamer",
+        "jealous",
+        "immoral"
+    ],
+    "tags": {
+        "divorced": false,
+        "married": true,
+        "relationship": true,
+        "parent": false,
+        "widowed": true,
+        "commitment-averse": false,
+        "famous": false,
+        "unambitious": false,
+        "independent": false,
+        "creative": false,
+        "gambler": false,
+        "drug addict": false,
+        "grifter": false,
+        "anxiety disorder": false,
+        "depressed": false,
+        "paranoid": false,
+        "recovering": false,
+        "conpiracy theorist": false,
+        "suicidal": false,
+        "possesive": false,
+        "wheelchair-bound": false,
+        "blind": false,
+        "hippy": false,
+        "spiritualist": false,
+        "evangelist": false,
+        "strict": false
+    },
+    "country affinities": {
+        "Netherlands": 1,
+        "Belgium": -1,
+        "Australia": 3
+    },
+    "relationships": {
+        "Juana": 70,
+        "Ika": 48,
+        "Robin": 91,
+        "Paul Carter": 88
+    },
+    "trauma": 48,
+    "people": {
+        "love_interest": "None",
+        "old_flame": "Bonnie Ackford (39)",
+        "partner": "None",
+        "spouse": "Diane Carter (30)",
+        "affairpartner": "None",
+        "dead_partner": "Judith Carter (31)",
+        "dead_child": "None",
+        "children": "",
+        "extra_marital_children": "",
+        "ex_spouses": "Judith Carter (31), ",
+        "ex_partners": "",
+        "boss": "G\u00fcnter von Mueller (66)",
+        "colleague": "Carl Fischer (77)",
+        "guardian": "Paul Carter (93)",
+        "friend": "Bruce Hilling (52)",
+        "bestfriend": "Gerald Ditterich (43)",
+        "deadfriend": "None",
+        "bfriend": "Johnny Fulton (54)",
+        "childhoodfriend": "Walter Sherwood (35)",
+        "familyfriend": "Joan York (35)",
+        "pet": "Jerry   (1)",
+        "enemy": "Walter Catfield (26)"
+    },
+    "romance/family life": {
+        "1949": {
+            "age": 18,
+            "state": "in love",
+            "married": false,
+            "partner": "Bonnie Ackford (22)"
+        },
+        "1950": {
+            "age": 19,
+            "state": "single",
+            "married": false
+        },
+        "1952": {
+            "age": 21,
+            "state": "in love",
+            "married": false,
+            "partner": "Brenda Springborg (25)"
+        },
+        "1953": {
+            "age": 22,
+            "state": "single",
+            "married": false
+        },
+        "1955": {
+            "age": 24,
+            "state": "in love",
+            "married": false,
+            "partner": "Judith Kilby (26)"
+        },
+        "1958": {
+            "age": 27,
+            "state": "engaged",
+            "married": false,
+            "partner": "Judith Kilby (29)"
+        },
+        "1959": {
+            "age": 28,
+            "state": "married",
+            "married": true,
+            "partner": "Judith Carter (30)"
+        },
+        "1960": {
+            "age": 29,
+            "state": "single",
+            "married": false
+        },
+        "1962": {
+            "age": 31,
+            "state": "in love",
+            "married": false,
+            "partner": "Diane Kilby (26)"
+        },
+        "1963": {
+            "age": 32,
+            "state": "engaged",
+            "married": false,
+            "partner": "Diane Kilby (27)"
+        },
+        "1965": {
+            "age": 34,
+            "state": "married",
+            "married": true,
+            "partner": "Diane Carter (29)"
+        }
+    },
+    "professional life": {
+        "1950": {
+            "age": 19,
+            "state": "low job",
+            "income": "low",
+            "location": [
+                "Yankalilla",
+                "South Australia",
+                "Australia",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "mechanic apprentice",
+            "career": "mechanic",
+            "married": false,
+            "boss": "Werner Tindall (37)",
+            "colleague": "Uwe Riley (21)"
+        },
+        "1960": {
+            "age": 29,
+            "state": "low job",
+            "income": "low",
+            "location": [
+                "Yankalilla",
+                "South Australia",
+                "Australia",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "mechanic apprentice",
+            "career": "mechanic",
+            "married": true,
+            "boss": "Jack Thorpe (31)",
+            "colleague": "Uwe Riley (31)"
+        },
+        "1961": {
+            "age": 30,
+            "state": "low job",
+            "income": "low",
+            "location": [
+                "Port Macquarie",
+                "New South Wales",
+                "Australia",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "mechanic apprentice",
+            "career": "mechanic",
+            "married": false,
+            "boss": "Richard Bircher (47)",
+            "colleague": "Alice Bolte (44)"
+        },
+        "1966": {
+            "age": 35,
+            "state": "low job",
+            "income": "low",
+            "location": [
+                "Port Macquarie",
+                "New South Wales",
+                "Australia",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "mechanic apprentice",
+            "career": "mechanic",
+            "married": true,
+            "boss": "G\u00fcnter von Mueller (65)",
+            "colleague": "Carl Fischer (76)"
+        }
+    }
+}

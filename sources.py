@@ -28,7 +28,7 @@ traits = [
     ('empathetic', 'cold'), 
     ('altruistic', 'selfish'),
     ('stoic', 'sensitive'), 
-    ('jealous', 'trusting')
+    ('jealous', 'trusting'),
     ]
 
 adult_tags = {
@@ -39,11 +39,13 @@ adult_tags = {
     'parent' : False, 
     'widowed' : False,
     'commitment-averse' : False,
+    'abusive relationship' : False, 
+    'prev abusive relationship' : False, 
     # jobs
     'famous' : False, 
-    'unambitious' : False,
     'independent' : False,
-    'creative' : False, 
+    'imprisoned' : False,
+    'prev_imprisoned' : False,
     # trauma
     'gambler' : False, 
     'drug addict' : False, 
@@ -61,7 +63,6 @@ adult_tags = {
     'hippy' : False, 
     'spiritualist' : False, 
     'evangelist' : False,
-    'strict' : False, 
 }
 
 people = {
@@ -213,15 +214,16 @@ locations = [
   JOBS
 """
 
-lifestyle = ['humble', 'middle class', 'rich', 'lavish' ]
+lifestyle = ['low', 'medium', 'high', 'very high']
 income = ['low', 'medium', 'high', 'very high']
 
-# (title, level, acceptable, mobile, respectable, student)
+# (0 title, 1 level, 2 acceptable, 3 mobile, 4 respectable, student)
 fem_jobs = [
     ('writer', 'creative', True, True, True, False),
     ('painter', 'creative', True, True, True, False),
     ('actress', 'creative', False, True, True, False), 
     ('singer', 'creative', False, True, True, False), 
+    ('mechanic', 'low', False, True, False, False),
     ('shop keep', 'low', False, False, True, False), 
     ('sex worker', 'low', False, False, False, False), 
     ('bar keep', 'low', False, False, True, False),

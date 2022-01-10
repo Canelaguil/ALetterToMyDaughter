@@ -103,7 +103,7 @@ class Character:
             self.year += 1
         print(self.name, self.surname)
         # pprint(self.romance_life.get_log())
-        pprint(self.io_life.get_people())
+        # pprint(self.io_life.get_people())
         pprint(self.professional_life.get_log())
 
     """
@@ -296,7 +296,12 @@ class Character:
             'tags' : self.tags,
             'country affinities' : self.country_affinities, 
             "relationships" : self.relationships,
-            'trauma' : self.trauma
+            'trauma' : self.trauma,
+            'people' : self.io_life.get_people(),  
+            'tags' : self.tags, 
+            'romance/family life' : self.romance_life.get_log(), 
+            'professional life' : self.professional_life.get_log(), 
+            # 'input/output life' : self.io_life.get_log()
         }
         self.write_json(adult, 'adult')
 

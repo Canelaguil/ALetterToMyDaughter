@@ -157,7 +157,7 @@ class Controller:
             event['reactions'][name] = c.interpret_event(event)
             c.output_event()
 
-        pprint(event)
+        # pprint(event)
 
         with open(f'objects/the_event.json', 'w') as outfile:
             json.dump(event, outfile, indent=2, sort_keys=False)
@@ -198,5 +198,6 @@ class Controller:
         self.cs.pop('Robin')
         for ch in self.cs.values():
             ch.become_adult()
+            ch.output_adult()
 
 Controller()

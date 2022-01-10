@@ -8,56 +8,56 @@
     "all traits": [
         "kind",
         "moody",
-        "rebellious",
-        "upbeat",
-        "moral"
+        "timid",
+        "lazy",
+        "nervous"
     ],
     "guardian": {
-        "name": "Paul",
-        "surname": "Carter",
-        "age": 72,
-        "sex": "m",
-        "relation": "uncle",
+        "name": "April",
+        "surname": "Ryan",
+        "age": 32,
+        "sex": "f",
+        "relation": "cousin",
         "location": [
-            "Yankalilla",
-            "South Australia",
+            "Port Macquarie",
+            "New South Wales",
             "Australia",
             "town"
         ],
-        "income_class": 3,
-        "lifestyle": 3,
-        "married": false,
-        "other_children": false,
+        "income_class": 1,
+        "lifestyle": 1,
+        "married": true,
+        "other_children": true,
         "nurturing": true,
-        "provide_college": true,
+        "provide_college": false,
         "provide_women_college": false,
         "provide_boarding_school": false,
-        "allowance": "big allowance",
+        "allowance": "small allowance",
         "capacity": 0,
         "ward": [
             "Juana"
         ]
     },
     "location": [
-        "Yankalilla",
-        "South Australia",
+        "Port Macquarie",
+        "New South Wales",
         "Australia",
         "town"
     ],
-    "lifestyle": 3,
-    "income class": 3,
+    "lifestyle": 1,
+    "income class": 1,
     "boarding school": false,
     "country affinities": {
-        "Netherlands": 0,
-        "Spain": 1,
-        "Australia": 0
+        "Netherlands": 1,
+        "Spain": 2,
+        "Australia": 2
     },
-    "sexuality": "straight",
+    "sexuality": "gay",
     "relationships": {
-        "Jules": 100,
-        "Ika": 80,
-        "Robin": 56,
-        "Paul Carter": 61
+        "Jules": 98,
+        "Ika": 100,
+        "Robin": 76,
+        "April Ryan": 47
     },
     "person tags": {
         "love_interest": null,
@@ -73,7 +73,7 @@
         "ex_partners": [],
         "boss": null,
         "colleague": null,
-        "guardian": "Paul Carter",
+        "guardian": "April Ryan",
         "friend": null,
         "bestfriend": null,
         "deadfriend": null,
@@ -83,15 +83,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 65,
+    "trauma": 1,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 3,
-        "income": 3,
+        "income": 1,
         "children": true,
         "location": "Spain",
         "college": true,
         "ambitious": false,
-        "independent": true
+        "independent": false
     }
 }
