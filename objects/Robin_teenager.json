@@ -16,8 +16,8 @@
             "Australia",
             "town"
         ],
-        "income_class": "low",
-        "lifestyle": "humble",
+        "income_class": 0,
+        "lifestyle": 0,
         "married": false,
         "other_children": false,
         "nurturing": true,
@@ -34,8 +34,8 @@
         "Australia",
         "town"
     ],
-    "lifestyle": "humble",
-    "income class": "low",
+    "lifestyle": 0,
+    "income class": 0,
     "boarding school": false,
     "country affinities": {
         "Netherlands": 2,
@@ -43,11 +43,11 @@
     },
     "sexuality": "straight",
     "relationships": {
-        "Juana": 86,
-        "Jules": 85,
-        "Ika": 82,
-        "Daniel": 93,
-        "Nadia Wilkes": 75
+        "Juana": 76,
+        "Jules": 100,
+        "Ika": 63,
+        "Daniel": 72,
+        "Nadia Wilkes": 82
     },
     "person tags": {
         "love_interest": null,
@@ -73,13 +73,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 4,
+    "trauma": 2,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "lavish",
-        "income": "low",
+        "lifestyle": 2,
+        "income": 0,
         "children": true,
         "location": "Australia",
-        "college": false
+        "college": true,
+        "ambitious": true,
+        "independent": false
     }
 }

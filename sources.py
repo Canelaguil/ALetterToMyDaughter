@@ -15,6 +15,7 @@ traits = [
     ('obedient', 'rebellious'),
     ('brave', 'cowardly'),
     ('nervous', 'confident'),
+    ('workaholic', 'lazy'),
     ('outgoing', 'shy'),
     ('clumsy', 'athletic'),
     ('intelligent', 'slow'),
@@ -40,9 +41,9 @@ adult_tags = {
     'commitment-averse' : False,
     # jobs
     'famous' : False, 
-    'workaholic' : False, 
-    'ambitious' : False,
+    'unambitious' : False,
     'independent' : False,
+    'creative' : False, 
     # trauma
     'gambler' : False, 
     'drug addict' : False, 
@@ -92,15 +93,12 @@ people = {
 }
 
 """
-GUARDIANS & LIFESTYLE
+GUARDIANS
 """
-
-lifestyle = ['pauper', 'humble', 'average', 'rich', 'lavish' ]
-income = ['very low', 'low', 'medium', 'high', 'very high']
 allowance = [
     'no allowance', 'small allowance', 
-    'medium allowance', 'big allowance'
-    ]
+    'medium allowance', 'big allowance']
+
 guardians = {
     1 : {
         'name' : 'April', 
@@ -109,8 +107,8 @@ guardians = {
         'sex' : 'f',
         'relation' : 'cousin',
         'location' : ('Port Macquarie', 'New South Wales', 'Australia', 'town'),
-        'income_class' : income[2],
-        'lifestyle' : lifestyle[2], 
+        'income_class' : 1,
+        'lifestyle' : 1, 
         'married' : True,
         'other_children' : True,
         'nurturing' : True, 
@@ -128,10 +126,8 @@ guardians = {
         'sex' : 'm',
         'relation' : 'uncle',
         'location' : ('Yankalilla', 'South Australia', 'Australia', 'town'),
-        'income_class' : income[4],
-        'lifestyle' : lifestyle[3], 
-        'income_class' : 'high',
-        'lifestyle' : 'lavish', 
+        'income_class' : 3,
+        'lifestyle' : 3, 
         'married' : False,
         'other_children' : False,
         'nurturing' : True, 
@@ -149,8 +145,8 @@ guardians = {
         'sex' : 'f',
         'relation' : 'sister',
         'location' : ('Geelong', 'Victoria', 'Australia', 'town'),
-        'income_class' : income[2],
-        'lifestyle' : lifestyle[3], 
+        'income_class' : 2,
+        'lifestyle' : 3, 
         'married' : True,
         'other_children' : False,
         'nurturing' : False, 
@@ -169,8 +165,8 @@ guardians = {
         'age1940' : 42, 
         'relation' : 'governess',
         'location' : ('Yealering', 'Western Australia', 'Australia', 'town'),
-        'income_class' : income[1],
-        'lifestyle' : lifestyle[1], 
+        'income_class' : 0,
+        'lifestyle' : 0, 
         'married' : False,
         'other_children' : False,
         'nurturing' : True, 
@@ -217,23 +213,35 @@ locations = [
   JOBS
 """
 
-# (title, level, acceptable, mobile)
+lifestyle = ['humble', 'middle class', 'rich', 'lavish' ]
+income = ['low', 'medium', 'high', 'very high']
+
+# (title, level, acceptable, mobile, respectable, student)
 fem_jobs = [
-    ('writer', 'creative', True, True),
-    ('painter', 'creative', True, True),
-    ('shopkeep', 'low', False, False), 
-    ('barkeep', 'low', False, False),
-    ('teacher', 'medium', True, False), 
-    ('nurse', 'medium', True, False), 
-    ('journalist', 'medium', False, True), 
-    ('secretary', 'medium', False, False)
+    ('writer', 'creative', True, True, True, False),
+    ('painter', 'creative', True, True, True, False),
+    ('actress', 'creative', False, True, True, False), 
+    ('singer', 'creative', False, True, True, False), 
+    ('shop keep', 'low', False, False, True, False), 
+    ('sex worker', 'low', False, False, False, False), 
+    ('bar keep', 'low', False, False, True, False),
+    ('teacher', 'medium', True, False, True, False), 
+    ('nurse', 'medium', True, False, True, False), 
+    ('journalist', 'medium', False, True, True, False), 
+    ('librarian', 'medium', False, False, True, False), 
+    ('pharmacist', 'medium', False, True, True, True), 
+    ('secretary', 'medium', False, False, True, False),
+    ('real estate agent', 'medium', False, False, True, False),
+    ('store owner', 'high', False, True, True, False),
+    ('doctor', 'high', False, False, True, True)
 ]
 
-# title : job per income class
+# title : (0 job per income class, 1 student, 2 acceptable, 3 respectable)
 male_jobs = {
-    'accountant' : ['clerk', 'accountant', 'senior accountant', 'CFO'],
-    'laywer' : [None, 'paralegal apprenticeship', 'paralegal', 'sollicitor'],
-    'bar' : ['bartender', 'bar owner', 'bar chain owner', 'CEO bar chain'], 
-    'mechanic' : ['mechanic apprentice', 'mechanic', 'car shop owner', None], 
-    'cook' : ['waiter', 'line cook', 'chef cook', 'famous chef cook']
+    'accountant' : (['clerk', 'accountant', 'senior accountant', 'CFO'], False, True, True),
+    'laywer' : ([None, 'paralegal apprenticeship', 'paralegal', 'sollicitor'], True, True, True),
+    'bar' : (['bartender', 'bar owner', 'bar chain owner', 'CEO bar chain'], False, False, True), 
+    'mechanic' : (['mechanic apprentice', 'mechanic', 'car shop owner', None], False, False, True), 
+    'cook' : (['waiter', 'line cook', 'chef cook', 'famous chef cook'], False, False, True),
+    'sex worker' : (['sex worker', 'escort', 'brothel owner', None], False, False, False)
 }

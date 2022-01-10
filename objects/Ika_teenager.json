@@ -8,9 +8,9 @@
     "all traits": [
         "brave",
         "outgoing",
-        "uptight",
-        "cheeky",
-        "rebellious"
+        "timid",
+        "kind",
+        "optimistic"
     ],
     "guardian": {
         "name": "Diane",
@@ -24,8 +24,8 @@
             "Australia",
             "town"
         ],
-        "income_class": "medium",
-        "lifestyle": "rich",
+        "income_class": 2,
+        "lifestyle": 3,
         "married": true,
         "other_children": false,
         "nurturing": false,
@@ -33,8 +33,9 @@
         "provide_women_college": true,
         "provide_boarding_school": true,
         "allowance": "medium allowance",
-        "capacity": 1,
+        "capacity": 0,
         "ward": [
+            "Jules",
             "Ika"
         ]
     },
@@ -44,19 +45,19 @@
         "Australia",
         "town"
     ],
-    "lifestyle": "rich",
-    "income class": "medium",
+    "lifestyle": 3,
+    "income class": 2,
     "boarding school": true,
     "country affinities": {
-        "Netherlands": 2,
-        "Indonesia": 1,
-        "Australia": -3
+        "Netherlands": -2,
+        "Indonesia": -3,
+        "Australia": -2
     },
-    "sexuality": "bisexual",
+    "sexuality": "gay",
     "relationships": {
-        "Juana": 84,
-        "Jules": 8,
-        "Robin": 76,
+        "Juana": 89,
+        "Jules": 73,
+        "Robin": 85,
         "Diane Schwarze": 0
     },
     "person tags": {
@@ -83,13 +84,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 51,
+    "trauma": 36,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "rich",
-        "income": "very high",
+        "lifestyle": 3,
+        "income": 2,
         "children": true,
         "location": "Netherlands",
-        "college": true
+        "college": true,
+        "ambitious": true,
+        "independent": false
     }
 }

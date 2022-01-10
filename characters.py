@@ -97,7 +97,7 @@ class Character:
     def adult_years(self):
         while self.year < 1966: 
             married, self.tags, self.people_tags = self.romance_life.transition(self.location[2], self.tags)
-            self.location, self.tags, self.people_tags = self.professional_life.transition(married, self.tags)
+            self.location, self.tags, self.people_tags = self.professional_life.transition(married, self.tags, self.my_traits)
             self.people_tags, self.tags = self.io_life.transition(self.person_tags, self.location, self.tags)
             self.surname = self.romance_life.surname
             self.year += 1
@@ -214,19 +214,21 @@ class Character:
         self.modify_trauma(new_trauma, True)
 
         # aspirations
-        l_index = randint(lifestyle.index(self.lifestyle), len(lifestyle) - 1)
-        i_index = randint(income.index(self.income_class), len(income) -1)
+        l_index = randint(self.lifestyle, len(lifestyle) - 1)
+        i_index = randint(self.income_class, len(income) -1)
         c_chance = 0.5
         if 'curious' in self.my_traits or 'intelligent' in self.my_traits or 'ambitious' in self.my_traits: 
             c_chance += 0.2
         if 'disinterested' in self.my_traits or 'unambitious' in self.my_traits or 'slow' in self.my_traits:
             c_chance -= 0.2
         self.aspirations = {
-            'lifestyle' : lifestyle[l_index], 
-            'income' : income[i_index], 
+            'lifestyle' : l_index, 
+            'income' : i_index, 
             'children' : False if random() < self.trauma / 100 else True,
             'location' : max(self.country_affinities, key=self.country_affinities.get),
-            'college' : True if random() < c_chance else False
+            'college' : True if random() < c_chance else False, 
+            'ambitious' : True if random() < c_chance else False, 
+            'independent' : True if random() < c_chance else False, 
         }
         self.year = 1945 + t_years
 

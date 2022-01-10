@@ -1,5 +1,5 @@
 {
-    "name": "Juana Carter",
+    "name": "Juana Huijzen",
     "age": 18,
     "known traits": [
         "kind",
@@ -8,9 +8,9 @@
     "all traits": [
         "kind",
         "moody",
-        "outgoing",
-        "relaxed",
-        "altruistic"
+        "rebellious",
+        "upbeat",
+        "moral"
     ],
     "guardian": {
         "name": "Paul",
@@ -24,8 +24,8 @@
             "Australia",
             "town"
         ],
-        "income_class": "high",
-        "lifestyle": "lavish",
+        "income_class": 3,
+        "lifestyle": 3,
         "married": false,
         "other_children": false,
         "nurturing": true,
@@ -44,20 +44,20 @@
         "Australia",
         "town"
     ],
-    "lifestyle": "lavish",
-    "income class": "high",
+    "lifestyle": 3,
+    "income class": 3,
     "boarding school": false,
     "country affinities": {
-        "Netherlands": -1,
-        "Spain": -3,
-        "Australia": 1
+        "Netherlands": 0,
+        "Spain": 1,
+        "Australia": 0
     },
-    "sexuality": "bisexual",
+    "sexuality": "straight",
     "relationships": {
-        "Jules": 85,
-        "Ika": 19,
-        "Robin": 74,
-        "Paul Carter": 94
+        "Jules": 100,
+        "Ika": 80,
+        "Robin": 56,
+        "Paul Carter": 61
     },
     "person tags": {
         "love_interest": null,
@@ -83,13 +83,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 32,
+    "trauma": 65,
     "happinness": 80,
     "aspirations": {
-        "lifestyle": "lavish",
-        "income": "very high",
-        "children": false,
-        "location": "Australia",
-        "college": false
+        "lifestyle": 3,
+        "income": 3,
+        "children": true,
+        "location": "Spain",
+        "college": true,
+        "ambitious": false,
+        "independent": true
     }
 }

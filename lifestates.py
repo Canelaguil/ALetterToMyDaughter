@@ -1,6 +1,8 @@
 from copy import copy
 from random import random, randint, choice, seed, choices, uniform, shuffle
-from sources import locations, allowance, lifestyle, fem_first_en, fem_first_nl, male_first_en, male_first_nl, surnames_nl, surnames_en
+from sources import locations, allowance, lifestyle, fem_first_en, fem_first_nl
+from sources import male_first_en, male_first_nl, surnames_nl, surnames_en
+from sources import male_jobs, fem_jobs, income, lifestyle
 
 class Person:
     def __init__(self, nationality, sex, name=None, surname=None, age=0) -> None:
@@ -356,7 +358,7 @@ class ProfessionalLife:
     def __init__(self, year, sex, aspirations, guardian, location, traits, people) -> None:
         self.year = year
         self.sex = sex
-        self.traits = traits
+        self.traits = set(traits)
         self.age = 18
         self.log = {}
         self.people = people
@@ -368,9 +370,14 @@ class ProfessionalLife:
         self.is_student = False 
         self.was_student = False
         self.state = 'start'
+        self.income = None
+        self.lifestyle = None
+        self.job = None
+        self.career = None
 
-    def transition(self, married, tags):
+    def transition(self, married, tags, traits):
         self.tags = tags
+        self.traits = set(traits)
         change = False
         if self.state == 'unemployed':
             change = self.unemployed()
@@ -440,67 +447,123 @@ class ProfessionalLife:
 
     def change(self): 
         relocated = self.relocate()
-        self.people['boss'] = self.get_colleague()
-        if relocated: 
-            self.people['colleague'] = self.get_colleague()
+        if self.state == 'unemployed' or self.state == 'stay at home':
+            self.people['boss'] = None
+            self.people['colleague'] = None 
         else: 
-            if random() < 0.4: 
+            self.people['boss'] = self.get_colleague()
+            if relocated: 
                 self.people['colleague'] = self.get_colleague()
+            else: 
+                if random() < 0.4: 
+                    self.people['colleague'] = self.get_colleague()
+
         self.log_change()
+
+    def assign_career(self):
+        creative_traits = {'quirky', 'unambitious', 'daydreamer', 'creative', 'exuberant', 'melancholic', 'optimistic'}
+        rebellious_traits = {'rebellious', 'critical', 'creative', 'impulsive', 'daydreamer', 'optimistic'}
+        ambitious_traits = {'intelligent', 'ambitious', 'optimistic', 'organised', 'workaholic', 'brave', 'confident'}
+        unambitious_traits = {'lazy', 'unambitious', 'disinterested' , 'clumsy', 'nervous'}
+
+        # bonus assignment
+        self.ambition_bonus = len(self.traits & ambitious_traits) * 0.05
+        self.unambitious_bonus = len(self.traits & unambitious_traits) * 0.05
+
+        # if woman
+        if self.sex == 'f':
+            if random() < ((len(self.traits & creative_traits) + 0.1) / len(creative_traits)):
+                creative_jobs = [job for job in fem_jobs if job[1] == 'creative']
+                self.job = choice(creative_jobs)
+                self.state = 'creative' 
+                self.income = 0
+                self.lifestyle = 0 if self.tags['independent'] else self.lifestyle
+                return
+            else: 
+                if self.lifestyle > 1:
+                    if random() < ((len(self.traits & rebellious_traits) + 0.1) / len(rebellious_traits)):
+                        self.tags['independent'] = True
+                        rebellious_jobs = [job for job in fem_jobs if job[2] == False and job[4]]
+                        self.job = choice(rebellious_jobs)
+                        self.lifestyle = lifestyle.index(self.job[1])
+                    else: 
+                        proper_jobs = [job for job in fem_jobs if job[3] and job[4]]
+                        self.job = choice(proper_jobs)
+                        self.income = income.index(self.job[1])
+                        self.lifestyle = lifestyle.index(self.job[1]) if self.tags['independent'] else self.lifestyle
+                else: 
+                    if random() < ((len(self.traits & ambitious_traits) + 0.1) / len(ambitious_traits)): 
+                        ambitious_jobs = [job for job in fem_jobs if job[1] == 'medium']
+                        self.job = choice(ambitious_jobs)
+                    else: 
+                        random_jobs = [job for job in fem_jobs if job[1] != 'high']
+                        self.job = choice(random_jobs)
+                    self.lifestyle = lifestyle.index(self.job[1])
+                    self.tags['independent'] = True
+                
+                self.state = f"{self.job[1]} job"
+                self.income = income.index(self.job[1])
+
+        # if man
+        else: 
+            if self.was_student:
+                if random() < (0.7 + self.ambition_bonus): 
+                    jobs = [key for key, job in male_jobs.items() if job[2]]
+                else: 
+                    jobs = [key for key, job in male_jobs.items() if job[3]]
+                ladder = choice([0, 1])
+            else: 
+                if self.lifestyle > 1:
+                    if random() < ((len(self.traits & rebellious_traits) + 0.1) / len(rebellious_traits)):
+                        jobs = [key for key, job in male_jobs.items() if not job[1] and job[3]]
+                    else: 
+                        jobs = [key for key, job in male_jobs.items() if not job[1] and job[2]]
+                    ladder = choice([0, 1])
+                else:
+                    ladder = 0
+                    jobs = [key for key, job in male_jobs.items() if job[3]]
+
+            self.career = choice(jobs)
+            self.job = male_jobs[self.career][ladder]
+            if self.lifestyle > 1:
+                self.lifestyle =  ladder + 1
+            else: 
+                self.lifestyle = ladder
+            self.income = ladder
+            self.state = f"{income[ladder]} job"
+
+    def start(self):
+        self.lifestyle = self.guardian['lifestyle']
+        self.income = self.guardian['income_class']
+        self.location = self.guardian['location']
+
+        if self.sex == 'f':
+            if self.lifestyle > 1:
+                if self.aspirations['college'] and self.guardian['provide_women_college']:
+                    self.state = 'student'
+                    self.tags['independent'] = False
+                else:
+                    self.state = 'stay at home'
+                    self.tags['independent'] = False
+                    return False
+            else: 
+                self.tags['independent'] = True
+                self.assign_career()
+        else:
+            if self.aspirations['college'] and self.guardian['provide_college']:
+                self.state = 'student'
+                self.tags['independent'] = False
+            else: 
+                self.assign_career()
 
     """ 
       PHASES
     """
-    def start(self):
-        self.lifestyle = self.guardian['lifestyle']
-        self.income_class = self.guardian['income_class']
-        self.location = self.guardian['location']
-
-        if self.aspirations['college']:
-            # If they want to study
-            if self.sex == 'f':
-                if self.guardian['provide_women_college']:
-                    self.state = 'student'
-                else:
-                    if lifestyle.index(self.lifestyle) > 1:
-                        self.state = 'unemployed'
-                    else: 
-                        self.state = 'low job'
-            else:
-                if self.guardian['provide_college']:
-                    self.state = 'student'
-                else:
-                    if lifestyle.index(self.lifestyle) > 2:
-                        if random() < 0.9:
-                            self.state = 'medium job'
-                        else:
-                            self.state = 'low job'
-                    else:
-                        if random() < 0.8: 
-                            self.state = 'low job'
-                        else: 
-                            self.state = 'medium job'
-        # if no aspiration for college
-        else: 
-            if self.sex == 'f':
-                if lifestyle.index(self.lifestyle) > 1:
-                    self.state = 'unemployed'
-                else: 
-                    self.state = 'low job'
-            else:
-                if lifestyle.index(self.lifestyle) > 2:
-                    if random() < 0.8:
-                        self.state = 'medium job'
-                    else:
-                        self.state = 'low job'
-                else:
-                    if random() < 0.8: 
-                        self.state = 'low job'
-                    else: 
-                        self.state = 'medium job'
-        return True
 
     def creative(self):
+        pass
+
+    def stay_at_home(self):
         pass
 
     def student(self): 
@@ -520,7 +583,7 @@ class ProfessionalLife:
 
     def unemployed(self): 
         if self.sex == 'f':
-            if lifestyle.index(self.lifestyle) > 1:
+            if self.lifestyle > 1:
                 self.state = 'unemployed'
                 if not self.married:
                     # if ambitious
@@ -543,6 +606,9 @@ class ProfessionalLife:
                             self.state = 'low job'
                             return True
 
+    """ 
+      JOBS
+    """
     def low_job(self):
         if self.sex == 'm':
             if random() < 0.1:
