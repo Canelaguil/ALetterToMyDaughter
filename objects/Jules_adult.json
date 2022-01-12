@@ -1,5 +1,5 @@
 {
-    "name": "Jules Carter",
+    "name": "Jules Cohen",
     "age at event": 35,
     "known traits": [
         "impulsive",
@@ -8,21 +8,23 @@
     "all traits": [
         "impulsive",
         "creative",
-        "daydreamer",
-        "jealous",
-        "immoral"
+        "slow",
+        "empathetic",
+        "curious"
     ],
     "tags": {
         "divorced": false,
         "married": true,
         "relationship": true,
         "parent": false,
-        "widowed": true,
-        "commitment-averse": false,
+        "widowed": false,
+        "commitment-averse": true,
+        "abusive relationship": false,
+        "prev abusive relationship": false,
         "famous": false,
-        "unambitious": false,
         "independent": false,
-        "creative": false,
+        "imprisoned": false,
+        "prev_imprisoned": false,
         "gambler": false,
         "drug addict": false,
         "grifter": false,
@@ -37,178 +39,187 @@
         "blind": false,
         "hippy": false,
         "spiritualist": false,
-        "evangelist": false,
-        "strict": false
+        "evangelist": false
     },
     "country affinities": {
-        "Netherlands": 1,
-        "Belgium": -1,
-        "Australia": 3
+        "Netherlands": -3,
+        "Belgium": 2,
+        "Australia": 2
     },
     "relationships": {
-        "Juana": 70,
-        "Ika": 48,
-        "Robin": 91,
-        "Paul Carter": 88
+        "Juana": 100,
+        "Ika": 100,
+        "Robin": 76,
+        "Diane Schwarze": 23
     },
-    "trauma": 48,
+    "trauma": 59,
     "people": {
         "love_interest": "None",
-        "old_flame": "Bonnie Ackford (39)",
+        "old_flame": "Shirley Bolte (40)",
         "partner": "None",
-        "spouse": "Diane Carter (30)",
+        "spouse": "Karin Cohen (43)",
         "affairpartner": "None",
-        "dead_partner": "Judith Carter (31)",
+        "dead_partner": "None",
         "dead_child": "None",
         "children": "",
         "extra_marital_children": "",
-        "ex_spouses": "Judith Carter (31), ",
+        "ex_spouses": "Gloria Cohen (46), ",
         "ex_partners": "",
-        "boss": "G\u00fcnter von Mueller (66)",
-        "colleague": "Carl Fischer (77)",
-        "guardian": "Paul Carter (93)",
-        "friend": "Bruce Hilling (52)",
-        "bestfriend": "Gerald Ditterich (43)",
+        "boss": "Billy Hilling (58)",
+        "colleague": "Karen von Mueller (47)",
+        "guardian": "Diane Schwarze (76)",
+        "friend": "Douglas Frei (42)",
+        "bestfriend": "George Bolte (30)",
         "deadfriend": "None",
-        "bfriend": "Johnny Fulton (54)",
-        "childhoodfriend": "Walter Sherwood (35)",
-        "familyfriend": "Joan York (35)",
-        "pet": "Jerry   (1)",
-        "enemy": "Walter Catfield (26)"
+        "bfriend": "Steven Tindall (46)",
+        "childhoodfriend": "Paul Acker (35)",
+        "familyfriend": "Werner York (41)",
+        "pet": "Donald   (3)",
+        "enemy": "Marie Ackford (49)"
     },
     "romance/family life": {
         "1949": {
             "age": 18,
-            "state": "in love",
-            "married": false,
-            "partner": "Bonnie Ackford (22)"
+            "state": "single",
+            "married": false
         },
         "1950": {
             "age": 19,
-            "state": "single",
-            "married": false
+            "state": "in love",
+            "married": false,
+            "partner": "Shirley Bolte (24)"
         },
         "1952": {
             "age": 21,
-            "state": "in love",
-            "married": false,
-            "partner": "Brenda Springborg (25)"
+            "state": "single",
+            "married": false
         },
         "1953": {
             "age": 22,
-            "state": "single",
-            "married": false
-        },
-        "1955": {
-            "age": 24,
             "state": "in love",
             "married": false,
-            "partner": "Judith Kilby (26)"
+            "partner": "Erika Barlow (22)"
+        },
+        "1954": {
+            "age": 23,
+            "state": "single",
+            "married": false
         },
         "1958": {
             "age": 27,
-            "state": "engaged",
+            "state": "in love",
             "married": false,
-            "partner": "Judith Kilby (29)"
-        },
-        "1959": {
-            "age": 28,
-            "state": "married",
-            "married": true,
-            "partner": "Judith Carter (30)"
+            "partner": "Gloria Barlow (38)"
         },
         "1960": {
             "age": 29,
-            "state": "single",
-            "married": false
-        },
-        "1962": {
-            "age": 31,
-            "state": "in love",
-            "married": false,
-            "partner": "Diane Kilby (26)"
-        },
-        "1963": {
-            "age": 32,
             "state": "engaged",
             "married": false,
-            "partner": "Diane Kilby (27)"
+            "partner": "Gloria Barlow (40)"
+        },
+        "1961": {
+            "age": 30,
+            "state": "married",
+            "married": true,
+            "partner": "Gloria Cohen (41)"
+        },
+        "1964": {
+            "age": 33,
+            "state": "cheating",
+            "married": true,
+            "partner": "Gloria Cohen (44)",
+            "cheating with": "Karin Sherwood (41)"
         },
         "1965": {
             "age": 34,
             "state": "married",
             "married": true,
-            "partner": "Diane Carter (29)"
+            "partner": "Karin Cohen (42)"
         }
     },
     "professional life": {
         "1950": {
             "age": 19,
-            "state": "low job",
-            "income": "low",
+            "state": "student",
+            "income": "high",
             "location": [
-                "Yankalilla",
-                "South Australia",
+                "Sydney",
+                "New South Wales",
                 "Australia",
-                "town"
+                "city"
             ],
-            "lifestyle": "medium",
-            "job": "mechanic apprentice",
-            "career": "mechanic",
+            "lifestyle": "very high",
+            "job": null,
+            "career": null,
+            "married": false
+        },
+        "1955": {
+            "age": 24,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "high",
+            "job": "paralegal",
+            "career": "laywer",
             "married": false,
-            "boss": "Werner Tindall (37)",
-            "colleague": "Uwe Riley (21)"
+            "boss": "Robert Eveleigh (24)",
+            "colleague": "Walter Eveleigh (53)"
         },
         "1960": {
             "age": 29,
-            "state": "low job",
-            "income": "low",
+            "state": "high job",
+            "income": "high",
             "location": [
-                "Yankalilla",
-                "South Australia",
-                "Australia",
-                "town"
-            ],
-            "lifestyle": "medium",
-            "job": "mechanic apprentice",
-            "career": "mechanic",
-            "married": true,
-            "boss": "Jack Thorpe (31)",
-            "colleague": "Uwe Riley (31)"
-        },
-        "1961": {
-            "age": 30,
-            "state": "low job",
-            "income": "low",
-            "location": [
-                "Port Macquarie",
+                "Sydney",
                 "New South Wales",
                 "Australia",
-                "town"
+                "city"
             ],
-            "lifestyle": "medium",
-            "job": "mechanic apprentice",
-            "career": "mechanic",
+            "lifestyle": "very high",
+            "job": "sollicitor",
+            "career": "laywer",
             "married": false,
-            "boss": "Richard Bircher (47)",
-            "colleague": "Alice Bolte (44)"
+            "boss": "G\u00fcnter Ditterich (35)",
+            "colleague": "Peter Yeaton (31)"
         },
-        "1966": {
-            "age": 35,
-            "state": "low job",
-            "income": "low",
+        "1962": {
+            "age": 31,
+            "state": "high job",
+            "income": "high",
             "location": [
-                "Port Macquarie",
+                "Sydney",
                 "New South Wales",
                 "Australia",
-                "town"
+                "city"
             ],
-            "lifestyle": "medium",
-            "job": "mechanic apprentice",
-            "career": "mechanic",
+            "lifestyle": "very high",
+            "job": "sollicitor",
+            "career": "laywer",
             "married": true,
-            "boss": "G\u00fcnter von Mueller (65)",
-            "colleague": "Carl Fischer (76)"
+            "boss": "Joan Ramsay (57)",
+            "colleague": "Karen von Mueller (42)"
+        },
+        "1963": {
+            "age": 32,
+            "state": "very high job",
+            "income": "very high",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": "law firm partner",
+            "career": "laywer",
+            "married": true,
+            "boss": "Billy Hilling (54)",
+            "colleague": "Karen von Mueller (43)"
         }
     }
 }

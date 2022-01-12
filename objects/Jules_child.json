@@ -8,20 +8,20 @@
     "all traits": [
         "impulsive",
         "creative",
-        "daydreamer",
-        "jealous",
-        "immoral"
+        "slow",
+        "empathetic",
+        "curious"
     ],
     "country affinities": {
-        "Netherlands": 1,
-        "Belgium": -1,
-        "Australia": 1
+        "Netherlands": -3,
+        "Belgium": 2,
+        "Australia": 2
     },
     "relationships": {
-        "Juana": 57,
-        "Ika": 74,
-        "Robin": 91,
-        "Daniel": 51
+        "Juana": 100,
+        "Ika": 78,
+        "Robin": 76,
+        "Daniel": 83
     },
     "memory": {
         "Juana": {
@@ -35,15 +35,17 @@
                 ],
                 "memory_relation_impact": "positive"
             },
-            "farmers children": {
-                "description": "Juana would sometimes play with the farmer's children",
+            "lost in woods": {
+                "description": "Ika once got lost in the woods while playing tag with Robin and Juana",
                 "category": "childhood",
-                "keyword": "farmers children",
+                "keyword": "lost in woods",
                 "people": [
-                    "Juana"
+                    "Ika",
+                    "Juana",
+                    "Robin"
                 ],
-                "ch_decrease": "['obedient', 'straight-laced', 'uptight']",
-                "ch_increase": "['rebellious', 'impulsive', 'relaxed']",
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
                 "memory_relation_impact": "neutral"
             },
             "horses": {
@@ -57,87 +59,122 @@
                 "ch_increase": "['optimistic', 'daydreamer']",
                 "memory_relation_impact": "neutral"
             },
-            "little women": {
-                "description": "Juana read Little Women several times but pretended not to like it",
-                "category": "childhood",
-                "keyword": "little women",
-                "people": [
-                    "Juana"
-                ],
-                "ch_decrease": "['tolerant', 'confident', 'outgoing', 'upbeat']",
-                "ch_increase": "['critical', 'cowardly', 'nervous', 'timid', 'suspicious']",
-                "memory_relation_impact": "neutral"
-            },
-            "sex talk": {
-                "description": "Juana informed Ika and I that sex involves two naked people",
-                "category": "childhood",
-                "keyword": "sex talk",
-                "people": [
-                    "Juana",
-                    "Jules",
-                    "Ika"
-                ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
-                "memory_relation_impact": "neutral"
-            }
-        },
-        "Daniel": {
-            "disliked general": {
-                "description": "Daniel disliked the general",
-                "category": "childhood",
-                "keyword": "disliked general",
-                "people": [
-                    "Daniel"
-                ],
-                "ch_decrease": "['obedient', 'naive']",
-                "ch_increase": "['rebellious', 'supicious', 'critical']",
-                "memory_relation_impact": "neutral"
-            },
             "learning english": {
-                "description": "Daniel struggled the longest with learning English",
+                "description": "Juana struggled the longest with learning English",
                 "category": "childhood",
                 "keyword": "learning english",
                 "people": [
-                    "Daniel"
+                    "Juana"
                 ],
                 "ch_decrease": "['curious', 'intelligent', 'daydreamer', 'suspicious']",
                 "ch_increase": "['disinterested', 'slow', 'naive', 'practical', 'critical']",
                 "memory_relation_impact": "neutral"
             }
         },
-        "myself": {
-            "sex talk": {
-                "description": "Juana informed Ika and I that sex involves two naked people",
+        "Daniel": {
+            "greek mythology": {
+                "description": "Daniel was obsessed with greek mythology for a while",
                 "category": "childhood",
-                "keyword": "sex talk",
+                "keyword": "greek mythology",
                 "people": [
-                    "Juana",
-                    "Jules",
-                    "Ika"
+                    "Daniel"
                 ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "ch_decrease": "['disinterested', 'slow', 'practical']",
+                "ch_increase": "['curious', 'daydreamer']",
                 "memory_relation_impact": "neutral"
+            },
+            "sucking up to Nadia": {
+                "description": "Daniel was always sucking up to Nadia",
+                "category": "childhood",
+                "keyword": "sucking up to Nadia",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
+            "new games": {
+                "description": "Daniel would often come up with new games ",
+                "category": "childhood",
+                "keyword": "new games",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
+                "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
+                "memory_relation_impact": "neutral"
+            },
+            "farmers children": {
+                "description": "Daniel would sometimes play with the farmer's children",
+                "category": "childhood",
+                "keyword": "farmers children",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['obedient', 'straight-laced', 'uptight']",
+                "ch_increase": "['rebellious', 'impulsive', 'relaxed']",
+                "memory_relation_impact": "neutral"
+            },
+            "helping when crying": {
+                "description": "When I got sad, Daniel would be the first to be at their side",
+                "category": "childhood",
+                "keyword": "helping when crying",
+                "people": [
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
+                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "myself": {
+            "helping when crying": {
+                "description": "When I got sad, Daniel would be the first to be at their side",
+                "category": "childhood",
+                "keyword": "helping when crying",
+                "people": [
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
+                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
             }
         },
         "Ika": {
-            "sex talk": {
-                "description": "Juana informed Ika and I that sex involves two naked people",
+            "lost in woods": {
+                "description": "Ika once got lost in the woods while playing tag with Robin and Juana",
                 "category": "childhood",
-                "keyword": "sex talk",
+                "keyword": "lost in woods",
                 "people": [
+                    "Ika",
                     "Juana",
-                    "Jules",
-                    "Ika"
+                    "Robin"
                 ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Robin": {
+            "lost in woods": {
+                "description": "Ika once got lost in the woods while playing tag with Robin and Juana",
+                "category": "childhood",
+                "keyword": "lost in woods",
+                "people": [
+                    "Ika",
+                    "Juana",
+                    "Robin"
+                ],
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
                 "memory_relation_impact": "neutral"
             }
         }
     },
-    "backstory": "I came to the Netherlands when I was 3 years old. My father liked it there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 9. My parents had send me  to England days prior. I never saw them again.",
-    "trauma": 38,
+    "backstory": "I came to the Netherlands when I was 1 years old. My father thought it would be saver for us there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 9. My parents had send me  to England days prior. I never saw them again.",
+    "trauma": 23,
     "crush": "Juana"
 }

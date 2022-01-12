@@ -8,21 +8,23 @@
     "all traits": [
         "kind",
         "moody",
-        "timid",
-        "lazy",
-        "nervous"
+        "melancholic",
+        "pessimistic",
+        "disorganised"
     ],
     "tags": {
         "divorced": false,
         "married": false,
         "relationship": true,
-        "parent": false,
-        "widowed": true,
+        "parent": true,
+        "widowed": false,
         "commitment-averse": false,
+        "abusive relationship": false,
+        "prev abusive relationship": false,
         "famous": false,
-        "unambitious": false,
         "independent": true,
-        "creative": false,
+        "imprisoned": false,
+        "prev_imprisoned": false,
         "gambler": false,
         "drug addict": false,
         "grifter": false,
@@ -37,74 +39,106 @@
         "blind": false,
         "hippy": false,
         "spiritualist": false,
-        "evangelist": false,
-        "strict": false
+        "evangelist": false
     },
     "country affinities": {
-        "Netherlands": 1,
-        "Spain": 2,
+        "Netherlands": -1,
+        "Spain": 3,
         "Australia": 2
     },
     "relationships": {
-        "Jules": 98,
-        "Ika": 100,
-        "Robin": 76,
-        "April Ryan": 47
+        "Jules": 70,
+        "Ika": 84,
+        "Robin": 100,
+        "Diane Schwarze": 6
     },
-    "trauma": 1,
+    "trauma": 21,
     "people": {
         "love_interest": "None",
         "old_flame": "None",
-        "partner": "Rosemarie Ramsay (28)",
+        "partner": "Ute Catfield (35)",
         "spouse": "None",
         "affairpartner": "None",
-        "dead_partner": "Rosemarie Ramsay (28)",
+        "dead_partner": "None",
         "dead_child": "None",
-        "children": "",
+        "children": "David Hilling (11), Mark Huijzen (3), ",
         "extra_marital_children": "",
         "ex_spouses": "",
-        "ex_partners": "Rosemarie Ramsay (28), Rosemarie Ramsay (28), Rosemarie Ramsay (28), ",
-        "boss": "Dennis Kilby (54)",
+        "ex_partners": "Ute Catfield (35), ",
+        "boss": "Dieter Farlow (36)",
         "colleague": "None",
-        "guardian": "April Ryan (53)",
-        "friend": "Gerd Harlow (52)",
-        "bestfriend": "Albert Yeaton (40)",
+        "guardian": "Diane Schwarze (76)",
+        "friend": "Barbara Fischer (52)",
+        "bestfriend": "Michael Digby (43)",
         "deadfriend": "None",
-        "bfriend": "Betty Bircher (28)",
-        "childhoodfriend": "Roy Ramsay (35)",
-        "familyfriend": "Brenda Ramsay (42)",
-        "pet": "Cathleen   (4)",
-        "enemy": "Frances Hayes (28)"
+        "bfriend": "Harold Ansley (24)",
+        "childhoodfriend": "Karen Woolley (35)",
+        "familyfriend": "Helga Ansley (42)",
+        "pet": "Marilyn   (0)",
+        "enemy": "Nancy Marston (39)"
     },
     "romance/family life": {
         "1949": {
             "age": 18,
+            "state": "single",
+            "married": false
+        },
+        "1952": {
+            "age": 21,
             "state": "in love",
             "married": false,
-            "partner": "Rosemarie Ramsay (21)"
+            "partner": "Ute Catfield (21)"
         },
-        "1951": {
-            "age": 20,
+        "1953": {
+            "age": 22,
             "state": "partnership",
             "married": false,
-            "partner": "Rosemarie Ramsay (23)"
+            "partner": "Ute Catfield (22)"
+        },
+        "1955": {
+            "age": 24,
+            "state": "partnership",
+            "married": false,
+            "partner": "Ute Catfield (24)",
+            "children": "David Hilling (0), "
+        },
+        "1963": {
+            "age": 32,
+            "state": "partnership",
+            "married": false,
+            "partner": "Ute Catfield (32)",
+            "children": "David Hilling (8), Mark Huijzen (0), "
         }
     },
     "professional life": {
         "1950": {
             "age": 19,
+            "state": "student",
+            "income": "high",
+            "location": [
+                "Melbourne",
+                "Victoria",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": false
+        },
+        "1955": {
+            "age": 24,
             "state": "medium job",
             "income": "medium",
             "location": [
-                "Port Macquarie",
-                "New South Wales",
+                "Melbourne",
+                "Victoria",
                 "Australia",
-                "town"
+                "city"
             ],
             "lifestyle": "medium",
-            "job": "journalist",
+            "job": "teacher",
             "married": false,
-            "boss": "Dennis Kilby (37)",
+            "boss": "Dieter Farlow (24)",
             "colleague": "None"
         }
     }

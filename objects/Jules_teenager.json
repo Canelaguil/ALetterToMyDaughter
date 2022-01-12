@@ -1,5 +1,5 @@
 {
-    "name": "Jules Carter",
+    "name": "Jules Cohen",
     "age": 18,
     "known traits": [
         "impulsive",
@@ -8,56 +8,57 @@
     "all traits": [
         "impulsive",
         "creative",
-        "daydreamer",
-        "jealous",
-        "immoral"
+        "slow",
+        "empathetic",
+        "curious"
     ],
     "guardian": {
-        "name": "Paul",
-        "surname": "Carter",
-        "age": 72,
-        "sex": "m",
-        "relation": "uncle",
+        "name": "Diane",
+        "surname": "Schwarze",
+        "age": 55,
+        "sex": "f",
+        "relation": "sister",
         "location": [
-            "Yankalilla",
-            "South Australia",
+            "Geelong",
+            "Victoria",
             "Australia",
             "town"
         ],
-        "income_class": 3,
+        "income_class": 2,
         "lifestyle": 3,
-        "married": false,
+        "married": true,
         "other_children": false,
-        "nurturing": true,
+        "nurturing": false,
         "provide_college": true,
-        "provide_women_college": false,
-        "provide_boarding_school": false,
-        "allowance": "big allowance",
+        "provide_women_college": true,
+        "provide_boarding_school": true,
+        "allowance": "medium allowance",
         "capacity": 0,
         "ward": [
+            "Juana",
             "Jules"
         ]
     },
     "location": [
-        "Yankalilla",
-        "South Australia",
+        "Geelong",
+        "Victoria",
         "Australia",
         "town"
     ],
     "lifestyle": 3,
-    "income class": 3,
-    "boarding school": false,
+    "income class": 2,
+    "boarding school": true,
     "country affinities": {
-        "Netherlands": 1,
-        "Belgium": -1,
-        "Australia": 3
+        "Netherlands": -3,
+        "Belgium": 2,
+        "Australia": 2
     },
     "sexuality": "straight",
     "relationships": {
-        "Juana": 70,
-        "Ika": 48,
-        "Robin": 91,
-        "Paul Carter": 88
+        "Juana": 100,
+        "Ika": 100,
+        "Robin": 76,
+        "Diane Schwarze": 23
     },
     "person tags": {
         "love_interest": null,
@@ -73,7 +74,7 @@
         "ex_partners": [],
         "boss": null,
         "colleague": null,
-        "guardian": "Paul Carter",
+        "guardian": "Diane Schwarze",
         "friend": null,
         "bestfriend": null,
         "deadfriend": null,
@@ -83,14 +84,14 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 48,
+    "trauma": 59,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 3,
         "income": 3,
-        "children": true,
-        "location": "Australia",
-        "college": false,
+        "children": false,
+        "location": "Belgium",
+        "college": true,
         "ambitious": false,
         "independent": false
     }

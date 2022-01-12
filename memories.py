@@ -73,7 +73,6 @@ class Memory:
             self.childhood_memories[about_person] = {}
 
         key = m['keyword']
-        print(key)
         self.childhood_memories[about_person][key] = m
 
     def add_memory(self, memory):

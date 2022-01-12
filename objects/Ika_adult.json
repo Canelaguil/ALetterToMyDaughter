@@ -1,5 +1,5 @@
 {
-    "name": "Ika Nicolaas",
+    "name": "Ika Carter",
     "age at event": 34,
     "known traits": [
         "brave",
@@ -8,21 +8,23 @@
     "all traits": [
         "brave",
         "outgoing",
-        "obedient",
-        "exuberant",
-        "straight-laced"
+        "egocentric",
+        "slow",
+        "lazy"
     ],
     "tags": {
         "divorced": false,
         "married": false,
         "relationship": false,
-        "parent": true,
+        "parent": false,
         "widowed": false,
         "commitment-averse": true,
+        "abusive relationship": false,
+        "prev abusive relationship": false,
         "famous": false,
-        "unambitious": false,
-        "independent": false,
-        "creative": false,
+        "independent": true,
+        "imprisoned": false,
+        "prev_imprisoned": false,
         "gambler": false,
         "drug addict": false,
         "grifter": false,
@@ -37,44 +39,43 @@
         "blind": false,
         "hippy": false,
         "spiritualist": false,
-        "evangelist": false,
-        "strict": false
+        "evangelist": false
     },
     "country affinities": {
-        "Netherlands": -1,
-        "Indonesia": 1,
-        "Australia": 2
+        "Netherlands": 0,
+        "Indonesia": 2,
+        "Australia": 1
     },
     "relationships": {
-        "Juana": 81,
-        "Jules": 22,
-        "Robin": 56,
-        "Diane Schwarze": 2
+        "Juana": 100,
+        "Jules": 73,
+        "Robin": 68,
+        "Paul Carter": 82
     },
-    "trauma": 15,
+    "trauma": 35,
     "people": {
         "love_interest": "None",
-        "old_flame": "Carl Digby (37)",
+        "old_flame": "Patricia Riley (50)",
         "partner": "None",
         "spouse": "None",
         "affairpartner": "None",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "Daniel Zusak (9), Joan Zusak (6), ",
+        "children": "",
         "extra_marital_children": "",
-        "ex_spouses": "Roger Zusak (37), ",
-        "ex_partners": "Roger Zusak (37), ",
+        "ex_spouses": "",
+        "ex_partners": "Monika Eveleigh (32), ",
         "boss": "None",
         "colleague": "None",
-        "guardian": "Diane Schwarze (76)",
-        "friend": "Barbara von Mueller (37)",
-        "bestfriend": "Phyllis Calcott (41)",
+        "guardian": "Paul Carter (93)",
+        "friend": "Alice Calcott (42)",
+        "bestfriend": "Peter Fittler (40)",
         "deadfriend": "None",
-        "bfriend": "Rosemarie Eveleigh (27)",
-        "childhoodfriend": "Marilyn Tindall (34)",
-        "familyfriend": "Ruth Riley (34)",
-        "pet": "Judy   (3)",
-        "enemy": "Catherine Hanney (46)"
+        "bfriend": "Gerhard Tindall (41)",
+        "childhoodfriend": "Alice Thorpe (34)",
+        "familyfriend": "Janet Catfield (47)",
+        "pet": "Helen   (0)",
+        "enemy": "Bonnie Hilling (45)"
     },
     "romance/family life": {
         "1950": {
@@ -82,106 +83,78 @@
             "state": "single",
             "married": false
         },
-        "1951": {
-            "age": 19,
+        "1952": {
+            "age": 20,
             "state": "in love",
             "married": false,
-            "partner": "Roger Zusak (22)"
-        },
-        "1953": {
-            "age": 21,
-            "state": "engaged",
-            "married": false,
-            "partner": "Roger Zusak (24)"
+            "partner": "Monika Eveleigh (18)"
         },
         "1954": {
             "age": 22,
-            "state": "married",
-            "married": true,
-            "partner": "Roger Zusak (25)"
+            "state": "partnership",
+            "married": false,
+            "partner": "Monika Eveleigh (20)"
         },
-        "1957": {
-            "age": 25,
-            "state": "married",
-            "married": true,
-            "partner": "Roger Zusak (28)",
-            "children": "Daniel Zusak (0), "
+        "1955": {
+            "age": 23,
+            "state": "cheating",
+            "married": false,
+            "partner": "Monika Eveleigh (21)",
+            "cheating with": "Patricia Ansley (28)"
+        },
+        "1956": {
+            "age": 24,
+            "state": "single",
+            "married": false
         },
         "1958": {
             "age": 26,
-            "state": "cheating",
-            "married": true,
-            "partner": "Roger Zusak (29)",
-            "cheating with": "Lawrence Quinton (36)",
-            "children": "Daniel Zusak (1), "
+            "state": "in love",
+            "married": false,
+            "partner": "Susan Sherwood (36)"
         },
         "1959": {
             "age": 27,
-            "state": "married",
-            "married": true,
-            "partner": "Roger Zusak (30)",
-            "children": "Daniel Zusak (2), "
+            "state": "single",
+            "married": false
         },
         "1960": {
             "age": 28,
-            "state": "cheating",
-            "married": true,
-            "partner": "Roger Zusak (31)",
-            "cheating with": "Harald Woolley (24)",
-            "children": "Daniel Zusak (3), Joan Zusak (0), "
-        },
-        "1962": {
-            "age": 30,
-            "state": "single",
-            "married": false,
-            "children": "Daniel Zusak (5), Joan Zusak (2), "
-        },
-        "1963": {
-            "age": 31,
             "state": "in love",
             "married": false,
-            "partner": "Carl Digby (34)",
-            "children": "Daniel Zusak (6), Joan Zusak (3), "
+            "partner": "Virginia Morley (24)"
+        },
+        "1961": {
+            "age": 29,
+            "state": "single",
+            "married": false
         },
         "1964": {
             "age": 32,
-            "state": "single",
+            "state": "in love",
             "married": false,
-            "children": "Daniel Zusak (7), Joan Zusak (4), "
+            "partner": "Patricia Riley (48)"
+        },
+        "1965": {
+            "age": 33,
+            "state": "single",
+            "married": false
         }
     },
     "professional life": {
-        "1955": {
-            "age": 23,
+        "1950": {
+            "age": 18,
             "state": "stay at home",
-            "income": "high",
+            "income": "very high",
             "location": [
-                "Perth",
-                "Western Australia",
+                "Yankalilla",
+                "South Australia",
                 "Australia",
-                "city"
+                "town"
             ],
             "lifestyle": "very high",
             "job": null,
-            "married": true,
-            "boss": "None",
-            "colleague": "None"
-        },
-        "1963": {
-            "age": 31,
-            "state": "stay at home",
-            "income": "high",
-            "location": [
-                "Perth",
-                "Western Australia",
-                "Australia",
-                "city"
-            ],
-            "lifestyle": "very high",
-            "job": null,
-            "married": false,
-            "boss": "None",
-            "colleague": "None"
+            "married": false
         }
     }
 }

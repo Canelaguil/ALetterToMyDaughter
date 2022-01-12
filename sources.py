@@ -231,7 +231,7 @@ fem_jobs = [
     ('nurse', 'medium', True, False, True, False), 
     ('journalist', 'medium', False, True, True, False), 
     ('librarian', 'medium', False, False, True, False), 
-    ('pharmacist', 'medium', False, True, True, True), 
+    ('pharmacist', 'medium', False, False, True, True), 
     ('secretary', 'medium', False, False, True, False),
     ('real estate agent', 'medium', False, False, True, False),
     ('store owner', 'high', False, True, True, False),
@@ -241,7 +241,7 @@ fem_jobs = [
 # title : (0 job per income class, 1 student, 2 acceptable, 3 respectable)
 male_jobs = {
     'accountant' : (['clerk', 'accountant', 'senior accountant', 'CFO'], False, True, True),
-    'laywer' : ([None, 'paralegal apprenticeship', 'paralegal', 'sollicitor'], True, True, True),
+    'laywer' : ([None, 'paralegal', 'sollicitor', 'law firm partner'], True, True, True),
     'bar' : (['bartender', 'bar owner', 'bar chain owner', 'CEO bar chain'], False, False, True), 
     'mechanic' : (['mechanic apprentice', 'mechanic', 'car shop owner', None], False, False, True), 
     'cook' : (['waiter', 'line cook', 'chef cook', 'famous chef cook'], False, False, True),

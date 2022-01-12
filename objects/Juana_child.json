@@ -8,186 +8,165 @@
     "all traits": [
         "kind",
         "moody",
-        "timid",
-        "lazy",
-        "nervous"
+        "melancholic",
+        "pessimistic",
+        "disorganised"
     ],
     "country affinities": {
-        "Netherlands": 1,
-        "Spain": 2,
-        "Australia": 1
+        "Netherlands": -1,
+        "Spain": 3,
+        "Australia": 2
     },
     "relationships": {
-        "Jules": 82,
-        "Ika": 100,
-        "Robin": 76,
-        "Daniel": 54
+        "Jules": 57,
+        "Ika": 77,
+        "Robin": 100,
+        "Daniel": 98
     },
     "memory": {
-        "Ika": {
-            "crush": {
-                "description": "I had a crush on Ika",
-                "category": "childhood",
-                "keyword": "crush",
-                "people": [
-                    "Juana",
-                    "Ika"
-                ],
-                "memory_relation_impact": "positive"
-            },
-            "sex talk": {
-                "description": "I informed Ika and Jules that sex involves two naked people",
-                "category": "childhood",
-                "keyword": "sex talk",
-                "people": [
-                    "Juana",
-                    "Jules",
-                    "Ika"
-                ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
-                "memory_relation_impact": "neutral"
-            }
-        },
         "Daniel": {
-            "disliked general": {
-                "description": "Daniel disliked the general",
+            "greek mythology": {
+                "description": "Daniel was obsessed with greek mythology for a while",
                 "category": "childhood",
-                "keyword": "disliked general",
+                "keyword": "greek mythology",
                 "people": [
                     "Daniel"
                 ],
-                "ch_decrease": "['obedient', 'naive']",
-                "ch_increase": "['rebellious', 'supicious', 'critical']",
+                "ch_decrease": "['disinterested', 'slow', 'practical']",
+                "ch_increase": "['curious', 'daydreamer']",
                 "memory_relation_impact": "neutral"
             },
-            "helping when crying": {
-                "description": "When Daniel got sad, Jules would be the first to be at their side",
+            "sucking up to Nadia": {
+                "description": "Daniel was always sucking up to Nadia",
                 "category": "childhood",
-                "keyword": "helping when crying",
-                "people": [
-                    "Jules",
-                    "Daniel"
-                ],
-                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
-                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
-                "memory_relation_impact": "positive"
-            },
-            "learning english": {
-                "description": "Daniel struggled the longest with learning English",
-                "category": "childhood",
-                "keyword": "learning english",
+                "keyword": "sucking up to Nadia",
                 "people": [
                     "Daniel"
                 ],
-                "ch_decrease": "['curious', 'intelligent', 'daydreamer', 'suspicious']",
-                "ch_increase": "['disinterested', 'slow', 'naive', 'practical', 'critical']",
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
                 "memory_relation_impact": "neutral"
-            }
-        },
-        "myself": {
+            },
+            "new games": {
+                "description": "Daniel would often come up with new games ",
+                "category": "childhood",
+                "keyword": "new games",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
+                "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
+                "memory_relation_impact": "neutral"
+            },
             "farmers children": {
-                "description": "I would sometimes play with the farmer's children",
+                "description": "Daniel would sometimes play with the farmer's children",
                 "category": "childhood",
                 "keyword": "farmers children",
                 "people": [
-                    "Juana"
+                    "Daniel"
                 ],
                 "ch_decrease": "['obedient', 'straight-laced', 'uptight']",
                 "ch_increase": "['rebellious', 'impulsive', 'relaxed']",
                 "memory_relation_impact": "neutral"
             },
-            "little women": {
-                "description": "I read Little Women several times but pretended not to like it",
-                "category": "childhood",
-                "keyword": "little women",
-                "people": [
-                    "Juana"
-                ],
-                "ch_decrease": "['tolerant', 'confident', 'outgoing', 'upbeat']",
-                "ch_increase": "['critical', 'cowardly', 'nervous', 'timid', 'suspicious']",
-                "memory_relation_impact": "neutral"
-            },
-            "wander off to read": {
-                "description": "I would often wander off from games to read, which Jules hated",
-                "category": "childhood",
-                "keyword": "wander off to read",
-                "people": [
-                    "Jules",
-                    "Juana"
-                ],
-                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
-                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
-                "memory_relation_impact": "negative"
-            },
-            "sex talk": {
-                "description": "I informed Ika and Jules that sex involves two naked people",
-                "category": "childhood",
-                "keyword": "sex talk",
-                "people": [
-                    "Juana",
-                    "Jules",
-                    "Ika"
-                ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
-                "memory_relation_impact": "neutral"
-            }
-        },
-        "Jules": {
             "helping when crying": {
-                "description": "When Daniel got sad, Jules would be the first to be at their side",
+                "description": "When Jules got sad, Daniel would be the first to be at their side",
                 "category": "childhood",
                 "keyword": "helping when crying",
                 "people": [
-                    "Jules",
-                    "Daniel"
+                    "Daniel",
+                    "Jules"
                 ],
                 "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
                 "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
                 "memory_relation_impact": "positive"
-            },
-            "wander off to read": {
-                "description": "I would often wander off from games to read, which Jules hated",
-                "category": "childhood",
-                "keyword": "wander off to read",
-                "people": [
-                    "Jules",
-                    "Juana"
-                ],
-                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
-                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
-                "memory_relation_impact": "negative"
-            },
-            "sex talk": {
-                "description": "I informed Ika and Jules that sex involves two naked people",
-                "category": "childhood",
-                "keyword": "sex talk",
-                "people": [
-                    "Juana",
-                    "Jules",
-                    "Ika"
-                ],
-                "ch_decrease": "['disinterested', 'straight-laced', 'humble', 'dull', 'uptight', 'hesitant', 'obedient', 'shy', 'timid', 'humorless']",
-                "ch_increase": "['curious', 'quirky', 'creative', 'impulsive', 'rebellious', 'confident', 'outgoing', 'cheeky']",
-                "memory_relation_impact": "neutral"
             }
         },
         "Robin": {
-            "little house on the prairy": {
-                "description": "Robin was a huge fan of the Little House on the Prairie books",
+            "stuck in tree": {
+                "description": "Robin once patiently helped Jules out of a tree",
                 "category": "childhood",
-                "keyword": "little house on the prairy",
+                "keyword": "stuck in tree",
                 "people": [
+                    "Robin",
+                    "Jules"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "lost in woods": {
+                "description": "Ika once got lost in the woods while playing tag with Robin and I",
+                "category": "childhood",
+                "keyword": "lost in woods",
+                "people": [
+                    "Ika",
+                    "Juana",
                     "Robin"
                 ],
-                "ch_decrease": "[]",
-                "ch_increase": "[]",
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Jules": {
+            "stuck in tree": {
+                "description": "Robin once patiently helped Jules out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Robin",
+                    "Jules"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "helping when crying": {
+                "description": "When Jules got sad, Daniel would be the first to be at their side",
+                "category": "childhood",
+                "keyword": "helping when crying",
+                "people": [
+                    "Daniel",
+                    "Jules"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'mean', 'selfish', 'jealous']",
+                "ch_increase": "['optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Ika": {
+            "lost in woods": {
+                "description": "Ika once got lost in the woods while playing tag with Robin and I",
+                "category": "childhood",
+                "keyword": "lost in woods",
+                "people": [
+                    "Ika",
+                    "Juana",
+                    "Robin"
+                ],
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "myself": {
+            "lost in woods": {
+                "description": "Ika once got lost in the woods while playing tag with Robin and I",
+                "category": "childhood",
+                "keyword": "lost in woods",
+                "people": [
+                    "Ika",
+                    "Juana",
+                    "Robin"
+                ],
+                "ch_decrease": "['practical', 'disorganised', 'hesitant', 'obedient']",
+                "ch_increase": "['daydreamer', 'clumsy', 'slow', 'disorganised', 'impulsive']",
                 "memory_relation_impact": "neutral"
             }
         }
     },
-    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a fervent communist, one of the leaders of The Cause. My father had travelled there all the way from the Netherlands. But he never came back. Right before  the communists lost, my mother packed up and took me to the Netherlands. She didn't even speak the language. Her dark, Spanish features got us mistaken for Jews. I was 9 when Germany invaded The Netherlands. My mother had seen what was coming and shipped me off to England January that year. It is there that they told me she was executed in the second week of occupation. They considered her a Jewish commie.",
+    "backstory": "I was born in Spain, where my parents met while fighting for the Spanish civil war. My mother was a fervent communist, one of the leaders of The Cause. My father had travelled there all the way from the Netherlands. But in the war he lost my mother and with her his faith in the cause and humanity at large. He took me back to the Netherlands. I was 9 when Germany invaded The Netherlands. My father had seen what was coming and shipped me off to England January that year. It is there that they told me he was executed in the second week of occupation. They knew he was a communist.",
     "trauma": 5,
-    "crush": "Ika"
+    "crush": null
 }

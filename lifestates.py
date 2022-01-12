@@ -7,24 +7,25 @@ from sources import male_jobs, fem_jobs, income, lifestyle
 class Person:
     def __init__(self, nationality, sex, name=None, surname=None, age=0, title=None) -> None:
         self.nationality = nationality
+        self.title = title
         self.sex = sex
         self.alive = True
         self.name = name if name else self._get_first_name()
         self.surname = surname if surname else self._get_surname()
         self._get_age(age)
-        self.title = title
 
     def _get_first_name(self): 
-        if self.title ==  'child':
-            if self.sex == 'f': 
-                self.title = 'daughter'
-            else: 
-                self.title = 'son'
-        elif self.title == 'spouse':
-            if self.sex == 'f':
-                self.title = 'wife'
-            else:
-                self.title = 'husband'
+        if self.title:
+            if self.title ==  'child':
+                if self.sex == 'f': 
+                    self.title = 'daughter'
+                else: 
+                    self.title = 'son'
+            elif self.title == 'spouse':
+                if self.sex == 'f':
+                    self.title = 'wife'
+                else:
+                    self.title = 'husband'
         
         if self.nationality == 'Netherlands':
             if self.sex == 'f':
@@ -176,6 +177,7 @@ class RomanceLife:
         self.people['spouse'] = None
         self.people['affairpartner'] = None
         self.tags['relationship'] = True 
+        self.tags['independent'] = True
         self.log_change()
 
     def to_cheating(self):
@@ -478,7 +480,7 @@ class ProfessionalLife:
 
     def change(self): 
         relocated = self.relocate()
-        if self.state == 'unemployed' or self.state == 'stay at home':
+        if self.state == 'unemployed' or self.state == 'stay at home' or self.state == 'student' or self.state == 'jailed':
             self.people['boss'] = None
             self.people['colleague'] = None 
         else: 
@@ -511,7 +513,7 @@ class ProfessionalLife:
             self.state = 'creative' 
             self.income = 0
             self.mobile = self.career[3]
-            self.lifestyle = 0 if self.tags['independent'] else self.lifestyle
+            self.lifestyle = 0 if self.tags['independent'] else self.lifestyleS
             return
         else: 
             if self.lifestyle > 1:
@@ -580,6 +582,7 @@ class ProfessionalLife:
                 else:
                     self.state = 'stay at home'
                     self.tags['independent'] = False
+                    self.log_change()
                     return False
             else: 
                 self.tags['independent'] = True
@@ -611,6 +614,11 @@ class ProfessionalLife:
                     self.state = 'stay at home'
             else: 
                 self.income -= 1
+            return True
+        
+        if self.income > 0 and not self.tags['independent']:
+            self.tags['independent'] = True 
+            self.lifestyle = self.income
             return True
         return False
         
@@ -673,7 +681,7 @@ class ProfessionalLife:
     """
     def low_job(self):
         if self.sex == 'm':
-            if random() < (0.1 + self.ambition_bonus - self.unambitious_bonus):
+            if random() < (0.2 + self.ambition_bonus - self.unambitious_bonus):
                 self.state = 'medium job'
                 self.promote()
                 return True
@@ -736,17 +744,19 @@ class ProfessionalLife:
     def promote(self):
         self.income += 1
         if self.live_above_pay():
-            self.lifestyle += 2
+            if self.lifestyle < 2: 
+                self.lifestyle += 2
+            elif self.lifestyle < 3: 
+                self.lifestyle += 1
         else: 
-            self.lifestyle += 1
+            if self.lifestyle < 3: 
+                self.lifestyle += 1
 
         if self.sex == 'm':
             self.job = male_jobs[self.career][0][self.income]
 
     def live_above_pay(self):
-        if self.income < 4:
-            return True if self.aspirations['lifestyle'] > self.income else False
-        else: return False
+        return True if self.aspirations['lifestyle'] > self.income else False
 
     def log_change(self):
         log = {
@@ -762,7 +772,7 @@ class ProfessionalLife:
         
         log['married'] = self.married 
 
-        if self.state != 'student' or self.state != 'unemployed' or self.state != 'jailed' or self.state == 'stay at home':
+        if self.state not in ['student', 'unemployed', 'jailed', 'stay at home']:
             log['boss'] = self.people['boss'].__str__()
             log['colleague'] = self.people['colleague'].__str__()
 
