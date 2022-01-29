@@ -8,9 +8,9 @@
     "all traits": [
         "kind",
         "moody",
-        "impulsive",
-        "stoic",
-        "naive"
+        "ambitious",
+        "tolerant",
+        "confident"
     ],
     "guardian": {
         "name": "April",
@@ -48,16 +48,16 @@
     "income class": 1,
     "boarding school": false,
     "country affinities": {
-        "Netherlands": 0,
-        "Spain": 3,
+        "Netherlands": 3,
+        "Spain": 2,
         "Australia": -1
     },
-    "sexuality": "gay",
+    "sexuality": "bisexual",
     "relationships": {
-        "Jules": 10,
-        "Ika": 84,
-        "Robin": 42,
-        "April Ryan": 70
+        "Jules": 69,
+        "Ika": 87,
+        "Robin": 72,
+        "April Ryan": 72
     },
     "person tags": {
         "love_interest": null,
@@ -83,15 +83,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 0,
+    "trauma": 24,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 2,
-        "income": 3,
+        "income": 2,
         "children": true,
-        "location": "Spain",
+        "location": "Netherlands",
         "college": false,
         "ambitious": true,
-        "independent": false
+        "independent": true
     }
 }

@@ -86,12 +86,13 @@ class RomanceLife:
         self.partnership = False
         self.is_engaged = False
         self.people = people
-        self.log_change()
 
     """
     TRANSITIONS 
     """
     def transition(self, location, tags): 
+        if self.age == 18:
+            self.log_change()
         if self.age > 17:
             self.country = location
             self.tags = tags
@@ -848,6 +849,8 @@ class IOLife:
             self.tags = tags
             self.update_ages()
             self.update_people()
+        self.age += 1
+        self.year += 1
         return self.people, self.tags
 
     def make_person(self, mode='pref_sex'): 

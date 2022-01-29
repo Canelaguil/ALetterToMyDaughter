@@ -8,34 +8,34 @@
     "all traits": [
         "brave",
         "outgoing",
-        "moody",
-        "cheeky",
-        "immoral"
+        "exuberant",
+        "disinterested",
+        "kind"
     ],
     "relationships": {
-        "Juana": 26,
-        "Jules": 50,
-        "Robin": 59
+        "Juana": 100,
+        "Jules": 10,
+        "Robin": 72
     },
-    "trauma": 50,
+    "trauma": 45,
     "reaction": {
         "age": 13,
-        "guilt": 79,
+        "guilt": 41,
         "trauma": {
-            "old_trauma": 7,
-            "trauma_modifier": 43.47182109414715,
-            "new_trauma": 50
+            "old_trauma": 20,
+            "trauma_modifier": 25.663624937524705,
+            "new_trauma": 45
         },
         "relationships": {
             "Juana": {
-                "old_R": 53,
-                "new_R": 26
+                "old_R": 97,
+                "new_R": 100
             },
             "Jules": {
-                "old_R": 47,
-                "new_R": 50
+                "old_R": 25,
+                "new_R": 10
             }
         }
     },
-    "crush": null
+    "crush": "Juana"
 }

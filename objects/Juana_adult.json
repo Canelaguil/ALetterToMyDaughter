@@ -8,17 +8,17 @@
     "all traits": [
         "kind",
         "moody",
-        "impulsive",
-        "stoic",
-        "naive"
+        "ambitious",
+        "tolerant",
+        "confident"
     ],
     "tags": {
         "divorced": false,
         "married": false,
-        "relationship": true,
+        "relationship": false,
         "parent": true,
         "widowed": false,
-        "commitment-averse": false,
+        "commitment-averse": true,
         "abusive relationship": false,
         "prev abusive relationship": false,
         "famous": false,
@@ -43,94 +43,108 @@
         "evangelist": false
     },
     "country affinities": {
-        "Netherlands": 0,
-        "Spain": 3,
+        "Netherlands": 3,
+        "Spain": 2,
         "Australia": -1
     },
     "relationships": {
-        "Jules": 10,
-        "Ika": 84,
-        "Robin": 42,
-        "April Ryan": 70
+        "Jules": 69,
+        "Ika": 87,
+        "Robin": 72,
+        "April Ryan": 72
     },
-    "trauma": 0,
+    "trauma": 24,
     "people": {
         "love_interest": "None",
-        "old_flame": "Alice Quinton (19)",
-        "partner": "Mary von Mueller (22)",
+        "old_flame": "William Hanney (39)",
+        "partner": "None",
         "spouse": "None",
         "affairpartner": "None",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "Joan Neumann (0), Gerald Ryan (0), ",
+        "children": "Judith Hanney (13), Elaine Hanney (12), Willie Hanney (8), J\u00fcrgen Hanney (7), Carl Hanney (5), ",
         "extra_marital_children": "",
-        "ex_spouses": "",
-        "ex_partners": "",
-        "boss": "Uwe Kilby (34)",
-        "colleague": "None",
-        "guardian": "April Ryan",
-        "friend": "None",
-        "bestfriend": "None",
+        "ex_spouses": "William Hanney (39), ",
+        "ex_partners": "William Hanney (39), ",
+        "boss": "Lennart Potharst (39)",
+        "colleague": "Gosse Smeets (71)",
+        "guardian": "April Ryan (54)",
+        "friend": "Cheryl Ditterich (42)",
+        "bestfriend": "Peggy Fischer (70)",
         "deadfriend": "None",
-        "bfriend": "None",
-        "childhoodfriend": "None",
-        "familyfriend": "None",
-        "pet": "None",
-        "enemy": "None"
+        "bfriend": "Anthony Gladstone (75)",
+        "childhoodfriend": "Ann Riley (36)",
+        "familyfriend": "Dennis Ansley (67)",
+        "pet": "Gisela   (0)",
+        "enemy": "Walter Harlow (35)"
     },
     "romance/family life": {
-        "1945": {
-            "age": 14,
-            "state": "single",
-            "married": false
-        },
-        "1950": {
-            "age": 19,
+        "1949": {
+            "age": 18,
             "state": "in love",
             "married": false,
-            "partner": "Ursula Fittler (20)"
+            "partner": "William Hanney (21)"
         },
         "1951": {
             "age": 20,
-            "state": "single",
-            "married": false
-        },
-        "1952": {
-            "age": 21,
-            "state": "in love",
+            "state": "engaged",
             "married": false,
-            "partner": "Alice Quinton (19)"
+            "partner": "William Hanney (23)"
         },
         "1953": {
             "age": 22,
-            "state": "single",
-            "married": false
+            "state": "married",
+            "married": true,
+            "partner": "William Hanney (25)"
         },
         "1954": {
             "age": 23,
-            "state": "in love",
-            "married": false,
-            "partner": "Mary von Mueller (22)"
+            "state": "married",
+            "married": true,
+            "partner": "William Hanney (26)",
+            "children": "Judith Hanney (0), "
         },
         "1955": {
             "age": 24,
-            "state": "partnership",
-            "married": false,
-            "partner": "Mary von Mueller (22)"
+            "state": "married",
+            "married": true,
+            "partner": "William Hanney (27)",
+            "children": "Judith Hanney (1), Elaine Hanney (0), "
         },
         "1959": {
             "age": 28,
-            "state": "partnership",
-            "married": false,
-            "partner": "Mary von Mueller (22)",
-            "children": "Joan Neumann (0), "
+            "state": "married",
+            "married": true,
+            "partner": "William Hanney (31)",
+            "children": "Judith Hanney (5), Elaine Hanney (4), Willie Hanney (0), "
         },
-        "1961": {
-            "age": 30,
-            "state": "partnership",
+        "1960": {
+            "age": 29,
+            "state": "married",
+            "married": true,
+            "partner": "William Hanney (32)",
+            "children": "Judith Hanney (6), Elaine Hanney (5), Willie Hanney (1), J\u00fcrgen Hanney (0), "
+        },
+        "1962": {
+            "age": 31,
+            "state": "married",
+            "married": true,
+            "partner": "William Hanney (34)",
+            "children": "Judith Hanney (8), Elaine Hanney (7), Willie Hanney (3), J\u00fcrgen Hanney (2), Carl Hanney (0), "
+        },
+        "1965": {
+            "age": 34,
+            "state": "cheating",
+            "married": true,
+            "partner": "William Hanney (37)",
+            "cheating with": "Koos van Veenen (50)",
+            "children": "Judith Hanney (11), Elaine Hanney (10), Willie Hanney (6), J\u00fcrgen Hanney (5), Carl Hanney (3), "
+        },
+        "1966": {
+            "age": 35,
+            "state": "single",
             "married": false,
-            "partner": "Mary von Mueller (22)",
-            "children": "Joan Neumann (0), Gerald Ryan (0), "
+            "children": "Judith Hanney (12), Elaine Hanney (11), Willie Hanney (7), J\u00fcrgen Hanney (6), Carl Hanney (4), "
         }
     },
     "professional life": {
@@ -145,10 +159,74 @@
                 "town"
             ],
             "lifestyle": "medium",
-            "job": "real estate agent",
+            "job": "nurse",
             "married": false,
-            "boss": "Uwe Kilby (34)",
+            "boss": "Jimmy Marleigh (26)",
             "colleague": "None"
+        },
+        "1953": {
+            "age": 22,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Amersfoort",
+                "Utrecht",
+                "Netherlands",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "nurse",
+            "married": true,
+            "boss": "Gerrit Verhoeven (49)",
+            "colleague": "Koen Klinkhamer (37)"
+        },
+        "1954": {
+            "age": 23,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Amersfoort",
+                "Utrecht",
+                "Netherlands",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "nurse",
+            "married": true,
+            "boss": "Hein van Nieuwkerken (25)",
+            "colleague": "Paul Smeets (23)"
+        },
+        "1965": {
+            "age": 34,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Amersfoort",
+                "Utrecht",
+                "Netherlands",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "nurse",
+            "married": true,
+            "boss": "Teun van Hijfte (39)",
+            "colleague": "Paul Smeets (34)"
+        },
+        "1966": {
+            "age": 35,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Amersfoort",
+                "Utrecht",
+                "Netherlands",
+                "town"
+            ],
+            "lifestyle": "medium",
+            "job": "nurse",
+            "married": false,
+            "boss": "Lennart Potharst (38)",
+            "colleague": "Gosse Smeets (70)"
         }
     }
 }

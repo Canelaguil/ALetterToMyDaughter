@@ -8,17 +8,17 @@
     "all traits": [
         "impulsive",
         "creative",
-        "clumsy",
-        "lazy",
-        "moody"
+        "jealous",
+        "obedient",
+        "melancholic"
     ],
     "tags": {
-        "divorced": true,
-        "married": true,
-        "relationship": true,
-        "parent": true,
+        "divorced": false,
+        "married": false,
+        "relationship": false,
+        "parent": false,
         "widowed": false,
-        "commitment-averse": false,
+        "commitment-averse": true,
         "abusive relationship": false,
         "prev abusive relationship": false,
         "famous": false,
@@ -45,188 +45,231 @@
     "country affinities": {
         "Netherlands": -3,
         "Belgium": 1,
-        "Australia": 0
+        "Australia": -2
     },
     "relationships": {
-        "Juana": 98,
-        "Ika": 58,
-        "Robin": 64,
-        "Paul Carter": 81
+        "Juana": 55,
+        "Ika": 82,
+        "Robin": 57,
+        "Diane Schwarze": 0
     },
-    "trauma": 34,
+    "trauma": 70,
     "people": {
         "love_interest": "None",
-        "old_flame": "Judy Hayes (23)",
+        "old_flame": "Cynthia Cohen (40)",
         "partner": "None",
-        "spouse": "Nancy Cohen (36)",
+        "spouse": "None",
         "affairpartner": "None",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "Willie Cohen (0), ",
+        "children": "",
         "extra_marital_children": "",
-        "ex_spouses": "Patricia Cohen (18), ",
-        "ex_partners": "",
-        "boss": "Helmut Ansley (54)",
-        "colleague": "Richard York (58)",
-        "guardian": "Paul Carter",
-        "friend": "None",
-        "bestfriend": "None",
+        "ex_spouses": "Cynthia Cohen (40), Waltraud Cohen (31), ",
+        "ex_partners": "Cynthia Cohen (40), Waltraud Cohen (31), ",
+        "boss": "Michael Quinton (76)",
+        "colleague": "Jerry Digby (67)",
+        "guardian": "Diane Schwarze (77)",
+        "friend": "Brenda Zusak (59)",
+        "bestfriend": "Hans Fulton (84)",
         "deadfriend": "None",
-        "bfriend": "None",
-        "childhoodfriend": "None",
-        "familyfriend": "None",
-        "pet": "None",
-        "enemy": "None"
+        "bfriend": "Edward Marston (90)",
+        "childhoodfriend": "Helmut York (36)",
+        "familyfriend": "Eugene Fulton (35)",
+        "pet": "David   (1)",
+        "enemy": "John Gladstone (37)"
     },
     "romance/family life": {
-        "1945": {
-            "age": 14,
-            "state": "single",
-            "married": false
-        },
         "1949": {
             "age": 18,
             "state": "in love",
             "married": false,
-            "partner": "Gloria Bolte (21)"
+            "partner": "Cynthia Ansley (22)"
+        },
+        "1950": {
+            "age": 19,
+            "state": "engaged",
+            "married": false,
+            "partner": "Cynthia Ansley (23)"
         },
         "1951": {
             "age": 20,
-            "state": "single",
-            "married": false
+            "state": "married",
+            "married": true,
+            "partner": "Cynthia Cohen (24)"
         },
-        "1952": {
-            "age": 21,
-            "state": "in love",
-            "married": false,
-            "partner": "Patricia Marleigh (18)"
+        "1953": {
+            "age": 22,
+            "state": "cheating",
+            "married": true,
+            "partner": "Cynthia Cohen (26)",
+            "cheating with": "Connie Neumann (19)"
         },
         "1954": {
             "age": 23,
-            "state": "engaged",
-            "married": false,
-            "partner": "Patricia Marleigh (18)"
-        },
-        "1955": {
-            "age": 24,
-            "state": "married",
-            "married": true,
-            "partner": "Patricia Cohen (18)"
+            "state": "single",
+            "married": false
         },
         "1956": {
             "age": 25,
-            "state": "married",
-            "married": true,
-            "partner": "Patricia Cohen (18)",
-            "children": "Willie Cohen (0), "
-        },
-        "1958": {
-            "age": 27,
-            "state": "single",
+            "state": "in love",
             "married": false,
-            "children": "Willie Cohen (0), "
+            "partner": "Jane Neumann (27)"
+        },
+        "1959": {
+            "age": 28,
+            "state": "single",
+            "married": false
         },
         "1960": {
             "age": 29,
             "state": "in love",
             "married": false,
-            "partner": "Judy Hayes (23)",
-            "children": "Willie Cohen (0), "
+            "partner": "Waltraud Springborg (24)"
         },
         "1961": {
             "age": 30,
-            "state": "single",
+            "state": "engaged",
             "married": false,
-            "children": "Willie Cohen (0), "
+            "partner": "Waltraud Springborg (25)"
         },
         "1963": {
             "age": 32,
-            "state": "in love",
-            "married": false,
-            "partner": "Nancy Gladstone (36)",
-            "children": "Willie Cohen (0), "
+            "state": "married",
+            "married": true,
+            "partner": "Waltraud Cohen (27)"
+        },
+        "1964": {
+            "age": 33,
+            "state": "cheating",
+            "married": true,
+            "partner": "Waltraud Cohen (28)",
+            "cheating with": "Connie Catfield (46)"
         },
         "1965": {
             "age": 34,
-            "state": "engaged",
-            "married": false,
-            "partner": "Nancy Gladstone (36)",
-            "children": "Willie Cohen (0), "
-        },
-        "1966": {
-            "age": 35,
-            "state": "married",
-            "married": true,
-            "partner": "Nancy Cohen (36)",
-            "children": "Willie Cohen (0), "
+            "state": "single",
+            "married": false
         }
     },
     "professional life": {
         "1949": {
             "age": 18,
-            "state": "student",
-            "income": "very high",
+            "state": "low job",
+            "income": "low",
             "location": [
-                "Perth",
-                "Western Australia",
+                "Adelaide",
+                "South Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "medium",
+            "job": "bartender",
+            "career": "bar",
+            "married": false,
+            "boss": "Peter Shelly (36)",
+            "colleague": "Sharon Bircher (25)"
+        },
+        "1951": {
+            "age": 20,
+            "state": "low job",
+            "income": "low",
+            "location": [
+                "Adelaide",
+                "South Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "medium",
+            "job": "bartender",
+            "career": "bar",
+            "married": true,
+            "boss": "Nancy Fischer (41)",
+            "colleague": "Sharon Bircher (27)"
+        },
+        "1952": {
+            "age": 21,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Adelaide",
+                "South Australia",
                 "Australia",
                 "city"
             ],
             "lifestyle": "very high",
-            "job": null,
-            "career": null,
-            "married": false
-        },
-        "1955": {
-            "age": 24,
-            "state": "low job",
-            "income": "low",
-            "location": [
-                "Perth",
-                "Western Australia",
-                "Australia",
-                "city"
-            ],
-            "lifestyle": "medium",
-            "job": "clerk",
-            "career": "accountant",
+            "job": "bar owner",
+            "career": "bar",
             "married": true,
-            "boss": "Dawn Riley (36)",
-            "colleague": "Karin Springborg (31)"
+            "boss": "George York (44)",
+            "colleague": "Sharon Bircher (28)"
         },
-        "1958": {
-            "age": 27,
-            "state": "low job",
-            "income": "low",
+        "1953": {
+            "age": 22,
+            "state": "high job",
+            "income": "high",
             "location": [
-                "Perth",
-                "Western Australia",
+                "Adelaide",
+                "South Australia",
                 "Australia",
                 "city"
             ],
-            "lifestyle": "medium",
-            "job": "clerk",
-            "career": "accountant",
+            "lifestyle": "very high",
+            "job": "bar chain owner",
+            "career": "bar",
+            "married": true,
+            "boss": "Roger Digby (47)",
+            "colleague": "Walter Acker (48)"
+        },
+        "1954": {
+            "age": 23,
+            "state": "high job",
+            "income": "high",
+            "location": [
+                "Adelaide",
+                "South Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": "bar chain owner",
+            "career": "bar",
             "married": false,
-            "boss": "Donald Fischer (57)",
-            "colleague": "Richard York (58)"
+            "boss": "Betty Fischer (34)",
+            "colleague": "Jerry Ackford (50)"
         },
-        "1966": {
-            "age": 35,
-            "state": "low job",
-            "income": "low",
+        "1963": {
+            "age": 32,
+            "state": "high job",
+            "income": "high",
             "location": [
-                "Perth",
-                "Western Australia",
+                "Adelaide",
+                "South Australia",
                 "Australia",
                 "city"
             ],
-            "lifestyle": "medium",
-            "job": "clerk",
-            "career": "accountant",
+            "lifestyle": "very high",
+            "job": "bar chain owner",
+            "career": "bar",
             "married": true,
-            "boss": "Helmut Ansley (54)",
-            "colleague": "Richard York (58)"
+            "boss": "Klaus Barlow (44)",
+            "colleague": "Douglas Thorpe (39)"
+        },
+        "1965": {
+            "age": 34,
+            "state": "high job",
+            "income": "high",
+            "location": [
+                "Melbourne",
+                "Victoria",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": "bar chain owner",
+            "career": "bar",
+            "married": false,
+            "boss": "Michael Quinton (74)",
+            "colleague": "Jerry Digby (65)"
         }
     }
 }
