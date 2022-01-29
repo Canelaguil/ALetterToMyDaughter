@@ -1,0 +1,41 @@
+{
+    "name": "Ika Nicolaas",
+    "age at event": 13,
+    "known traits": [
+        "brave",
+        "outgoing"
+    ],
+    "all traits": [
+        "brave",
+        "outgoing",
+        "nervous",
+        "sensitive",
+        "quirky"
+    ],
+    "relationships": {
+        "Juana": 73,
+        "Jules": 40,
+        "Robin": 100
+    },
+    "trauma": 41,
+    "reaction": {
+        "age": 13,
+        "guilt": 53,
+        "trauma": {
+            "old_trauma": 14,
+            "trauma_modifier": 27.318672602325652,
+            "new_trauma": 41
+        },
+        "relationships": {
+            "Juana": {
+                "old_R": 54,
+                "new_R": 73
+            },
+            "Jules": {
+                "old_R": 43,
+                "new_R": 40
+            }
+        }
+    },
+    "crush": null
+}

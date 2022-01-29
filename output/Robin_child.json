@@ -1,0 +1,177 @@
+{
+    "name": "Robin Kuijper",
+    "age at move": 5,
+    "known traits": [],
+    "all traits": [],
+    "country affinities": {
+        "Netherlands": 2,
+        "Australia": 3
+    },
+    "relationships": {
+        "Juana": 74,
+        "Jules": 67,
+        "Ika": 87,
+        "Daniel": 100
+    },
+    "memory": {
+        "Jules": {
+            "crush": {
+                "description": "I had a crush on Jules",
+                "category": "childhood",
+                "keyword": "crush",
+                "people": [
+                    "Robin",
+                    "Jules"
+                ],
+                "memory_relation_impact": "positive"
+            },
+            "horses": {
+                "description": "After reading Black Beauty, Jules begged Nadia to ask the general for horses: Nadia replied the horses were all off to war",
+                "category": "childhood",
+                "keyword": "horses",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['practical', 'pessimistic']",
+                "ch_increase": "['optimistic', 'daydreamer']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "myself": {
+            "idolized general": {
+                "description": "I idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
+                "people": [
+                    "Robin"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
+            "learning english": {
+                "description": "I struggled the longest with learning English",
+                "category": "childhood",
+                "keyword": "learning english",
+                "people": [
+                    "Robin"
+                ],
+                "ch_decrease": "['curious', 'intelligent', 'daydreamer', 'suspicious']",
+                "ch_increase": "['disinterested', 'slow', 'naive', 'practical', 'critical']",
+                "memory_relation_impact": "neutral"
+            },
+            "stuck in tree": {
+                "description": "I once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Robin",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            },
+            "science fairies": {
+                "description": "I conducted scientific experiences to figure out if fairies existed",
+                "category": "childhood",
+                "keyword": "science fairies",
+                "people": [
+                    "Robin"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'naive', 'practical', 'critical']",
+                "ch_increase": "['curious', 'intelligent', 'daydreamer', 'suspicious']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Daniel": {
+            "sucking up to Nadia": {
+                "description": "Daniel was always sucking up to Nadia",
+                "category": "childhood",
+                "keyword": "sucking up to Nadia",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
+            "greek mythology": {
+                "description": "Daniel was obsessed with greek mythology for a while",
+                "category": "childhood",
+                "keyword": "greek mythology",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'practical']",
+                "ch_increase": "['curious', 'daydreamer']",
+                "memory_relation_impact": "neutral"
+            },
+            "stuck in tree": {
+                "description": "I once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Robin",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Ika": {
+            "room sharing": {
+                "description": "Juana shared a room with Ika for a while",
+                "category": "childhood",
+                "keyword": "room sharing",
+                "people": [
+                    "Ika",
+                    "Juana"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            },
+            "little house on the prairy": {
+                "description": "Ika was a huge fan of the Little House on the Prairie books",
+                "category": "childhood",
+                "keyword": "little house on the prairy",
+                "people": [
+                    "Ika"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            },
+            "new games": {
+                "description": "Ika would often come up with new games ",
+                "category": "childhood",
+                "keyword": "new games",
+                "people": [
+                    "Ika"
+                ],
+                "ch_decrease": "['disinterested', 'humble', 'uptight', 'hesitant', 'obedient', 'nervous', 'shy', 'slow', 'timid', 'humorless', 'stoic']",
+                "ch_increase": "['creative', 'intelligent', 'cheeky', 'outgoing', 'exuberant', 'confident', 'impulsive', 'curious', 'quirky', 'athletic']",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Juana": {
+            "room sharing": {
+                "description": "Juana shared a room with Ika for a while",
+                "category": "childhood",
+                "keyword": "room sharing",
+                "people": [
+                    "Ika",
+                    "Juana"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            }
+        }
+    },
+    "backstory": "",
+    "trauma": 10,
+    "crush": "Jules"
+}

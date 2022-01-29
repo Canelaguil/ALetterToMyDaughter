@@ -9,7 +9,7 @@ class ChildhoodMemories:
         self.not_used = list(range(len(self.memories)))
 
     def read_file(self):
-        fn = 'memoriesChild.csv'
+        fn = 'input/memoriesChild.csv'
         df = pd.read_csv(fn)
         return df
 

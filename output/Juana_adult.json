@@ -1,0 +1,274 @@
+{
+    "name": "Juana Huijzen",
+    "age at event": 35,
+    "known traits": [
+        "kind",
+        "moody"
+    ],
+    "all traits": [
+        "kind",
+        "moody",
+        "brave",
+        "practical",
+        "nervous"
+    ],
+    "tags": {
+        "divorced": false,
+        "married": false,
+        "relationship": false,
+        "parent": true,
+        "widowed": false,
+        "commitment-averse": true,
+        "abusive relationship": false,
+        "prev abusive relationship": false,
+        "famous": false,
+        "independent": false,
+        "imprisoned": false,
+        "prev_imprisoned": false,
+        "with guardian": true,
+        "gambler": false,
+        "drug addict": false,
+        "grifter": false,
+        "anxiety disorder": false,
+        "depressed": false,
+        "paranoid": false,
+        "recovering": false,
+        "conspiracy theorist": false,
+        "suicidal": false,
+        "possesive": false,
+        "wheelchair-bound": false,
+        "blind": false,
+        "hippy": false,
+        "spiritualist": false,
+        "evangelist": false
+    },
+    "country affinities": {
+        "Netherlands": 2,
+        "Spain": -1,
+        "Australia": 0
+    },
+    "relationships": {
+        "Jules": 82,
+        "Ika": 39,
+        "Robin": 53,
+        "Paul Carter": 74
+    },
+    "trauma": 72,
+    "people": {
+        "love_interest": "None",
+        "old_flame": "Harold Acker (30)",
+        "partner": "None",
+        "spouse": "None",
+        "affairpartner": "None",
+        "dead_partner": "None",
+        "dead_child": "None",
+        "children": "",
+        "extra_marital_children": "Gerald Huijzen (13), ",
+        "ex_spouses": "Rolf Monash (39), Harold Acker (30), ",
+        "ex_partners": "Rolf Monash (39), Harold Acker (30), ",
+        "boss": "Larry Ansley (46)",
+        "colleague": "Willie Sherwood (70)",
+        "guardian": "Paul Carter (94)",
+        "friend": "Mary Harlow (33)",
+        "bestfriend": "Kathleen Fittler (71)",
+        "deadfriend": "None",
+        "bfriend": "Janice Calcott (74)",
+        "childhoodfriend": "Rosemarie Yeaton (36)",
+        "familyfriend": "James Hanney (47)",
+        "pet": "Catherine   (1)",
+        "enemy": "Bonnie Thorpe (77)"
+    },
+    "romance/family life": {
+        "1949": {
+            "age": 18,
+            "state": "single",
+            "married": false
+        },
+        "1950": {
+            "age": 19,
+            "state": "in love",
+            "married": false,
+            "partner": "Rolf Monash (22)"
+        },
+        "1951": {
+            "age": 20,
+            "state": "engaged",
+            "married": false,
+            "partner": "Rolf Monash (23)"
+        },
+        "1952": {
+            "age": 21,
+            "state": "married",
+            "married": true,
+            "partner": "Rolf Monash (24)"
+        },
+        "1953": {
+            "age": 22,
+            "state": "cheating",
+            "married": true,
+            "partner": "Rolf Monash (25)",
+            "cheating with": "Charles Marleigh (22)"
+        },
+        "1954": {
+            "age": 23,
+            "state": "cheating",
+            "married": true,
+            "partner": "Rolf Monash (26)",
+            "cheating with": "Charles Marleigh (23)",
+            "extra-marrital children": "Gerald Monash (0), "
+        },
+        "1955": {
+            "age": 24,
+            "state": "single",
+            "married": false,
+            "extra-marrital children": "Gerald Huijzen (1), "
+        },
+        "1957": {
+            "age": 26,
+            "state": "in love",
+            "married": false,
+            "partner": "Harold Acker (20)",
+            "extra-marrital children": "Gerald Huijzen (3), "
+        },
+        "1961": {
+            "age": 30,
+            "state": "engaged",
+            "married": false,
+            "partner": "Harold Acker (24)",
+            "extra-marrital children": "Gerald Huijzen (7), "
+        },
+        "1962": {
+            "age": 31,
+            "state": "married",
+            "married": true,
+            "partner": "Harold Acker (25)",
+            "extra-marrital children": "Gerald Huijzen (8), "
+        },
+        "1963": {
+            "age": 32,
+            "state": "cheating",
+            "married": true,
+            "partner": "Harold Acker (26)",
+            "cheating with": "Willie York (31)",
+            "extra-marrital children": "Gerald Huijzen (9), "
+        },
+        "1964": {
+            "age": 33,
+            "state": "single",
+            "married": false,
+            "extra-marrital children": "Gerald Huijzen (10), "
+        }
+    },
+    "professional life": {
+        "1949": {
+            "age": 18,
+            "state": "stay at home",
+            "income": "very high",
+            "location": [
+                "Yankalilla",
+                "South Australia",
+                "Australia",
+                "town"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": false
+        },
+        "1950": {
+            "age": 19,
+            "state": "low job",
+            "income": "very high",
+            "location": [
+                "Melbourne",
+                "Victoria",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": false,
+            "boss": "Betty Shelly (22)",
+            "colleague": "Peggy Eveleigh (23)"
+        },
+        "1952": {
+            "age": 21,
+            "state": "low job",
+            "income": "very high",
+            "location": [
+                "Melbourne",
+                "Victoria",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": true,
+            "boss": "Joyce Kilby (22)",
+            "colleague": "David Barlow (48)"
+        },
+        "1954": {
+            "age": 23,
+            "state": "low job",
+            "income": "very high",
+            "location": [
+                "Perth",
+                "Western Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": true,
+            "boss": "Jurgen Springborg (37)",
+            "colleague": "Gerhard Tindall (24)"
+        },
+        "1955": {
+            "age": 24,
+            "state": "low job",
+            "income": "very high",
+            "location": [
+                "Perth",
+                "Western Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": false,
+            "boss": "Jurgen Bircher (26)",
+            "colleague": "John Tindall (45)"
+        },
+        "1962": {
+            "age": 31,
+            "state": "low job",
+            "income": "very high",
+            "location": [
+                "Perth",
+                "Western Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": true,
+            "boss": "Jutta von Mueller (35)",
+            "colleague": "John Tindall (52)"
+        },
+        "1964": {
+            "age": 33,
+            "state": "low job",
+            "income": "very high",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": false,
+            "boss": "Larry Ansley (43)",
+            "colleague": "Willie Sherwood (67)"
+        }
+    }
+}

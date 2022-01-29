@@ -1,0 +1,13 @@
+key,lettertext,people,variables,req_state,req_tags+,req_tags-,req_trauma,req_happinness,ch_traits+,ch_traits-,con_sequence,con_tags+,con_tags-,con_tags+,con_traits+,con_traits-,con_trauma,con_happinness
+abusive_rel,Abusive relationship with {partner},partner,,,relationship,,10,,"tolerant, cowardly, nervous, shy, kind, timid, naive, empathetic, trusting, obedient, jealous, altruistic","brave, confident",,"abusive relationship, prev abusive relationship",,"anxiety disorder, depressed, suicidal, paranoid","nervous, dull, uptight, pessimistic, timid, supicious, stoic","naive, tolerant, sensitive, daydreamer, creative, ambitious",increase,decrease
+runaway,"{child}, {me}'s {relationshiptitle} ran away, never to be seen again.","child, me",title,,parent,,10,,"stoic, moody, mean","sensitive, kind, calm",runaway_child,,,"anxiety disorder, depressed, suicidal, paranoid","melancholic, humble, daydreamer, pessimistic, nervous, mean, humorless, uptight, cold","kind, calm, optimistic, outgoing, exuberant, upbeat, confident, relaxed, trusting, disinterested, ",increase,decrease
+divorce,{partner} issued {me} with a divorce.,"partner, me",,,married,,5,,"disinterested, moody, critical, immoral, mean, cold, selfish, reactive, jealous","generous, tolerant, thoughtful, kind, empathetic",,divorced,,"anxiety disorder, depressed, suicidal, paranoid",,"calm, optimistic, confident, exuberant, upbeat, relaxed, trusting, disinterested, obedient, ",,
+partner_cheated,"{me} caught {name1}, their {relationshiptitle}, cheating on them","me, partner",,,relationship,,10,,"curious, naive, trusting, pessimistic, suspicious, jealous",,,cheated on,,,,,,
+partner_cheated_with,{me} was cheated on by {name1} with {randomrelationship},"me, partner, ?randomrelationship?",randomrelationship,,relationship,,10,,,,,cheated on,,,,,,
+house_fire,{me}'s house burned down in a wildfire.,me,,,,,5,,,,income_decrease,,,"anxiety disorder, depressed, possessive, blind, wheelchair-bound, evangelist",,,increase,decrease
+house_arson,{me}'s house burned down as a result of suspected arson.,me,,,,,10,,"immoral, mean, reactive","kind, thoughtful, altruistic",,,,,,,,
+robbed,{me} was robbed of everything they had,me,,,,,3,,"daydreamer, naive, trusting, mean","suspicious, uptight, nervous",,,,,,,,
+assaulted,{me} was assaulted on the street,"me, partner",title,,,,3,,"daydreamer, naive","suspicious, athletic, nervous",,,,,,,,
+tornadoed_house,{me}'s house was levelled by a tornado,me,,,,,5,,,,,,,,,,,
+NDE_heartattack,{me} nearly died from a heart attack,me,,,,,3,,"impulsive, nervous, uptight, reactive, jeaous","relaxed, athletic",,,,,,,,
+title_NDE_cause,{me}'s {relationshiptitle} nearly died from (causeofdeath1),me,"relationshiptitle, causeofdeath1",,relationship,,5,,,,,,,,,,,

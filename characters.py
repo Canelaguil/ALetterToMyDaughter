@@ -303,7 +303,7 @@ class Character:
 
     def write_json(self, object, stage):
         # pprint(object)
-        with open(f'objects/{self.name}_{stage}.json', 'w') as outfile:
+        with open(f'output/{self.name}_{stage}.json', 'w') as outfile:
             json.dump(object, outfile, indent=4, sort_keys=False)
 
     

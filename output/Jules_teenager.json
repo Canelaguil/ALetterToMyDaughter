@@ -1,0 +1,98 @@
+{
+    "name": "Jules Cohen",
+    "age": 18,
+    "known traits": [
+        "impulsive",
+        "creative"
+    ],
+    "all traits": [
+        "impulsive",
+        "creative",
+        "altruistic",
+        "clumsy",
+        "tolerant"
+    ],
+    "guardian": {
+        "name": "Diane",
+        "surname": "Schwarze",
+        "age": 55,
+        "sex": "f",
+        "relation": "sister",
+        "location": [
+            "Geelong",
+            "Victoria",
+            "Australia",
+            "town"
+        ],
+        "income_class": 2,
+        "lifestyle": 3,
+        "married": true,
+        "other_children": false,
+        "nurturing": false,
+        "provide_college": true,
+        "provide_women_college": true,
+        "provide_boarding_school": true,
+        "allowance": "medium allowance",
+        "capacity": 0,
+        "ward": [
+            "Jules",
+            "Ika"
+        ]
+    },
+    "location": [
+        "Geelong",
+        "Victoria",
+        "Australia",
+        "town"
+    ],
+    "lifestyle": 3,
+    "income class": 2,
+    "boarding school": true,
+    "country affinities": {
+        "Netherlands": 1,
+        "Belgium": -2,
+        "Australia": 0
+    },
+    "sexuality": "straight",
+    "relationships": {
+        "Juana": 90,
+        "Ika": 60,
+        "Robin": 73,
+        "Diane Schwarze": 0
+    },
+    "person tags": {
+        "love_interest": null,
+        "old_flame": null,
+        "partner": null,
+        "spouse": null,
+        "affairpartner": null,
+        "dead_partner": null,
+        "dead_child": null,
+        "children": [],
+        "extra_marital_children": [],
+        "ex_spouses": [],
+        "ex_partners": [],
+        "boss": null,
+        "colleague": null,
+        "guardian": "Diane Schwarze",
+        "friend": null,
+        "bestfriend": null,
+        "deadfriend": null,
+        "bfriend": null,
+        "childhoodfriend": null,
+        "familyfriend": null,
+        "pet": null,
+        "enemy": null
+    },
+    "trauma": 86,
+    "happinness": 80,
+    "aspirations": {
+        "lifestyle": 3,
+        "income": 3,
+        "children": false,
+        "location": "Netherlands",
+        "college": true,
+        "ambitious": true,
+        "independent": false
+    }
+}

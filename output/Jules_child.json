@@ -1,0 +1,179 @@
+{
+    "name": "Jules Cohen",
+    "age at move": 9,
+    "known traits": [
+        "impulsive",
+        "creative"
+    ],
+    "all traits": [
+        "impulsive",
+        "creative",
+        "altruistic",
+        "clumsy",
+        "tolerant"
+    ],
+    "country affinities": {
+        "Netherlands": 1,
+        "Belgium": -2,
+        "Australia": 0
+    },
+    "relationships": {
+        "Juana": 74,
+        "Ika": 41,
+        "Robin": 73,
+        "Daniel": 78
+    },
+    "memory": {
+        "Robin": {
+            "idolized general": {
+                "description": "Robin idolized the general and was always excited about his scarce visits",
+                "category": "childhood",
+                "keyword": "idolized general",
+                "people": [
+                    "Robin"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
+            "learning english": {
+                "description": "Robin struggled the longest with learning English",
+                "category": "childhood",
+                "keyword": "learning english",
+                "people": [
+                    "Robin"
+                ],
+                "ch_decrease": "['curious', 'intelligent', 'daydreamer', 'suspicious']",
+                "ch_increase": "['disinterested', 'slow', 'naive', 'practical', 'critical']",
+                "memory_relation_impact": "neutral"
+            },
+            "wander off to read": {
+                "description": "Robin would often wander off from games to read, which I hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Jules",
+                    "Robin"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            },
+            "stuck in tree": {
+                "description": "Robin once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Robin",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Daniel": {
+            "sucking up to Nadia": {
+                "description": "Daniel was always sucking up to Nadia",
+                "category": "childhood",
+                "keyword": "sucking up to Nadia",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['rebellious', 'supicious', 'critical']",
+                "ch_increase": "['obedient', 'naive']",
+                "memory_relation_impact": "neutral"
+            },
+            "greek mythology": {
+                "description": "Daniel was obsessed with greek mythology for a while",
+                "category": "childhood",
+                "keyword": "greek mythology",
+                "people": [
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested', 'slow', 'practical']",
+                "ch_increase": "['curious', 'daydreamer']",
+                "memory_relation_impact": "neutral"
+            },
+            "stuck in tree": {
+                "description": "Robin once patiently helped Daniel out of a tree",
+                "category": "childhood",
+                "keyword": "stuck in tree",
+                "people": [
+                    "Robin",
+                    "Daniel"
+                ],
+                "ch_decrease": "['disinterested',  'daydreamer', 'clumsy', 'mean', 'selfish', 'cowardly']",
+                "ch_increase": "['athletlic', 'optimistic', 'kind', 'impulsive', 'empathetic', 'athletic', 'brave']",
+                "memory_relation_impact": "positive"
+            }
+        },
+        "Ika": {
+            "room sharing": {
+                "description": "Juana shared a room with Ika for a while",
+                "category": "childhood",
+                "keyword": "room sharing",
+                "people": [
+                    "Ika",
+                    "Juana"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            },
+            "little house on the prairy": {
+                "description": "Ika was a huge fan of the Little House on the Prairie books",
+                "category": "childhood",
+                "keyword": "little house on the prairy",
+                "people": [
+                    "Ika"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "Juana": {
+            "room sharing": {
+                "description": "Juana shared a room with Ika for a while",
+                "category": "childhood",
+                "keyword": "room sharing",
+                "people": [
+                    "Ika",
+                    "Juana"
+                ],
+                "ch_decrease": "[]",
+                "ch_increase": "[]",
+                "memory_relation_impact": "neutral"
+            }
+        },
+        "myself": {
+            "wander off to read": {
+                "description": "Robin would often wander off from games to read, which I hated",
+                "category": "childhood",
+                "keyword": "wander off to read",
+                "people": [
+                    "Jules",
+                    "Robin"
+                ],
+                "ch_decrease": "['mean', 'jealous', 'sensitive', 'critical', 'suspicious', 'pessimistic']",
+                "ch_increase": "['kind', 'optimistic', 'altruistic', 'disinterested', 'tolerant', 'calm']",
+                "memory_relation_impact": "negative"
+            },
+            "horses": {
+                "description": "After reading Black Beauty, I begged Nadia to ask the general for horses: Nadia replied the horses were all off to war",
+                "category": "childhood",
+                "keyword": "horses",
+                "people": [
+                    "Jules"
+                ],
+                "ch_decrease": "['practical', 'pessimistic']",
+                "ch_increase": "['optimistic', 'daydreamer']",
+                "memory_relation_impact": "neutral"
+            }
+        }
+    },
+    "backstory": "I came to the Netherlands when I was 1 years old. My father liked it there. He was born in France, spend time in Berlin, Koningsberg before it got bad. He met my mother in Brussels. My mother was an silent movie actress, but after the switch to talkies finding work became hard for her in more ways than one. When Germany invaded the Netherlands I was 9. My parents had send me  to England days prior. I never saw them again.",
+    "trauma": 58,
+    "crush": null
+}

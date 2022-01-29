@@ -1,63 +1,53 @@
 {
-    "name": "Juana Ryan",
+    "name": "Robin Kuijper",
     "age": 18,
-    "known traits": [
-        "kind",
-        "moody"
-    ],
-    "all traits": [
-        "kind",
-        "moody",
-        "ambitious",
-        "tolerant",
-        "confident"
-    ],
+    "known traits": [],
+    "all traits": [],
     "guardian": {
-        "name": "April",
-        "surname": "Ryan",
-        "age": 32,
+        "name": "Nadia",
+        "surname": "Wilkes",
+        "age": 47,
         "sex": "f",
-        "relation": "cousin",
+        "age1940": 42,
+        "relation": "governess",
         "location": [
-            "Port Macquarie",
-            "New South Wales",
+            "Yealering",
+            "Western Australia",
             "Australia",
             "town"
         ],
-        "income_class": 1,
-        "lifestyle": 1,
-        "married": true,
-        "other_children": true,
+        "income_class": 0,
+        "lifestyle": 0,
+        "married": false,
+        "other_children": false,
         "nurturing": true,
         "provide_college": false,
         "provide_women_college": false,
         "provide_boarding_school": false,
-        "allowance": "small allowance",
-        "capacity": 0,
-        "ward": [
-            "Juana"
-        ]
+        "allowance": "no allowance",
+        "capacity": 1,
+        "ward": []
     },
     "location": [
-        "Port Macquarie",
-        "New South Wales",
+        "Yealering",
+        "Western Australia",
         "Australia",
         "town"
     ],
-    "lifestyle": 1,
-    "income class": 1,
+    "lifestyle": 0,
+    "income class": 0,
     "boarding school": false,
     "country affinities": {
-        "Netherlands": 3,
-        "Spain": 2,
-        "Australia": -1
+        "Netherlands": 2,
+        "Australia": 3
     },
-    "sexuality": "bisexual",
+    "sexuality": "straight",
     "relationships": {
-        "Jules": 69,
+        "Juana": 74,
+        "Jules": 67,
         "Ika": 87,
-        "Robin": 72,
-        "April Ryan": 72
+        "Daniel": 100,
+        "Nadia Wilkes": 74
     },
     "person tags": {
         "love_interest": null,
@@ -73,7 +63,7 @@
         "ex_partners": [],
         "boss": null,
         "colleague": null,
-        "guardian": "April Ryan",
+        "guardian": "Nadia Wilkes",
         "friend": null,
         "bestfriend": null,
         "deadfriend": null,
@@ -83,15 +73,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 24,
+    "trauma": 12,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 2,
-        "income": 2,
+        "income": 3,
         "children": true,
-        "location": "Netherlands",
-        "college": false,
-        "ambitious": true,
+        "location": "Australia",
+        "college": true,
+        "ambitious": false,
         "independent": true
     }
 }

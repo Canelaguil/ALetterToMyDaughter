@@ -1,0 +1,20 @@
+{
+    "name": "Robin Kuijper",
+    "age at event": 10,
+    "known traits": [],
+    "all traits": [],
+    "relationships": {
+        "Juana": 74,
+        "Jules": 67,
+        "Ika": 87,
+        "Daniel": 100
+    },
+    "trauma": 68,
+    "reaction": {
+        "age": 10,
+        "old_trauma": 10,
+        "trauma_modifier": 58,
+        "new_trauma": 68
+    },
+    "crush": "Jules"
+}

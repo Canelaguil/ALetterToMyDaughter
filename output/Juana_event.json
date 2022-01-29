@@ -1,0 +1,41 @@
+{
+    "name": "Juana Huijzen",
+    "age at event": 14,
+    "known traits": [
+        "kind",
+        "moody"
+    ],
+    "all traits": [
+        "kind",
+        "moody",
+        "brave",
+        "practical",
+        "nervous"
+    ],
+    "relationships": {
+        "Jules": 82,
+        "Ika": 39,
+        "Robin": 53
+    },
+    "trauma": 100,
+    "reaction": {
+        "age": 14,
+        "guilt": 100,
+        "trauma": {
+            "old_trauma": 78,
+            "trauma_modifier": 62.66286532610601,
+            "new_trauma": 100
+        },
+        "relationships": {
+            "Jules": {
+                "old_R": 53,
+                "new_R": 82
+            },
+            "Ika": {
+                "old_R": 69,
+                "new_R": 39
+            }
+        }
+    },
+    "crush": "Daniel"
+}

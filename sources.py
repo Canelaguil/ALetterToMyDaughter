@@ -55,7 +55,7 @@ adult_tags = {
     'depressed' : False, 
     'paranoid' : False,
     'recovering' : False,
-    'conpiracy theorist' : False,
+    'conspiracy theorist' : False,
     'suicidal' : False,
     'possesive' : False,
     # random

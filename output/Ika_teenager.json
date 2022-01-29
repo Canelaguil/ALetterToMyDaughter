@@ -8,9 +8,9 @@
     "all traits": [
         "brave",
         "outgoing",
-        "exuberant",
-        "disinterested",
-        "kind"
+        "nervous",
+        "sensitive",
+        "quirky"
     ],
     "guardian": {
         "name": "Diane",
@@ -49,16 +49,16 @@
     "income class": 2,
     "boarding school": true,
     "country affinities": {
-        "Netherlands": 2,
-        "Indonesia": 3,
-        "Australia": 2
+        "Netherlands": 1,
+        "Indonesia": 1,
+        "Australia": -1
     },
-    "sexuality": "gay",
+    "sexuality": "straight",
     "relationships": {
-        "Juana": 100,
-        "Jules": 10,
-        "Robin": 72,
-        "Diane Schwarze": 21
+        "Juana": 73,
+        "Jules": 40,
+        "Robin": 100,
+        "Diane Schwarze": 0
     },
     "person tags": {
         "love_interest": null,
@@ -84,13 +84,13 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 30,
+    "trauma": 26,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 3,
-        "income": 2,
-        "children": false,
-        "location": "Indonesia",
+        "income": 3,
+        "children": true,
+        "location": "Netherlands",
         "college": true,
         "ambitious": false,
         "independent": false
