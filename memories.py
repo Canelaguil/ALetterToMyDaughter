@@ -24,6 +24,10 @@ class ChildhoodMemories:
         return rm
 
 
+class AdultMemories:
+    def __init__(self) -> None:
+        pass
+
 class Memory:
     def __init__(self, name) -> None:
         self.name = name

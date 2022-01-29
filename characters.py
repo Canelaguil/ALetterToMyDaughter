@@ -89,22 +89,19 @@ class Character:
     def become_adult(self):
         self.tags = deepcopy(adult_tags)
         self.age = 18
-        self.romance_life = RomanceLife(self.sexuality, self.sex, self.year, self.location[2], self.my_traits, self.surname, self.tags, self.aspirations, self.person_tags)
-        self.professional_life = ProfessionalLife(self.year, self.sex, self.aspirations, self.guardian, self.location, self.my_traits, self.person_tags)
-        self.io_life = IOLife(self.person_tags, self.location[2], self.guardian, self.tags, self.year, self.sex)
-        self.adult_years()
+        self.romance_life = RomanceLife(self.sexuality, self.sex, self.location[2], self.my_traits, self.surname, self.tags, self.aspirations, self.person_tags, self.age1945)
+        self.professional_life = ProfessionalLife(self.sex, self.aspirations, self.guardian, self.location, self.my_traits, self.person_tags, self.age1945)
+        self.io_life = IOLife(self.person_tags, self.location[2], self.guardian, self.tags, self.sex, self.age1945)
 
-    def adult_years(self):
-        while self.year < 1966: 
-            married, self.tags, self.people_tags = self.romance_life.transition(self.location[2], self.tags)
-            self.location, self.tags, self.people_tags = self.professional_life.transition(married, self.tags, self.my_traits)
-            self.people_tags, self.tags = self.io_life.transition(self.person_tags, self.location, self.tags)
-            self.surname = self.romance_life.surname
-            self.year += 1
-        print(self.name, self.surname)
-        # pprint(self.romance_life.get_log())
-        # pprint(self.io_life.get_people())
-        pprint(self.professional_life.get_log())
+    def adult_year(self):
+        married, self.tags, self.people_tags = self.romance_life.transition(self.location[2], self.tags)
+        self.location, self.tags, self.people_tags = self.professional_life.transition(married, self.tags, self.my_traits)
+        self.people_tags, self.tags = self.io_life.transition(self.person_tags, self.location, self.tags)
+        self.surname = self.romance_life.surname
+        # print(self.name, self.surname)
+        # # pprint(self.romance_life.get_log())
+        # # pprint(self.io_life.get_people())
+        # pprint(self.professional_life.get_log())
 
     """
       CHECK CHARACTER 
@@ -230,7 +227,6 @@ class Character:
             'ambitious' : True if random() < c_chance else False, 
             'independent' : True if random() < c_chance else False, 
         }
-        self.year = 1945 + t_years
 
     """
       OUTPUT FUNCTIONS

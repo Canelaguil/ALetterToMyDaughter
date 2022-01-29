@@ -43,11 +43,11 @@
     },
     "sexuality": "straight",
     "relationships": {
-        "Juana": 96,
-        "Jules": 84,
-        "Ika": 70,
-        "Daniel": 97,
-        "Nadia Wilkes": 68
+        "Juana": 51,
+        "Jules": 69,
+        "Ika": 100,
+        "Daniel": 56,
+        "Nadia Wilkes": 86
     },
     "person tags": {
         "love_interest": null,
@@ -73,15 +73,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 3,
+    "trauma": 1,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 0,
-        "income": 2,
+        "income": 3,
         "children": true,
         "location": "Australia",
         "college": false,
-        "ambitious": false,
-        "independent": false
+        "ambitious": true,
+        "independent": true
     }
 }

@@ -8,57 +8,56 @@
     "all traits": [
         "impulsive",
         "creative",
-        "slow",
-        "empathetic",
-        "curious"
+        "clumsy",
+        "lazy",
+        "moody"
     ],
     "guardian": {
-        "name": "Diane",
-        "surname": "Schwarze",
-        "age": 55,
-        "sex": "f",
-        "relation": "sister",
+        "name": "Paul",
+        "surname": "Carter",
+        "age": 72,
+        "sex": "m",
+        "relation": "uncle",
         "location": [
-            "Geelong",
-            "Victoria",
+            "Yankalilla",
+            "South Australia",
             "Australia",
             "town"
         ],
-        "income_class": 2,
+        "income_class": 3,
         "lifestyle": 3,
-        "married": true,
+        "married": false,
         "other_children": false,
-        "nurturing": false,
+        "nurturing": true,
         "provide_college": true,
-        "provide_women_college": true,
-        "provide_boarding_school": true,
-        "allowance": "medium allowance",
+        "provide_women_college": false,
+        "provide_boarding_school": false,
+        "allowance": "big allowance",
         "capacity": 0,
         "ward": [
-            "Juana",
             "Jules"
         ]
     },
     "location": [
-        "Geelong",
-        "Victoria",
+        "Yankalilla",
+        "South Australia",
         "Australia",
         "town"
     ],
     "lifestyle": 3,
-    "income class": 2,
-    "boarding school": true,
+    "income class": 3,
+    "boarding school": false,
     "country affinities": {
         "Netherlands": -3,
-        "Belgium": 2,
-        "Australia": 2
+        "Belgium": 1,
+        "Australia": 0
     },
-    "sexuality": "straight",
+    "sexuality": "bisexual",
     "relationships": {
-        "Juana": 100,
-        "Ika": 100,
-        "Robin": 76,
-        "Diane Schwarze": 23
+        "Juana": 98,
+        "Ika": 58,
+        "Robin": 64,
+        "Paul Carter": 81
     },
     "person tags": {
         "love_interest": null,
@@ -74,7 +73,7 @@
         "ex_partners": [],
         "boss": null,
         "colleague": null,
-        "guardian": "Diane Schwarze",
+        "guardian": "Paul Carter",
         "friend": null,
         "bestfriend": null,
         "deadfriend": null,
@@ -84,15 +83,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 59,
+    "trauma": 34,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 3,
         "income": 3,
-        "children": false,
+        "children": true,
         "location": "Belgium",
         "college": true,
         "ambitious": false,
-        "independent": false
+        "independent": true
     }
 }

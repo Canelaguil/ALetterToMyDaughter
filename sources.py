@@ -46,6 +46,7 @@ adult_tags = {
     'independent' : False,
     'imprisoned' : False,
     'prev_imprisoned' : False,
+    'with guardian' : False,
     # trauma
     'gambler' : False, 
     'drug addict' : False, 
@@ -217,7 +218,7 @@ locations = [
 lifestyle = ['low', 'medium', 'high', 'very high']
 income = ['low', 'medium', 'high', 'very high']
 
-# (0 title, 1 level, 2 acceptable, 3 mobile, 4 respectable, student)
+# (0 title, 1 level, 2 acceptable, 3 mobile, 4 respectable, 5 student)
 fem_jobs = [
     ('writer', 'creative', True, True, True, False),
     ('painter', 'creative', True, True, True, False),

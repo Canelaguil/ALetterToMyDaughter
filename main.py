@@ -198,6 +198,15 @@ class Controller:
         self.cs.pop('Robin')
         for ch in self.cs.values():
             ch.become_adult()
+
+        year = 1945
+        
+        while year < 1967:
+            for ch in self.cs.values():
+                ch.adult_year()
+            year += 1
+
+        for ch in self.cs.values():
             ch.output_adult()
 
 Controller()

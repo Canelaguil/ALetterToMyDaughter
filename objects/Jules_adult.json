@@ -8,23 +8,24 @@
     "all traits": [
         "impulsive",
         "creative",
-        "slow",
-        "empathetic",
-        "curious"
+        "clumsy",
+        "lazy",
+        "moody"
     ],
     "tags": {
-        "divorced": false,
+        "divorced": true,
         "married": true,
         "relationship": true,
-        "parent": false,
+        "parent": true,
         "widowed": false,
-        "commitment-averse": true,
+        "commitment-averse": false,
         "abusive relationship": false,
         "prev abusive relationship": false,
         "famous": false,
         "independent": false,
         "imprisoned": false,
         "prev_imprisoned": false,
+        "with guardian": false,
         "gambler": false,
         "drug addict": false,
         "grifter": false,
@@ -43,108 +44,131 @@
     },
     "country affinities": {
         "Netherlands": -3,
-        "Belgium": 2,
-        "Australia": 2
+        "Belgium": 1,
+        "Australia": 0
     },
     "relationships": {
-        "Juana": 100,
-        "Ika": 100,
-        "Robin": 76,
-        "Diane Schwarze": 23
+        "Juana": 98,
+        "Ika": 58,
+        "Robin": 64,
+        "Paul Carter": 81
     },
-    "trauma": 59,
+    "trauma": 34,
     "people": {
         "love_interest": "None",
-        "old_flame": "Shirley Bolte (40)",
+        "old_flame": "Judy Hayes (23)",
         "partner": "None",
-        "spouse": "Karin Cohen (43)",
+        "spouse": "Nancy Cohen (36)",
         "affairpartner": "None",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "",
+        "children": "Willie Cohen (0), ",
         "extra_marital_children": "",
-        "ex_spouses": "Gloria Cohen (46), ",
+        "ex_spouses": "Patricia Cohen (18), ",
         "ex_partners": "",
-        "boss": "Billy Hilling (58)",
-        "colleague": "Karen von Mueller (47)",
-        "guardian": "Diane Schwarze (76)",
-        "friend": "Douglas Frei (42)",
-        "bestfriend": "George Bolte (30)",
+        "boss": "Helmut Ansley (54)",
+        "colleague": "Richard York (58)",
+        "guardian": "Paul Carter",
+        "friend": "None",
+        "bestfriend": "None",
         "deadfriend": "None",
-        "bfriend": "Steven Tindall (46)",
-        "childhoodfriend": "Paul Acker (35)",
-        "familyfriend": "Werner York (41)",
-        "pet": "Donald   (3)",
-        "enemy": "Marie Ackford (49)"
+        "bfriend": "None",
+        "childhoodfriend": "None",
+        "familyfriend": "None",
+        "pet": "None",
+        "enemy": "None"
     },
     "romance/family life": {
-        "1949": {
-            "age": 18,
+        "1945": {
+            "age": 14,
             "state": "single",
             "married": false
         },
-        "1950": {
-            "age": 19,
+        "1949": {
+            "age": 18,
             "state": "in love",
             "married": false,
-            "partner": "Shirley Bolte (24)"
+            "partner": "Gloria Bolte (21)"
+        },
+        "1951": {
+            "age": 20,
+            "state": "single",
+            "married": false
         },
         "1952": {
             "age": 21,
-            "state": "single",
-            "married": false
-        },
-        "1953": {
-            "age": 22,
             "state": "in love",
             "married": false,
-            "partner": "Erika Barlow (22)"
+            "partner": "Patricia Marleigh (18)"
         },
         "1954": {
             "age": 23,
-            "state": "single",
-            "married": false
+            "state": "engaged",
+            "married": false,
+            "partner": "Patricia Marleigh (18)"
+        },
+        "1955": {
+            "age": 24,
+            "state": "married",
+            "married": true,
+            "partner": "Patricia Cohen (18)"
+        },
+        "1956": {
+            "age": 25,
+            "state": "married",
+            "married": true,
+            "partner": "Patricia Cohen (18)",
+            "children": "Willie Cohen (0), "
         },
         "1958": {
             "age": 27,
-            "state": "in love",
+            "state": "single",
             "married": false,
-            "partner": "Gloria Barlow (38)"
+            "children": "Willie Cohen (0), "
         },
         "1960": {
             "age": 29,
-            "state": "engaged",
+            "state": "in love",
             "married": false,
-            "partner": "Gloria Barlow (40)"
+            "partner": "Judy Hayes (23)",
+            "children": "Willie Cohen (0), "
         },
         "1961": {
             "age": 30,
-            "state": "married",
-            "married": true,
-            "partner": "Gloria Cohen (41)"
+            "state": "single",
+            "married": false,
+            "children": "Willie Cohen (0), "
         },
-        "1964": {
-            "age": 33,
-            "state": "cheating",
-            "married": true,
-            "partner": "Gloria Cohen (44)",
-            "cheating with": "Karin Sherwood (41)"
+        "1963": {
+            "age": 32,
+            "state": "in love",
+            "married": false,
+            "partner": "Nancy Gladstone (36)",
+            "children": "Willie Cohen (0), "
         },
         "1965": {
             "age": 34,
+            "state": "engaged",
+            "married": false,
+            "partner": "Nancy Gladstone (36)",
+            "children": "Willie Cohen (0), "
+        },
+        "1966": {
+            "age": 35,
             "state": "married",
             "married": true,
-            "partner": "Karin Cohen (42)"
+            "partner": "Nancy Cohen (36)",
+            "children": "Willie Cohen (0), "
         }
     },
     "professional life": {
-        "1950": {
-            "age": 19,
+        "1949": {
+            "age": 18,
             "state": "student",
-            "income": "high",
+            "income": "very high",
             "location": [
-                "Sydney",
-                "New South Wales",
+                "Perth",
+                "Western Australia",
                 "Australia",
                 "city"
             ],
@@ -155,71 +179,54 @@
         },
         "1955": {
             "age": 24,
-            "state": "medium job",
-            "income": "medium",
+            "state": "low job",
+            "income": "low",
             "location": [
-                "Sydney",
-                "New South Wales",
+                "Perth",
+                "Western Australia",
                 "Australia",
                 "city"
             ],
-            "lifestyle": "high",
-            "job": "paralegal",
-            "career": "laywer",
-            "married": false,
-            "boss": "Robert Eveleigh (24)",
-            "colleague": "Walter Eveleigh (53)"
-        },
-        "1960": {
-            "age": 29,
-            "state": "high job",
-            "income": "high",
-            "location": [
-                "Sydney",
-                "New South Wales",
-                "Australia",
-                "city"
-            ],
-            "lifestyle": "very high",
-            "job": "sollicitor",
-            "career": "laywer",
-            "married": false,
-            "boss": "G\u00fcnter Ditterich (35)",
-            "colleague": "Peter Yeaton (31)"
-        },
-        "1962": {
-            "age": 31,
-            "state": "high job",
-            "income": "high",
-            "location": [
-                "Sydney",
-                "New South Wales",
-                "Australia",
-                "city"
-            ],
-            "lifestyle": "very high",
-            "job": "sollicitor",
-            "career": "laywer",
+            "lifestyle": "medium",
+            "job": "clerk",
+            "career": "accountant",
             "married": true,
-            "boss": "Joan Ramsay (57)",
-            "colleague": "Karen von Mueller (42)"
+            "boss": "Dawn Riley (36)",
+            "colleague": "Karin Springborg (31)"
         },
-        "1963": {
-            "age": 32,
-            "state": "very high job",
-            "income": "very high",
+        "1958": {
+            "age": 27,
+            "state": "low job",
+            "income": "low",
             "location": [
-                "Sydney",
-                "New South Wales",
+                "Perth",
+                "Western Australia",
                 "Australia",
                 "city"
             ],
-            "lifestyle": "very high",
-            "job": "law firm partner",
-            "career": "laywer",
+            "lifestyle": "medium",
+            "job": "clerk",
+            "career": "accountant",
+            "married": false,
+            "boss": "Donald Fischer (57)",
+            "colleague": "Richard York (58)"
+        },
+        "1966": {
+            "age": 35,
+            "state": "low job",
+            "income": "low",
+            "location": [
+                "Perth",
+                "Western Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "medium",
+            "job": "clerk",
+            "career": "accountant",
             "married": true,
-            "boss": "Billy Hilling (54)",
-            "colleague": "Karen von Mueller (43)"
+            "boss": "Helmut Ansley (54)",
+            "colleague": "Richard York (58)"
         }
     }
 }

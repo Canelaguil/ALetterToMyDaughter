@@ -1,5 +1,5 @@
 {
-    "name": "Juana Huijzen",
+    "name": "Juana Ryan",
     "age at event": 35,
     "known traits": [
         "kind",
@@ -8,9 +8,9 @@
     "all traits": [
         "kind",
         "moody",
-        "melancholic",
-        "pessimistic",
-        "disorganised"
+        "impulsive",
+        "stoic",
+        "naive"
     ],
     "tags": {
         "divorced": false,
@@ -25,6 +25,7 @@
         "independent": true,
         "imprisoned": false,
         "prev_imprisoned": false,
+        "with guardian": false,
         "gambler": false,
         "drug addict": false,
         "grifter": false,
@@ -42,44 +43,55 @@
         "evangelist": false
     },
     "country affinities": {
-        "Netherlands": -1,
+        "Netherlands": 0,
         "Spain": 3,
-        "Australia": 2
+        "Australia": -1
     },
     "relationships": {
-        "Jules": 70,
+        "Jules": 10,
         "Ika": 84,
-        "Robin": 100,
-        "Diane Schwarze": 6
+        "Robin": 42,
+        "April Ryan": 70
     },
-    "trauma": 21,
+    "trauma": 0,
     "people": {
         "love_interest": "None",
-        "old_flame": "None",
-        "partner": "Ute Catfield (35)",
+        "old_flame": "Alice Quinton (19)",
+        "partner": "Mary von Mueller (22)",
         "spouse": "None",
         "affairpartner": "None",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "David Hilling (11), Mark Huijzen (3), ",
+        "children": "Joan Neumann (0), Gerald Ryan (0), ",
         "extra_marital_children": "",
         "ex_spouses": "",
-        "ex_partners": "Ute Catfield (35), ",
-        "boss": "Dieter Farlow (36)",
+        "ex_partners": "",
+        "boss": "Uwe Kilby (34)",
         "colleague": "None",
-        "guardian": "Diane Schwarze (76)",
-        "friend": "Barbara Fischer (52)",
-        "bestfriend": "Michael Digby (43)",
+        "guardian": "April Ryan",
+        "friend": "None",
+        "bestfriend": "None",
         "deadfriend": "None",
-        "bfriend": "Harold Ansley (24)",
-        "childhoodfriend": "Karen Woolley (35)",
-        "familyfriend": "Helga Ansley (42)",
-        "pet": "Marilyn   (0)",
-        "enemy": "Nancy Marston (39)"
+        "bfriend": "None",
+        "childhoodfriend": "None",
+        "familyfriend": "None",
+        "pet": "None",
+        "enemy": "None"
     },
     "romance/family life": {
-        "1949": {
-            "age": 18,
+        "1945": {
+            "age": 14,
+            "state": "single",
+            "married": false
+        },
+        "1950": {
+            "age": 19,
+            "state": "in love",
+            "married": false,
+            "partner": "Ursula Fittler (20)"
+        },
+        "1951": {
+            "age": 20,
             "state": "single",
             "married": false
         },
@@ -87,58 +99,55 @@
             "age": 21,
             "state": "in love",
             "married": false,
-            "partner": "Ute Catfield (21)"
+            "partner": "Alice Quinton (19)"
         },
         "1953": {
             "age": 22,
-            "state": "partnership",
+            "state": "single",
+            "married": false
+        },
+        "1954": {
+            "age": 23,
+            "state": "in love",
             "married": false,
-            "partner": "Ute Catfield (22)"
+            "partner": "Mary von Mueller (22)"
         },
         "1955": {
             "age": 24,
             "state": "partnership",
             "married": false,
-            "partner": "Ute Catfield (24)",
-            "children": "David Hilling (0), "
+            "partner": "Mary von Mueller (22)"
         },
-        "1963": {
-            "age": 32,
+        "1959": {
+            "age": 28,
             "state": "partnership",
             "married": false,
-            "partner": "Ute Catfield (32)",
-            "children": "David Hilling (8), Mark Huijzen (0), "
+            "partner": "Mary von Mueller (22)",
+            "children": "Joan Neumann (0), "
+        },
+        "1961": {
+            "age": 30,
+            "state": "partnership",
+            "married": false,
+            "partner": "Mary von Mueller (22)",
+            "children": "Joan Neumann (0), Gerald Ryan (0), "
         }
     },
     "professional life": {
-        "1950": {
-            "age": 19,
-            "state": "student",
-            "income": "high",
-            "location": [
-                "Melbourne",
-                "Victoria",
-                "Australia",
-                "city"
-            ],
-            "lifestyle": "very high",
-            "job": null,
-            "married": false
-        },
-        "1955": {
-            "age": 24,
+        "1949": {
+            "age": 18,
             "state": "medium job",
             "income": "medium",
             "location": [
-                "Melbourne",
-                "Victoria",
+                "Port Macquarie",
+                "New South Wales",
                 "Australia",
-                "city"
+                "town"
             ],
             "lifestyle": "medium",
-            "job": "teacher",
+            "job": "real estate agent",
             "married": false,
-            "boss": "Dieter Farlow (24)",
+            "boss": "Uwe Kilby (34)",
             "colleague": "None"
         }
     }

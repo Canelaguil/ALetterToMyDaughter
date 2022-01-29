@@ -1,5 +1,5 @@
 {
-    "name": "Ika Carter",
+    "name": "Ika Nicolaas",
     "age at event": 34,
     "known traits": [
         "brave",
@@ -8,23 +8,24 @@
     "all traits": [
         "brave",
         "outgoing",
-        "egocentric",
-        "slow",
-        "lazy"
+        "moody",
+        "cheeky",
+        "immoral"
     ],
     "tags": {
         "divorced": false,
         "married": false,
         "relationship": false,
-        "parent": false,
+        "parent": true,
         "widowed": false,
         "commitment-averse": true,
         "abusive relationship": false,
         "prev abusive relationship": false,
         "famous": false,
-        "independent": true,
+        "independent": false,
         "imprisoned": false,
         "prev_imprisoned": false,
+        "with guardian": false,
         "gambler": false,
         "drug addict": false,
         "grifter": false,
@@ -42,110 +43,202 @@
         "evangelist": false
     },
     "country affinities": {
-        "Netherlands": 0,
+        "Netherlands": -2,
         "Indonesia": 2,
-        "Australia": 1
+        "Australia": 0
     },
     "relationships": {
-        "Juana": 100,
-        "Jules": 73,
-        "Robin": 68,
-        "Paul Carter": 82
+        "Juana": 26,
+        "Jules": 50,
+        "Robin": 59,
+        "Diane Schwarze": 29
     },
     "trauma": 35,
     "people": {
         "love_interest": "None",
-        "old_flame": "Patricia Riley (50)",
+        "old_flame": "David von Mueller (40)",
         "partner": "None",
         "spouse": "None",
         "affairpartner": "None",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "",
-        "extra_marital_children": "",
-        "ex_spouses": "",
-        "ex_partners": "Monika Eveleigh (32), ",
-        "boss": "None",
-        "colleague": "None",
-        "guardian": "Paul Carter (93)",
-        "friend": "Alice Calcott (42)",
-        "bestfriend": "Peter Fittler (40)",
+        "children": "Anthony Ditterich (0), ",
+        "extra_marital_children": "Johnny Nicolaas (0), ",
+        "ex_spouses": "George Ditterich (19), ",
+        "ex_partners": "George Ditterich (19), ",
+        "boss": "Wolfgang Bircher (28)",
+        "colleague": "Richard Zusak (47)",
+        "guardian": "Diane Schwarze",
+        "friend": "None",
+        "bestfriend": "None",
         "deadfriend": "None",
-        "bfriend": "Gerhard Tindall (41)",
-        "childhoodfriend": "Alice Thorpe (34)",
-        "familyfriend": "Janet Catfield (47)",
-        "pet": "Helen   (0)",
-        "enemy": "Bonnie Hilling (45)"
+        "bfriend": "None",
+        "childhoodfriend": "None",
+        "familyfriend": "None",
+        "pet": "None",
+        "enemy": "None"
     },
     "romance/family life": {
-        "1950": {
-            "age": 18,
+        "1945": {
+            "age": 13,
             "state": "single",
             "married": false
         },
-        "1952": {
-            "age": 20,
+        "1950": {
+            "age": 18,
             "state": "in love",
             "married": false,
-            "partner": "Monika Eveleigh (18)"
+            "partner": "George Ditterich (19)"
+        },
+        "1951": {
+            "age": 19,
+            "state": "engaged",
+            "married": false,
+            "partner": "George Ditterich (19)"
         },
         "1954": {
             "age": 22,
-            "state": "partnership",
-            "married": false,
-            "partner": "Monika Eveleigh (20)"
-        },
-        "1955": {
-            "age": 23,
-            "state": "cheating",
-            "married": false,
-            "partner": "Monika Eveleigh (21)",
-            "cheating with": "Patricia Ansley (28)"
-        },
-        "1956": {
-            "age": 24,
-            "state": "single",
-            "married": false
-        },
-        "1958": {
-            "age": 26,
-            "state": "in love",
-            "married": false,
-            "partner": "Susan Sherwood (36)"
-        },
-        "1959": {
-            "age": 27,
-            "state": "single",
-            "married": false
+            "state": "married",
+            "married": true,
+            "partner": "George Ditterich (19)"
         },
         "1960": {
             "age": 28,
-            "state": "in love",
-            "married": false,
-            "partner": "Virginia Morley (24)"
+            "state": "cheating",
+            "married": true,
+            "partner": "George Ditterich (19)",
+            "cheating with": "Gary Ansley (27)",
+            "children": "Anthony Ditterich (0), "
         },
         "1961": {
             "age": 29,
-            "state": "single",
-            "married": false
+            "state": "cheating",
+            "married": true,
+            "partner": "George Ditterich (19)",
+            "cheating with": "Gary Ansley (27)",
+            "children": "Anthony Ditterich (0), ",
+            "extra-marrital children": "Johnny Ditterich (0), "
         },
-        "1964": {
-            "age": 32,
+        "1962": {
+            "age": 30,
+            "state": "single",
+            "married": false,
+            "children": "Anthony Ditterich (0), ",
+            "extra-marrital children": "Johnny Nicolaas (0), "
+        },
+        "1963": {
+            "age": 31,
             "state": "in love",
             "married": false,
-            "partner": "Patricia Riley (48)"
+            "partner": "David von Mueller (40)",
+            "children": "Anthony Ditterich (0), ",
+            "extra-marrital children": "Johnny Nicolaas (0), "
         },
         "1965": {
             "age": 33,
             "state": "single",
-            "married": false
+            "married": false,
+            "children": "Anthony Ditterich (0), ",
+            "extra-marrital children": "Johnny Nicolaas (0), "
         }
     },
     "professional life": {
         "1950": {
             "age": 18,
-            "state": "stay at home",
-            "income": "very high",
+            "state": "student",
+            "income": "high",
+            "location": [
+                "Perth",
+                "Western Australia",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": false
+        },
+        "1954": {
+            "age": 22,
+            "state": "student",
+            "income": "high",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": null,
+            "married": true
+        },
+        "1955": {
+            "age": 23,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": "nurse",
+            "married": true,
+            "boss": "Henry Shelly (41)",
+            "colleague": "None"
+        },
+        "1956": {
+            "age": 24,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": "nurse",
+            "married": true,
+            "boss": "Alice Woolley (41)",
+            "colleague": "None"
+        },
+        "1957": {
+            "age": 25,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": "nurse",
+            "married": true,
+            "boss": "Dorothy Bolte (39)",
+            "colleague": "None"
+        },
+        "1959": {
+            "age": 27,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Sydney",
+                "New South Wales",
+                "Australia",
+                "city"
+            ],
+            "lifestyle": "very high",
+            "job": "nurse",
+            "married": true,
+            "boss": "Brigitte von Mueller (39)",
+            "colleague": "None"
+        },
+        "1960": {
+            "age": 28,
+            "state": "medium job",
+            "income": "medium",
             "location": [
                 "Yankalilla",
                 "South Australia",
@@ -153,8 +246,26 @@
                 "town"
             ],
             "lifestyle": "very high",
-            "job": null,
-            "married": false
+            "job": "nurse",
+            "married": true,
+            "boss": "Carl Bolte (55)",
+            "colleague": "Richard Zusak (47)"
+        },
+        "1962": {
+            "age": 30,
+            "state": "medium job",
+            "income": "medium",
+            "location": [
+                "Yankalilla",
+                "South Australia",
+                "Australia",
+                "town"
+            ],
+            "lifestyle": "very high",
+            "job": "nurse",
+            "married": false,
+            "boss": "Wolfgang Bircher (28)",
+            "colleague": "Richard Zusak (47)"
         }
     }
 }

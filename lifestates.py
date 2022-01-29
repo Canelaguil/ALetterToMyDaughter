@@ -66,15 +66,15 @@ class Person:
 
 
 class RomanceLife:
-    def __init__(self, sexuality, sex, year, country, traits, surname, tags, aspirations, people) -> None:
+    def __init__(self, sexuality, sex, country, traits, surname, tags, aspirations, people, age1945) -> None:
         self.state = 'single'
         self.traits = traits
         self.tags = tags
         self.aspirations = aspirations
-        self.year = year
+        self.year = 1945
         self.surname = surname
         self.og_surname = surname
-        self.age = 18
+        self.age = age1945
         self.country = country
         self.log = {}
         self.sexuality = sexuality
@@ -92,20 +92,21 @@ class RomanceLife:
     TRANSITIONS 
     """
     def transition(self, location, tags): 
-        self.country = location
-        self.tags = tags
-        if self.state == 'single':
-            self.single()
-        elif self.state == 'in love': 
-            self.in_love()
-        elif self.state == 'engaged':
-            self.engaged()
-        elif self.state == 'married': 
-            self.married()
-        elif self.state ==  'partnership':
-            self.partners()
-        elif self.state == 'cheating': 
-            self.cheating()
+        if self.age > 17:
+            self.country = location
+            self.tags = tags
+            if self.state == 'single':
+                self.single()
+            elif self.state == 'in love': 
+                self.in_love()
+            elif self.state == 'engaged':
+                self.engaged()
+            elif self.state == 'married': 
+                self.married()
+            elif self.state ==  'partnership':
+                self.partners()
+            elif self.state == 'cheating': 
+                self.cheating()
         self.year += 1
         self.age += 1
 
@@ -377,12 +378,12 @@ class RomanceLife:
 
 
 class ProfessionalLife: 
-    def __init__(self, year, sex, aspirations, guardian, location, traits, people) -> None:
-        self.year = year
+    def __init__(self, sex, aspirations, guardian, location, traits, people, age1945) -> None:
+        self.year = 1945
         self.sex = sex
         self.traits = set(traits)
-        self.age = 18
-        self.log = {}
+        self.age = age1945
+        self.log, self.tags = {}, {}
         self.people = people
         self.guardian = guardian
         self.aspirations = aspirations
@@ -404,43 +405,46 @@ class ProfessionalLife:
         self.unambitious_traits = {'lazy', 'unambitious', 'disinterested' , 'clumsy', 'nervous'}
 
     def transition(self, married, tags, traits):
-        # recalculate  bonus assignment
-        self.ambition_bonus = len(self.traits & self.ambitious_traits) * 0.05
-        self.unambitious_bonus = len(self.traits & self.unambitious_traits) * 0.05
+        if self.age > 17:
+            # recalculate  bonus assignment
+            self.ambition_bonus = len(self.traits & self.ambitious_traits) * 0.05
+            self.unambitious_bonus = len(self.traits & self.unambitious_traits) * 0.05
 
-        self.tags = tags
-        self.traits = set(traits)
-        change = False
-        if self.state == 'unemployed':
-            change = self.unemployed()
-        elif self.state == 'stay at home':
-            change = self.stay_at_home()
-        elif self.state == 'start':
-            change = self.start()
-        elif self.state == 'creative':
-            change = self.creative()
-        elif self.state == 'student':
-            change = self.student()
-        elif self.state == 'jailed': 
-            change = self.jailed()
-        elif self.state == 'low job':
-            change = self.low_job()
-        elif self.state == 'medium job':
-            change = self.medium_job()
-        elif self.state == 'high job':
-            change = self.high_job()
-        elif self.state == 'very high job':
-            change = self.very_high_job()
+            self.tags = tags
+            self.traits = set(traits)
+            change = False
+            if self.state == 'unemployed':
+                change = self.unemployed()
+            elif self.state == 'stay at home':
+                change = self.stay_at_home()
+            elif self.state == 'start':
+                change = self.start()
+            elif self.state == 'creative':
+                change = self.creative()
+            elif self.state == 'student':
+                change = self.student()
+            elif self.state == 'jailed': 
+                change = self.jailed()
+            elif self.state == 'low job':
+                change = self.low_job()
+            elif self.state == 'medium job':
+                change = self.medium_job()
+            elif self.state == 'high job':
+                change = self.high_job()
+            elif self.state == 'very high job':
+                change = self.very_high_job()
 
-        if married != self.married:
-            change = True
-        
-        self.married = married
+
+            if married != self.married:
+                change = True
+            
+            self.married = married
+
+            if change: 
+                self.change()
+
         self.year += 1
         self.age += 1
-
-        if change: 
-            self.change()
 
         return self.location, self.tags, self.people
 
@@ -582,6 +586,7 @@ class ProfessionalLife:
                 else:
                     self.state = 'stay at home'
                     self.tags['independent'] = False
+                    self.tags['with guardian'] = True
                     self.log_change()
                     return False
             else: 
@@ -623,24 +628,8 @@ class ProfessionalLife:
         return False
         
     def stay_at_home(self):
-        pass
-
-    def student(self): 
-        if self.student_years > 3: 
-            # Chance of stopping study
-            if random() < 0.7:
-                self.is_student = False
-                self.was_student = True
-                self.assign_career()
-                return True
-        self.is_student = True
-        self.student_years += 1
-        return False
-
-    def unemployed(self): 
         if self.sex == 'f':
             if self.lifestyle > 1:
-                self.state = 'unemployed'
                 if not self.married:
                     # if ambitious
                     if self.aspirations['college']:
@@ -661,6 +650,23 @@ class ProfessionalLife:
                         if random() < 0.005: 
                             self.state = 'low job'
                             return True
+
+    def student(self): 
+        if self.student_years > 3: 
+            # Chance of stopping study
+            if random() < 0.7:
+                self.is_student = False
+                self.was_student = True
+                self.assign_career()
+                return True
+        self.is_student = True
+        self.student_years += 1
+        return False
+
+    def unemployed(self): 
+        if random() > self.trauma_modifier() * 2: 
+            self.state = 'start'
+        return False
 
     def jailed(self):
         self.tags['imprisoned'] = True
@@ -741,6 +747,18 @@ class ProfessionalLife:
         age = self.age + 10
         return Person(self.location[2], sex, age=age)
 
+    def trauma_modifier(self):
+        mod = 0
+        trauma_expressions = [
+            'gambler', 'drug addict', 'grifter', 'depressed',
+            'anxiety disorder', 'grifter', 'paranoid', 'conspiracy theorist', 
+            'suicidal', 'possesive'
+            ]
+        for d in trauma_expressions:
+            if self.tags[d]:
+                mod += 1
+        return mod / 8
+
     def promote(self):
         self.income += 1
         if self.live_above_pay():
@@ -801,15 +819,14 @@ class ProfessionalLife:
 
 
 class IOLife:
-    def __init__(self, people, location, guardian, tags, year, sex) -> None:
+    def __init__(self, people, location, guardian, tags, sex, age1945) -> None:
         self.people = people     
         self.sex = sex
         self.location = location
         self.guardian = guardian
-        self.year = year
+        self.year = 1945
         self.tags = tags
-        self.age = 18
-        self.init_people()
+        self.age = age1945
 
     def init_people(self):
         g = Person('Australia', self.guardian['sex'], self.guardian['name'], self.guardian['surname'])
@@ -821,13 +838,16 @@ class IOLife:
         self.people['friend'] = self.make_person()
 
     def transition(self, people, location, tags):
-        self.people = people
-        if self.location != location: 
-            self.location = location
+        if self.age == 18:
+            self.init_people()
+        if self.age > 17:
+            self.people = people
+            if self.location != location: 
+                self.location = location
+                self.update_people()
+            self.tags = tags
+            self.update_ages()
             self.update_people()
-        self.tags = tags
-        self.update_ages()
-        self.update_people()
         return self.people, self.tags
 
     def make_person(self, mode='pref_sex'): 
@@ -887,3 +907,10 @@ class IOLife:
             else:        
                 people[key] = value.__str__()
         return people
+
+    """ 
+      TRIGGERS
+    """
+    def trigger(self, trigger, romance, professional):
+        return romance, professional
+
