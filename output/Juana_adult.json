@@ -1,5 +1,5 @@
 {
-    "name": "Juana Huijzen",
+    "name": "Juana Slagt",
     "age at event": 35,
     "known traits": [
         "kind",
@@ -8,24 +8,24 @@
     "all traits": [
         "kind",
         "moody",
-        "brave",
-        "practical",
-        "nervous"
+        "moral",
+        "hesitant",
+        "outgoing"
     ],
     "tags": {
         "divorced": false,
-        "married": false,
-        "relationship": false,
+        "married": true,
+        "relationship": true,
         "parent": true,
         "widowed": false,
         "commitment-averse": true,
         "abusive relationship": false,
         "prev abusive relationship": false,
         "famous": false,
-        "independent": false,
+        "independent": true,
         "imprisoned": false,
         "prev_imprisoned": false,
-        "with guardian": true,
+        "with guardian": false,
         "gambler": false,
         "drug addict": false,
         "grifter": false,
@@ -43,232 +43,228 @@
         "evangelist": false
     },
     "country affinities": {
-        "Netherlands": 2,
-        "Spain": -1,
-        "Australia": 0
+        "Netherlands": 0,
+        "Spain": -3,
+        "Australia": -2
     },
     "relationships": {
-        "Jules": 82,
-        "Ika": 39,
-        "Robin": 53,
-        "Paul Carter": 74
+        "Jules": 66,
+        "Ika": 58,
+        "Robin": 50,
+        "April Ryan": 30
     },
-    "trauma": 72,
+    "trauma": 8,
     "people": {
         "love_interest": "None",
-        "old_flame": "Harold Acker (30)",
+        "old_flame": "Jurgen Thorpe (36)",
         "partner": "None",
-        "spouse": "None",
-        "affairpartner": "None",
+        "spouse": "Siem Slagt (49)",
+        "affairpartner": "Waldemar Schippers (55)",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "",
-        "extra_marital_children": "Gerald Huijzen (13), ",
-        "ex_spouses": "Rolf Monash (39), Harold Acker (30), ",
-        "ex_partners": "Rolf Monash (39), Harold Acker (30), ",
-        "boss": "Larry Ansley (46)",
-        "colleague": "Willie Sherwood (70)",
-        "guardian": "Paul Carter (94)",
-        "friend": "Mary Harlow (33)",
-        "bestfriend": "Kathleen Fittler (71)",
+        "children": "Carl Thorpe (12), ",
+        "extra_marital_children": "Uwe Ryan (9), ",
+        "ex_spouses": "Jurgen Thorpe (36), ",
+        "ex_partners": "Jurgen Thorpe (36), ",
+        "boss": "Rein Slagt (52)",
+        "colleague": "Julian Jonk (57)",
+        "guardian": "April Ryan (54)",
+        "friend": "Diane Gladstone (79)",
+        "bestfriend": "Heinz Ansley (51)",
         "deadfriend": "None",
-        "bfriend": "Janice Calcott (74)",
-        "childhoodfriend": "Rosemarie Yeaton (36)",
-        "familyfriend": "James Hanney (47)",
-        "pet": "Catherine   (1)",
-        "enemy": "Bonnie Thorpe (77)"
+        "bfriend": "Walter Thorpe (88)",
+        "childhoodfriend": "Frances Morley (36)",
+        "familyfriend": "James Marleigh (44)",
+        "pet": "Jean   (3)",
+        "enemy": "Patricia Bircher (76)"
     },
     "romance/family life": {
         "1949": {
             "age": 18,
-            "state": "single",
-            "married": false
+            "state": "in love",
+            "married": false,
+            "partner": "Jurgen Thorpe (18)"
         },
         "1950": {
             "age": 19,
-            "state": "in love",
-            "married": false,
-            "partner": "Rolf Monash (22)"
-        },
-        "1951": {
-            "age": 20,
             "state": "engaged",
             "married": false,
-            "partner": "Rolf Monash (23)"
-        },
-        "1952": {
-            "age": 21,
-            "state": "married",
-            "married": true,
-            "partner": "Rolf Monash (24)"
+            "partner": "Jurgen Thorpe (19)"
         },
         "1953": {
             "age": 22,
-            "state": "cheating",
+            "state": "married",
             "married": true,
-            "partner": "Rolf Monash (25)",
-            "cheating with": "Charles Marleigh (22)"
-        },
-        "1954": {
-            "age": 23,
-            "state": "cheating",
-            "married": true,
-            "partner": "Rolf Monash (26)",
-            "cheating with": "Charles Marleigh (23)",
-            "extra-marrital children": "Gerald Monash (0), "
+            "partner": "Jurgen Thorpe (22)"
         },
         "1955": {
             "age": 24,
-            "state": "single",
-            "married": false,
-            "extra-marrital children": "Gerald Huijzen (1), "
-        },
-        "1957": {
-            "age": 26,
-            "state": "in love",
-            "married": false,
-            "partner": "Harold Acker (20)",
-            "extra-marrital children": "Gerald Huijzen (3), "
-        },
-        "1961": {
-            "age": 30,
-            "state": "engaged",
-            "married": false,
-            "partner": "Harold Acker (24)",
-            "extra-marrital children": "Gerald Huijzen (7), "
-        },
-        "1962": {
-            "age": 31,
             "state": "married",
             "married": true,
-            "partner": "Harold Acker (25)",
-            "extra-marrital children": "Gerald Huijzen (8), "
+            "partner": "Jurgen Thorpe (24)",
+            "children": "Carl Thorpe (0), "
+        },
+        "1956": {
+            "age": 25,
+            "state": "cheating",
+            "married": true,
+            "partner": "Jurgen Thorpe (25)",
+            "cheating with": "Guus De Jong (19)",
+            "children": "Carl Thorpe (1), "
+        },
+        "1958": {
+            "age": 27,
+            "state": "single",
+            "married": false,
+            "children": "Carl Thorpe (3), ",
+            "extra-marrital children": "Uwe Ryan (0), "
+        },
+        "1959": {
+            "age": 28,
+            "state": "in love",
+            "married": false,
+            "partner": "Siem Slagt (41)",
+            "children": "Carl Thorpe (4), ",
+            "extra-marrital children": "Uwe Ryan (1), "
+        },
+        "1960": {
+            "age": 29,
+            "state": "engaged",
+            "married": false,
+            "partner": "Siem Slagt (42)",
+            "children": "Carl Thorpe (5), ",
+            "extra-marrital children": "Uwe Ryan (2), "
         },
         "1963": {
             "age": 32,
+            "state": "married",
+            "married": true,
+            "partner": "Siem Slagt (45)",
+            "children": "Carl Thorpe (8), ",
+            "extra-marrital children": "Uwe Ryan (5), "
+        },
+        "1966": {
+            "age": 35,
             "state": "cheating",
             "married": true,
-            "partner": "Harold Acker (26)",
-            "cheating with": "Willie York (31)",
-            "extra-marrital children": "Gerald Huijzen (9), "
-        },
-        "1964": {
-            "age": 33,
-            "state": "single",
-            "married": false,
-            "extra-marrital children": "Gerald Huijzen (10), "
+            "partner": "Siem Slagt (48)",
+            "cheating with": "Waldemar Schippers (54)",
+            "children": "Carl Thorpe (11), ",
+            "extra-marrital children": "Uwe Ryan (8), "
         }
     },
     "professional life": {
         "1949": {
             "age": 18,
-            "state": "stay at home",
-            "income": "very high",
-            "location": [
-                "Yankalilla",
-                "South Australia",
-                "Australia",
-                "town"
-            ],
-            "lifestyle": "very high",
-            "job": null,
-            "married": false
-        },
-        "1950": {
-            "age": 19,
             "state": "low job",
-            "income": "very high",
+            "income": "low",
             "location": [
-                "Melbourne",
-                "Victoria",
-                "Australia",
+                "Amsterdam",
+                "Noord-Holland",
+                "Netherlands",
                 "city"
             ],
-            "lifestyle": "very high",
-            "job": null,
+            "lifestyle": "low",
+            "job": "mechanic",
             "married": false,
-            "boss": "Betty Shelly (22)",
-            "colleague": "Peggy Eveleigh (23)"
+            "boss": "Koos ter Schure (26)",
+            "colleague": "Kees Jonk (26)"
         },
-        "1952": {
-            "age": 21,
+        "1953": {
+            "age": 22,
             "state": "low job",
-            "income": "very high",
+            "income": "low",
             "location": [
-                "Melbourne",
-                "Victoria",
-                "Australia",
+                "Amsterdam",
+                "Noord-Holland",
+                "Netherlands",
                 "city"
             ],
-            "lifestyle": "very high",
-            "job": null,
+            "lifestyle": "low",
+            "job": "mechanic",
             "married": true,
-            "boss": "Joyce Kilby (22)",
-            "colleague": "David Barlow (48)"
+            "boss": "Jonathan van Hijfte (37)",
+            "colleague": "Guus ter Schure (25)"
         },
-        "1954": {
-            "age": 23,
+        "1957": {
+            "age": 26,
             "state": "low job",
-            "income": "very high",
+            "income": "low",
             "location": [
-                "Perth",
-                "Western Australia",
-                "Australia",
+                "Amsterdam",
+                "Noord-Holland",
+                "Netherlands",
                 "city"
             ],
-            "lifestyle": "very high",
-            "job": null,
+            "lifestyle": "low",
+            "job": "mechanic",
             "married": true,
-            "boss": "Jurgen Springborg (37)",
-            "colleague": "Gerhard Tindall (24)"
+            "boss": "Piet von Zesen (49)",
+            "colleague": "Guus ter Schure (29)"
         },
-        "1955": {
-            "age": 24,
+        "1958": {
+            "age": 27,
             "state": "low job",
-            "income": "very high",
+            "income": "low",
             "location": [
-                "Perth",
-                "Western Australia",
-                "Australia",
+                "Amsterdam",
+                "Noord-Holland",
+                "Netherlands",
                 "city"
             ],
-            "lifestyle": "very high",
-            "job": null,
+            "lifestyle": "low",
+            "job": "mechanic",
             "married": false,
-            "boss": "Jurgen Bircher (26)",
-            "colleague": "John Tindall (45)"
+            "boss": "Tamara van Nieuwkerken (43)",
+            "colleague": "Guus ter Schure (30)"
         },
-        "1962": {
-            "age": 31,
+        "1963": {
+            "age": 32,
             "state": "low job",
-            "income": "very high",
+            "income": "low",
             "location": [
-                "Perth",
-                "Western Australia",
-                "Australia",
+                "Amsterdam",
+                "Noord-Holland",
+                "Netherlands",
                 "city"
             ],
-            "lifestyle": "very high",
-            "job": null,
+            "lifestyle": "low",
+            "job": "mechanic",
             "married": true,
-            "boss": "Jutta von Mueller (35)",
-            "colleague": "John Tindall (52)"
+            "boss": "Guusje Perdeck (28)",
+            "colleague": "Julian Jonk (53)"
         },
         "1964": {
             "age": 33,
             "state": "low job",
-            "income": "very high",
+            "income": "low",
             "location": [
-                "Sydney",
-                "New South Wales",
-                "Australia",
+                "Amsterdam",
+                "Noord-Holland",
+                "Netherlands",
                 "city"
             ],
-            "lifestyle": "very high",
-            "job": null,
-            "married": false,
-            "boss": "Larry Ansley (43)",
-            "colleague": "Willie Sherwood (67)"
+            "lifestyle": "low",
+            "job": "mechanic",
+            "married": true,
+            "boss": "Koos van Kooten (62)",
+            "colleague": "Julian Jonk (54)"
+        },
+        "1966": {
+            "age": 35,
+            "state": "low job",
+            "income": "low",
+            "location": [
+                "Amsterdam",
+                "Noord-Holland",
+                "Netherlands",
+                "city"
+            ],
+            "lifestyle": "low",
+            "job": "mechanic",
+            "married": true,
+            "boss": "Rein Slagt (51)",
+            "colleague": "Julian Jonk (56)"
         }
     }
 }

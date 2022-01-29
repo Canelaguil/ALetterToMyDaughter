@@ -24,6 +24,7 @@ class Controller:
         self.warden_life()
         self.teenage_progress()
         self.start_adulthood()
+        print("Generation done, check the output folder for results!")
 
     def childhood_memories(self):
         cdb = ChildhoodMemories()
@@ -159,7 +160,7 @@ class Controller:
 
         # pprint(event)
 
-        with open(f'objects/the_event.json', 'w') as outfile:
+        with open(f'output/the_event.json', 'w') as outfile:
             json.dump(event, outfile, indent=2, sort_keys=False)
 
     def warden_life(self):

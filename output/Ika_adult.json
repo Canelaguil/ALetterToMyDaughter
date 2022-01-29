@@ -1,5 +1,5 @@
 {
-    "name": "Ika ter Schure",
+    "name": "Ika Nicolaas",
     "age at event": 34,
     "known traits": [
         "brave",
@@ -8,17 +8,17 @@
     "all traits": [
         "brave",
         "outgoing",
-        "nervous",
-        "sensitive",
-        "quirky"
+        "curious",
+        "creative",
+        "sensitive"
     ],
     "tags": {
         "divorced": false,
-        "married": true,
-        "relationship": true,
-        "parent": true,
+        "married": false,
+        "relationship": false,
+        "parent": false,
         "widowed": false,
-        "commitment-averse": true,
+        "commitment-averse": false,
         "abusive relationship": false,
         "prev abusive relationship": false,
         "famous": false,
@@ -43,93 +43,63 @@
         "evangelist": false
     },
     "country affinities": {
-        "Netherlands": 1,
+        "Netherlands": -3,
         "Indonesia": 1,
-        "Australia": -1
+        "Australia": 0
     },
     "relationships": {
-        "Juana": 73,
-        "Jules": 40,
-        "Robin": 100,
-        "Diane Schwarze": 0
+        "Juana": 71,
+        "Jules": 49,
+        "Robin": 73,
+        "Diane Schwarze": 24
     },
-    "trauma": 26,
+    "trauma": 28,
     "people": {
         "love_interest": "None",
-        "old_flame": "None",
+        "old_flame": "Paul Zusak (35)",
         "partner": "None",
-        "spouse": "Lars ter Schure (27)",
+        "spouse": "None",
         "affairpartner": "None",
         "dead_partner": "None",
         "dead_child": "None",
-        "children": "Christa Yeaton (5), Kathleen Yeaton (3), Marilyn Yeaton (2), ",
+        "children": "",
         "extra_marital_children": "",
-        "ex_spouses": "Roger Yeaton (36), ",
+        "ex_spouses": "",
         "ex_partners": "",
-        "boss": "Sonja Schippers (43)",
-        "colleague": "Sietse Teulings (43)",
+        "boss": "Arthur Acker (53)",
+        "colleague": "None",
         "guardian": "Diane Schwarze (77)",
-        "friend": "Barbara Fulton (56)",
-        "bestfriend": "Helga Bircher (47)",
+        "friend": "Renate Barlow (36)",
+        "bestfriend": "Roy Yeaton (39)",
         "deadfriend": "None",
-        "bfriend": "Sandra Ansley (68)",
-        "childhoodfriend": "Rosemarie Fulton (35)",
-        "familyfriend": "Carolyn Farlow (51)",
-        "pet": "Dawn   (3)",
-        "enemy": "Virginia Ackford (63)"
+        "bfriend": "Jack Marston (66)",
+        "childhoodfriend": "Margaret Acker (35)",
+        "familyfriend": "Janice Woolley (52)",
+        "pet": "Gloria   (9)",
+        "enemy": "Barbara Bolte (37)"
     },
     "romance/family life": {
         "1950": {
             "age": 18,
+            "state": "in love",
+            "married": false,
+            "partner": "Gunther Morley (20)"
+        },
+        "1954": {
+            "age": 22,
             "state": "single",
             "married": false
         },
-        "1952": {
-            "age": 20,
+        "1958": {
+            "age": 26,
             "state": "in love",
             "married": false,
-            "partner": "Roger Yeaton (21)"
+            "partner": "Paul Zusak (26)"
         },
-        "1955": {
-            "age": 23,
-            "state": "engaged",
-            "married": false,
-            "partner": "Roger Yeaton (24)"
-        },
-        "1956": {
-            "age": 24,
-            "state": "married",
-            "married": true,
-            "partner": "Roger Yeaton (25)"
-        },
-        "1962": {
-            "age": 30,
-            "state": "married",
-            "married": true,
-            "partner": "Roger Yeaton (31)",
-            "children": "Christa Yeaton (0), "
-        },
-        "1964": {
-            "age": 32,
-            "state": "married",
-            "married": true,
-            "partner": "Roger Yeaton (33)",
-            "children": "Christa Yeaton (2), Kathleen Yeaton (0), "
-        },
-        "1965": {
-            "age": 33,
-            "state": "cheating",
-            "married": true,
-            "partner": "Roger Yeaton (34)",
-            "cheating with": "Lars ter Schure (25)",
-            "children": "Christa Yeaton (3), Kathleen Yeaton (1), Marilyn Yeaton (0), "
-        },
-        "1966": {
-            "age": 34,
-            "state": "married",
-            "married": true,
-            "partner": "Lars ter Schure (26)",
-            "children": "Christa Yeaton (4), Kathleen Yeaton (2), Marilyn Yeaton (1), "
+        "1960": {
+            "age": 28,
+            "state": "single",
+            "married": false
         }
     },
     "professional life": {
@@ -138,10 +108,10 @@
             "state": "student",
             "income": "high",
             "location": [
-                "Geelong",
+                "Melbourne",
                 "Victoria",
                 "Australia",
-                "town"
+                "city"
             ],
             "lifestyle": "very high",
             "job": null,
@@ -152,96 +122,16 @@
             "state": "medium job",
             "income": "medium",
             "location": [
-                "Geelong",
+                "Melbourne",
                 "Victoria",
                 "Australia",
-                "town"
+                "city"
             ],
             "lifestyle": "very high",
-            "job": "nurse",
+            "job": "teacher",
             "married": false,
-            "boss": "Jurgen Calcott (48)",
+            "boss": "Arthur Acker (41)",
             "colleague": "None"
-        },
-        "1956": {
-            "age": 24,
-            "state": "medium job",
-            "income": "medium",
-            "location": [
-                "Amersfoort",
-                "Utrecht",
-                "Netherlands",
-                "town"
-            ],
-            "lifestyle": "very high",
-            "job": "nurse",
-            "married": true,
-            "boss": "Waldemar ter Schure (42)",
-            "colleague": "Koen von Zesen (27)"
-        },
-        "1957": {
-            "age": 25,
-            "state": "medium job",
-            "income": "medium",
-            "location": [
-                "Amersfoort",
-                "Utrecht",
-                "Netherlands",
-                "town"
-            ],
-            "lifestyle": "very high",
-            "job": "nurse",
-            "married": true,
-            "boss": "Hugo von Zesen (55)",
-            "colleague": "Koen von Zesen (28)"
-        },
-        "1959": {
-            "age": 27,
-            "state": "medium job",
-            "income": "medium",
-            "location": [
-                "Amsterdam",
-                "Noord-Holland",
-                "Netherlands",
-                "city"
-            ],
-            "lifestyle": "very high",
-            "job": "nurse",
-            "married": true,
-            "boss": "Sonja Schippers (50)",
-            "colleague": "Leendert van Kooten (25)"
-        },
-        "1962": {
-            "age": 30,
-            "state": "medium job",
-            "income": "medium",
-            "location": [
-                "Amsterdam",
-                "Noord-Holland",
-                "Netherlands",
-                "city"
-            ],
-            "lifestyle": "very high",
-            "job": "nurse",
-            "married": true,
-            "boss": "Nicole de Bie (36)",
-            "colleague": "Sietse Teulings (38)"
-        },
-        "1964": {
-            "age": 32,
-            "state": "medium job",
-            "income": "medium",
-            "location": [
-                "Amsterdam",
-                "Noord-Holland",
-                "Netherlands",
-                "city"
-            ],
-            "lifestyle": "very high",
-            "job": "nurse",
-            "married": true,
-            "boss": "Sonja Schippers (40)",
-            "colleague": "Sietse Teulings (40)"
         }
     }
 }

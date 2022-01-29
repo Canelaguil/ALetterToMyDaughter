@@ -1,5 +1,5 @@
 {
-    "name": "Juana Huijzen",
+    "name": "Juana Ryan",
     "age": 18,
     "known traits": [
         "kind",
@@ -8,56 +8,56 @@
     "all traits": [
         "kind",
         "moody",
-        "brave",
-        "practical",
-        "nervous"
+        "moral",
+        "hesitant",
+        "outgoing"
     ],
     "guardian": {
-        "name": "Paul",
-        "surname": "Carter",
-        "age": 72,
-        "sex": "m",
-        "relation": "uncle",
+        "name": "April",
+        "surname": "Ryan",
+        "age": 32,
+        "sex": "f",
+        "relation": "cousin",
         "location": [
-            "Yankalilla",
-            "South Australia",
+            "Port Macquarie",
+            "New South Wales",
             "Australia",
             "town"
         ],
-        "income_class": 3,
-        "lifestyle": 3,
-        "married": false,
-        "other_children": false,
+        "income_class": 1,
+        "lifestyle": 1,
+        "married": true,
+        "other_children": true,
         "nurturing": true,
-        "provide_college": true,
+        "provide_college": false,
         "provide_women_college": false,
         "provide_boarding_school": false,
-        "allowance": "big allowance",
+        "allowance": "small allowance",
         "capacity": 0,
         "ward": [
             "Juana"
         ]
     },
     "location": [
-        "Yankalilla",
-        "South Australia",
+        "Port Macquarie",
+        "New South Wales",
         "Australia",
         "town"
     ],
-    "lifestyle": 3,
-    "income class": 3,
+    "lifestyle": 1,
+    "income class": 1,
     "boarding school": false,
     "country affinities": {
-        "Netherlands": 2,
-        "Spain": -1,
-        "Australia": 0
+        "Netherlands": 0,
+        "Spain": -3,
+        "Australia": -2
     },
     "sexuality": "straight",
     "relationships": {
-        "Jules": 82,
-        "Ika": 39,
-        "Robin": 53,
-        "Paul Carter": 74
+        "Jules": 66,
+        "Ika": 58,
+        "Robin": 50,
+        "April Ryan": 30
     },
     "person tags": {
         "love_interest": null,
@@ -73,7 +73,7 @@
         "ex_partners": [],
         "boss": null,
         "colleague": null,
-        "guardian": "Paul Carter",
+        "guardian": "April Ryan",
         "friend": null,
         "bestfriend": null,
         "deadfriend": null,
@@ -83,15 +83,15 @@
         "pet": null,
         "enemy": null
     },
-    "trauma": 72,
+    "trauma": 8,
     "happinness": 80,
     "aspirations": {
         "lifestyle": 3,
-        "income": 3,
-        "children": false,
+        "income": 1,
+        "children": true,
         "location": "Netherlands",
         "college": false,
         "ambitious": false,
-        "independent": true
+        "independent": false
     }
 }
